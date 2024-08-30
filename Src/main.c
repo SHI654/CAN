@@ -90,16 +90,19 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN_Init();
   /* USER CODE BEGIN 2 */
-
-  /* USER CODE END 2 */
+  //CAN_Config();
+  CAN_Init();
+  CAN_SetTxPacket();
+    /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
+    CAN_Transmit(&g_CanTxPacket);
       HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-      HAL_Delay(100);
+      HAL_Delay(5000);
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
