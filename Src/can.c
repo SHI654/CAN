@@ -121,7 +121,7 @@ void CAN_Config(void)
   /* Configure the CAN Filter */
   sFilterConfig.FilterBank = 0;                      // 过滤器编号，使用一个CAN，则可选0-13；使用两个CAN可选0-27
   sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK;  // 过滤器模式，掩码模式或列表模式
-  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT; // 过滤器位宽
+  sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT; // 过滤器位宽.
   sFilterConfig.FilterIdHigh = 0x0000;               // 过滤器验证码ID高16位，0-0xFFFF
   sFilterConfig.FilterIdLow = 0x0000;                // 过滤器验证码ID低16位，0-0xFFFF
   sFilterConfig.FilterMaskIdHigh = 0x0000;           // 过滤器掩码ID高16位，0-0xFFFF
