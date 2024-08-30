@@ -1,14 +1,60 @@
+/*@!Encoding:1252*/
 includes
 {
-  
 }
 
 variables
 {
-
-
+  int messageCount = 0;
+  int specificMessageId = 0x123;
+  int errorMessageId = 0x456;
+  int i=0;
+  msTimer periodicTimer;
 }
-On message *
+
+on start
 {
-  write("***0x%x",this.id);
+  setTimer(periodicTimer, 1);
+}
+
+on message *
+{
+  messageCount++;
+  write("Received CAN ID: 0x%X", this.id);
+
+  if (this.id == specificMessageId)
+  {
+    write("Special message received: 0x%X", this.id);
+
+    for (i = 0; i < this.dlc; i++)
+    {
+      write("Data[%d]: 0x%02X", i, this.Byte(i));
+    }
+    
+    if (this.Byte(0) == 0x01)
+    {
+      write("Condition met: First byte is 0x01");
+    }
+  }
+  else if (this.id == errorMessageId )
+  {
+    write("Error message received: 0x%X", this.id);
+  }
+
+  write("Total messages received: %d", messageCount);
+}
+
+on timer periodicTimer
+{
+  write("Periodic task triggered");
+}
+
+on key 'a'
+{
+  write("Key 'a' pressed");
+}
+
+on key 'b'
+{
+  write("Key 'b' pressed");
 }
