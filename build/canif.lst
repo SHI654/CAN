@@ -1,0 +1,235 @@
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"canif.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.CanIf_Transmit,"ax",%progbits
+  18              		.align	1
+  19              		.global	CanIf_Transmit
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	CanIf_Transmit:
+  25              	.LVL0:
+  26              	.LFB65:
+  27              		.file 1 "Src/canif.c"
+   1:Src/canif.c   **** #include "canif.h"
+   2:Src/canif.c   **** #include "can.h"
+   3:Src/canif.c   **** 
+   4:Src/canif.c   **** const uint32_t TxPduIdToStdIdTable[] = {
+   5:Src/canif.c   ****     0x100,
+   6:Src/canif.c   ****     0x1C0,
+   7:Src/canif.c   ****     0x280,
+   8:Src/canif.c   ****     0x340,
+   9:Src/canif.c   ****     0x400,
+  10:Src/canif.c   ****     0x4C0,
+  11:Src/canif.c   ****     0x580,
+  12:Src/canif.c   ****     0x640,
+  13:Src/canif.c   ****     0x700,
+  14:Src/canif.c   ****     0x7C0,
+  15:Src/canif.c   ****     0x780,
+  16:Src/canif.c   ****     0x740,
+  17:Src/canif.c   ****     0x6C0,
+  18:Src/canif.c   ****     0x600,
+  19:Src/canif.c   ****     0x5A0,
+  20:Src/canif.c   ****     0x4E0,
+  21:Src/canif.c   ****     0x420,
+  22:Src/canif.c   ****     0x360,
+  23:Src/canif.c   ****     0x2A0,
+  24:Src/canif.c   ****     0x1E0
+  25:Src/canif.c   **** };
+  26:Src/canif.c   **** 
+  27:Src/canif.c   **** 
+  28:Src/canif.c   **** void CanIf_Transmit(uint32_t TxPduId, PduInfoTRx* PduInfoPtr) {
+  28              		.loc 1 28 63 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 32
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s 			page 2
+
+
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 28 63 is_stmt 0 view .LVU1
+  33 0000 10B5     		push	{r4, lr}
+  34              	.LCFI0:
+  35              		.cfi_def_cfa_offset 8
+  36              		.cfi_offset 4, -8
+  37              		.cfi_offset 14, -4
+  38 0002 88B0     		sub	sp, sp, #32
+  39              	.LCFI1:
+  40              		.cfi_def_cfa_offset 40
+  29:Src/canif.c   ****     CAN_TxHeaderTypeDef txHeader;
+  41              		.loc 1 29 5 is_stmt 1 view .LVU2
+  30:Src/canif.c   ****     uint32_t txMailbox;
+  42              		.loc 1 30 5 view .LVU3
+  31:Src/canif.c   **** 
+  32:Src/canif.c   ****     if (TxPduId < (sizeof(TxPduIdToStdIdTable) / sizeof(TxPduIdToStdIdTable[0]))) {
+  43              		.loc 1 32 5 view .LVU4
+  44              		.loc 1 32 8 is_stmt 0 view .LVU5
+  45 0004 1328     		cmp	r0, #19
+  46 0006 18D8     		bhi	.L2
+  47 0008 0C46     		mov	r4, r1
+  33:Src/canif.c   ****         txHeader.StdId = TxPduIdToStdIdTable[TxPduId];
+  48              		.loc 1 33 9 is_stmt 1 view .LVU6
+  49              		.loc 1 33 45 is_stmt 0 view .LVU7
+  50 000a 0F4B     		ldr	r3, .L8
+  51 000c 53F82030 		ldr	r3, [r3, r0, lsl #2]
+  52              		.loc 1 33 24 view .LVU8
+  53 0010 0293     		str	r3, [sp, #8]
+  34:Src/canif.c   ****     } else {
+  35:Src/canif.c   ****         Error_Handler();
+  36:Src/canif.c   ****         return;
+  37:Src/canif.c   ****     }
+  38:Src/canif.c   **** 
+  39:Src/canif.c   ****     txHeader.ExtId = 0x00;
+  54              		.loc 1 39 5 is_stmt 1 view .LVU9
+  55              		.loc 1 39 20 is_stmt 0 view .LVU10
+  56 0012 0023     		movs	r3, #0
+  57 0014 0393     		str	r3, [sp, #12]
+  40:Src/canif.c   ****     txHeader.IDE = CAN_ID_STD;
+  58              		.loc 1 40 5 is_stmt 1 view .LVU11
+  59              		.loc 1 40 18 is_stmt 0 view .LVU12
+  60 0016 0493     		str	r3, [sp, #16]
+  41:Src/canif.c   ****     txHeader.RTR = CAN_RTR_DATA;
+  61              		.loc 1 41 5 is_stmt 1 view .LVU13
+  62              		.loc 1 41 18 is_stmt 0 view .LVU14
+  63 0018 0593     		str	r3, [sp, #20]
+  42:Src/canif.c   ****     txHeader.DLC = 8;
+  64              		.loc 1 42 5 is_stmt 1 view .LVU15
+  65              		.loc 1 42 18 is_stmt 0 view .LVU16
+  66 001a 0823     		movs	r3, #8
+  67 001c 0693     		str	r3, [sp, #24]
+  43:Src/canif.c   **** 
+  44:Src/canif.c   ****     while (HAL_CAN_GetTxMailboxesFreeLevel(&hcan) == 0);
+  68              		.loc 1 44 5 is_stmt 1 view .LVU17
+  69              	.LVL1:
+  70              	.L3:
+  71              		.loc 1 44 56 discriminator 1 view .LVU18
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s 			page 3
+
+
+  72              		.loc 1 44 11 discriminator 1 view .LVU19
+  73              		.loc 1 44 12 is_stmt 0 discriminator 1 view .LVU20
+  74 001e 0B48     		ldr	r0, .L8+4
+  75 0020 FFF7FEFF 		bl	HAL_CAN_GetTxMailboxesFreeLevel
+  76              	.LVL2:
+  77              		.loc 1 44 11 discriminator 1 view .LVU21
+  78 0024 0028     		cmp	r0, #0
+  79 0026 FAD0     		beq	.L3
+  45:Src/canif.c   **** 
+  46:Src/canif.c   ****     if (HAL_CAN_AddTxMessage(&hcan, &txHeader, PduInfoPtr->Data, &txMailbox) != HAL_OK) {
+  80              		.loc 1 46 5 is_stmt 1 view .LVU22
+  81              		.loc 1 46 9 is_stmt 0 view .LVU23
+  82 0028 01AB     		add	r3, sp, #4
+  83 002a 2246     		mov	r2, r4
+  84 002c 02A9     		add	r1, sp, #8
+  85 002e 0748     		ldr	r0, .L8+4
+  86 0030 FFF7FEFF 		bl	HAL_CAN_AddTxMessage
+  87              	.LVL3:
+  88              		.loc 1 46 8 view .LVU24
+  89 0034 20B9     		cbnz	r0, .L7
+  90              	.LVL4:
+  91              	.L1:
+  47:Src/canif.c   ****         Error_Handler();
+  48:Src/canif.c   ****     }
+  49:Src/canif.c   **** }
+  92              		.loc 1 49 1 view .LVU25
+  93 0036 08B0     		add	sp, sp, #32
+  94              	.LCFI2:
+  95              		.cfi_remember_state
+  96              		.cfi_def_cfa_offset 8
+  97              		@ sp needed
+  98 0038 10BD     		pop	{r4, pc}
+  99              	.LVL5:
+ 100              	.L2:
+ 101              	.LCFI3:
+ 102              		.cfi_restore_state
+  35:Src/canif.c   ****         return;
+ 103              		.loc 1 35 9 is_stmt 1 view .LVU26
+ 104 003a FFF7FEFF 		bl	Error_Handler
+ 105              	.LVL6:
+  36:Src/canif.c   ****     }
+ 106              		.loc 1 36 9 view .LVU27
+ 107 003e FAE7     		b	.L1
+ 108              	.LVL7:
+ 109              	.L7:
+  47:Src/canif.c   ****         Error_Handler();
+ 110              		.loc 1 47 9 view .LVU28
+ 111 0040 FFF7FEFF 		bl	Error_Handler
+ 112              	.LVL8:
+ 113 0044 F7E7     		b	.L1
+ 114              	.L9:
+ 115 0046 00BF     		.align	2
+ 116              	.L8:
+ 117 0048 00000000 		.word	.LANCHOR0
+ 118 004c 00000000 		.word	hcan
+ 119              		.cfi_endproc
+ 120              	.LFE65:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s 			page 4
+
+
+ 122              		.global	TxPduIdToStdIdTable
+ 123              		.section	.rodata.TxPduIdToStdIdTable,"a"
+ 124              		.align	2
+ 125              		.set	.LANCHOR0,. + 0
+ 128              	TxPduIdToStdIdTable:
+ 129 0000 00010000 		.word	256
+ 130 0004 C0010000 		.word	448
+ 131 0008 80020000 		.word	640
+ 132 000c 40030000 		.word	832
+ 133 0010 00040000 		.word	1024
+ 134 0014 C0040000 		.word	1216
+ 135 0018 80050000 		.word	1408
+ 136 001c 40060000 		.word	1600
+ 137 0020 00070000 		.word	1792
+ 138 0024 C0070000 		.word	1984
+ 139 0028 80070000 		.word	1920
+ 140 002c 40070000 		.word	1856
+ 141 0030 C0060000 		.word	1728
+ 142 0034 00060000 		.word	1536
+ 143 0038 A0050000 		.word	1440
+ 144 003c E0040000 		.word	1248
+ 145 0040 20040000 		.word	1056
+ 146 0044 60030000 		.word	864
+ 147 0048 A0020000 		.word	672
+ 148 004c E0010000 		.word	480
+ 149              		.text
+ 150              	.Letext0:
+ 151              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 152              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 153              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 154              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
+ 155              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 156              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"
+ 157              		.file 8 "Inc/canif.h"
+ 158              		.file 9 "Inc/can.h"
+ 159              		.file 10 "Inc/main.h"
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s 			page 5
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 canif.c
+C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s:18     .text.CanIf_Transmit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s:24     .text.CanIf_Transmit:00000000 CanIf_Transmit
+C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s:117    .text.CanIf_Transmit:00000048 $d
+C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s:128    .rodata.TxPduIdToStdIdTable:00000000 TxPduIdToStdIdTable
+C:\Users\wup15j\AppData\Local\Temp\ccZerJLc.s:124    .rodata.TxPduIdToStdIdTable:00000000 $d
+
+UNDEFINED SYMBOLS
+HAL_CAN_GetTxMailboxesFreeLevel
+HAL_CAN_AddTxMessage
+Error_Handler
+hcan

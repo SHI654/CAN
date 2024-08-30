@@ -1,0 +1,201 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+ 
+    dword gTcpDataSocket;
+  char clientAddress[20] = "169.254.163.52";//TCAM IP Addres
+BYTE response[10000] = {0x02, 0xFD, 0x80, 0x01, 0x00, 0x00, 0x00, 0x06, 0x0E, 0x80, 0xFF, 0xFF, 0x3E, 0x80};
+byte request[15]= {0x02, 0xFD, 0x80, 0x01, 0x00, 0x00, 0x00, 0x07, 0x0E, 0x80, 0x10, 0x01, 0x22, 0xF1, 0x86};
+//byte request[256]= {0x02, 0xFD, 0x80, 0x01, 0x00, 0x00, 0x00, 0xF8, 0x0E, 0x80, 0x10, 0x01, 0x22, 0xF1, 0x86};
+BYTE requestTP[14] = {0x02, 0xFD, 0x80, 0x01, 0x00, 0x00, 0x00, 0x06, 0x0E, 0x80, 0x1F, 0xFF, 0x3E, 0x80};
+msTimer send_routing_activation_req,SendRequest,SendTP;  
+int i=0,sendTester=0;
+
+
+
+}
+
+Connect_TCP_TS(char IPnumber[], dword TCP_port)
+{
+  dword serverIp, clientIp;
+
+  dword clientPort = 13400;
+  long connectResult;
+  
+  serverIp = IpGetAddressAsNumber(IPnumber);
+  
+  gTcpDataSocket = TcpOpen(clientIp, 63683);
+  
+  connectResult = TcpConnect(gTcpDataSocket, serverIp, TCP_port);
+  
+  if (0 == connectResult)
+  {
+    //writelineex(0, 1, "Successfully connected to server");
+  }
+  else 
+  {
+    //write("error code: %x", connectResult);
+  }
+  
+  //write("Socket Status : %d \n Connection Result : %d",gTcpDataSocket,connectResult);
+}
+
+ON key '1'
+{
+  diagRequest "SPA_RAW" SPA_RAW;
+  int tx_buffer_len;
+  	byte tx_buffer[1000];			// buffer for sending diag request
+	//word tx_buffer_len = 0;    
+  
+  diagSetTarget("VGM_Func");
+  
+  //Send_Diag_Req("3E 80"); 
+  
+  // tx_buffer_len = _Str_To_Data_Bytes("3E 80", 1000, tx_buffer, 1000);
+    tx_buffer[0]=0x3e; tx_buffer[1]=0x80;
+		DiagResize(SPA_RAW,2);
+		DiagSetPrimitiveData(SPA_RAW,tx_buffer,2);
+    
+    diagSendRequest(SPA_RAW);
+  
+//  Connect_TCP_TS("169.254.19.1", 13400); 
+//  setTimer(send_routing_activation_req, 100);
+}
+
+sendTP()
+{
+    diagRequest "SPA_RAW" SPA_RAW;
+  int tx_buffer_len;
+  	byte tx_buffer[1000];			// buffer for sending diag request
+	//word tx_buffer_len = 0;    
+  
+  diagSetTarget("VGM_Func");
+  
+  //Send_Diag_Req("3E 80"); 
+  
+  // tx_buffer_len = _Str_To_Data_Bytes("3E 80", 1000, tx_buffer, 1000);
+    tx_buffer[0]=0x3e; tx_buffer[1]=0x80;
+		DiagResize(SPA_RAW,2);
+		DiagSetPrimitiveData(SPA_RAW,tx_buffer,2);
+  
+    diagSendRequest(SPA_RAW);
+}
+
+on key '2'
+{
+  Connect_TCP_TS("169.254.19.1", 13400); 
+  setTimer(send_routing_activation_req, 100);
+  setTimerCyclic(SendRequest,500);
+  //TcpSend( gTcpDataSocket,  response, 14);
+}
+
+on key '3'
+{
+  tcpClose(gTcpDataSocket);
+}
+
+on key '4'
+{
+   SendRequest.cancel();
+}
+
+on key '5'
+{
+   byte timerSta = 0;
+   timerSta = SendRequest.isRunning();
+   write("timerSta:%d\n", timerSta);
+}
+
+on key '6'
+{
+  setTimerCyclic(SendRequest,500);
+}
+
+on timer send_routing_activation_req
+{
+  send_doip_activation_req();
+  cancelTimer(send_routing_activation_req);
+}
+
+
+on ethernetPacket *
+{
+  byte buffer[5000];
+  int i,length;
+  
+  char recvBuffer[128];
+
+  TcpReceive(gTcpDataSocket, recvBuffer, 128);
+  
+  
+   if(this.msgChannel==1)
+  {
+    if(this.type==0x0800 && this.byte(40)==0x02 && this.byte(41)==0xFD && this.byte(42)==0x80 && this.byte(43)==0x01 && this.byte(52)==0x22)//&& this.dir==tx)
+    {
+      sendTester=1;
+    }
+    if(this.type==0x0800 && this.byte(40)==0x02 && this.byte(41)==0xFD && this.byte(42)==0x80 && this.byte(43)==0x02 && sendTester==1)//&& this.dir==tx)
+    {
+       TcpSend( gTcpDataSocket,  requestTP, 14);
+      //setTimer(SendTP,5);
+      //diagStartTesterPresent("VGM_Func");
+      sendTester=0;
+
+    }
+  }
+}
+
+on timer SendTP
+{
+  
+      TcpSend( gTcpDataSocket,  requestTP, 14);
+}
+
+void send_doip_activation_req()
+{
+  int i;
+  byte tx_buffer[10000];
+  byte buffer[10000];
+  long lResult, lTime, tx_buffer_len, gIpLastErr;
+  char strTestStepDescription[256];
+  
+  //DoIP header
+  buffer[0]=0x02;
+  buffer[1]=0xfd;
+  buffer[2]=0x00;
+  buffer[3]=0x05;
+  
+  buffer[4]=0x00;
+  buffer[5]=0x00;
+  buffer[6]=0x00;
+  buffer[7]=0x07;
+  buffer[8]=0x0E;
+  buffer[9]=0x80;
+  buffer[10]=0x00; /*Address*/
+  buffer[11]=0x00;
+  buffer[12]=0x00;
+  buffer[13]=0x00;
+  buffer[14]=0x00;
+  
+  tx_buffer_len =3;
+
+  lTime = timeNow();
+  
+  if (0 != TcpSend(  gTcpDataSocket, buffer, tx_buffer_len+12))
+  {
+    gIpLastErr = IpGetLastSocketError( gTcpDataSocket);
+  }
+}
+
+on timer SendRequest
+{
+//  TcpSend( gTcpDataSocket,  request, 256);
+//  TcpSend( gTcpDataSocket,  request, 15);
+  TcpSend( gTcpDataSocket,  requestTP, 14);
+//  SendRequest.cancel();
+}

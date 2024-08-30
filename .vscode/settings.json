@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "canif.h": "c",
+        "can.h": "c"
+    }
+}

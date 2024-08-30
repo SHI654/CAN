@@ -22,6 +22,7 @@
 #include "main.h"
 #include "can.h"
 #include "gpio.h"
+#include "canif.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -97,13 +98,23 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  PduInfoTRx pduInfo;
+    pduInfo.Length = 8; // 设置数据长度为 8 字节
+    // 填充发送数据
+    for (uint32_t i = 0; i < pduInfo.Length; i++) {
+        pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+    }
+  
   while (1)
   {
-    /* USER CODE END WHILE */
-    CAN_Transmit(&g_CanTxPacket);
+    for(int i=0;i<20;i++){
+      /* USER CODE END WHILE */
+    // 调用 CanIf_Transmit 函数发送数据，使用 PDU ID 0
+      CanIf_Transmit(i, &pduInfo);
       HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-      HAL_Delay(5000);
-    /* USER CODE BEGIN 3 */
+      HAL_Delay(250);     
+    }
+    
   }
   /* USER CODE END 3 */
 }

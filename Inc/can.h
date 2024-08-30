@@ -41,7 +41,7 @@ void MX_CAN_Init(void);
 /* USER CODE BEGIN Prototypes */
 
 
-
+extern CAN_HandleTypeDef hcan;
 
 typedef struct
 {
@@ -85,6 +85,11 @@ void CAN_Init(void);
 void CAN_SetTxPacket(void);
 
 /* USER CODE END Prototypes */
+
+
+
+
+
 
 #ifdef __cplusplus
 }
