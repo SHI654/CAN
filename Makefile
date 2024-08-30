@@ -13,7 +13,7 @@
 ######################################
 # target
 ######################################
-TARGET = CBMX
+TARGET = CAN
 
 
 ######################################
@@ -106,7 +106,7 @@ AS_DEFS =
 # C defines
 C_DEFS =  \
 -DUSE_HAL_DRIVER \
--DSTM32F103x6
+-DSTM32F103x6 \
 -DUSE_HAL_DRIVER \
 -DSTM32F103x6
 
@@ -120,7 +120,7 @@ C_INCLUDES =  \
 -IDrivers/STM32F1xx_HAL_Driver/Inc \
 -IDrivers/STM32F1xx_HAL_Driver/Inc/Legacy \
 -IDrivers/CMSIS/Device/ST/STM32F1xx/Include \
--IDrivers/CMSIS/Include
+-IDrivers/CMSIS/Include \
 -IDrivers/CMSIS/Include
 
 
