@@ -23,7 +23,7 @@
                 "-f", "C:/openocd-0.10.0/scripts/target/stm32f1x.cfg",      // STM32F103 的配置文件
                 "-c", "init",                                               // 初始化 OpenOCD
                 "-c", "reset init",                                         // 复位并初始化目标设备
-                "-c", "program build/TEE.elf verify",                       // 刷写并验证 ELF 文件
+                "-c", "program build/CAN.elf verify",                       // 刷写并验证 ELF 文件
                 "-c", "reset run",                                          // 复位并运行程序
                 "-c", "shutdown"                                            // 结束 OpenOCD 会话
             ],

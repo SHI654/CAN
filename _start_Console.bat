@@ -21,7 +21,7 @@ if "%choice%"=="1" (
         -f C:/openocd-0.10.0/scripts/target/stm32f1x.cfg ^
         -c "init" ^
         -c "reset init" ^
-        -c "program build/TEE.elf verify" ^
+        -c "program build/CAN.elf verify" ^
         -c "reset run" ^
         -c "shutdown"
     echo Flash completed!
@@ -38,7 +38,7 @@ if "%choice%"=="1" (
         -f C:/openocd-0.10.0/scripts/target/stm32f1x.cfg ^
         -c "init" ^
         -c "reset init" ^
-        -c "program build/TEE.elf verify" ^
+        -c "program build/CAN.elf verify" ^
         -c "reset run" ^
         -c "shutdown"
     echo Flash completed!
