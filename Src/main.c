@@ -23,7 +23,6 @@
 #include "cmsis_os.h"
 #include "can.h"
 #include "gpio.h"
-#include "canif.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -93,10 +92,8 @@ int main(void)
   MX_GPIO_Init();
   MX_CAN_Init();
   /* USER CODE BEGIN 2 */
-  //CAN_Config();
-  CAN_Init();
-  CAN_SetTxPacket();
-    /* USER CODE END 2 */
+
+  /* USER CODE END 2 */
 
   /* Call init function for freertos objects (in freertos.c) */
   MX_FREERTOS_Init();
@@ -108,23 +105,11 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  PduInfoTRx pduInfo;
-    pduInfo.Length = 8; // 设置数据长度为 8 字节
-    // 填充发送数据
-    for (uint32_t i = 0; i < pduInfo.Length; i++) {
-        pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
-    }
-  
   while (1)
   {
-    for(int i=0;i<20;i++){
-      /* USER CODE END WHILE */
-    // 调用 CanIf_Transmit 函数发送数据，使用 PDU ID 0
-      //CanIf_Transmit(i, &pduInfo);
-      //HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-      //HAL_Delay(250);     
-    }
-    
+    /* USER CODE END WHILE */
+
+    /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
 }
