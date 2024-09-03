@@ -58,5 +58,5 @@ void CanIf_Transmit(uint32_t TxPduId, PduInfoTRx* PduInfoPtr) {
         
 		CanNm_TxCallback();
 	}
-	*/
+	l*/
 //	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);  // (注释掉的代码) 可以用于在发送消息后点亮 LED 等。
