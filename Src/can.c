@@ -201,7 +201,8 @@ void CAN_Init(void)
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *canHandle)
 {
   static CAN_RxPacketTypeDef packet;
-
+  CAN_TxHeaderTypeDef txHeader;
+  uint32_t txMailbox;
   // CAN数据接收
   if (canHandle->Instance == hcan.Instance)
   {
@@ -210,6 +211,19 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *canHandle)
       for (int i = 0; i < packet.hdr.DLC; i++)
       {
       }
+      // 设置要发送的 CAN 报文头
+            txHeader.StdId = packet.hdr.StdId;      // 使用接收的数据头中的标准标识符
+            txHeader.ExtId = packet.hdr.ExtId;      // 使用接收的数据头中的扩展标识符
+            txHeader.IDE = packet.hdr.IDE;          // 使用接收的数据头中的ID扩展
+            txHeader.RTR = CAN_RTR_DATA;            // 设置为数据帧
+            txHeader.DLC = packet.hdr.DLC;          // 数据长度代码
+            txHeader.TransmitGlobalTime = DISABLE;  // 禁用全局时间戳
+
+            // 发送CAN数据
+            if (HAL_CAN_AddTxMessage(canHandle, &txHeader, packet.payload, &txMailbox) != HAL_OK)
+            {
+                // 发送失败处理
+            }
       HAL_CAN_ActivateNotification(canHandle, CAN_IT_RX_FIFO0_MSG_PENDING); // 再次使能FIFO0接收中断
     }
   }

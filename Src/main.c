@@ -110,9 +110,9 @@ int main(void)
     for(int i=0;i<20;i++){
       /* USER CODE END WHILE */
     // 调用 CanIf_Transmit 函数发送数据，使用 PDU ID 0
-      CanIf_Transmit(i, &pduInfo);
-      HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-      HAL_Delay(250);     
+      //CanIf_Transmit(i, &pduInfo);
+      //HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+      //HAL_Delay(250);     
     }
     
   }
