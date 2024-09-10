@@ -21,7 +21,7 @@
 #include "can.h"
 
 /* USER CODE BEGIN 0 */
-
+volatile int8_t CanIf_Rx=0;  
 /* USER CODE END 0 */
 
 CAN_HandleTypeDef hcan;
@@ -227,6 +227,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *canHandle)
       HAL_CAN_ActivateNotification(canHandle, CAN_IT_RX_FIFO0_MSG_PENDING); // 再次使能FIFO0接收中断
     }
   }
+  CanIf_Rx = 1;
 }
 
 CAN_TxPacketTypeDef g_CanTxPacket;
