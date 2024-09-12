@@ -195,7 +195,7 @@ void CAN_Init(void)
   MX_CAN_Init();
   CAN_Filter_Config();
   HAL_CAN_Start(&hcan);
-  HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING); // 使能CAN接收中断
+  HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING); // 使能CAN接0收中断
 }
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *canHandle)
