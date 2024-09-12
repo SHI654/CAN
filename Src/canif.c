@@ -120,27 +120,3 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan1){
 	}
 	l*/
 //	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);  // (注释掉的代码) 可以用于在发送消息后点亮 LED 等。
-
-// 设置 CAN 接收回调函数
-void CanIf_setCallback(Std_ReturnType (*IF_Callback)(uint32_t RxPduId, PduInfoTRx* PduInfoPtr)){
-	if(IF_Callback != NULL)
-	{
-		CanTp_Callback = IF_Callback ;  // 如果传入的回调函数指针不为空，则将其设置为接收回调函数
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
