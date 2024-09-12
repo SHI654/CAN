@@ -1,8 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 1
+>>>>>>> 2ff531d (build)
 
 
    1              		.cpu cortex-m3
@@ -63,10 +67,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
   30:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   All GPIO pins have weak internal pull-up and pull-down resistors, which can be
   31:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   activated or not.
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 2
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 2
+>>>>>>> 2ff531d (build)
 
 
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
@@ -127,10 +135,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
   87:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****        The HSE has priority over the GPIO function.
   88:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 3
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 3
+>>>>>>> 2ff531d (build)
 
 
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   @endverbatim
@@ -191,10 +203,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  144:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   * @}
  145:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 4
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 4
+>>>>>>> 2ff531d (build)
 
 
  146:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** /* Private macro -------------------------------------------------------------*/
@@ -255,10 +271,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
   46              		.loc 1 182 3 view .LVU4
  183:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   uint32_t temp;
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 5
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 5
+>>>>>>> 2ff531d (build)
 
 
   47              		.loc 1 183 3 view .LVU5
@@ -319,10 +339,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
   75              	.L34:
   76 0022 A5F58015 		sub	r5, r5, #1048576
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 6
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 6
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 6
+>>>>>>> 2ff531d (build)
 
 
   77 0026 AA42     		cmp	r2, r5
@@ -383,10 +407,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  251:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****           }
  252:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****           else if (GPIO_Init->Pull == GPIO_PULLUP)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 7
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 7
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 7
+>>>>>>> 2ff531d (build)
 
 
   90              		.loc 1 252 16 is_stmt 1 view .LVU21
@@ -447,10 +475,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  115 0056 0646     		mov	r6, r0
  116              	.L16:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 8
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 8
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 8
+>>>>>>> 2ff531d (build)
 
 
  117              	.LVL6:
@@ -511,10 +543,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  160              		.loc 1 292 9 view .LVU46
  161              		.loc 1 292 38 is_stmt 0 view .LVU47
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 9
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 9
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 9
+>>>>>>> 2ff531d (build)
 
 
  162 0092 4FEA9C02 		lsr	r2, ip, #2
@@ -575,10 +611,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  208              	.LVL14:
  209              		.loc 1 301 11 is_stmt 0 view .LVU61
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 10
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 10
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 10
+>>>>>>> 2ff531d (build)
 
 
  210 00e0 1368     		ldr	r3, [r2]
@@ -639,10 +679,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  328:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****         /* Enable or disable the falling trigger */
  329:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****         if ((GPIO_Init->Mode & FALLING_EDGE) == FALLING_EDGE)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 11
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 11
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 11
+>>>>>>> 2ff531d (build)
 
 
  239              		.loc 1 329 9 view .LVU70
@@ -703,10 +747,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  274 0138 F1D1     		bne	.L3
  205:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 12
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 12
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 12
+>>>>>>> 2ff531d (build)
 
 
  275              		.loc 1 205 7 is_stmt 1 view .LVU85
@@ -767,10 +815,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  320 019c CC68     		ldr	r4, [r1, #12]
  321              	.LVL20:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 13
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 13
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 13
+>>>>>>> 2ff531d (build)
 
 
  221:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****           break;
@@ -831,10 +883,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  360              		.loc 1 270 18 view .LVU112
  361 01b4 0024     		movs	r4, #0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 14
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 14
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 14
+>>>>>>> 2ff531d (build)
 
 
  362              	.LVL28:
@@ -895,10 +951,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  305:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****         }
  407              		.loc 1 305 11 view .LVU123
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 15
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 15
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 15
+>>>>>>> 2ff531d (build)
 
 
  408 01de 83E7     		b	.L21
@@ -959,10 +1019,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  460              	.LVL40:
  461              	.LFB66:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 16
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 16
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 16
+>>>>>>> 2ff531d (build)
 
 
  343:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
@@ -1023,10 +1087,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  372:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****       /* Clear the External Interrupt or Event for the current IO */
  373:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 17
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 17
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 17
+>>>>>>> 2ff531d (build)
 
 
  374:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****       tmp = AFIO->EXTICR[position >> 2u];
@@ -1087,10 +1155,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  519 0024 0EFA05FE 		lsl	lr, lr, r5
  520 0028 24EA0E04 		bic	r4, r4, lr
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 18
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 18
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 18
+>>>>>>> 2ff531d (build)
 
 
  521 002c 4FF0040C 		mov	ip, #4
@@ -1151,10 +1223,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  560              		.loc 1 375 7 is_stmt 1 view .LVU163
  375:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****       if (tmp == (GPIO_GET_INDEX(GPIOx) << (4u * (position & 0x03u))))
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 19
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 19
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 19
+>>>>>>> 2ff531d (build)
 
 
  561              		.loc 1 375 40 is_stmt 0 view .LVU164
@@ -1215,10 +1291,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  604              		.loc 1 383 9 view .LVU176
  605 00a6 6568     		ldr	r5, [r4, #4]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 20
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 20
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 20
+>>>>>>> 2ff531d (build)
 
 
  606 00a8 25EA0305 		bic	r5, r5, r3
@@ -1279,10 +1359,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  650              		.loc 1 367 5 view .LVU186
  367:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 21
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 21
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 21
+>>>>>>> 2ff531d (build)
 
 
  651              		.loc 1 367 35 is_stmt 0 view .LVU187
@@ -1343,10 +1427,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  407:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   * @}
  408:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 22
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 22
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 22
+>>>>>>> 2ff531d (build)
 
 
  409:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
@@ -1407,10 +1495,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  444:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****     bitstatus = GPIO_PIN_RESET;
  721              		.loc 1 444 15 view .LVU201
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 23
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 23
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 23
+>>>>>>> 2ff531d (build)
 
 
  722 000a 0020     		movs	r0, #0
@@ -1471,10 +1563,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  750              		.loc 1 473 5 is_stmt 1 view .LVU209
  751              		.loc 1 473 17 is_stmt 0 view .LVU210
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 24
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 24
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 24
+>>>>>>> 2ff531d (build)
 
 
  752 0002 0161     		str	r1, [r0, #16]
@@ -1535,10 +1631,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  496:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
  497:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   /* Set selected pins that were at low level, and reset ones that were high */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 25
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 25
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 25
+>>>>>>> 2ff531d (build)
 
 
  498:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   GPIOx->BSRR = ((odr & GPIO_Pin) << GPIO_NUMBER) | (~odr & GPIO_Pin);
@@ -1599,10 +1699,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  825              		.loc 1 516 3 is_stmt 1 view .LVU230
  517:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   assert_param(IS_GPIO_PIN(GPIO_Pin));
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 26
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 26
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 26
+>>>>>>> 2ff531d (build)
 
 
  826              		.loc 1 517 3 view .LVU231
@@ -1663,10 +1767,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  859              	.LCFI8:
  860              		.cfi_remember_state
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 27
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 27
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 27
+>>>>>>> 2ff531d (build)
 
 
  861              		.cfi_def_cfa_offset 0
@@ -1727,10 +1835,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  891              		.loc 1 564 3 view .LVU250
  565:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   /* NOTE: This function Should not be modified, when the callback is needed,
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 28
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 28
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 28
+>>>>>>> 2ff531d (build)
 
 
  566:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****            the HAL_GPIO_EXTI_Callback could be implemented in the user file
@@ -1791,10 +1903,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  937 0014 F9E7     		b	.L79
  938              	.L84:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 29
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 29
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 29
+>>>>>>> 2ff531d (build)
 
 
  939 0016 00BF     		.align	2
@@ -1810,14 +1926,19 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
  950              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
  951              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 30
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 30
 >>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 30
+>>>>>>> 2ff531d (build)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_gpio.c
+<<<<<<< HEAD
 <<<<<<< HEAD
 C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s:18     .text.HAL_GPIO_Init:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s:24     .text.HAL_GPIO_Init:00000000 HAL_GPIO_Init
@@ -1863,5 +1984,28 @@ C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s:898    .text.HAL_GPIO_EXTI_IRQHand
 C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s:904    .text.HAL_GPIO_EXTI_IRQHandler:00000000 HAL_GPIO_EXTI_IRQHandler
 C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s:941    .text.HAL_GPIO_EXTI_IRQHandler:00000018 $d
 >>>>>>> RTOS
+=======
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:18     .text.HAL_GPIO_Init:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:24     .text.HAL_GPIO_Init:00000000 HAL_GPIO_Init
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:288    .text.HAL_GPIO_Init:0000014c $d
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:307    .text.HAL_GPIO_Init:00000198 $t
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:443    .text.HAL_GPIO_Init:00000208 $d
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:453    .text.HAL_GPIO_DeInit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:459    .text.HAL_GPIO_DeInit:00000000 HAL_GPIO_DeInit
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:685    .text.HAL_GPIO_DeInit:000000e8 $d
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:692    .text.HAL_GPIO_ReadPin:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:698    .text.HAL_GPIO_ReadPin:00000000 HAL_GPIO_ReadPin
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:731    .text.HAL_GPIO_WritePin:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:737    .text.HAL_GPIO_WritePin:00000000 HAL_GPIO_WritePin
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:767    .text.HAL_GPIO_TogglePin:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:773    .text.HAL_GPIO_TogglePin:00000000 HAL_GPIO_TogglePin
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:803    .text.HAL_GPIO_LockPin:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:809    .text.HAL_GPIO_LockPin:00000000 HAL_GPIO_LockPin
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:877    .text.HAL_GPIO_EXTI_Callback:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:883    .text.HAL_GPIO_EXTI_Callback:00000000 HAL_GPIO_EXTI_Callback
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:898    .text.HAL_GPIO_EXTI_IRQHandler:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:904    .text.HAL_GPIO_EXTI_IRQHandler:00000000 HAL_GPIO_EXTI_IRQHandler
+C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s:941    .text.HAL_GPIO_EXTI_IRQHandler:00000018 $d
+>>>>>>> 2ff531d (build)
 
 NO UNDEFINED SYMBOLS
