@@ -197,7 +197,7 @@ void CAN_Init(void)
   HAL_CAN_Start(&hcan);
   HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING); // 使能CAN接收中断
 }
-
+/*
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *canHandle)
 {
   static CAN_RxPacketTypeDef packet;
@@ -229,6 +229,9 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *canHandle)
   }
   CanIf_Rx = 1;
 }
+*/
+
+
 
 CAN_TxPacketTypeDef g_CanTxPacket;
 
