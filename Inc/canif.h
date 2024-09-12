@@ -12,6 +12,12 @@ typedef struct
 	uint32_t Length;
 }PduInfoTRx;
 
-void CanIf_Transmit(uint32_t TxPduId, PduInfoTRx* PduInfoPtr);
+typedef enum
+{
+	E_OK=0,
+	E_NOK
+}Std_ReturnType;
 
+void CanIf_Transmit(uint32_t TxPduId, PduInfoTRx* PduInfoPtr);
+void CanIf_setCallback(Std_ReturnType (*IF_Callback)(uint32_t RxPduId, PduInfoTRx* PduInfoPtr));
 #endif /* _CANIF_H_ */

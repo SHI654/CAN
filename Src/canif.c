@@ -4,6 +4,7 @@
 CAN_RxHeaderTypeDef rxHeader;  // 定义一个用于存储接收 CAN 消息头的变量。
 PduInfoTRx CanIfPduInfo;  // 定义一个用于存储接收 CAN 消息数据的结构体变量。
 extern volatile int8_t CanIf_Rx;  
+Std_ReturnType (*CanTp_Callback)(uint32_t RxPduId, PduInfoTRx* PduInfoPtr) = NULL; 
 
 const uint32_t TxPduIdToStdIdTable[] = {
     0x100,
@@ -119,3 +120,27 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan1){
 	}
 	l*/
 //	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);  // (注释掉的代码) 可以用于在发送消息后点亮 LED 等。
+
+// 设置 CAN 接收回调函数
+void CanIf_setCallback(Std_ReturnType (*IF_Callback)(uint32_t RxPduId, PduInfoTRx* PduInfoPtr)){
+	if(IF_Callback != NULL)
+	{
+		CanTp_Callback = IF_Callback ;  // 如果传入的回调函数指针不为空，则将其设置为接收回调函数
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

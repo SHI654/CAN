@@ -1,4 +1,4 @@
-build/can.o: Src/can.c Inc/can.h Inc/main.h \
+build/cantp.o: Src/cantp.c Inc/CanTp.h Inc/CanIf.h Inc/can.h Inc/main.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  Inc/stm32f1xx_hal_conf.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -21,8 +21,7 @@ build/can.o: Src/can.c Inc/can.h Inc/main.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Inc/canif.h \
- Inc/can.h Inc/cantp.h Inc/CanIf.h \
+ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h \
  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  Inc/FreeRTOSConfig.h \
@@ -40,6 +39,8 @@ build/can.o: Src/can.c Inc/can.h Inc/main.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/timers.h
+Inc/CanTp.h:
+Inc/CanIf.h:
 Inc/can.h:
 Inc/main.h:
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -67,10 +68,6 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
-Inc/canif.h:
-Inc/can.h:
-Inc/cantp.h:
-Inc/CanIf.h:
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 Inc/FreeRTOSConfig.h:

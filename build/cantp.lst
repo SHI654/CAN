@@ -1,0 +1,2548 @@
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 1
+
+
+   1              		.cpu cortex-m3
+   2              		.arch armv7-m
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.file	"cantp.c"
+  14              		.text
+  15              	.Ltext0:
+  16              		.cfi_sections	.debug_frame
+  17              		.section	.text.CanTp_RxIndication,"ax",%progbits
+  18              		.align	1
+  19              		.global	CanTp_RxIndication
+  20              		.syntax unified
+  21              		.thumb
+  22              		.thumb_func
+  24              	CanTp_RxIndication:
+  25              	.LVL0:
+  26              	.LFB73:
+  27              		.file 1 "Src/cantp.c"
+   1:Src/cantp.c   **** /*
+   2:Src/cantp.c   ****  * CanTp.c
+   3:Src/cantp.c   ****  *
+   4:Src/cantp.c   ****  *  Created on: Jun 11, 2024
+   5:Src/cantp.c   ****  *      Author: DELL
+   6:Src/cantp.c   ****  */
+   7:Src/cantp.c   **** 
+   8:Src/cantp.c   **** #include "CanTp.h"  // 包含 CanTp 模块的头文件，声明了该模块的函数和数据结构
+   9:Src/cantp.c   **** 
+  10:Src/cantp.c   **** #define RX_BUFFER_SIZE 100  // 定义接收缓冲区大小为 100 字节。
+  11:Src/cantp.c   **** #define CAN_FRAME_LENGTH 8  // 定义 CAN 帧的长度为 8 字节。
+  12:Src/cantp.c   **** #define CAN_MAX_PAYLOAD_LENGTH 7  // 定义 CAN 帧的最大有效负载长度为 7 字节（考虑
+  13:Src/cantp.c   **** 
+  14:Src/cantp.c   **** volatile uint32_t numberOfConsecutiveFramesToSend = 0;  // 定义一个用于存储要发送的连�
+  15:Src/cantp.c   **** volatile uint32_t currentConsecutiveFrames = 0;  // 定义一个变量用于记录当前发送的�
+  16:Src/cantp.c   **** volatile uint32_t numberOfConsecutiveFramesToReceive = 0;  // 定义一个用于存储要接收的�
+  17:Src/cantp.c   **** volatile uint32_t numberOfRemainingBytesToSend = 0;  // 定义一个变量用于记录剩余的需�
+  18:Src/cantp.c   **** volatile uint32_t numberOfRemainingBytesToReceive = 0;  // 定义一个变量用于记录剩余的�
+  19:Src/cantp.c   **** volatile uint32_t availableBuffers = 10;  // 定义一个变量表示可用的缓冲区数量，初
+  20:Src/cantp.c   **** void (*App_Callback)(uint32_t RxPduId, PduInfoType* PduInfoPtr) = NULL;  // 定义一个指向回�
+  21:Src/cantp.c   **** 
+  22:Src/cantp.c   **** Frame_States expectedFrameState = Any_State;  // 定义一个变量表示预期接收到的帧状�
+  23:Src/cantp.c   **** PduInfoTRx EncodedPduInfo;  // 定义一个结构体用于存储编码后的 PDU 信息。
+  24:Src/cantp.c   **** PduInfoTRx DecodedPduInfo;  // 定义一个结构体用于存储解码后的 PDU 信息。
+  25:Src/cantp.c   **** PduInfoType CompletePduInfo;  // 定义一个结构体用于存储完整的 PDU 信息。
+  26:Src/cantp.c   **** PduInfoTRx* GlobalRxPduInfoPtr;  // 定义一个指针用于指向全局接收 PDU 信息结构体�
+  27:Src/cantp.c   **** PduInfoType* GlobalTxPduInfoPtr;  // 定义一个指针用于指向全局传输 PDU 信息结构体
+  28:Src/cantp.c   **** 
+  29:Src/cantp.c   **** volatile uint8_t ConsecSN;  // 定义一个变量用于存储连续帧的序列号。
+  30:Src/cantp.c   **** volatile uint16_t currentIndex;  // 定义一个变量用于存储当前索引（通常用于缓冲
+  31:Src/cantp.c   **** volatile int32_t currentOffset = -1;  // 定义一个变量用于存储当前的偏移量，初始�
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 2
+
+
+  32:Src/cantp.c   **** volatile int32_t startOffset;  // 定义一个变量用于存储起始偏移量。
+  33:Src/cantp.c   **** 
+  34:Src/cantp.c   **** volatile int8_t CanTp_Rx;  // 定义一个变量用于表示 CAN TP 接收状态。
+  35:Src/cantp.c   **** volatile int8_t CanTp_Tx;  // 定义一个变量用于表示 CAN TP 发送状态。
+  36:Src/cantp.c   **** volatile uint32_t GlobalRxPduId;  // 定义一个变量用于存储全局接收 PDU ID。
+  37:Src/cantp.c   **** volatile uint32_t GlobalTxPduId;  // 定义一个变量用于存储全局传输 PDU ID。
+  38:Src/cantp.c   **** 
+  39:Src/cantp.c   **** uint8_t RxData[8];  // 定义一个数组用于存储接收到的数据，大小为 8 字节。
+  40:Src/cantp.c   **** // uint8_t TxData[8];  // 定义一个数组用于存储要发送的数据，大小为 8 字节（�
+  41:Src/cantp.c   **** 
+  42:Src/cantp.c   **** uint8_t rxBuffer[RX_BUFFER_SIZE];  // 定义一个接收缓冲区数组，大小为 RX_BUFFER_SIZE�
+  43:Src/cantp.c   **** volatile int32_t rxBufferIndex = 0;  // 定义一个变量用于记录接收缓冲区的当前索�
+  44:Src/cantp.c   **** volatile int32_t rxCurrentMaxIndex = 0;  // 定义一个变量用于记录接收缓冲区的最大�
+  45:Src/cantp.c   **** 
+  46:Src/cantp.c   **** volatile uint8_t rxData = 0;  // 定义一个变量用于表示当前接收的数据。
+  47:Src/cantp.c   **** volatile uint8_t rxComplete = 0;  // 定义一个变量用于表示接收是否完成。
+  48:Src/cantp.c   **** 
+  49:Src/cantp.c   **** // 初始化 CanTp 模块
+  50:Src/cantp.c   **** void CanTp_Init(){
+  51:Src/cantp.c   **** 	CanIf_setCallback(CanTp_RxIndication);  // 调用 CanIf 模块的函数，设置 CanTp 模块的�
+  52:Src/cantp.c   **** }
+  53:Src/cantp.c   **** 
+  54:Src/cantp.c   **** void CanTp_MainFunction(){
+  55:Src/cantp.c   **** 	while(1){  // 无限循环，不断轮询处理 CAN TP 的接收和发送操作。
+  56:Src/cantp.c   **** 		if(CanTp_Rx){  // 如果接收到新的 CAN TP 数据包。
+  57:Src/cantp.c   **** 			CanTp_Rx = 0;  // 清除接收标志，表示正在处理接收到的数据。
+  58:Src/cantp.c   **** 			
+  59:Src/cantp.c   **** 			// 如果全局接收 PDU ID 不等于 0，则停止程序运行。
+  60:Src/cantp.c   **** 			if(GlobalRxPduId != 0){
+  61:Src/cantp.c   **** 				while(1);  // 进入死循环，通常用作错误处理或调试目的。
+  62:Src/cantp.c   **** 			}
+  63:Src/cantp.c   **** 
+  64:Src/cantp.c   **** 			// 获取当前接收帧的数据类型，根据帧的第一个字节确定帧类型。
+  65:Src/cantp.c   **** 			Frame_Type frame_type = CanTp_GetFrameType(GlobalRxPduInfoPtr->Data[0]);
+  66:Src/cantp.c   **** 
+  67:Src/cantp.c   **** 			// 根据帧类型调用相应的解码函数，并处理数据。
+  68:Src/cantp.c   **** 			switch(frame_type){
+  69:Src/cantp.c   **** 			case Single_Frame:  // 如果帧类型是单帧。
+  70:Src/cantp.c   **** 				CanTp_decodeSingleFrame(GlobalRxPduId, GlobalRxPduInfoPtr);  // 解码单帧数据。
+  71:Src/cantp.c   **** 				break;
+  72:Src/cantp.c   **** 			case First_Frame:  // 如果帧类型是首帧。
+  73:Src/cantp.c   **** 				CanTp_decodeFirstFrame(GlobalRxPduId, GlobalRxPduInfoPtr);  // 解码首帧数据。
+  74:Src/cantp.c   **** 				expectedFrameState = FlowControl_Frame_State;  // 设置期望的下一个帧状态为流控制
+  75:Src/cantp.c   **** 				CanTp_Transmit(GlobalRxPduId, (PduInfoType*) GlobalRxPduInfoPtr);  // 发送流控制帧，以�
+  76:Src/cantp.c   **** 				break;
+  77:Src/cantp.c   **** 			case Consecutive_Frame:  // 如果帧类型是连续帧。
+  78:Src/cantp.c   **** 				CanTp_decodeConsecutiveFrame(GlobalRxPduId, GlobalRxPduInfoPtr);  // 解码连续帧数据。
+  79:Src/cantp.c   **** 				if(numberOfConsecutiveFramesToReceive == 0 && numberOfRemainingBytesToReceive > 0){
+  80:Src/cantp.c   **** 					// 如果接收到的连续帧数量为 0 且还有剩余字节未接收，发送流控制帧�
+  81:Src/cantp.c   **** 					expectedFrameState = FlowControl_Frame_State;  // 更新期望的帧状态。
+  82:Src/cantp.c   **** 					CanTp_Transmit(GlobalRxPduId, (PduInfoType*) GlobalRxPduInfoPtr);  // 发送流控制帧。
+  83:Src/cantp.c   **** 				}
+  84:Src/cantp.c   **** 				break;
+  85:Src/cantp.c   **** 			case FlowControl_Frame:  // 如果帧类型是流控制帧。
+  86:Src/cantp.c   **** 				// 解码流控制帧，并根据对方节点的空闲缓冲区数调整待发送的连续帧�
+  87:Src/cantp.c   **** 				CanTp_decodeFlowControlFrame(GlobalRxPduId, GlobalRxPduInfoPtr);
+  88:Src/cantp.c   **** 				break;
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 3
+
+
+  89:Src/cantp.c   **** 			default:
+  90:Src/cantp.c   **** 				break;  // 其他情况不做处理。
+  91:Src/cantp.c   **** 			}
+  92:Src/cantp.c   **** 
+  93:Src/cantp.c   **** 			// 如果接收到的帧是流控制帧，进行特定处理（本段代码为空，可能预留
+  94:Src/cantp.c   **** 			if(frame_type == FlowControl_Frame){
+  95:Src/cantp.c   **** 
+  96:Src/cantp.c   **** 			}
+  97:Src/cantp.c   **** 			else if(numberOfRemainingBytesToReceive == 0){  // 如果所有数据都接收完毕。
+  98:Src/cantp.c   **** 				if(App_Callback != NULL){  // 如果应用层回调函数不为空。
+  99:Src/cantp.c   **** 					currentIndex = 0;  // 重置索引。
+ 100:Src/cantp.c   **** 					App_Callback(GlobalRxPduId, &CompletePduInfo);  // 调用应用层回调函数，处理完整�
+ 101:Src/cantp.c   **** 				}
+ 102:Src/cantp.c   **** 			}
+ 103:Src/cantp.c   **** 		}
+ 104:Src/cantp.c   **** 		else if(CanTp_Tx){  // 如果有新的 CAN TP 数据需要发送。
+ 105:Src/cantp.c   **** 			// 如果全局传输 PDU ID 不等于 0，则停止程序运行。
+ 106:Src/cantp.c   **** 			if(GlobalTxPduId != 0){
+ 107:Src/cantp.c   **** 				while(1);  // 进入死循环，通常用作错误处理或调试目的。
+ 108:Src/cantp.c   **** 			}
+ 109:Src/cantp.c   **** 
+ 110:Src/cantp.c   **** 			Frame_Type frame_type = None;  // 初始化帧类型为 None。
+ 111:Src/cantp.c   **** 			if(numberOfRemainingBytesToSend == 0 && expectedFrameState == Any_State){
+ 112:Src/cantp.c   **** 				// 如果没有剩余字节需要发送且当前期望的帧状态为任意状态。
+ 113:Src/cantp.c   **** 				numberOfRemainingBytesToSend = GlobalTxPduInfoPtr->Length;  // 更新剩余待发送字节数�
+ 114:Src/cantp.c   **** 				CompletePduInfo.Length = numberOfRemainingBytesToSend;  // 更新完整 PDU 的长度。
+ 115:Src/cantp.c   **** 				if(GlobalTxPduInfoPtr->Length < 8){
+ 116:Src/cantp.c   **** 					frame_type = Single_Frame;  // 如果数据长度小于 8 字节，设置帧类型为单帧。
+ 117:Src/cantp.c   **** 				}
+ 118:Src/cantp.c   **** 				else{
+ 119:Src/cantp.c   **** 					frame_type = First_Frame;  // 否则，设置帧类型为首帧。
+ 120:Src/cantp.c   **** 				}
+ 121:Src/cantp.c   **** 			}
+ 122:Src/cantp.c   **** 
+ 123:Src/cantp.c   **** 			if(numberOfRemainingBytesToSend > 0 || expectedFrameState == FlowControl_Frame_State){
+ 124:Src/cantp.c   **** 				// 如果有剩余字节需要发送或期望的帧状态为流控制帧状态。
+ 125:Src/cantp.c   **** 				if(expectedFrameState == Consecutive_Frame_State){
+ 126:Src/cantp.c   **** 					frame_type = Consecutive_Frame;  // 设置帧类型为连续帧。
+ 127:Src/cantp.c   **** 				}
+ 128:Src/cantp.c   **** 				else if(expectedFrameState == FlowControl_Frame_State){
+ 129:Src/cantp.c   **** 					frame_type = FlowControl_Frame;  // 设置帧类型为流控制帧。
+ 130:Src/cantp.c   **** 				}
+ 131:Src/cantp.c   **** 				else{
+ 132:Src/cantp.c   **** 					// 其他情况不做处理（可能用于扩展）。
+ 133:Src/cantp.c   **** 				}
+ 134:Src/cantp.c   **** 
+ 135:Src/cantp.c   **** 				// 根据帧类型调用相应的编码函数，编码数据并发送。
+ 136:Src/cantp.c   **** 				switch(frame_type){
+ 137:Src/cantp.c   **** 				case Single_Frame:
+ 138:Src/cantp.c   **** 					CanTp_encodeSingleFrame(GlobalTxPduId, GlobalTxPduInfoPtr);  // 编码单帧数据并发送。
+ 139:Src/cantp.c   **** 					break;
+ 140:Src/cantp.c   **** 				case First_Frame:
+ 141:Src/cantp.c   **** 					CanTp_encodeFirstFrame(GlobalTxPduId, GlobalTxPduInfoPtr);  // 编码首帧数据并发送。
+ 142:Src/cantp.c   **** 					frame_type = None;  // 发送完首帧后，将帧类型重置为 None。
+ 143:Src/cantp.c   **** 					break;
+ 144:Src/cantp.c   **** 				case Consecutive_Frame:
+ 145:Src/cantp.c   **** 					if(numberOfConsecutiveFramesToSend > 0){  // 如果仍有待发送的连续帧。
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 4
+
+
+ 146:Src/cantp.c   **** 						numberOfConsecutiveFramesToSend--;  // 递减连续帧计数器。
+ 147:Src/cantp.c   **** 						CanTp_encodeConsecutiveFrame(GlobalTxPduId, GlobalTxPduInfoPtr);  // 编码连续帧数据并
+ 148:Src/cantp.c   **** 					}
+ 149:Src/cantp.c   **** 					else{
+ 150:Src/cantp.c   **** 						frame_type = None;  // 如果没有连续帧待发送，重置帧类型。
+ 151:Src/cantp.c   **** 						// 等待流控制帧接收中断通知来更新 numberOfConsecutiveFramesToSend 变量。
+ 152:Src/cantp.c   **** 					}
+ 153:Src/cantp.c   **** 					break;
+ 154:Src/cantp.c   **** 				case FlowControl_Frame:
+ 155:Src/cantp.c   **** 					// 根据 availableBuffers 变量（通常是接收数组的大小）决定如何发送流控�
+ 156:Src/cantp.c   **** 					CanTp_encodeFlowControlFrame(GlobalTxPduId, GlobalTxPduInfoPtr);
+ 157:Src/cantp.c   **** 					break;
+ 158:Src/cantp.c   **** 				default:
+ 159:Src/cantp.c   **** 					break;  // 其他情况不做处理。
+ 160:Src/cantp.c   **** 				}
+ 161:Src/cantp.c   **** 			}
+ 162:Src/cantp.c   **** 
+ 163:Src/cantp.c   **** 			// 如果所有数据发送完毕。
+ 164:Src/cantp.c   **** 			if(numberOfRemainingBytesToSend == 0){
+ 165:Src/cantp.c   **** 				// 重置期望帧状态。
+ 166:Src/cantp.c   **** 				expectedFrameState = Any_State;
+ 167:Src/cantp.c   **** 				currentOffset = -1;  // 重置当前偏移量。
+ 168:Src/cantp.c   **** 				CanTp_Tx = 0;  // 清除发送标志，表示发送操作完成。
+ 169:Src/cantp.c   **** 			}
+ 170:Src/cantp.c   **** 		}
+ 171:Src/cantp.c   **** 		vTaskDelay(100);  // 延迟 100 毫秒，控制主循环的执行频率。
+ 172:Src/cantp.c   **** 	}
+ 173:Src/cantp.c   **** }
+ 174:Src/cantp.c   **** 
+ 175:Src/cantp.c   **** Std_ReturnType CanTp_Transmit(uint32_t TxPduId, PduInfoType* PduInfoPtr){
+ 176:Src/cantp.c   **** 	GlobalTxPduInfoPtr = PduInfoPtr;  // 将传入的 PDU 信息指针保存到全局变量中，便�
+ 177:Src/cantp.c   **** 	GlobalTxPduId = TxPduId;  // 将传入的 PDU ID 保存到全局变量中。
+ 178:Src/cantp.c   **** 	CanTp_Tx = 1;  // 设置发送标志，表示有数据需要发送。
+ 179:Src/cantp.c   **** 	return E_OK;  // 返回标准返回值，表示操作成功。
+ 180:Src/cantp.c   **** }
+ 181:Src/cantp.c   **** 
+ 182:Src/cantp.c   **** Std_ReturnType CanTp_RxIndication (uint32_t RxPduId, PduInfoTRx* PduInfoPtr){
+  28              		.loc 1 182 77 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 0
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		@ link register save eliminated.
+ 183:Src/cantp.c   **** 	GlobalRxPduInfoPtr = PduInfoPtr;  // 将接收到的 PDU 信息指针保存到全局变量中，�
+  33              		.loc 1 183 2 view .LVU1
+  34              		.loc 1 183 21 is_stmt 0 view .LVU2
+  35 0000 044B     		ldr	r3, .L2
+  36 0002 1960     		str	r1, [r3]
+ 184:Src/cantp.c   **** 	GlobalRxPduId = RxPduId;  // 将接收到的 PDU ID 保存到全局变量中。
+  37              		.loc 1 184 2 is_stmt 1 view .LVU3
+  38              		.loc 1 184 16 is_stmt 0 view .LVU4
+  39 0004 044B     		ldr	r3, .L2+4
+  40 0006 1860     		str	r0, [r3]
+ 185:Src/cantp.c   **** 	CanTp_Rx = 1;  // 设置接收标志，表示有数据需要处理。
+  41              		.loc 1 185 2 is_stmt 1 view .LVU5
+  42              		.loc 1 185 11 is_stmt 0 view .LVU6
+  43 0008 044B     		ldr	r3, .L2+8
+  44 000a 0122     		movs	r2, #1
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 5
+
+
+  45 000c 1A70     		strb	r2, [r3]
+ 186:Src/cantp.c   **** 	return E_OK;  // 返回标准返回值，表示操作成功。
+  46              		.loc 1 186 2 is_stmt 1 view .LVU7
+ 187:Src/cantp.c   **** }
+  47              		.loc 1 187 1 is_stmt 0 view .LVU8
+  48 000e 0020     		movs	r0, #0
+  49              	.LVL1:
+  50              		.loc 1 187 1 view .LVU9
+  51 0010 7047     		bx	lr
+  52              	.L3:
+  53 0012 00BF     		.align	2
+  54              	.L2:
+  55 0014 00000000 		.word	.LANCHOR0
+  56 0018 00000000 		.word	.LANCHOR1
+  57 001c 00000000 		.word	.LANCHOR2
+  58              		.cfi_endproc
+  59              	.LFE73:
+  61              		.section	.text.CanTp_Init,"ax",%progbits
+  62              		.align	1
+  63              		.global	CanTp_Init
+  64              		.syntax unified
+  65              		.thumb
+  66              		.thumb_func
+  68              	CanTp_Init:
+  69              	.LFB70:
+  50:Src/cantp.c   **** 	CanIf_setCallback(CanTp_RxIndication);  // 调用 CanIf 模块的函数，设置 CanTp 模块的�
+  70              		.loc 1 50 18 is_stmt 1 view -0
+  71              		.cfi_startproc
+  72              		@ args = 0, pretend = 0, frame = 0
+  73              		@ frame_needed = 0, uses_anonymous_args = 0
+  74 0000 08B5     		push	{r3, lr}
+  75              	.LCFI0:
+  76              		.cfi_def_cfa_offset 8
+  77              		.cfi_offset 3, -8
+  78              		.cfi_offset 14, -4
+  51:Src/cantp.c   **** }
+  79              		.loc 1 51 2 view .LVU11
+  80 0002 0248     		ldr	r0, .L6
+  81 0004 FFF7FEFF 		bl	CanIf_setCallback
+  82              	.LVL2:
+  52:Src/cantp.c   **** 
+  83              		.loc 1 52 1 is_stmt 0 view .LVU12
+  84 0008 08BD     		pop	{r3, pc}
+  85              	.L7:
+  86 000a 00BF     		.align	2
+  87              	.L6:
+  88 000c 00000000 		.word	CanTp_RxIndication
+  89              		.cfi_endproc
+  90              	.LFE70:
+  92              		.section	.text.CanTp_Transmit,"ax",%progbits
+  93              		.align	1
+  94              		.global	CanTp_Transmit
+  95              		.syntax unified
+  96              		.thumb
+  97              		.thumb_func
+  99              	CanTp_Transmit:
+ 100              	.LVL3:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 6
+
+
+ 101              	.LFB72:
+ 175:Src/cantp.c   **** 	GlobalTxPduInfoPtr = PduInfoPtr;  // 将传入的 PDU 信息指针保存到全局变量中，便�
+ 102              		.loc 1 175 73 is_stmt 1 view -0
+ 103              		.cfi_startproc
+ 104              		@ args = 0, pretend = 0, frame = 0
+ 105              		@ frame_needed = 0, uses_anonymous_args = 0
+ 106              		@ link register save eliminated.
+ 176:Src/cantp.c   **** 	GlobalTxPduId = TxPduId;  // 将传入的 PDU ID 保存到全局变量中。
+ 107              		.loc 1 176 2 view .LVU14
+ 176:Src/cantp.c   **** 	GlobalTxPduId = TxPduId;  // 将传入的 PDU ID 保存到全局变量中。
+ 108              		.loc 1 176 21 is_stmt 0 view .LVU15
+ 109 0000 044B     		ldr	r3, .L9
+ 110 0002 1960     		str	r1, [r3]
+ 177:Src/cantp.c   **** 	CanTp_Tx = 1;  // 设置发送标志，表示有数据需要发送。
+ 111              		.loc 1 177 2 is_stmt 1 view .LVU16
+ 177:Src/cantp.c   **** 	CanTp_Tx = 1;  // 设置发送标志，表示有数据需要发送。
+ 112              		.loc 1 177 16 is_stmt 0 view .LVU17
+ 113 0004 044B     		ldr	r3, .L9+4
+ 114 0006 1860     		str	r0, [r3]
+ 178:Src/cantp.c   **** 	return E_OK;  // 返回标准返回值，表示操作成功。
+ 115              		.loc 1 178 2 is_stmt 1 view .LVU18
+ 178:Src/cantp.c   **** 	return E_OK;  // 返回标准返回值，表示操作成功。
+ 116              		.loc 1 178 11 is_stmt 0 view .LVU19
+ 117 0008 044B     		ldr	r3, .L9+8
+ 118 000a 0122     		movs	r2, #1
+ 119 000c 1A70     		strb	r2, [r3]
+ 179:Src/cantp.c   **** }
+ 120              		.loc 1 179 2 is_stmt 1 view .LVU20
+ 180:Src/cantp.c   **** 
+ 121              		.loc 1 180 1 is_stmt 0 view .LVU21
+ 122 000e 0020     		movs	r0, #0
+ 123              	.LVL4:
+ 180:Src/cantp.c   **** 
+ 124              		.loc 1 180 1 view .LVU22
+ 125 0010 7047     		bx	lr
+ 126              	.L10:
+ 127 0012 00BF     		.align	2
+ 128              	.L9:
+ 129 0014 00000000 		.word	.LANCHOR3
+ 130 0018 00000000 		.word	.LANCHOR4
+ 131 001c 00000000 		.word	.LANCHOR5
+ 132              		.cfi_endproc
+ 133              	.LFE72:
+ 135              		.section	.text.CanTp_GetFrameType,"ax",%progbits
+ 136              		.align	1
+ 137              		.global	CanTp_GetFrameType
+ 138              		.syntax unified
+ 139              		.thumb
+ 140              		.thumb_func
+ 142              	CanTp_GetFrameType:
+ 143              	.LVL5:
+ 144              	.LFB74:
+ 188:Src/cantp.c   **** 
+ 189:Src/cantp.c   **** Frame_Type CanTp_GetFrameType(uint8_t PCI){
+ 145              		.loc 1 189 43 is_stmt 1 view -0
+ 146              		.cfi_startproc
+ 147              		@ args = 0, pretend = 0, frame = 0
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 7
+
+
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              		@ link register save eliminated.
+ 150              		.loc 1 189 43 is_stmt 0 view .LVU24
+ 151 0000 0346     		mov	r3, r0
+ 190:Src/cantp.c   **** 	PCI >>= 4;  // 将 PCI 字节右移 4 位，提取帧类型信息（即 PCI 的高 4 位）。
+ 152              		.loc 1 190 2 is_stmt 1 view .LVU25
+ 153              		.loc 1 190 6 is_stmt 0 view .LVU26
+ 154 0002 0009     		lsrs	r0, r0, #4
+ 155              	.LVL6:
+ 191:Src/cantp.c   **** 	if(PCI < 4){  // 如果 PCI 的值小于 4，表示这是一个有效的帧类型。
+ 156              		.loc 1 191 2 is_stmt 1 view .LVU27
+ 157              		.loc 1 191 4 is_stmt 0 view .LVU28
+ 158 0004 3F2B     		cmp	r3, #63
+ 159 0006 00D8     		bhi	.L14
+ 160              	.LVL7:
+ 161              	.L12:
+ 192:Src/cantp.c   **** 		return (Frame_Type) PCI;  // 返回相应的帧类型枚举值。
+ 193:Src/cantp.c   **** 	}
+ 194:Src/cantp.c   **** 	else{
+ 195:Src/cantp.c   **** 		return None;  // 否则，返回 `None`，表示无效的帧类型。
+ 196:Src/cantp.c   **** 	}
+ 197:Src/cantp.c   **** }
+ 162              		.loc 1 197 1 view .LVU29
+ 163 0008 7047     		bx	lr
+ 164              	.LVL8:
+ 165              	.L14:
+ 195:Src/cantp.c   **** 	}
+ 166              		.loc 1 195 10 view .LVU30
+ 167 000a 0420     		movs	r0, #4
+ 168              	.LVL9:
+ 195:Src/cantp.c   **** 	}
+ 169              		.loc 1 195 10 view .LVU31
+ 170 000c FCE7     		b	.L12
+ 171              		.cfi_endproc
+ 172              	.LFE74:
+ 174              		.section	.text.CanTp_setCallback,"ax",%progbits
+ 175              		.align	1
+ 176              		.global	CanTp_setCallback
+ 177              		.syntax unified
+ 178              		.thumb
+ 179              		.thumb_func
+ 181              	CanTp_setCallback:
+ 182              	.LVL10:
+ 183              	.LFB75:
+ 198:Src/cantp.c   **** 
+ 199:Src/cantp.c   **** void CanTp_setCallback(void (*PTF)(uint32_t TxPduId, PduInfoType* PduInfoPtr)){
+ 184              		.loc 1 199 79 is_stmt 1 view -0
+ 185              		.cfi_startproc
+ 186              		@ args = 0, pretend = 0, frame = 0
+ 187              		@ frame_needed = 0, uses_anonymous_args = 0
+ 188              		@ link register save eliminated.
+ 200:Src/cantp.c   **** 	if(PTF != NULL){  // 如果传入的函数指针非空。
+ 189              		.loc 1 200 2 view .LVU33
+ 190              		.loc 1 200 4 is_stmt 0 view .LVU34
+ 191 0000 08B1     		cbz	r0, .L15
+ 201:Src/cantp.c   **** 		App_Callback = PTF;  // 将其保存到全局变量 `App_Callback` 中，便于在接收数据时
+ 192              		.loc 1 201 3 is_stmt 1 view .LVU35
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 8
+
+
+ 193              		.loc 1 201 16 is_stmt 0 view .LVU36
+ 194 0002 014A     		ldr	r2, .L17
+ 195 0004 1060     		str	r0, [r2]
+ 196              	.L15:
+ 202:Src/cantp.c   **** 	}
+ 203:Src/cantp.c   **** }
+ 197              		.loc 1 203 1 view .LVU37
+ 198 0006 7047     		bx	lr
+ 199              	.L18:
+ 200              		.align	2
+ 201              	.L17:
+ 202 0008 00000000 		.word	.LANCHOR6
+ 203              		.cfi_endproc
+ 204              	.LFE75:
+ 206              		.section	.text.CanTp_encodeSingleFrame,"ax",%progbits
+ 207              		.align	1
+ 208              		.global	CanTp_encodeSingleFrame
+ 209              		.syntax unified
+ 210              		.thumb
+ 211              		.thumb_func
+ 213              	CanTp_encodeSingleFrame:
+ 214              	.LVL11:
+ 215              	.LFB76:
+ 204:Src/cantp.c   **** 
+ 205:Src/cantp.c   **** void CanTp_encodeSingleFrame(uint32_t TxPduId, PduInfoType* PduInfoPtr){
+ 216              		.loc 1 205 72 is_stmt 1 view -0
+ 217              		.cfi_startproc
+ 218              		@ args = 0, pretend = 0, frame = 0
+ 219              		@ frame_needed = 0, uses_anonymous_args = 0
+ 220              		.loc 1 205 72 is_stmt 0 view .LVU39
+ 221 0000 38B5     		push	{r3, r4, r5, lr}
+ 222              	.LCFI1:
+ 223              		.cfi_def_cfa_offset 16
+ 224              		.cfi_offset 3, -16
+ 225              		.cfi_offset 4, -12
+ 226              		.cfi_offset 5, -8
+ 227              		.cfi_offset 14, -4
+ 206:Src/cantp.c   ****     // 获取需要发送的数据的长度
+ 207:Src/cantp.c   ****     uint32_t dataLength = PduInfoPtr->Length;
+ 228              		.loc 1 207 5 is_stmt 1 view .LVU40
+ 229              		.loc 1 207 14 is_stmt 0 view .LVU41
+ 230 0002 01F58053 		add	r3, r1, #4096
+ 231 0006 1B68     		ldr	r3, [r3]
+ 232              	.LVL12:
+ 208:Src/cantp.c   ****     // 将要发送的数据长度保存在全局的编码信息结构体中
+ 209:Src/cantp.c   ****     EncodedPduInfo.Length = PduInfoPtr->Length;
+ 233              		.loc 1 209 5 is_stmt 1 view .LVU42
+ 234              		.loc 1 209 27 is_stmt 0 view .LVU43
+ 235 0008 104C     		ldr	r4, .L25
+ 236 000a A360     		str	r3, [r4, #8]
+ 210:Src/cantp.c   ****     // 更新剩余要发送的字节数
+ 211:Src/cantp.c   ****     numberOfRemainingBytesToSend -= dataLength;
+ 237              		.loc 1 211 5 is_stmt 1 view .LVU44
+ 238              		.loc 1 211 34 is_stmt 0 view .LVU45
+ 239 000c 104D     		ldr	r5, .L25+4
+ 240 000e 2A68     		ldr	r2, [r5]
+ 241 0010 D21A     		subs	r2, r2, r3
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 9
+
+
+ 242 0012 2A60     		str	r2, [r5]
+ 212:Src/cantp.c   **** 
+ 213:Src/cantp.c   ****     // 设置 CAN 帧的第一个字节为 PCI（协议控制信息），其低 4 位为数据长�
+ 214:Src/cantp.c   ****     EncodedPduInfo.Data[0] = 0x00 | (dataLength & 0x0F);
+ 243              		.loc 1 214 5 is_stmt 1 view .LVU46
+ 244              		.loc 1 214 35 is_stmt 0 view .LVU47
+ 245 0014 03F00F02 		and	r2, r3, #15
+ 246              		.loc 1 214 28 view .LVU48
+ 247 0018 2270     		strb	r2, [r4]
+ 215:Src/cantp.c   **** 
+ 216:Src/cantp.c   ****     // 初始化一个循环计数变量 i
+ 217:Src/cantp.c   ****     uint32_t i;
+ 248              		.loc 1 217 5 is_stmt 1 view .LVU49
+ 218:Src/cantp.c   ****     // 将数据从 PduInfoPtr 复制到 CAN 帧，从第二个字节（索引为 1）开始
+ 219:Src/cantp.c   ****     for (i = 0; i < dataLength; i++) {
+ 249              		.loc 1 219 5 view .LVU50
+ 250              	.LVL13:
+ 251              		.loc 1 219 12 is_stmt 0 view .LVU51
+ 252 001a 0022     		movs	r2, #0
+ 253              		.loc 1 219 5 view .LVU52
+ 254 001c 07E0     		b	.L20
+ 255              	.LVL14:
+ 256              	.L21:
+ 220:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i];
+ 257              		.loc 1 220 9 is_stmt 1 discriminator 3 view .LVU53
+ 258              		.loc 1 220 31 is_stmt 0 discriminator 3 view .LVU54
+ 259 001e 02F1010C 		add	ip, r2, #1
+ 260              		.loc 1 220 54 discriminator 3 view .LVU55
+ 261 0022 11F802E0 		ldrb	lr, [r1, r2]	@ zero_extendqisi2
+ 262              		.loc 1 220 36 discriminator 3 view .LVU56
+ 263 0026 094A     		ldr	r2, .L25
+ 264              	.LVL15:
+ 265              		.loc 1 220 36 discriminator 3 view .LVU57
+ 266 0028 02F80CE0 		strb	lr, [r2, ip]
+ 219:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i];
+ 267              		.loc 1 219 33 is_stmt 1 discriminator 3 view .LVU58
+ 268              	.LVL16:
+ 219:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i];
+ 269              		.loc 1 219 34 is_stmt 0 discriminator 3 view .LVU59
+ 270 002c 6246     		mov	r2, ip
+ 271              	.LVL17:
+ 272              	.L20:
+ 219:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i];
+ 273              		.loc 1 219 17 is_stmt 1 discriminator 1 view .LVU60
+ 219:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i];
+ 274              		.loc 1 219 5 is_stmt 0 discriminator 1 view .LVU61
+ 275 002e 9A42     		cmp	r2, r3
+ 276 0030 F5D3     		bcc	.L21
+ 221:Src/cantp.c   ****     }
+ 222:Src/cantp.c   **** 
+ 223:Src/cantp.c   ****     // 如果数据未填满整个 CAN 帧，将剩余的字节填充为零
+ 224:Src/cantp.c   ****     for (i = dataLength + 1; i < CAN_FRAME_LENGTH; i++) {
+ 277              		.loc 1 224 5 is_stmt 1 view .LVU62
+ 278              		.loc 1 224 12 is_stmt 0 view .LVU63
+ 279 0032 0133     		adds	r3, r3, #1
+ 280              	.LVL18:
+ 281              		.loc 1 224 5 view .LVU64
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 10
+
+
+ 282 0034 03E0     		b	.L22
+ 283              	.LVL19:
+ 284              	.L23:
+ 225:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0;
+ 285              		.loc 1 225 9 is_stmt 1 discriminator 3 view .LVU65
+ 286              		.loc 1 225 32 is_stmt 0 discriminator 3 view .LVU66
+ 287 0036 054A     		ldr	r2, .L25
+ 288 0038 0021     		movs	r1, #0
+ 289 003a D154     		strb	r1, [r2, r3]
+ 224:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0;
+ 290              		.loc 1 224 52 is_stmt 1 discriminator 3 view .LVU67
+ 224:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0;
+ 291              		.loc 1 224 53 is_stmt 0 discriminator 3 view .LVU68
+ 292 003c 0133     		adds	r3, r3, #1
+ 293              	.LVL20:
+ 294              	.L22:
+ 224:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0;
+ 295              		.loc 1 224 30 is_stmt 1 discriminator 1 view .LVU69
+ 224:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0;
+ 296              		.loc 1 224 5 is_stmt 0 discriminator 1 view .LVU70
+ 297 003e 072B     		cmp	r3, #7
+ 298 0040 F9D9     		bls	.L23
+ 226:Src/cantp.c   ****     }
+ 227:Src/cantp.c   **** 
+ 228:Src/cantp.c   ****     // 调用 CanIf_Transmit 函数发送编码后的 CAN 帧
+ 229:Src/cantp.c   ****     CanIf_Transmit(TxPduId, &EncodedPduInfo);
+ 299              		.loc 1 229 5 is_stmt 1 view .LVU71
+ 300 0042 0249     		ldr	r1, .L25
+ 301 0044 FFF7FEFF 		bl	CanIf_Transmit
+ 302              	.LVL21:
+ 230:Src/cantp.c   **** }
+ 303              		.loc 1 230 1 is_stmt 0 view .LVU72
+ 304 0048 38BD     		pop	{r3, r4, r5, pc}
+ 305              	.L26:
+ 306 004a 00BF     		.align	2
+ 307              	.L25:
+ 308 004c 00000000 		.word	.LANCHOR7
+ 309 0050 00000000 		.word	.LANCHOR8
+ 310              		.cfi_endproc
+ 311              	.LFE76:
+ 313              		.section	.text.CanTp_encodeFirstFrame,"ax",%progbits
+ 314              		.align	1
+ 315              		.global	CanTp_encodeFirstFrame
+ 316              		.syntax unified
+ 317              		.thumb
+ 318              		.thumb_func
+ 320              	CanTp_encodeFirstFrame:
+ 321              	.LVL22:
+ 322              	.LFB77:
+ 231:Src/cantp.c   **** 
+ 232:Src/cantp.c   **** void CanTp_encodeFirstFrame(uint32_t TxPduId, PduInfoType* PduInfoPtr){
+ 323              		.loc 1 232 71 is_stmt 1 view -0
+ 324              		.cfi_startproc
+ 325              		@ args = 0, pretend = 0, frame = 16
+ 326              		@ frame_needed = 0, uses_anonymous_args = 0
+ 327              		.loc 1 232 71 is_stmt 0 view .LVU74
+ 328 0000 10B5     		push	{r4, lr}
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 11
+
+
+ 329              	.LCFI2:
+ 330              		.cfi_def_cfa_offset 8
+ 331              		.cfi_offset 4, -8
+ 332              		.cfi_offset 14, -4
+ 333 0002 84B0     		sub	sp, sp, #16
+ 334              	.LCFI3:
+ 335              		.cfi_def_cfa_offset 24
+ 233:Src/cantp.c   ****     // 定义一个循环计数变量 Counter
+ 234:Src/cantp.c   ****     uint8_t Counter = 0;
+ 336              		.loc 1 234 5 is_stmt 1 view .LVU75
+ 337              	.LVL23:
+ 235:Src/cantp.c   ****     // 定义一个局部变量 EncodedPduInfo 来存储编码后的 PDU 信息
+ 236:Src/cantp.c   ****     PduInfoTRx EncodedPduInfo;
+ 338              		.loc 1 236 5 view .LVU76
+ 237:Src/cantp.c   **** 
+ 238:Src/cantp.c   ****     // 设置 CAN 帧的第一个字节为帧类型（首帧），并且将数据长度的高 4 位
+ 239:Src/cantp.c   ****     EncodedPduInfo.Data[0] = (0x01 << 4) | ((PduInfoPtr->Length) >> 8 & 0x0F);
+ 339              		.loc 1 239 5 view .LVU77
+ 340              		.loc 1 239 56 is_stmt 0 view .LVU78
+ 341 0004 01F58053 		add	r3, r1, #4096
+ 342 0008 1C68     		ldr	r4, [r3]
+ 343              		.loc 1 239 71 view .LVU79
+ 344 000a C4F30323 		ubfx	r3, r4, #8, #4
+ 345              		.loc 1 239 42 view .LVU80
+ 346 000e 43F01003 		orr	r3, r3, #16
+ 347              		.loc 1 239 28 view .LVU81
+ 348 0012 8DF80430 		strb	r3, [sp, #4]
+ 240:Src/cantp.c   ****     // 设置 CAN 帧的第二个字节为数据长度的低 8 位
+ 241:Src/cantp.c   ****     EncodedPduInfo.Data[1] = (PduInfoPtr->Length) & 0xFF;
+ 349              		.loc 1 241 5 is_stmt 1 view .LVU82
+ 350              		.loc 1 241 28 is_stmt 0 view .LVU83
+ 351 0016 8DF80540 		strb	r4, [sp, #5]
+ 242:Src/cantp.c   **** 
+ 243:Src/cantp.c   ****     // 将数据从 PduInfoPtr 复制到 CAN 帧，从第三个字节（索引为 2）开始
+ 244:Src/cantp.c   ****     for (Counter = 2; Counter < 8; Counter++) {
+ 352              		.loc 1 244 5 is_stmt 1 view .LVU84
+ 353              	.LVL24:
+ 354              		.loc 1 244 18 is_stmt 0 view .LVU85
+ 355 001a 0223     		movs	r3, #2
+ 356              		.loc 1 244 5 view .LVU86
+ 357 001c 09E0     		b	.L28
+ 358              	.LVL25:
+ 359              	.L29:
+ 245:Src/cantp.c   ****         EncodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter - 2];
+ 360              		.loc 1 245 9 is_stmt 1 discriminator 3 view .LVU87
+ 361              		.loc 1 245 65 is_stmt 0 discriminator 3 view .LVU88
+ 362 001e 9A1E     		subs	r2, r3, #2
+ 363              		.loc 1 245 56 discriminator 3 view .LVU89
+ 364 0020 11F802C0 		ldrb	ip, [r1, r2]	@ zero_extendqisi2
+ 365              		.loc 1 245 38 discriminator 3 view .LVU90
+ 366 0024 03F11002 		add	r2, r3, #16
+ 367 0028 6A44     		add	r2, sp, r2
+ 368 002a 02F80CCC 		strb	ip, [r2, #-12]
+ 244:Src/cantp.c   ****         EncodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter - 2];
+ 369              		.loc 1 244 36 is_stmt 1 discriminator 3 view .LVU91
+ 244:Src/cantp.c   ****         EncodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter - 2];
+ 370              		.loc 1 244 43 is_stmt 0 discriminator 3 view .LVU92
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 12
+
+
+ 371 002e 0133     		adds	r3, r3, #1
+ 372              	.LVL26:
+ 244:Src/cantp.c   ****         EncodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter - 2];
+ 373              		.loc 1 244 43 discriminator 3 view .LVU93
+ 374 0030 DBB2     		uxtb	r3, r3
+ 375              	.LVL27:
+ 376              	.L28:
+ 244:Src/cantp.c   ****         EncodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter - 2];
+ 377              		.loc 1 244 23 is_stmt 1 discriminator 1 view .LVU94
+ 244:Src/cantp.c   ****         EncodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter - 2];
+ 378              		.loc 1 244 5 is_stmt 0 discriminator 1 view .LVU95
+ 379 0032 072B     		cmp	r3, #7
+ 380 0034 F3D9     		bls	.L29
+ 246:Src/cantp.c   ****     }
+ 247:Src/cantp.c   **** 
+ 248:Src/cantp.c   ****     // 更新剩余需要发送的字节数（总长度减去首帧中已发送的 6 个字节）
+ 249:Src/cantp.c   ****     numberOfRemainingBytesToSend = (PduInfoPtr->Length - 6);
+ 381              		.loc 1 249 5 is_stmt 1 view .LVU96
+ 382              		.loc 1 249 56 is_stmt 0 view .LVU97
+ 383 0036 063C     		subs	r4, r4, #6
+ 384              		.loc 1 249 34 view .LVU98
+ 385 0038 034B     		ldr	r3, .L31
+ 386              	.LVL28:
+ 387              		.loc 1 249 34 view .LVU99
+ 388 003a 1C60     		str	r4, [r3]
+ 250:Src/cantp.c   ****     // 调用 CanIf_Transmit 函数发送编码后的 CAN 帧
+ 251:Src/cantp.c   ****     CanIf_Transmit(TxPduId, &EncodedPduInfo);
+ 389              		.loc 1 251 5 is_stmt 1 view .LVU100
+ 390 003c 01A9     		add	r1, sp, #4
+ 391              	.LVL29:
+ 392              		.loc 1 251 5 is_stmt 0 view .LVU101
+ 393 003e FFF7FEFF 		bl	CanIf_Transmit
+ 394              	.LVL30:
+ 252:Src/cantp.c   **** }
+ 395              		.loc 1 252 1 view .LVU102
+ 396 0042 04B0     		add	sp, sp, #16
+ 397              	.LCFI4:
+ 398              		.cfi_def_cfa_offset 8
+ 399              		@ sp needed
+ 400 0044 10BD     		pop	{r4, pc}
+ 401              	.L32:
+ 402 0046 00BF     		.align	2
+ 403              	.L31:
+ 404 0048 00000000 		.word	.LANCHOR8
+ 405              		.cfi_endproc
+ 406              	.LFE77:
+ 408              		.section	.text.CanTp_encodeConsecutiveFrame,"ax",%progbits
+ 409              		.align	1
+ 410              		.global	CanTp_encodeConsecutiveFrame
+ 411              		.syntax unified
+ 412              		.thumb
+ 413              		.thumb_func
+ 415              	CanTp_encodeConsecutiveFrame:
+ 416              	.LVL31:
+ 417              	.LFB78:
+ 253:Src/cantp.c   **** 
+ 254:Src/cantp.c   **** void CanTp_encodeConsecutiveFrame(uint32_t TxPduId, PduInfoType* PduInfoPtr){
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 13
+
+
+ 418              		.loc 1 254 77 is_stmt 1 view -0
+ 419              		.cfi_startproc
+ 420              		@ args = 0, pretend = 0, frame = 0
+ 421              		@ frame_needed = 0, uses_anonymous_args = 0
+ 422              		.loc 1 254 77 is_stmt 0 view .LVU104
+ 423 0000 38B5     		push	{r3, r4, r5, lr}
+ 424              	.LCFI5:
+ 425              		.cfi_def_cfa_offset 16
+ 426              		.cfi_offset 3, -16
+ 427              		.cfi_offset 4, -12
+ 428              		.cfi_offset 5, -8
+ 429              		.cfi_offset 14, -4
+ 255:Src/cantp.c   ****     // 定义一个循环计数变量 i
+ 256:Src/cantp.c   ****     uint8_t i = 0;
+ 430              		.loc 1 256 5 is_stmt 1 view .LVU105
+ 431              	.LVL32:
+ 257:Src/cantp.c   ****     // 根据剩余字节数设置当前帧的长度，如果剩余字节数大于 7，则本帧传
+ 258:Src/cantp.c   ****     EncodedPduInfo.Length = numberOfRemainingBytesToSend > 7 ? 7 : numberOfRemainingBytesToSend;
+ 432              		.loc 1 258 5 view .LVU106
+ 433              		.loc 1 258 58 is_stmt 0 view .LVU107
+ 434 0002 1E4B     		ldr	r3, .L40
+ 435 0004 1B68     		ldr	r3, [r3]
+ 436              		.loc 1 258 66 view .LVU108
+ 437 0006 072B     		cmp	r3, #7
+ 438 0008 12D8     		bhi	.L38
+ 439              		.loc 1 258 66 discriminator 1 view .LVU109
+ 440 000a 1C4B     		ldr	r3, .L40
+ 441 000c 1C68     		ldr	r4, [r3]
+ 442              	.L34:
+ 443              		.loc 1 258 27 discriminator 4 view .LVU110
+ 444 000e 1C4D     		ldr	r5, .L40+4
+ 445 0010 AC60     		str	r4, [r5, #8]
+ 259:Src/cantp.c   ****     // 设置 CAN 帧的第一个字节为帧类型（连续帧），并将帧序号编码进去
+ 260:Src/cantp.c   ****     EncodedPduInfo.Data[0] = (0x02 << 4) | ConsecSN;
+ 446              		.loc 1 260 5 is_stmt 1 discriminator 4 view .LVU111
+ 447              		.loc 1 260 28 is_stmt 0 discriminator 4 view .LVU112
+ 448 0012 1C4A     		ldr	r2, .L40+8
+ 449 0014 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 450 0016 43F02003 		orr	r3, r3, #32
+ 451 001a 2B70     		strb	r3, [r5]
+ 261:Src/cantp.c   **** 
+ 262:Src/cantp.c   ****     // 计算当前数据的偏移量，即从哪里开始读取数据
+ 263:Src/cantp.c   ****     currentOffset = startOffset + ConsecSN * 7;
+ 452              		.loc 1 263 5 is_stmt 1 discriminator 4 view .LVU113
+ 453              		.loc 1 263 44 is_stmt 0 discriminator 4 view .LVU114
+ 454 001c 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 455 001e C3EBC303 		rsb	r3, r3, r3, lsl #3
+ 456              		.loc 1 263 33 discriminator 4 view .LVU115
+ 457 0022 194A     		ldr	r2, .L40+12
+ 458 0024 1268     		ldr	r2, [r2]
+ 459 0026 1344     		add	r3, r3, r2
+ 460              		.loc 1 263 19 discriminator 4 view .LVU116
+ 461 0028 184A     		ldr	r2, .L40+16
+ 462 002a 1360     		str	r3, [r2]
+ 264:Src/cantp.c   **** 
+ 265:Src/cantp.c   ****     // 将数据从 PduInfoPtr 复制到 CAN 帧，从第二个字节（索引为 1）开始
+ 266:Src/cantp.c   ****     for (i = 0; i < EncodedPduInfo.Length; i++) {
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 14
+
+
+ 463              		.loc 1 266 5 is_stmt 1 discriminator 4 view .LVU117
+ 464              		.loc 1 266 12 is_stmt 0 discriminator 4 view .LVU118
+ 465 002c 0023     		movs	r3, #0
+ 466              		.loc 1 266 5 discriminator 4 view .LVU119
+ 467 002e 0BE0     		b	.L35
+ 468              	.L38:
+ 258:Src/cantp.c   ****     // 设置 CAN 帧的第一个字节为帧类型（连续帧），并将帧序号编码进去
+ 469              		.loc 1 258 66 view .LVU120
+ 470 0030 0724     		movs	r4, #7
+ 471 0032 ECE7     		b	.L34
+ 472              	.LVL33:
+ 473              	.L36:
+ 267:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i + currentOffset];
+ 474              		.loc 1 267 9 is_stmt 1 discriminator 3 view .LVU121
+ 475              		.loc 1 267 57 is_stmt 0 discriminator 3 view .LVU122
+ 476 0034 154A     		ldr	r2, .L40+16
+ 477 0036 1268     		ldr	r2, [r2]
+ 478 0038 1A44     		add	r2, r2, r3
+ 479              		.loc 1 267 31 discriminator 3 view .LVU123
+ 480 003a 0133     		adds	r3, r3, #1
+ 481              	.LVL34:
+ 482              		.loc 1 267 54 discriminator 3 view .LVU124
+ 483 003c 11F802C0 		ldrb	ip, [r1, r2]	@ zero_extendqisi2
+ 484              		.loc 1 267 36 discriminator 3 view .LVU125
+ 485 0040 0F4A     		ldr	r2, .L40+4
+ 486 0042 02F803C0 		strb	ip, [r2, r3]
+ 266:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i + currentOffset];
+ 487              		.loc 1 266 44 is_stmt 1 discriminator 3 view .LVU126
+ 266:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i + currentOffset];
+ 488              		.loc 1 266 45 is_stmt 0 discriminator 3 view .LVU127
+ 489 0046 DBB2     		uxtb	r3, r3
+ 490              	.LVL35:
+ 491              	.L35:
+ 266:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i + currentOffset];
+ 492              		.loc 1 266 17 is_stmt 1 discriminator 1 view .LVU128
+ 266:Src/cantp.c   ****         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i + currentOffset];
+ 493              		.loc 1 266 5 is_stmt 0 discriminator 1 view .LVU129
+ 494 0048 A342     		cmp	r3, r4
+ 495 004a F3D3     		bcc	.L36
+ 268:Src/cantp.c   ****     }
+ 269:Src/cantp.c   **** 
+ 270:Src/cantp.c   ****     // 增加帧序号，如果序号超过 0xF（即 15），则重置为 0 并更新起始偏移�
+ 271:Src/cantp.c   ****     ConsecSN++;
+ 496              		.loc 1 271 5 is_stmt 1 view .LVU130
+ 497              		.loc 1 271 13 is_stmt 0 view .LVU131
+ 498 004c 0D4A     		ldr	r2, .L40+8
+ 499 004e 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 500              	.LVL36:
+ 501              		.loc 1 271 13 view .LVU132
+ 502 0050 0133     		adds	r3, r3, #1
+ 503 0052 DBB2     		uxtb	r3, r3
+ 504 0054 1370     		strb	r3, [r2]
+ 272:Src/cantp.c   ****     if (ConsecSN > 0xF) {
+ 505              		.loc 1 272 5 is_stmt 1 view .LVU133
+ 506              		.loc 1 272 18 is_stmt 0 view .LVU134
+ 507 0056 1378     		ldrb	r3, [r2]	@ zero_extendqisi2
+ 508 0058 DBB2     		uxtb	r3, r3
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 15
+
+
+ 509              		.loc 1 272 8 view .LVU135
+ 510 005a 0F2B     		cmp	r3, #15
+ 511 005c 06D9     		bls	.L37
+ 273:Src/cantp.c   ****         startOffset = currentOffset;
+ 512              		.loc 1 273 9 is_stmt 1 view .LVU136
+ 513              		.loc 1 273 21 is_stmt 0 view .LVU137
+ 514 005e 0B4B     		ldr	r3, .L40+16
+ 515 0060 1A68     		ldr	r2, [r3]
+ 516 0062 094B     		ldr	r3, .L40+12
+ 517 0064 1A60     		str	r2, [r3]
+ 274:Src/cantp.c   ****         ConsecSN = 0;
+ 518              		.loc 1 274 9 is_stmt 1 view .LVU138
+ 519              		.loc 1 274 18 is_stmt 0 view .LVU139
+ 520 0066 074B     		ldr	r3, .L40+8
+ 521 0068 0022     		movs	r2, #0
+ 522 006a 1A70     		strb	r2, [r3]
+ 523              	.L37:
+ 275:Src/cantp.c   ****     }
+ 276:Src/cantp.c   **** 
+ 277:Src/cantp.c   ****     // 更新剩余需要发送的字节数
+ 278:Src/cantp.c   ****     numberOfRemainingBytesToSend -= EncodedPduInfo.Length;
+ 524              		.loc 1 278 5 is_stmt 1 view .LVU140
+ 525              		.loc 1 278 34 is_stmt 0 view .LVU141
+ 526 006c 034A     		ldr	r2, .L40
+ 527 006e 1368     		ldr	r3, [r2]
+ 528 0070 1C1B     		subs	r4, r3, r4
+ 529 0072 1460     		str	r4, [r2]
+ 279:Src/cantp.c   ****     // 调用 CanIf_Transmit 函数发送编码后的 CAN 帧
+ 280:Src/cantp.c   ****     CanIf_Transmit(TxPduId, &EncodedPduInfo);
+ 530              		.loc 1 280 5 is_stmt 1 view .LVU142
+ 531 0074 0249     		ldr	r1, .L40+4
+ 532              	.LVL37:
+ 533              		.loc 1 280 5 is_stmt 0 view .LVU143
+ 534 0076 FFF7FEFF 		bl	CanIf_Transmit
+ 535              	.LVL38:
+ 281:Src/cantp.c   **** }
+ 536              		.loc 1 281 1 view .LVU144
+ 537 007a 38BD     		pop	{r3, r4, r5, pc}
+ 538              	.L41:
+ 539              		.align	2
+ 540              	.L40:
+ 541 007c 00000000 		.word	.LANCHOR8
+ 542 0080 00000000 		.word	.LANCHOR7
+ 543 0084 00000000 		.word	.LANCHOR9
+ 544 0088 00000000 		.word	.LANCHOR10
+ 545 008c 00000000 		.word	.LANCHOR11
+ 546              		.cfi_endproc
+ 547              	.LFE78:
+ 549              		.section	.text.CanTp_encodeFlowControlFrame,"ax",%progbits
+ 550              		.align	1
+ 551              		.global	CanTp_encodeFlowControlFrame
+ 552              		.syntax unified
+ 553              		.thumb
+ 554              		.thumb_func
+ 556              	CanTp_encodeFlowControlFrame:
+ 557              	.LVL39:
+ 558              	.LFB79:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 16
+
+
+ 282:Src/cantp.c   **** 
+ 283:Src/cantp.c   **** void CanTp_encodeFlowControlFrame(uint32_t TxPduId, PduInfoType* PduInfoPtr){
+ 559              		.loc 1 283 77 is_stmt 1 view -0
+ 560              		.cfi_startproc
+ 561              		@ args = 0, pretend = 0, frame = 0
+ 562              		@ frame_needed = 0, uses_anonymous_args = 0
+ 563              		.loc 1 283 77 is_stmt 0 view .LVU146
+ 564 0000 08B5     		push	{r3, lr}
+ 565              	.LCFI6:
+ 566              		.cfi_def_cfa_offset 8
+ 567              		.cfi_offset 3, -8
+ 568              		.cfi_offset 14, -4
+ 284:Src/cantp.c   ****     // 设置流控制帧的第一个字节，流控状态为继续发送（CTS）
+ 285:Src/cantp.c   ****     EncodedPduInfo.Data[0] = 0x30;
+ 569              		.loc 1 285 5 is_stmt 1 view .LVU147
+ 570              		.loc 1 285 28 is_stmt 0 view .LVU148
+ 571 0002 0D4B     		ldr	r3, .L46
+ 572 0004 3022     		movs	r2, #48
+ 573 0006 1A70     		strb	r2, [r3]
+ 286:Src/cantp.c   ****     // 设置流控制帧的第二个字节为块大小，即可用缓冲区的数量
+ 287:Src/cantp.c   ****     EncodedPduInfo.Data[1] = availableBuffers;
+ 574              		.loc 1 287 5 is_stmt 1 view .LVU149
+ 575              		.loc 1 287 28 is_stmt 0 view .LVU150
+ 576 0008 0C4A     		ldr	r2, .L46+4
+ 577 000a 1168     		ldr	r1, [r2]
+ 578              	.LVL40:
+ 579              		.loc 1 287 28 view .LVU151
+ 580 000c 5970     		strb	r1, [r3, #1]
+ 288:Src/cantp.c   ****     // 设置流控制帧的第三个字节为分离时间（ST），这里设为 0 毫秒
+ 289:Src/cantp.c   ****     EncodedPduInfo.Data[2] = 0x00;
+ 581              		.loc 1 289 5 is_stmt 1 view .LVU152
+ 582              		.loc 1 289 28 is_stmt 0 view .LVU153
+ 583 000e 0021     		movs	r1, #0
+ 584 0010 9970     		strb	r1, [r3, #2]
+ 290:Src/cantp.c   **** 
+ 291:Src/cantp.c   ****     // 更新接收端可以接收的连续帧的数量
+ 292:Src/cantp.c   ****     numberOfConsecutiveFramesToReceive = availableBuffers;
+ 585              		.loc 1 292 5 is_stmt 1 view .LVU154
+ 586              		.loc 1 292 40 is_stmt 0 view .LVU155
+ 587 0012 1268     		ldr	r2, [r2]
+ 588 0014 0A4B     		ldr	r3, .L46+8
+ 589 0016 1A60     		str	r2, [r3]
+ 293:Src/cantp.c   **** 
+ 294:Src/cantp.c   ****     // 将流控帧中剩余的字节填充为 0
+ 295:Src/cantp.c   ****     for (uint8_t i = 3; i < 8; i++) {
+ 590              		.loc 1 295 5 is_stmt 1 view .LVU156
+ 591              	.LBB2:
+ 592              		.loc 1 295 10 view .LVU157
+ 593              	.LVL41:
+ 594              		.loc 1 295 18 is_stmt 0 view .LVU158
+ 595 0018 0323     		movs	r3, #3
+ 596              		.loc 1 295 5 view .LVU159
+ 597 001a 04E0     		b	.L43
+ 598              	.LVL42:
+ 599              	.L44:
+ 296:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0x00;
+ 600              		.loc 1 296 9 is_stmt 1 discriminator 3 view .LVU160
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 17
+
+
+ 601              		.loc 1 296 32 is_stmt 0 discriminator 3 view .LVU161
+ 602 001c 064A     		ldr	r2, .L46
+ 603 001e 0021     		movs	r1, #0
+ 604 0020 D154     		strb	r1, [r2, r3]
+ 295:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0x00;
+ 605              		.loc 1 295 32 is_stmt 1 discriminator 3 view .LVU162
+ 295:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0x00;
+ 606              		.loc 1 295 33 is_stmt 0 discriminator 3 view .LVU163
+ 607 0022 0133     		adds	r3, r3, #1
+ 608              	.LVL43:
+ 295:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0x00;
+ 609              		.loc 1 295 33 discriminator 3 view .LVU164
+ 610 0024 DBB2     		uxtb	r3, r3
+ 611              	.LVL44:
+ 612              	.L43:
+ 295:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0x00;
+ 613              		.loc 1 295 25 is_stmt 1 discriminator 1 view .LVU165
+ 295:Src/cantp.c   ****         EncodedPduInfo.Data[i] = 0x00;
+ 614              		.loc 1 295 5 is_stmt 0 discriminator 1 view .LVU166
+ 615 0026 072B     		cmp	r3, #7
+ 616 0028 F8D9     		bls	.L44
+ 617              	.LBE2:
+ 297:Src/cantp.c   ****     }
+ 298:Src/cantp.c   **** 
+ 299:Src/cantp.c   ****     // 初始化帧序号为 1
+ 300:Src/cantp.c   ****     ConsecSN = 1;
+ 618              		.loc 1 300 5 is_stmt 1 view .LVU167
+ 619              		.loc 1 300 14 is_stmt 0 view .LVU168
+ 620 002a 064B     		ldr	r3, .L46+12
+ 621              	.LVL45:
+ 622              		.loc 1 300 14 view .LVU169
+ 623 002c 0122     		movs	r2, #1
+ 624 002e 1A70     		strb	r2, [r3]
+ 301:Src/cantp.c   ****     // 调用 CanIf_Transmit 函数发送编码后的流控帧
+ 302:Src/cantp.c   ****     CanIf_Transmit(TxPduId, &EncodedPduInfo);
+ 625              		.loc 1 302 5 is_stmt 1 view .LVU170
+ 626 0030 0149     		ldr	r1, .L46
+ 627 0032 FFF7FEFF 		bl	CanIf_Transmit
+ 628              	.LVL46:
+ 303:Src/cantp.c   **** }
+ 629              		.loc 1 303 1 is_stmt 0 view .LVU171
+ 630 0036 08BD     		pop	{r3, pc}
+ 631              	.L47:
+ 632              		.align	2
+ 633              	.L46:
+ 634 0038 00000000 		.word	.LANCHOR7
+ 635 003c 00000000 		.word	.LANCHOR12
+ 636 0040 00000000 		.word	.LANCHOR13
+ 637 0044 00000000 		.word	.LANCHOR9
+ 638              		.cfi_endproc
+ 639              	.LFE79:
+ 641              		.section	.text.CanTp_decodeFlowControlFrame,"ax",%progbits
+ 642              		.align	1
+ 643              		.global	CanTp_decodeFlowControlFrame
+ 644              		.syntax unified
+ 645              		.thumb
+ 646              		.thumb_func
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 18
+
+
+ 648              	CanTp_decodeFlowControlFrame:
+ 649              	.LVL47:
+ 650              	.LFB83:
+ 304:Src/cantp.c   **** 
+ 305:Src/cantp.c   **** void CanTp_decodeSingleFrame(uint32_t RxPduId, PduInfoTRx* PduInfoPtr){
+ 306:Src/cantp.c   ****     // 从 CAN 帧的第一个字节中提取数据长度，数据长度在 PCI 的低 4 位
+ 307:Src/cantp.c   ****     uint32_t dataLength = PduInfoPtr->Data[0] & 0x0F;
+ 308:Src/cantp.c   ****     // 更新全局变量，记录剩余要接收的字节数
+ 309:Src/cantp.c   ****     numberOfRemainingBytesToReceive = dataLength;
+ 310:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的字节数
+ 311:Src/cantp.c   ****     CompletePduInfo.Length = numberOfRemainingBytesToReceive;
+ 312:Src/cantp.c   **** 
+ 313:Src/cantp.c   ****     // 初始化一个循环计数变量 i
+ 314:Src/cantp.c   ****     int i;
+ 315:Src/cantp.c   ****     // 将数据从接收到的 CAN 帧中复制到解码后的数据结构中
+ 316:Src/cantp.c   ****     for (i = 0; i < dataLength; i++) {
+ 317:Src/cantp.c   ****         DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 318:Src/cantp.c   ****     }
+ 319:Src/cantp.c   **** 
+ 320:Src/cantp.c   ****     // 将解码后的数据长度设置为 dataLength
+ 321:Src/cantp.c   ****     DecodedPduInfo.Length = dataLength;
+ 322:Src/cantp.c   **** 
+ 323:Src/cantp.c   ****     // 调用 CanTp_ConnectData 函数，将解码后的数据与完整的 PDU 信息连接起来
+ 324:Src/cantp.c   ****     CanTp_ConnectData(&DecodedPduInfo);
+ 325:Src/cantp.c   **** }
+ 326:Src/cantp.c   **** 
+ 327:Src/cantp.c   **** void CanTp_decodeFirstFrame(uint32_t RxPduId, PduInfoTRx* PduInfoPtr){
+ 328:Src/cantp.c   ****     // 从首帧的第一个字节的低 4 位和第二个字节提取数据长度
+ 329:Src/cantp.c   ****     numberOfRemainingBytesToReceive = ((PduInfoPtr->Data[0] & 0x0F) << 8) | PduInfoPtr->Data[1];
+ 330:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的总字节数
+ 331:Src/cantp.c   ****     CompletePduInfo.Length = numberOfRemainingBytesToReceive;
+ 332:Src/cantp.c   ****     // 首帧中实际有效负载数据长度为 6 个字节
+ 333:Src/cantp.c   ****     DecodedPduInfo.Length = 6;
+ 334:Src/cantp.c   **** 
+ 335:Src/cantp.c   ****     // 定义一个循环计数变量 Counter
+ 336:Src/cantp.c   ****     uint8_t Counter = 0;
+ 337:Src/cantp.c   **** 
+ 338:Src/cantp.c   ****     // 将首帧中的数据复制到解码后的数据结构中，从 CAN 帧的第三个字节（
+ 339:Src/cantp.c   ****     for (Counter = 0; Counter < 8; Counter++) {
+ 340:Src/cantp.c   ****         DecodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter + 2];
+ 341:Src/cantp.c   ****     }
+ 342:Src/cantp.c   **** 
+ 343:Src/cantp.c   ****     // 调用 CanTp_ConnectData 函数，将解码后的数据与完整的 PDU 信息连接起来
+ 344:Src/cantp.c   ****     CanTp_ConnectData(&DecodedPduInfo);
+ 345:Src/cantp.c   **** }
+ 346:Src/cantp.c   **** 
+ 347:Src/cantp.c   **** void CanTp_decodeConsecutiveFrame(uint32_t RxPduId, PduInfoTRx* PduInfoPtr){
+ 348:Src/cantp.c   ****     // 每收到一个连续帧，就减少剩余要接收的帧数
+ 349:Src/cantp.c   ****     numberOfConsecutiveFramesToReceive--;
+ 350:Src/cantp.c   ****     // 初始化一个循环计数变量 i
+ 351:Src/cantp.c   ****     uint8_t i = 0;
+ 352:Src/cantp.c   ****     // 设置解码后的帧长度为 7 字节或剩余字节数中的较小者
+ 353:Src/cantp.c   ****     DecodedPduInfo.Length = numberOfRemainingBytesToReceive > 7 ? 7 : numberOfRemainingBytesToRecei
+ 354:Src/cantp.c   **** 
+ 355:Src/cantp.c   ****     // 检查连续帧的序号是否与当前期望的序号匹配
+ 356:Src/cantp.c   ****     if (ConsecSN == (PduInfoPtr->Data[0] & 0x0F)) {
+ 357:Src/cantp.c   ****         // 将数据从接收到的 CAN 帧中复制到解码后的数据结构中
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 19
+
+
+ 358:Src/cantp.c   ****         for (i = 0; i < DecodedPduInfo.Length; i++) {
+ 359:Src/cantp.c   ****             DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 360:Src/cantp.c   ****         }
+ 361:Src/cantp.c   **** 
+ 362:Src/cantp.c   ****         // 更新序号，如果序号超过 0xF（即 15），则重置为 0，否则递增
+ 363:Src/cantp.c   ****         ConsecSN = ConsecSN + 1 > 0xF ? 0 : ConsecSN + 1;
+ 364:Src/cantp.c   **** 
+ 365:Src/cantp.c   ****         // 调用 CanTp_ConnectData 函数，将解码后的数据与完整的 PDU 信息连接起�
+ 366:Src/cantp.c   ****         CanTp_ConnectData(&DecodedPduInfo);
+ 367:Src/cantp.c   ****     }
+ 368:Src/cantp.c   **** }
+ 369:Src/cantp.c   **** 
+ 370:Src/cantp.c   **** void CanTp_decodeFlowControlFrame(uint32_t RxPduId, PduInfoTRx* PduInfoPtr){
+ 651              		.loc 1 370 76 is_stmt 1 view -0
+ 652              		.cfi_startproc
+ 653              		@ args = 0, pretend = 0, frame = 0
+ 654              		@ frame_needed = 0, uses_anonymous_args = 0
+ 655              		@ link register save eliminated.
+ 371:Src/cantp.c   ****     // 从接收到的 PDU 中提取流控制状态、块大小和分离时间（ST）
+ 372:Src/cantp.c   ****     uint8_t flowStatus = PduInfoPtr->Data[0];
+ 656              		.loc 1 372 5 view .LVU173
+ 657              		.loc 1 372 13 is_stmt 0 view .LVU174
+ 658 0000 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 659              	.LVL48:
+ 373:Src/cantp.c   ****     uint8_t blockSize = PduInfoPtr->Data[1];
+ 660              		.loc 1 373 5 is_stmt 1 view .LVU175
+ 661              		.loc 1 373 13 is_stmt 0 view .LVU176
+ 662 0002 4978     		ldrb	r1, [r1, #1]	@ zero_extendqisi2
+ 663              	.LVL49:
+ 374:Src/cantp.c   **** 
+ 375:Src/cantp.c   ****     // 更新可以发送的连续帧的数量
+ 376:Src/cantp.c   ****     numberOfConsecutiveFramesToSend = blockSize;
+ 664              		.loc 1 376 5 is_stmt 1 view .LVU177
+ 665              		.loc 1 376 37 is_stmt 0 view .LVU178
+ 666 0004 0A4A     		ldr	r2, .L52
+ 667 0006 1160     		str	r1, [r2]
+ 377:Src/cantp.c   **** 
+ 378:Src/cantp.c   ****     // 根据不同的流控制状态执行相应操作
+ 379:Src/cantp.c   ****     switch (flowStatus) {
+ 668              		.loc 1 379 5 is_stmt 1 view .LVU179
+ 669 0008 302B     		cmp	r3, #48
+ 670 000a 02D0     		beq	.L49
+ 671 000c 312B     		cmp	r3, #49
+ 672 000e 0AD0     		beq	.L50
+ 673 0010 7047     		bx	lr
+ 674              	.L49:
+ 380:Src/cantp.c   ****         case 0x30:  // 继续发送 (CTS)
+ 381:Src/cantp.c   ****             // 更新期望的帧状态为连续帧
+ 382:Src/cantp.c   ****             expectedFrameState = Consecutive_Frame_State;
+ 675              		.loc 1 382 13 view .LVU180
+ 676              		.loc 1 382 32 is_stmt 0 view .LVU181
+ 677 0012 0123     		movs	r3, #1
+ 678              	.LVL50:
+ 679              		.loc 1 382 32 view .LVU182
+ 680 0014 074A     		ldr	r2, .L52+4
+ 681 0016 1370     		strb	r3, [r2]
+ 383:Src/cantp.c   ****             // 更新当前偏移量为起始偏移量
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 20
+
+
+ 384:Src/cantp.c   ****             startOffset = currentOffset;
+ 682              		.loc 1 384 13 is_stmt 1 view .LVU183
+ 683              		.loc 1 384 25 is_stmt 0 view .LVU184
+ 684 0018 074A     		ldr	r2, .L52+8
+ 685 001a 1168     		ldr	r1, [r2]
+ 686              	.LVL51:
+ 687              		.loc 1 384 25 view .LVU185
+ 688 001c 074A     		ldr	r2, .L52+12
+ 689 001e 1160     		str	r1, [r2]
+ 690              	.LVL52:
+ 385:Src/cantp.c   ****             // 初始化帧序号为 1
+ 386:Src/cantp.c   ****             ConsecSN = 1;
+ 691              		.loc 1 386 13 is_stmt 1 view .LVU186
+ 692              		.loc 1 386 22 is_stmt 0 view .LVU187
+ 693 0020 074A     		ldr	r2, .L52+16
+ 694 0022 1370     		strb	r3, [r2]
+ 387:Src/cantp.c   ****             break;
+ 695              		.loc 1 387 13 is_stmt 1 view .LVU188
+ 696 0024 7047     		bx	lr
+ 697              	.LVL53:
+ 698              	.L50:
+ 388:Src/cantp.c   **** 
+ 389:Src/cantp.c   ****         case 0x31:  // 等待 (WT)
+ 390:Src/cantp.c   ****             // 流控制状态为等待
+ 391:Src/cantp.c   ****             expectedFrameState = FlowControl_Frame_State;
+ 699              		.loc 1 391 13 view .LVU189
+ 700              		.loc 1 391 32 is_stmt 0 view .LVU190
+ 701 0026 034B     		ldr	r3, .L52+4
+ 702              	.LVL54:
+ 703              		.loc 1 391 32 view .LVU191
+ 704 0028 0222     		movs	r2, #2
+ 705 002a 1A70     		strb	r2, [r3]
+ 392:Src/cantp.c   ****             break;
+ 706              		.loc 1 392 13 is_stmt 1 view .LVU192
+ 393:Src/cantp.c   **** 
+ 394:Src/cantp.c   ****         case 0x32:  // 溢出/中止 (OVFLW/ABORT)
+ 395:Src/cantp.c   ****             // 处理溢出或中止条件
+ 396:Src/cantp.c   ****             // 更新期望的帧状态为任意状态（如需要）
+ 397:Src/cantp.c   ****             // expectedFrameState = Any_State;
+ 398:Src/cantp.c   ****             // 执行额外的中止操作，如通知上层协议
+ 399:Src/cantp.c   ****             break;
+ 400:Src/cantp.c   **** 
+ 401:Src/cantp.c   ****         default:
+ 402:Src/cantp.c   ****             // 处理无效的流控制状态，如设置错误状态
+ 403:Src/cantp.c   ****             // expectedFrameState = Any_State;
+ 404:Src/cantp.c   ****             break;
+ 405:Src/cantp.c   ****     }
+ 406:Src/cantp.c   **** }
+ 707              		.loc 1 406 1 is_stmt 0 view .LVU193
+ 708 002c 7047     		bx	lr
+ 709              	.L53:
+ 710 002e 00BF     		.align	2
+ 711              	.L52:
+ 712 0030 00000000 		.word	.LANCHOR14
+ 713 0034 00000000 		.word	.LANCHOR15
+ 714 0038 00000000 		.word	.LANCHOR11
+ 715 003c 00000000 		.word	.LANCHOR10
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 21
+
+
+ 716 0040 00000000 		.word	.LANCHOR9
+ 717              		.cfi_endproc
+ 718              	.LFE83:
+ 720              		.section	.text.CanTp_ConnectData,"ax",%progbits
+ 721              		.align	1
+ 722              		.global	CanTp_ConnectData
+ 723              		.syntax unified
+ 724              		.thumb
+ 725              		.thumb_func
+ 727              	CanTp_ConnectData:
+ 728              	.LVL55:
+ 729              	.LFB84:
+ 407:Src/cantp.c   **** 
+ 408:Src/cantp.c   **** void CanTp_ConnectData(PduInfoTRx* PduInfoPtr){
+ 730              		.loc 1 408 47 is_stmt 1 view -0
+ 731              		.cfi_startproc
+ 732              		@ args = 0, pretend = 0, frame = 0
+ 733              		@ frame_needed = 0, uses_anonymous_args = 0
+ 734              		.loc 1 408 47 is_stmt 0 view .LVU195
+ 735 0000 00B5     		push	{lr}
+ 736              	.LCFI7:
+ 737              		.cfi_def_cfa_offset 4
+ 738              		.cfi_offset 14, -4
+ 409:Src/cantp.c   ****     // 使用 CompletePduInfo 结构体，将接收到的数据与完整的 PDU 信息连接起来
+ 410:Src/cantp.c   ****     // 定义一个临时变量 tempCurrentIndex，保存当前索引
+ 411:Src/cantp.c   ****     uint16_t tempCurrentIndex = currentIndex;
+ 739              		.loc 1 411 5 is_stmt 1 view .LVU196
+ 740              		.loc 1 411 14 is_stmt 0 view .LVU197
+ 741 0002 124B     		ldr	r3, .L58
+ 742 0004 B3F800C0 		ldrh	ip, [r3]
+ 743 0008 1FFA8CFC 		uxth	ip, ip
+ 744              	.LVL56:
+ 412:Src/cantp.c   ****     
+ 413:Src/cantp.c   ****     // 将接收到的 PDU 数据逐字节连接到 CompletePduInfo 数据中
+ 414:Src/cantp.c   ****     while (currentIndex < PduInfoPtr->Length + tempCurrentIndex) {
+ 745              		.loc 1 414 5 is_stmt 1 view .LVU198
+ 746              		.loc 1 414 11 is_stmt 0 view .LVU199
+ 747 000c 10E0     		b	.L55
+ 748              	.L56:
+ 415:Src/cantp.c   ****         CompletePduInfo.Data[currentIndex] = PduInfoPtr->Data[currentIndex - tempCurrentIndex];
+ 749              		.loc 1 415 9 is_stmt 1 view .LVU200
+ 750              		.loc 1 415 76 is_stmt 0 view .LVU201
+ 751 000e 0F4A     		ldr	r2, .L58
+ 752 0010 1388     		ldrh	r3, [r2]
+ 753 0012 9BB2     		uxth	r3, r3
+ 754 0014 A3EB0C03 		sub	r3, r3, ip
+ 755              		.loc 1 415 29 view .LVU202
+ 756 0018 1188     		ldrh	r1, [r2]
+ 757 001a 89B2     		uxth	r1, r1
+ 758              		.loc 1 415 62 view .LVU203
+ 759 001c 10F803E0 		ldrb	lr, [r0, r3]	@ zero_extendqisi2
+ 760              		.loc 1 415 44 view .LVU204
+ 761 0020 0B4B     		ldr	r3, .L58+4
+ 762 0022 03F801E0 		strb	lr, [r3, r1]
+ 416:Src/cantp.c   ****         // 更新当前索引
+ 417:Src/cantp.c   ****         currentIndex++;
+ 763              		.loc 1 417 9 is_stmt 1 view .LVU205
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 22
+
+
+ 764              		.loc 1 417 21 is_stmt 0 view .LVU206
+ 765 0026 1388     		ldrh	r3, [r2]
+ 766 0028 9BB2     		uxth	r3, r3
+ 767 002a 0133     		adds	r3, r3, #1
+ 768 002c 9BB2     		uxth	r3, r3
+ 769 002e 1380     		strh	r3, [r2]	@ movhi
+ 770              	.L55:
+ 414:Src/cantp.c   ****         CompletePduInfo.Data[currentIndex] = PduInfoPtr->Data[currentIndex - tempCurrentIndex];
+ 771              		.loc 1 414 11 is_stmt 1 view .LVU207
+ 414:Src/cantp.c   ****         CompletePduInfo.Data[currentIndex] = PduInfoPtr->Data[currentIndex - tempCurrentIndex];
+ 772              		.loc 1 414 25 is_stmt 0 view .LVU208
+ 773 0030 064B     		ldr	r3, .L58
+ 774 0032 1B88     		ldrh	r3, [r3]
+ 775 0034 9BB2     		uxth	r3, r3
+ 414:Src/cantp.c   ****         CompletePduInfo.Data[currentIndex] = PduInfoPtr->Data[currentIndex - tempCurrentIndex];
+ 776              		.loc 1 414 37 view .LVU209
+ 777 0036 8268     		ldr	r2, [r0, #8]
+ 414:Src/cantp.c   ****         CompletePduInfo.Data[currentIndex] = PduInfoPtr->Data[currentIndex - tempCurrentIndex];
+ 778              		.loc 1 414 46 view .LVU210
+ 779 0038 0CEB0201 		add	r1, ip, r2
+ 414:Src/cantp.c   ****         CompletePduInfo.Data[currentIndex] = PduInfoPtr->Data[currentIndex - tempCurrentIndex];
+ 780              		.loc 1 414 11 view .LVU211
+ 781 003c 8B42     		cmp	r3, r1
+ 782 003e E6D3     		bcc	.L56
+ 418:Src/cantp.c   ****     }
+ 419:Src/cantp.c   **** 
+ 420:Src/cantp.c   ****     // 更新剩余需要接收的字节数
+ 421:Src/cantp.c   ****     numberOfRemainingBytesToReceive -= PduInfoPtr->Length;
+ 783              		.loc 1 421 5 is_stmt 1 view .LVU212
+ 784              		.loc 1 421 37 is_stmt 0 view .LVU213
+ 785 0040 0449     		ldr	r1, .L58+8
+ 786 0042 0B68     		ldr	r3, [r1]
+ 787 0044 9A1A     		subs	r2, r3, r2
+ 788 0046 0A60     		str	r2, [r1]
+ 422:Src/cantp.c   **** }
+ 789              		.loc 1 422 1 view .LVU214
+ 790 0048 5DF804FB 		ldr	pc, [sp], #4
+ 791              	.L59:
+ 792              		.align	2
+ 793              	.L58:
+ 794 004c 00000000 		.word	.LANCHOR16
+ 795 0050 00000000 		.word	CompletePduInfo
+ 796 0054 00000000 		.word	.LANCHOR17
+ 797              		.cfi_endproc
+ 798              	.LFE84:
+ 800              		.section	.text.CanTp_decodeSingleFrame,"ax",%progbits
+ 801              		.align	1
+ 802              		.global	CanTp_decodeSingleFrame
+ 803              		.syntax unified
+ 804              		.thumb
+ 805              		.thumb_func
+ 807              	CanTp_decodeSingleFrame:
+ 808              	.LVL57:
+ 809              	.LFB80:
+ 305:Src/cantp.c   ****     // 从 CAN 帧的第一个字节中提取数据长度，数据长度在 PCI 的低 4 位
+ 810              		.loc 1 305 71 is_stmt 1 view -0
+ 811              		.cfi_startproc
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 23
+
+
+ 812              		@ args = 0, pretend = 0, frame = 0
+ 813              		@ frame_needed = 0, uses_anonymous_args = 0
+ 305:Src/cantp.c   ****     // 从 CAN 帧的第一个字节中提取数据长度，数据长度在 PCI 的低 4 位
+ 814              		.loc 1 305 71 is_stmt 0 view .LVU216
+ 815 0000 10B5     		push	{r4, lr}
+ 816              	.LCFI8:
+ 817              		.cfi_def_cfa_offset 8
+ 818              		.cfi_offset 4, -8
+ 819              		.cfi_offset 14, -4
+ 307:Src/cantp.c   ****     // 更新全局变量，记录剩余要接收的字节数
+ 820              		.loc 1 307 5 is_stmt 1 view .LVU217
+ 307:Src/cantp.c   ****     // 更新全局变量，记录剩余要接收的字节数
+ 821              		.loc 1 307 43 is_stmt 0 view .LVU218
+ 822 0002 0C78     		ldrb	r4, [r1]	@ zero_extendqisi2
+ 307:Src/cantp.c   ****     // 更新全局变量，记录剩余要接收的字节数
+ 823              		.loc 1 307 14 view .LVU219
+ 824 0004 04F00F04 		and	r4, r4, #15
+ 825              	.LVL58:
+ 309:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的字节数
+ 826              		.loc 1 309 5 is_stmt 1 view .LVU220
+ 309:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的字节数
+ 827              		.loc 1 309 37 is_stmt 0 view .LVU221
+ 828 0008 0A4B     		ldr	r3, .L64
+ 829 000a 1C60     		str	r4, [r3]
+ 311:Src/cantp.c   **** 
+ 830              		.loc 1 311 5 is_stmt 1 view .LVU222
+ 311:Src/cantp.c   **** 
+ 831              		.loc 1 311 28 is_stmt 0 view .LVU223
+ 832 000c 1A68     		ldr	r2, [r3]
+ 833 000e 0A4B     		ldr	r3, .L64+4
+ 834 0010 1A60     		str	r2, [r3]
+ 314:Src/cantp.c   ****     // 将数据从接收到的 CAN 帧中复制到解码后的数据结构中
+ 835              		.loc 1 314 5 is_stmt 1 view .LVU224
+ 316:Src/cantp.c   ****         DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 836              		.loc 1 316 5 view .LVU225
+ 837              	.LVL59:
+ 316:Src/cantp.c   ****         DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 838              		.loc 1 316 12 is_stmt 0 view .LVU226
+ 839 0012 0023     		movs	r3, #0
+ 316:Src/cantp.c   ****         DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 840              		.loc 1 316 5 view .LVU227
+ 841 0014 06E0     		b	.L61
+ 842              	.LVL60:
+ 843              	.L62:
+ 317:Src/cantp.c   ****     }
+ 844              		.loc 1 317 9 is_stmt 1 discriminator 3 view .LVU228
+ 317:Src/cantp.c   ****     }
+ 845              		.loc 1 317 52 is_stmt 0 discriminator 3 view .LVU229
+ 846 0016 5A1C     		adds	r2, r3, #1
+ 317:Src/cantp.c   ****     }
+ 847              		.loc 1 317 50 discriminator 3 view .LVU230
+ 848 0018 11F802C0 		ldrb	ip, [r1, r2]	@ zero_extendqisi2
+ 317:Src/cantp.c   ****     }
+ 849              		.loc 1 317 32 discriminator 3 view .LVU231
+ 850 001c 0748     		ldr	r0, .L64+8
+ 851 001e 00F803C0 		strb	ip, [r0, r3]
+ 316:Src/cantp.c   ****         DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 24
+
+
+ 852              		.loc 1 316 33 is_stmt 1 discriminator 3 view .LVU232
+ 853              	.LVL61:
+ 316:Src/cantp.c   ****         DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 854              		.loc 1 316 34 is_stmt 0 discriminator 3 view .LVU233
+ 855 0022 1346     		mov	r3, r2
+ 856              	.LVL62:
+ 857              	.L61:
+ 316:Src/cantp.c   ****         DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 858              		.loc 1 316 17 is_stmt 1 discriminator 1 view .LVU234
+ 316:Src/cantp.c   ****         DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 859              		.loc 1 316 5 is_stmt 0 discriminator 1 view .LVU235
+ 860 0024 A342     		cmp	r3, r4
+ 861 0026 F6D3     		bcc	.L62
+ 321:Src/cantp.c   **** 
+ 862              		.loc 1 321 5 is_stmt 1 view .LVU236
+ 321:Src/cantp.c   **** 
+ 863              		.loc 1 321 27 is_stmt 0 view .LVU237
+ 864 0028 0448     		ldr	r0, .L64+8
+ 865 002a 8460     		str	r4, [r0, #8]
+ 324:Src/cantp.c   **** }
+ 866              		.loc 1 324 5 is_stmt 1 view .LVU238
+ 867 002c FFF7FEFF 		bl	CanTp_ConnectData
+ 868              	.LVL63:
+ 325:Src/cantp.c   **** 
+ 869              		.loc 1 325 1 is_stmt 0 view .LVU239
+ 870 0030 10BD     		pop	{r4, pc}
+ 871              	.LVL64:
+ 872              	.L65:
+ 325:Src/cantp.c   **** 
+ 873              		.loc 1 325 1 view .LVU240
+ 874 0032 00BF     		.align	2
+ 875              	.L64:
+ 876 0034 00000000 		.word	.LANCHOR17
+ 877 0038 00100000 		.word	CompletePduInfo+4096
+ 878 003c 00000000 		.word	.LANCHOR18
+ 879              		.cfi_endproc
+ 880              	.LFE80:
+ 882              		.section	.text.CanTp_decodeFirstFrame,"ax",%progbits
+ 883              		.align	1
+ 884              		.global	CanTp_decodeFirstFrame
+ 885              		.syntax unified
+ 886              		.thumb
+ 887              		.thumb_func
+ 889              	CanTp_decodeFirstFrame:
+ 890              	.LVL65:
+ 891              	.LFB81:
+ 327:Src/cantp.c   ****     // 从首帧的第一个字节的低 4 位和第二个字节提取数据长度
+ 892              		.loc 1 327 70 is_stmt 1 view -0
+ 893              		.cfi_startproc
+ 894              		@ args = 0, pretend = 0, frame = 0
+ 895              		@ frame_needed = 0, uses_anonymous_args = 0
+ 327:Src/cantp.c   ****     // 从首帧的第一个字节的低 4 位和第二个字节提取数据长度
+ 896              		.loc 1 327 70 is_stmt 0 view .LVU242
+ 897 0000 08B5     		push	{r3, lr}
+ 898              	.LCFI9:
+ 899              		.cfi_def_cfa_offset 8
+ 900              		.cfi_offset 3, -8
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 25
+
+
+ 901              		.cfi_offset 14, -4
+ 329:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的总字节数
+ 902              		.loc 1 329 5 is_stmt 1 view .LVU243
+ 329:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的总字节数
+ 903              		.loc 1 329 57 is_stmt 0 view .LVU244
+ 904 0002 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 329:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的总字节数
+ 905              		.loc 1 329 69 view .LVU245
+ 906 0004 1B02     		lsls	r3, r3, #8
+ 907 0006 03F47063 		and	r3, r3, #3840
+ 329:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的总字节数
+ 908              		.loc 1 329 93 view .LVU246
+ 909 000a 4A78     		ldrb	r2, [r1, #1]	@ zero_extendqisi2
+ 329:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的总字节数
+ 910              		.loc 1 329 75 view .LVU247
+ 911 000c 1343     		orrs	r3, r3, r2
+ 329:Src/cantp.c   ****     // 设置 CompletePduInfo 结构体中的长度为接收到的总字节数
+ 912              		.loc 1 329 37 view .LVU248
+ 913 000e 0B4A     		ldr	r2, .L70
+ 914 0010 1360     		str	r3, [r2]
+ 331:Src/cantp.c   ****     // 首帧中实际有效负载数据长度为 6 个字节
+ 915              		.loc 1 331 5 is_stmt 1 view .LVU249
+ 331:Src/cantp.c   ****     // 首帧中实际有效负载数据长度为 6 个字节
+ 916              		.loc 1 331 28 is_stmt 0 view .LVU250
+ 917 0012 1268     		ldr	r2, [r2]
+ 918 0014 0A4B     		ldr	r3, .L70+4
+ 919 0016 1A60     		str	r2, [r3]
+ 333:Src/cantp.c   **** 
+ 920              		.loc 1 333 5 is_stmt 1 view .LVU251
+ 333:Src/cantp.c   **** 
+ 921              		.loc 1 333 27 is_stmt 0 view .LVU252
+ 922 0018 0A4B     		ldr	r3, .L70+8
+ 923 001a 0622     		movs	r2, #6
+ 924 001c 9A60     		str	r2, [r3, #8]
+ 336:Src/cantp.c   **** 
+ 925              		.loc 1 336 5 is_stmt 1 view .LVU253
+ 926              	.LVL66:
+ 339:Src/cantp.c   ****         DecodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter + 2];
+ 927              		.loc 1 339 5 view .LVU254
+ 339:Src/cantp.c   ****         DecodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter + 2];
+ 928              		.loc 1 339 18 is_stmt 0 view .LVU255
+ 929 001e 0023     		movs	r3, #0
+ 339:Src/cantp.c   ****         DecodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter + 2];
+ 930              		.loc 1 339 5 view .LVU256
+ 931 0020 05E0     		b	.L67
+ 932              	.LVL67:
+ 933              	.L68:
+ 340:Src/cantp.c   ****     }
+ 934              		.loc 1 340 9 is_stmt 1 discriminator 3 view .LVU257
+ 340:Src/cantp.c   ****     }
+ 935              		.loc 1 340 65 is_stmt 0 discriminator 3 view .LVU258
+ 936 0022 9A1C     		adds	r2, r3, #2
+ 340:Src/cantp.c   ****     }
+ 937              		.loc 1 340 56 discriminator 3 view .LVU259
+ 938 0024 885C     		ldrb	r0, [r1, r2]	@ zero_extendqisi2
+ 340:Src/cantp.c   ****     }
+ 939              		.loc 1 340 38 discriminator 3 view .LVU260
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 26
+
+
+ 940 0026 074A     		ldr	r2, .L70+8
+ 941 0028 D054     		strb	r0, [r2, r3]
+ 339:Src/cantp.c   ****         DecodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter + 2];
+ 942              		.loc 1 339 36 is_stmt 1 discriminator 3 view .LVU261
+ 339:Src/cantp.c   ****         DecodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter + 2];
+ 943              		.loc 1 339 43 is_stmt 0 discriminator 3 view .LVU262
+ 944 002a 0133     		adds	r3, r3, #1
+ 945              	.LVL68:
+ 339:Src/cantp.c   ****         DecodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter + 2];
+ 946              		.loc 1 339 43 discriminator 3 view .LVU263
+ 947 002c DBB2     		uxtb	r3, r3
+ 948              	.LVL69:
+ 949              	.L67:
+ 339:Src/cantp.c   ****         DecodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter + 2];
+ 950              		.loc 1 339 23 is_stmt 1 discriminator 1 view .LVU264
+ 339:Src/cantp.c   ****         DecodedPduInfo.Data[Counter] = PduInfoPtr->Data[Counter + 2];
+ 951              		.loc 1 339 5 is_stmt 0 discriminator 1 view .LVU265
+ 952 002e 072B     		cmp	r3, #7
+ 953 0030 F7D9     		bls	.L68
+ 344:Src/cantp.c   **** }
+ 954              		.loc 1 344 5 is_stmt 1 view .LVU266
+ 955 0032 0448     		ldr	r0, .L70+8
+ 956 0034 FFF7FEFF 		bl	CanTp_ConnectData
+ 957              	.LVL70:
+ 345:Src/cantp.c   **** 
+ 958              		.loc 1 345 1 is_stmt 0 view .LVU267
+ 959 0038 08BD     		pop	{r3, pc}
+ 960              	.L71:
+ 961 003a 00BF     		.align	2
+ 962              	.L70:
+ 963 003c 00000000 		.word	.LANCHOR17
+ 964 0040 00100000 		.word	CompletePduInfo+4096
+ 965 0044 00000000 		.word	.LANCHOR18
+ 966              		.cfi_endproc
+ 967              	.LFE81:
+ 969              		.section	.text.CanTp_decodeConsecutiveFrame,"ax",%progbits
+ 970              		.align	1
+ 971              		.global	CanTp_decodeConsecutiveFrame
+ 972              		.syntax unified
+ 973              		.thumb
+ 974              		.thumb_func
+ 976              	CanTp_decodeConsecutiveFrame:
+ 977              	.LVL71:
+ 978              	.LFB82:
+ 347:Src/cantp.c   ****     // 每收到一个连续帧，就减少剩余要接收的帧数
+ 979              		.loc 1 347 76 is_stmt 1 view -0
+ 980              		.cfi_startproc
+ 981              		@ args = 0, pretend = 0, frame = 0
+ 982              		@ frame_needed = 0, uses_anonymous_args = 0
+ 347:Src/cantp.c   ****     // 每收到一个连续帧，就减少剩余要接收的帧数
+ 983              		.loc 1 347 76 is_stmt 0 view .LVU269
+ 984 0000 10B5     		push	{r4, lr}
+ 985              	.LCFI10:
+ 986              		.cfi_def_cfa_offset 8
+ 987              		.cfi_offset 4, -8
+ 988              		.cfi_offset 14, -4
+ 349:Src/cantp.c   ****     // 初始化一个循环计数变量 i
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 27
+
+
+ 989              		.loc 1 349 5 is_stmt 1 view .LVU270
+ 349:Src/cantp.c   ****     // 初始化一个循环计数变量 i
+ 990              		.loc 1 349 39 is_stmt 0 view .LVU271
+ 991 0002 194A     		ldr	r2, .L83
+ 992 0004 1368     		ldr	r3, [r2]
+ 993 0006 013B     		subs	r3, r3, #1
+ 994 0008 1360     		str	r3, [r2]
+ 351:Src/cantp.c   ****     // 设置解码后的帧长度为 7 字节或剩余字节数中的较小者
+ 995              		.loc 1 351 5 is_stmt 1 view .LVU272
+ 996              	.LVL72:
+ 353:Src/cantp.c   **** 
+ 997              		.loc 1 353 5 view .LVU273
+ 353:Src/cantp.c   **** 
+ 998              		.loc 1 353 61 is_stmt 0 view .LVU274
+ 999 000a 184B     		ldr	r3, .L83+4
+ 1000 000c 1B68     		ldr	r3, [r3]
+ 353:Src/cantp.c   **** 
+ 1001              		.loc 1 353 69 view .LVU275
+ 1002 000e 072B     		cmp	r3, #7
+ 1003 0010 0CD8     		bhi	.L78
+ 353:Src/cantp.c   **** 
+ 1004              		.loc 1 353 69 discriminator 1 view .LVU276
+ 1005 0012 164B     		ldr	r3, .L83+4
+ 1006 0014 1C68     		ldr	r4, [r3]
+ 1007              	.L73:
+ 353:Src/cantp.c   **** 
+ 1008              		.loc 1 353 27 discriminator 4 view .LVU277
+ 1009 0016 164B     		ldr	r3, .L83+8
+ 1010 0018 9C60     		str	r4, [r3, #8]
+ 356:Src/cantp.c   ****         // 将数据从接收到的 CAN 帧中复制到解码后的数据结构中
+ 1011              		.loc 1 356 5 is_stmt 1 discriminator 4 view .LVU278
+ 356:Src/cantp.c   ****         // 将数据从接收到的 CAN 帧中复制到解码后的数据结构中
+ 1012              		.loc 1 356 18 is_stmt 0 discriminator 4 view .LVU279
+ 1013 001a 164B     		ldr	r3, .L83+12
+ 1014 001c 1A78     		ldrb	r2, [r3]	@ zero_extendqisi2
+ 1015 001e D2B2     		uxtb	r2, r2
+ 356:Src/cantp.c   ****         // 将数据从接收到的 CAN 帧中复制到解码后的数据结构中
+ 1016              		.loc 1 356 38 discriminator 4 view .LVU280
+ 1017 0020 0B78     		ldrb	r3, [r1]	@ zero_extendqisi2
+ 356:Src/cantp.c   ****         // 将数据从接收到的 CAN 帧中复制到解码后的数据结构中
+ 1018              		.loc 1 356 8 discriminator 4 view .LVU281
+ 1019 0022 03F00F03 		and	r3, r3, #15
+ 1020 0026 9A42     		cmp	r2, r3
+ 1021 0028 1AD0     		beq	.L82
+ 1022              	.LVL73:
+ 1023              	.L72:
+ 368:Src/cantp.c   **** 
+ 1024              		.loc 1 368 1 view .LVU282
+ 1025 002a 10BD     		pop	{r4, pc}
+ 1026              	.LVL74:
+ 1027              	.L78:
+ 353:Src/cantp.c   **** 
+ 1028              		.loc 1 353 69 view .LVU283
+ 1029 002c 0724     		movs	r4, #7
+ 1030 002e F2E7     		b	.L73
+ 1031              	.LVL75:
+ 1032              	.L76:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 28
+
+
+ 359:Src/cantp.c   ****         }
+ 1033              		.loc 1 359 13 is_stmt 1 discriminator 3 view .LVU284
+ 359:Src/cantp.c   ****         }
+ 1034              		.loc 1 359 56 is_stmt 0 discriminator 3 view .LVU285
+ 1035 0030 5A1C     		adds	r2, r3, #1
+ 359:Src/cantp.c   ****         }
+ 1036              		.loc 1 359 54 discriminator 3 view .LVU286
+ 1037 0032 11F802C0 		ldrb	ip, [r1, r2]	@ zero_extendqisi2
+ 359:Src/cantp.c   ****         }
+ 1038              		.loc 1 359 36 discriminator 3 view .LVU287
+ 1039 0036 0E48     		ldr	r0, .L83+8
+ 1040 0038 00F803C0 		strb	ip, [r0, r3]
+ 358:Src/cantp.c   ****             DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 1041              		.loc 1 358 48 is_stmt 1 discriminator 3 view .LVU288
+ 358:Src/cantp.c   ****             DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 1042              		.loc 1 358 49 is_stmt 0 discriminator 3 view .LVU289
+ 1043 003c D3B2     		uxtb	r3, r2
+ 1044              	.LVL76:
+ 1045              	.L74:
+ 358:Src/cantp.c   ****             DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 1046              		.loc 1 358 21 is_stmt 1 discriminator 1 view .LVU290
+ 358:Src/cantp.c   ****             DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 1047              		.loc 1 358 9 is_stmt 0 discriminator 1 view .LVU291
+ 1048 003e A342     		cmp	r3, r4
+ 1049 0040 F6D3     		bcc	.L76
+ 363:Src/cantp.c   **** 
+ 1050              		.loc 1 363 9 is_stmt 1 view .LVU292
+ 363:Src/cantp.c   **** 
+ 1051              		.loc 1 363 33 is_stmt 0 view .LVU293
+ 1052 0042 0C4B     		ldr	r3, .L83+12
+ 1053              	.LVL77:
+ 363:Src/cantp.c   **** 
+ 1054              		.loc 1 363 33 view .LVU294
+ 1055 0044 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 1056 0046 DBB2     		uxtb	r3, r3
+ 363:Src/cantp.c   **** 
+ 1057              		.loc 1 363 18 view .LVU295
+ 1058 0048 0E2B     		cmp	r3, #14
+ 1059 004a 0BD8     		bhi	.L80
+ 363:Src/cantp.c   **** 
+ 1060              		.loc 1 363 54 discriminator 1 view .LVU296
+ 1061 004c 094B     		ldr	r3, .L83+12
+ 1062 004e 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 363:Src/cantp.c   **** 
+ 1063              		.loc 1 363 18 discriminator 1 view .LVU297
+ 1064 0050 0133     		adds	r3, r3, #1
+ 1065 0052 DBB2     		uxtb	r3, r3
+ 1066              	.L77:
+ 363:Src/cantp.c   **** 
+ 1067              		.loc 1 363 18 discriminator 4 view .LVU298
+ 1068 0054 074A     		ldr	r2, .L83+12
+ 1069 0056 1370     		strb	r3, [r2]
+ 366:Src/cantp.c   ****     }
+ 1070              		.loc 1 366 9 is_stmt 1 discriminator 4 view .LVU299
+ 1071 0058 0548     		ldr	r0, .L83+8
+ 1072 005a FFF7FEFF 		bl	CanTp_ConnectData
+ 1073              	.LVL78:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 29
+
+
+ 368:Src/cantp.c   **** 
+ 1074              		.loc 1 368 1 is_stmt 0 discriminator 4 view .LVU300
+ 1075 005e E4E7     		b	.L72
+ 1076              	.LVL79:
+ 1077              	.L82:
+ 358:Src/cantp.c   ****             DecodedPduInfo.Data[i] = PduInfoPtr->Data[i+1];
+ 1078              		.loc 1 358 16 view .LVU301
+ 1079 0060 0023     		movs	r3, #0
+ 1080 0062 ECE7     		b	.L74
+ 1081              	.LVL80:
+ 1082              	.L80:
+ 363:Src/cantp.c   **** 
+ 1083              		.loc 1 363 18 view .LVU302
+ 1084 0064 0023     		movs	r3, #0
+ 1085 0066 F5E7     		b	.L77
+ 1086              	.L84:
+ 1087              		.align	2
+ 1088              	.L83:
+ 1089 0068 00000000 		.word	.LANCHOR13
+ 1090 006c 00000000 		.word	.LANCHOR17
+ 1091 0070 00000000 		.word	.LANCHOR18
+ 1092 0074 00000000 		.word	.LANCHOR9
+ 1093              		.cfi_endproc
+ 1094              	.LFE82:
+ 1096              		.section	.text.CanTp_MainFunction,"ax",%progbits
+ 1097              		.align	1
+ 1098              		.global	CanTp_MainFunction
+ 1099              		.syntax unified
+ 1100              		.thumb
+ 1101              		.thumb_func
+ 1103              	CanTp_MainFunction:
+ 1104              	.LFB71:
+  54:Src/cantp.c   **** 	while(1){  // 无限循环，不断轮询处理 CAN TP 的接收和发送操作。
+ 1105              		.loc 1 54 26 is_stmt 1 view -0
+ 1106              		.cfi_startproc
+ 1107              		@ args = 0, pretend = 0, frame = 0
+ 1108              		@ frame_needed = 0, uses_anonymous_args = 0
+ 1109 0000 70B5     		push	{r4, r5, r6, lr}
+ 1110              	.LCFI11:
+ 1111              		.cfi_def_cfa_offset 16
+ 1112              		.cfi_offset 4, -16
+ 1113              		.cfi_offset 5, -12
+ 1114              		.cfi_offset 6, -8
+ 1115              		.cfi_offset 14, -4
+ 1116 0002 78E0     		b	.L106
+ 1117              	.L88:
+ 1118              	.LBB3:
+  61:Src/cantp.c   **** 			}
+ 1119              		.loc 1 61 5 discriminator 1 view .LVU304
+  61:Src/cantp.c   **** 			}
+ 1120              		.loc 1 61 13 discriminator 1 view .LVU305
+  61:Src/cantp.c   **** 			}
+ 1121              		.loc 1 61 10 discriminator 1 view .LVU306
+ 1122 0004 FEE7     		b	.L88
+ 1123              	.LVL81:
+ 1124              	.L94:
+  70:Src/cantp.c   **** 				break;
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 30
+
+
+ 1125              		.loc 1 70 5 view .LVU307
+ 1126 0006 654B     		ldr	r3, .L111
+ 1127 0008 1868     		ldr	r0, [r3]
+ 1128              	.LVL82:
+  70:Src/cantp.c   **** 				break;
+ 1129              		.loc 1 70 5 is_stmt 0 view .LVU308
+ 1130 000a 2946     		mov	r1, r5
+ 1131 000c FFF7FEFF 		bl	CanTp_decodeSingleFrame
+ 1132              	.LVL83:
+  71:Src/cantp.c   **** 			case First_Frame:  // 如果帧类型是首帧。
+ 1133              		.loc 1 71 5 is_stmt 1 view .LVU309
+ 1134              	.L89:
+  94:Src/cantp.c   **** 
+ 1135              		.loc 1 94 4 view .LVU310
+  94:Src/cantp.c   **** 
+ 1136              		.loc 1 94 6 is_stmt 0 view .LVU311
+ 1137 0010 032C     		cmp	r4, #3
+ 1138 0012 6DD0     		beq	.L95
+  97:Src/cantp.c   **** 				if(App_Callback != NULL){  // 如果应用层回调函数不为空。
+ 1139              		.loc 1 97 9 is_stmt 1 view .LVU312
+  97:Src/cantp.c   **** 				if(App_Callback != NULL){  // 如果应用层回调函数不为空。
+ 1140              		.loc 1 97 44 is_stmt 0 view .LVU313
+ 1141 0014 624B     		ldr	r3, .L111+4
+ 1142 0016 1B68     		ldr	r3, [r3]
+  97:Src/cantp.c   **** 				if(App_Callback != NULL){  // 如果应用层回调函数不为空。
+ 1143              		.loc 1 97 11 view .LVU314
+ 1144 0018 002B     		cmp	r3, #0
+ 1145 001a 69D1     		bne	.L95
+  98:Src/cantp.c   **** 					currentIndex = 0;  // 重置索引。
+ 1146              		.loc 1 98 5 is_stmt 1 view .LVU315
+  98:Src/cantp.c   **** 					currentIndex = 0;  // 重置索引。
+ 1147              		.loc 1 98 21 is_stmt 0 view .LVU316
+ 1148 001c 614B     		ldr	r3, .L111+8
+ 1149 001e 1B68     		ldr	r3, [r3]
+  98:Src/cantp.c   **** 					currentIndex = 0;  // 重置索引。
+ 1150              		.loc 1 98 7 view .LVU317
+ 1151 0020 002B     		cmp	r3, #0
+ 1152 0022 65D0     		beq	.L95
+  99:Src/cantp.c   **** 					App_Callback(GlobalRxPduId, &CompletePduInfo);  // 调用应用层回调函数，处理完整�
+ 1153              		.loc 1 99 6 is_stmt 1 view .LVU318
+  99:Src/cantp.c   **** 					App_Callback(GlobalRxPduId, &CompletePduInfo);  // 调用应用层回调函数，处理完整�
+ 1154              		.loc 1 99 19 is_stmt 0 view .LVU319
+ 1155 0024 604A     		ldr	r2, .L111+12
+ 1156 0026 0021     		movs	r1, #0
+ 1157 0028 1180     		strh	r1, [r2]	@ movhi
+ 100:Src/cantp.c   **** 				}
+ 1158              		.loc 1 100 6 is_stmt 1 view .LVU320
+ 1159 002a 5C4A     		ldr	r2, .L111
+ 1160 002c 1068     		ldr	r0, [r2]
+ 1161 002e 5F49     		ldr	r1, .L111+16
+ 1162 0030 9847     		blx	r3
+ 1163              	.LVL84:
+ 1164 0032 5DE0     		b	.L95
+ 1165              	.LVL85:
+ 1166              	.L93:
+  73:Src/cantp.c   **** 				expectedFrameState = FlowControl_Frame_State;  // 设置期望的下一个帧状态为流控制
+ 1167              		.loc 1 73 5 view .LVU321
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 31
+
+
+ 1168 0034 594E     		ldr	r6, .L111
+ 1169 0036 3068     		ldr	r0, [r6]
+ 1170              	.LVL86:
+  73:Src/cantp.c   **** 				expectedFrameState = FlowControl_Frame_State;  // 设置期望的下一个帧状态为流控制
+ 1171              		.loc 1 73 5 is_stmt 0 view .LVU322
+ 1172 0038 2946     		mov	r1, r5
+ 1173 003a FFF7FEFF 		bl	CanTp_decodeFirstFrame
+ 1174              	.LVL87:
+  74:Src/cantp.c   **** 				CanTp_Transmit(GlobalRxPduId, (PduInfoType*) GlobalRxPduInfoPtr);  // 发送流控制帧，以�
+ 1175              		.loc 1 74 5 is_stmt 1 view .LVU323
+  74:Src/cantp.c   **** 				CanTp_Transmit(GlobalRxPduId, (PduInfoType*) GlobalRxPduInfoPtr);  // 发送流控制帧，以�
+ 1176              		.loc 1 74 24 is_stmt 0 view .LVU324
+ 1177 003e 5C4B     		ldr	r3, .L111+20
+ 1178 0040 0222     		movs	r2, #2
+ 1179 0042 1A70     		strb	r2, [r3]
+  75:Src/cantp.c   **** 				break;
+ 1180              		.loc 1 75 5 is_stmt 1 view .LVU325
+ 1181 0044 3068     		ldr	r0, [r6]
+ 1182 0046 5B4B     		ldr	r3, .L111+24
+ 1183 0048 1968     		ldr	r1, [r3]
+ 1184 004a FFF7FEFF 		bl	CanTp_Transmit
+ 1185              	.LVL88:
+  76:Src/cantp.c   **** 			case Consecutive_Frame:  // 如果帧类型是连续帧。
+ 1186              		.loc 1 76 5 view .LVU326
+ 1187 004e DFE7     		b	.L89
+ 1188              	.LVL89:
+ 1189              	.L92:
+  78:Src/cantp.c   **** 				if(numberOfConsecutiveFramesToReceive == 0 && numberOfRemainingBytesToReceive > 0){
+ 1190              		.loc 1 78 5 view .LVU327
+ 1191 0050 524B     		ldr	r3, .L111
+ 1192 0052 1868     		ldr	r0, [r3]
+ 1193              	.LVL90:
+  78:Src/cantp.c   **** 				if(numberOfConsecutiveFramesToReceive == 0 && numberOfRemainingBytesToReceive > 0){
+ 1194              		.loc 1 78 5 is_stmt 0 view .LVU328
+ 1195 0054 2946     		mov	r1, r5
+ 1196 0056 FFF7FEFF 		bl	CanTp_decodeConsecutiveFrame
+ 1197              	.LVL91:
+  79:Src/cantp.c   **** 					// 如果接收到的连续帧数量为 0 且还有剩余字节未接收，发送流控制帧�
+ 1198              		.loc 1 79 5 is_stmt 1 view .LVU329
+  79:Src/cantp.c   **** 					// 如果接收到的连续帧数量为 0 且还有剩余字节未接收，发送流控制帧�
+ 1199              		.loc 1 79 43 is_stmt 0 view .LVU330
+ 1200 005a 574B     		ldr	r3, .L111+28
+ 1201 005c 1B68     		ldr	r3, [r3]
+  79:Src/cantp.c   **** 					// 如果接收到的连续帧数量为 0 且还有剩余字节未接收，发送流控制帧�
+ 1202              		.loc 1 79 7 view .LVU331
+ 1203 005e 002B     		cmp	r3, #0
+ 1204 0060 D6D1     		bne	.L89
+  79:Src/cantp.c   **** 					// 如果接收到的连续帧数量为 0 且还有剩余字节未接收，发送流控制帧�
+ 1205              		.loc 1 79 83 discriminator 1 view .LVU332
+ 1206 0062 4F4B     		ldr	r3, .L111+4
+ 1207 0064 1B68     		ldr	r3, [r3]
+  79:Src/cantp.c   **** 					// 如果接收到的连续帧数量为 0 且还有剩余字节未接收，发送流控制帧�
+ 1208              		.loc 1 79 48 discriminator 1 view .LVU333
+ 1209 0066 002B     		cmp	r3, #0
+ 1210 0068 D2D0     		beq	.L89
+  81:Src/cantp.c   **** 					CanTp_Transmit(GlobalRxPduId, (PduInfoType*) GlobalRxPduInfoPtr);  // 发送流控制帧。
+ 1211              		.loc 1 81 6 is_stmt 1 view .LVU334
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 32
+
+
+  81:Src/cantp.c   **** 					CanTp_Transmit(GlobalRxPduId, (PduInfoType*) GlobalRxPduInfoPtr);  // 发送流控制帧。
+ 1212              		.loc 1 81 25 is_stmt 0 view .LVU335
+ 1213 006a 514B     		ldr	r3, .L111+20
+ 1214 006c 0222     		movs	r2, #2
+ 1215 006e 1A70     		strb	r2, [r3]
+  82:Src/cantp.c   **** 				}
+ 1216              		.loc 1 82 6 is_stmt 1 view .LVU336
+ 1217 0070 4A4B     		ldr	r3, .L111
+ 1218 0072 1868     		ldr	r0, [r3]
+ 1219 0074 4F4B     		ldr	r3, .L111+24
+ 1220 0076 1968     		ldr	r1, [r3]
+ 1221 0078 FFF7FEFF 		bl	CanTp_Transmit
+ 1222              	.LVL92:
+ 1223 007c C8E7     		b	.L89
+ 1224              	.LVL93:
+ 1225              	.L90:
+  87:Src/cantp.c   **** 				break;
+ 1226              		.loc 1 87 5 view .LVU337
+ 1227 007e 474B     		ldr	r3, .L111
+ 1228 0080 1868     		ldr	r0, [r3]
+ 1229              	.LVL94:
+  87:Src/cantp.c   **** 				break;
+ 1230              		.loc 1 87 5 is_stmt 0 view .LVU338
+ 1231 0082 2946     		mov	r1, r5
+ 1232 0084 FFF7FEFF 		bl	CanTp_decodeFlowControlFrame
+ 1233              	.LVL95:
+  88:Src/cantp.c   **** 			default:
+ 1234              		.loc 1 88 5 is_stmt 1 view .LVU339
+ 1235 0088 C2E7     		b	.L89
+ 1236              	.L86:
+  88:Src/cantp.c   **** 			default:
+ 1237              		.loc 1 88 5 is_stmt 0 view .LVU340
+ 1238              	.LBE3:
+ 104:Src/cantp.c   **** 			// 如果全局传输 PDU ID 不等于 0，则停止程序运行。
+ 1239              		.loc 1 104 8 is_stmt 1 view .LVU341
+ 104:Src/cantp.c   **** 			// 如果全局传输 PDU ID 不等于 0，则停止程序运行。
+ 1240              		.loc 1 104 11 is_stmt 0 view .LVU342
+ 1241 008a 4C4B     		ldr	r3, .L111+32
+ 1242 008c 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 1243 008e 5BB2     		sxtb	r3, r3
+ 104:Src/cantp.c   **** 			// 如果全局传输 PDU ID 不等于 0，则停止程序运行。
+ 1244              		.loc 1 104 10 view .LVU343
+ 1245 0090 002B     		cmp	r3, #0
+ 1246 0092 2DD0     		beq	.L95
+ 1247              	.LBB4:
+ 106:Src/cantp.c   **** 				while(1);  // 进入死循环，通常用作错误处理或调试目的。
+ 1248              		.loc 1 106 4 is_stmt 1 view .LVU344
+ 106:Src/cantp.c   **** 				while(1);  // 进入死循环，通常用作错误处理或调试目的。
+ 1249              		.loc 1 106 21 is_stmt 0 view .LVU345
+ 1250 0094 4A4B     		ldr	r3, .L111+36
+ 1251 0096 1B68     		ldr	r3, [r3]
+ 106:Src/cantp.c   **** 				while(1);  // 进入死循环，通常用作错误处理或调试目的。
+ 1252              		.loc 1 106 6 view .LVU346
+ 1253 0098 ABB9     		cbnz	r3, .L97
+ 110:Src/cantp.c   **** 			if(numberOfRemainingBytesToSend == 0 && expectedFrameState == Any_State){
+ 1254              		.loc 1 110 4 is_stmt 1 view .LVU347
+ 1255              	.LVL96:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 33
+
+
+ 111:Src/cantp.c   **** 				// 如果没有剩余字节需要发送且当前期望的帧状态为任意状态。
+ 1256              		.loc 1 111 4 view .LVU348
+ 111:Src/cantp.c   **** 				// 如果没有剩余字节需要发送且当前期望的帧状态为任意状态。
+ 1257              		.loc 1 111 36 is_stmt 0 view .LVU349
+ 1258 009a 4A4B     		ldr	r3, .L111+40
+ 1259 009c 1B68     		ldr	r3, [r3]
+ 111:Src/cantp.c   **** 				// 如果没有剩余字节需要发送且当前期望的帧状态为任意状态。
+ 1260              		.loc 1 111 6 view .LVU350
+ 1261 009e 9BB9     		cbnz	r3, .L107
+ 111:Src/cantp.c   **** 				// 如果没有剩余字节需要发送且当前期望的帧状态为任意状态。
+ 1262              		.loc 1 111 63 discriminator 1 view .LVU351
+ 1263 00a0 434B     		ldr	r3, .L111+20
+ 1264 00a2 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 111:Src/cantp.c   **** 				// 如果没有剩余字节需要发送且当前期望的帧状态为任意状态。
+ 1265              		.loc 1 111 41 discriminator 1 view .LVU352
+ 1266 00a4 002B     		cmp	r3, #0
+ 1267 00a6 47D1     		bne	.L108
+ 113:Src/cantp.c   **** 				CompletePduInfo.Length = numberOfRemainingBytesToSend;  // 更新完整 PDU 的长度。
+ 1268              		.loc 1 113 5 is_stmt 1 view .LVU353
+ 113:Src/cantp.c   **** 				CompletePduInfo.Length = numberOfRemainingBytesToSend;  // 更新完整 PDU 的长度。
+ 1269              		.loc 1 113 54 is_stmt 0 view .LVU354
+ 1270 00a8 474A     		ldr	r2, .L111+44
+ 1271 00aa 1268     		ldr	r2, [r2]
+ 1272 00ac 02F58052 		add	r2, r2, #4096
+ 1273 00b0 1068     		ldr	r0, [r2]
+ 113:Src/cantp.c   **** 				CompletePduInfo.Length = numberOfRemainingBytesToSend;  // 更新完整 PDU 的长度。
+ 1274              		.loc 1 113 34 view .LVU355
+ 1275 00b2 4449     		ldr	r1, .L111+40
+ 1276 00b4 0860     		str	r0, [r1]
+ 114:Src/cantp.c   **** 				if(GlobalTxPduInfoPtr->Length < 8){
+ 1277              		.loc 1 114 5 is_stmt 1 view .LVU356
+ 114:Src/cantp.c   **** 				if(GlobalTxPduInfoPtr->Length < 8){
+ 1278              		.loc 1 114 28 is_stmt 0 view .LVU357
+ 1279 00b6 0868     		ldr	r0, [r1]
+ 1280 00b8 4449     		ldr	r1, .L111+48
+ 1281 00ba 0860     		str	r0, [r1]
+ 115:Src/cantp.c   **** 					frame_type = Single_Frame;  // 如果数据长度小于 8 字节，设置帧类型为单帧。
+ 1282              		.loc 1 115 5 is_stmt 1 view .LVU358
+ 115:Src/cantp.c   **** 					frame_type = Single_Frame;  // 如果数据长度小于 8 字节，设置帧类型为单帧。
+ 1283              		.loc 1 115 26 is_stmt 0 view .LVU359
+ 1284 00bc 1268     		ldr	r2, [r2]
+ 115:Src/cantp.c   **** 					frame_type = Single_Frame;  // 如果数据长度小于 8 字节，设置帧类型为单帧。
+ 1285              		.loc 1 115 7 view .LVU360
+ 1286 00be 072A     		cmp	r2, #7
+ 1287 00c0 03D9     		bls	.L98
+ 119:Src/cantp.c   **** 				}
+ 1288              		.loc 1 119 17 view .LVU361
+ 1289 00c2 0123     		movs	r3, #1
+ 1290 00c4 01E0     		b	.L98
+ 1291              	.LVL97:
+ 1292              	.L97:
+ 107:Src/cantp.c   **** 			}
+ 1293              		.loc 1 107 5 is_stmt 1 discriminator 3 view .LVU362
+ 107:Src/cantp.c   **** 			}
+ 1294              		.loc 1 107 13 discriminator 3 view .LVU363
+ 107:Src/cantp.c   **** 			}
+ 1295              		.loc 1 107 10 discriminator 3 view .LVU364
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 34
+
+
+ 1296 00c6 FEE7     		b	.L97
+ 1297              	.LVL98:
+ 1298              	.L107:
+ 110:Src/cantp.c   **** 			if(numberOfRemainingBytesToSend == 0 && expectedFrameState == Any_State){
+ 1299              		.loc 1 110 15 is_stmt 0 view .LVU365
+ 1300 00c8 0423     		movs	r3, #4
+ 1301              	.L98:
+ 1302              	.LVL99:
+ 123:Src/cantp.c   **** 				// 如果有剩余字节需要发送或期望的帧状态为流控制帧状态。
+ 1303              		.loc 1 123 4 is_stmt 1 view .LVU366
+ 123:Src/cantp.c   **** 				// 如果有剩余字节需要发送或期望的帧状态为流控制帧状态。
+ 1304              		.loc 1 123 36 is_stmt 0 view .LVU367
+ 1305 00ca 3E4A     		ldr	r2, .L111+40
+ 1306 00cc 1268     		ldr	r2, [r2]
+ 123:Src/cantp.c   **** 				// 如果有剩余字节需要发送或期望的帧状态为流控制帧状态。
+ 1307              		.loc 1 123 6 view .LVU368
+ 1308 00ce 002A     		cmp	r2, #0
+ 1309 00d0 34D1     		bne	.L99
+ 123:Src/cantp.c   **** 				// 如果有剩余字节需要发送或期望的帧状态为流控制帧状态。
+ 1310              		.loc 1 123 62 discriminator 1 view .LVU369
+ 1311 00d2 374A     		ldr	r2, .L111+20
+ 1312 00d4 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 123:Src/cantp.c   **** 				// 如果有剩余字节需要发送或期望的帧状态为流控制帧状态。
+ 1313              		.loc 1 123 40 discriminator 1 view .LVU370
+ 1314 00d6 022A     		cmp	r2, #2
+ 1315 00d8 30D0     		beq	.L99
+ 1316              	.LVL100:
+ 1317              	.L100:
+ 164:Src/cantp.c   **** 				// 重置期望帧状态。
+ 1318              		.loc 1 164 4 is_stmt 1 view .LVU371
+ 164:Src/cantp.c   **** 				// 重置期望帧状态。
+ 1319              		.loc 1 164 36 is_stmt 0 view .LVU372
+ 1320 00da 3A4B     		ldr	r3, .L111+40
+ 1321 00dc 1B68     		ldr	r3, [r3]
+ 164:Src/cantp.c   **** 				// 重置期望帧状态。
+ 1322              		.loc 1 164 6 view .LVU373
+ 1323 00de 3BB9     		cbnz	r3, .L95
+ 166:Src/cantp.c   **** 				currentOffset = -1;  // 重置当前偏移量。
+ 1324              		.loc 1 166 5 is_stmt 1 view .LVU374
+ 166:Src/cantp.c   **** 				currentOffset = -1;  // 重置当前偏移量。
+ 1325              		.loc 1 166 24 is_stmt 0 view .LVU375
+ 1326 00e0 334A     		ldr	r2, .L111+20
+ 1327 00e2 1370     		strb	r3, [r2]
+ 167:Src/cantp.c   **** 				CanTp_Tx = 0;  // 清除发送标志，表示发送操作完成。
+ 1328              		.loc 1 167 5 is_stmt 1 view .LVU376
+ 167:Src/cantp.c   **** 				CanTp_Tx = 0;  // 清除发送标志，表示发送操作完成。
+ 1329              		.loc 1 167 19 is_stmt 0 view .LVU377
+ 1330 00e4 3A4A     		ldr	r2, .L111+52
+ 1331 00e6 4FF0FF31 		mov	r1, #-1
+ 1332 00ea 1160     		str	r1, [r2]
+ 168:Src/cantp.c   **** 			}
+ 1333              		.loc 1 168 5 is_stmt 1 view .LVU378
+ 168:Src/cantp.c   **** 			}
+ 1334              		.loc 1 168 14 is_stmt 0 view .LVU379
+ 1335 00ec 334A     		ldr	r2, .L111+32
+ 1336 00ee 1370     		strb	r3, [r2]
+ 1337              	.L95:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 35
+
+
+ 1338              	.LBE4:
+ 171:Src/cantp.c   **** 	}
+ 1339              		.loc 1 171 3 is_stmt 1 view .LVU380
+ 1340 00f0 6420     		movs	r0, #100
+ 1341 00f2 FFF7FEFF 		bl	vTaskDelay
+ 1342              	.LVL101:
+  55:Src/cantp.c   **** 		if(CanTp_Rx){  // 如果接收到新的 CAN TP 数据包。
+ 1343              		.loc 1 55 7 view .LVU381
+ 1344              	.L106:
+  55:Src/cantp.c   **** 		if(CanTp_Rx){  // 如果接收到新的 CAN TP 数据包。
+ 1345              		.loc 1 55 2 view .LVU382
+  56:Src/cantp.c   **** 			CanTp_Rx = 0;  // 清除接收标志，表示正在处理接收到的数据。
+ 1346              		.loc 1 56 3 view .LVU383
+  56:Src/cantp.c   **** 			CanTp_Rx = 0;  // 清除接收标志，表示正在处理接收到的数据。
+ 1347              		.loc 1 56 6 is_stmt 0 view .LVU384
+ 1348 00f6 374B     		ldr	r3, .L111+56
+ 1349 00f8 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 1350 00fa 5BB2     		sxtb	r3, r3
+  56:Src/cantp.c   **** 			CanTp_Rx = 0;  // 清除接收标志，表示正在处理接收到的数据。
+ 1351              		.loc 1 56 5 view .LVU385
+ 1352 00fc 002B     		cmp	r3, #0
+ 1353 00fe C4D0     		beq	.L86
+ 1354              	.LBB5:
+  57:Src/cantp.c   **** 			
+ 1355              		.loc 1 57 4 is_stmt 1 view .LVU386
+  57:Src/cantp.c   **** 			
+ 1356              		.loc 1 57 13 is_stmt 0 view .LVU387
+ 1357 0100 344B     		ldr	r3, .L111+56
+ 1358 0102 0022     		movs	r2, #0
+ 1359 0104 1A70     		strb	r2, [r3]
+  60:Src/cantp.c   **** 				while(1);  // 进入死循环，通常用作错误处理或调试目的。
+ 1360              		.loc 1 60 4 is_stmt 1 view .LVU388
+  60:Src/cantp.c   **** 				while(1);  // 进入死循环，通常用作错误处理或调试目的。
+ 1361              		.loc 1 60 21 is_stmt 0 view .LVU389
+ 1362 0106 254B     		ldr	r3, .L111
+ 1363 0108 1B68     		ldr	r3, [r3]
+  60:Src/cantp.c   **** 				while(1);  // 进入死循环，通常用作错误处理或调试目的。
+ 1364              		.loc 1 60 6 view .LVU390
+ 1365 010a 002B     		cmp	r3, #0
+ 1366 010c 7FF47AAF 		bne	.L88
+  65:Src/cantp.c   **** 
+ 1367              		.loc 1 65 4 is_stmt 1 view .LVU391
+  65:Src/cantp.c   **** 
+ 1368              		.loc 1 65 65 is_stmt 0 view .LVU392
+ 1369 0110 284B     		ldr	r3, .L111+24
+ 1370 0112 1D68     		ldr	r5, [r3]
+  65:Src/cantp.c   **** 
+ 1371              		.loc 1 65 28 view .LVU393
+ 1372 0114 2878     		ldrb	r0, [r5]	@ zero_extendqisi2
+ 1373 0116 FFF7FEFF 		bl	CanTp_GetFrameType
+ 1374              	.LVL102:
+ 1375 011a 0446     		mov	r4, r0
+ 1376              	.LVL103:
+  68:Src/cantp.c   **** 			case Single_Frame:  // 如果帧类型是单帧。
+ 1377              		.loc 1 68 4 is_stmt 1 view .LVU394
+ 1378 011c 0328     		cmp	r0, #3
+ 1379 011e 3FF677AF 		bhi	.L89
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 36
+
+
+ 1380 0122 01A3     		adr	r3, .L91
+ 1381 0124 53F820F0 		ldr	pc, [r3, r0, lsl #2]
+ 1382              		.p2align 2
+ 1383              	.L91:
+ 1384 0128 07000000 		.word	.L94+1
+ 1385 012c 35000000 		.word	.L93+1
+ 1386 0130 51000000 		.word	.L92+1
+ 1387 0134 7F000000 		.word	.L90+1
+ 1388              	.LVL104:
+ 1389              		.p2align 1
+ 1390              	.L108:
+  68:Src/cantp.c   **** 			case Single_Frame:  // 如果帧类型是单帧。
+ 1391              		.loc 1 68 4 is_stmt 0 view .LVU395
+ 1392              	.LBE5:
+ 1393              	.LBB6:
+ 110:Src/cantp.c   **** 			if(numberOfRemainingBytesToSend == 0 && expectedFrameState == Any_State){
+ 1394              		.loc 1 110 15 view .LVU396
+ 1395 0138 0423     		movs	r3, #4
+ 1396 013a C6E7     		b	.L98
+ 1397              	.LVL105:
+ 1398              	.L99:
+ 125:Src/cantp.c   **** 					frame_type = Consecutive_Frame;  // 设置帧类型为连续帧。
+ 1399              		.loc 1 125 5 is_stmt 1 view .LVU397
+ 125:Src/cantp.c   **** 					frame_type = Consecutive_Frame;  // 设置帧类型为连续帧。
+ 1400              		.loc 1 125 27 is_stmt 0 view .LVU398
+ 1401 013c 1C4A     		ldr	r2, .L111+20
+ 1402 013e 1278     		ldrb	r2, [r2]	@ zero_extendqisi2
+ 125:Src/cantp.c   **** 					frame_type = Consecutive_Frame;  // 设置帧类型为连续帧。
+ 1403              		.loc 1 125 7 view .LVU399
+ 1404 0140 012A     		cmp	r2, #1
+ 1405 0142 15D0     		beq	.L101
+ 128:Src/cantp.c   **** 					frame_type = FlowControl_Frame;  // 设置帧类型为流控制帧。
+ 1406              		.loc 1 128 10 is_stmt 1 view .LVU400
+ 128:Src/cantp.c   **** 					frame_type = FlowControl_Frame;  // 设置帧类型为流控制帧。
+ 1407              		.loc 1 128 12 is_stmt 0 view .LVU401
+ 1408 0144 022A     		cmp	r2, #2
+ 1409 0146 22D0     		beq	.L102
+ 133:Src/cantp.c   **** 
+ 1410              		.loc 1 133 5 is_stmt 1 view .LVU402
+ 136:Src/cantp.c   **** 				case Single_Frame:
+ 1411              		.loc 1 136 5 view .LVU403
+ 1412 0148 032B     		cmp	r3, #3
+ 1413 014a C6D8     		bhi	.L100
+ 1414 014c DFE803F0 		tbb	[pc, r3]
+ 1415              	.L103:
+ 1416 0150 02       		.byte	(.L105-.L103)/2
+ 1417 0151 09       		.byte	(.L104-.L103)/2
+ 1418 0152 10       		.byte	(.L101-.L103)/2
+ 1419 0153 1F       		.byte	(.L102-.L103)/2
+ 1420              		.p2align 1
+ 1421              	.L105:
+ 138:Src/cantp.c   **** 					break;
+ 1422              		.loc 1 138 6 view .LVU404
+ 1423 0154 1A4B     		ldr	r3, .L111+36
+ 1424              	.LVL106:
+ 138:Src/cantp.c   **** 					break;
+ 1425              		.loc 1 138 6 is_stmt 0 view .LVU405
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 37
+
+
+ 1426 0156 1868     		ldr	r0, [r3]
+ 1427 0158 1B4B     		ldr	r3, .L111+44
+ 1428 015a 1968     		ldr	r1, [r3]
+ 1429 015c FFF7FEFF 		bl	CanTp_encodeSingleFrame
+ 1430              	.LVL107:
+ 139:Src/cantp.c   **** 				case First_Frame:
+ 1431              		.loc 1 139 6 is_stmt 1 view .LVU406
+ 1432 0160 BBE7     		b	.L100
+ 1433              	.LVL108:
+ 1434              	.L104:
+ 141:Src/cantp.c   **** 					frame_type = None;  // 发送完首帧后，将帧类型重置为 None。
+ 1435              		.loc 1 141 6 view .LVU407
+ 1436 0162 174B     		ldr	r3, .L111+36
+ 1437              	.LVL109:
+ 141:Src/cantp.c   **** 					frame_type = None;  // 发送完首帧后，将帧类型重置为 None。
+ 1438              		.loc 1 141 6 is_stmt 0 view .LVU408
+ 1439 0164 1868     		ldr	r0, [r3]
+ 1440 0166 184B     		ldr	r3, .L111+44
+ 1441 0168 1968     		ldr	r1, [r3]
+ 1442 016a FFF7FEFF 		bl	CanTp_encodeFirstFrame
+ 1443              	.LVL110:
+ 142:Src/cantp.c   **** 					break;
+ 1444              		.loc 1 142 6 is_stmt 1 view .LVU409
+ 143:Src/cantp.c   **** 				case Consecutive_Frame:
+ 1445              		.loc 1 143 6 view .LVU410
+ 1446 016e B4E7     		b	.L100
+ 1447              	.LVL111:
+ 1448              	.L101:
+ 145:Src/cantp.c   **** 						numberOfConsecutiveFramesToSend--;  // 递减连续帧计数器。
+ 1449              		.loc 1 145 6 view .LVU411
+ 145:Src/cantp.c   **** 						numberOfConsecutiveFramesToSend--;  // 递减连续帧计数器。
+ 1450              		.loc 1 145 41 is_stmt 0 view .LVU412
+ 1451 0170 194B     		ldr	r3, .L111+60
+ 1452 0172 1B68     		ldr	r3, [r3]
+ 145:Src/cantp.c   **** 						numberOfConsecutiveFramesToSend--;  // 递减连续帧计数器。
+ 1453              		.loc 1 145 8 view .LVU413
+ 1454 0174 002B     		cmp	r3, #0
+ 1455 0176 B0D0     		beq	.L100
+ 146:Src/cantp.c   **** 						CanTp_encodeConsecutiveFrame(GlobalTxPduId, GlobalTxPduInfoPtr);  // 编码连续帧数据并
+ 1456              		.loc 1 146 7 is_stmt 1 view .LVU414
+ 146:Src/cantp.c   **** 						CanTp_encodeConsecutiveFrame(GlobalTxPduId, GlobalTxPduInfoPtr);  // 编码连续帧数据并
+ 1457              		.loc 1 146 38 is_stmt 0 view .LVU415
+ 1458 0178 174A     		ldr	r2, .L111+60
+ 1459 017a 1368     		ldr	r3, [r2]
+ 1460 017c 013B     		subs	r3, r3, #1
+ 1461 017e 1360     		str	r3, [r2]
+ 147:Src/cantp.c   **** 					}
+ 1462              		.loc 1 147 7 is_stmt 1 view .LVU416
+ 1463 0180 0F4B     		ldr	r3, .L111+36
+ 1464 0182 1868     		ldr	r0, [r3]
+ 1465 0184 104B     		ldr	r3, .L111+44
+ 1466 0186 1968     		ldr	r1, [r3]
+ 1467 0188 FFF7FEFF 		bl	CanTp_encodeConsecutiveFrame
+ 1468              	.LVL112:
+ 1469 018c A5E7     		b	.L100
+ 1470              	.LVL113:
+ 1471              	.L102:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 38
+
+
+ 156:Src/cantp.c   **** 					break;
+ 1472              		.loc 1 156 6 view .LVU417
+ 1473 018e 0C4B     		ldr	r3, .L111+36
+ 1474 0190 1868     		ldr	r0, [r3]
+ 1475 0192 0D4B     		ldr	r3, .L111+44
+ 1476 0194 1968     		ldr	r1, [r3]
+ 1477 0196 FFF7FEFF 		bl	CanTp_encodeFlowControlFrame
+ 1478              	.LVL114:
+ 157:Src/cantp.c   **** 				default:
+ 1479              		.loc 1 157 6 view .LVU418
+ 1480 019a 9EE7     		b	.L100
+ 1481              	.L112:
+ 1482              		.align	2
+ 1483              	.L111:
+ 1484 019c 00000000 		.word	.LANCHOR1
+ 1485 01a0 00000000 		.word	.LANCHOR17
+ 1486 01a4 00000000 		.word	.LANCHOR6
+ 1487 01a8 00000000 		.word	.LANCHOR16
+ 1488 01ac 00000000 		.word	CompletePduInfo
+ 1489 01b0 00000000 		.word	.LANCHOR15
+ 1490 01b4 00000000 		.word	.LANCHOR0
+ 1491 01b8 00000000 		.word	.LANCHOR13
+ 1492 01bc 00000000 		.word	.LANCHOR5
+ 1493 01c0 00000000 		.word	.LANCHOR4
+ 1494 01c4 00000000 		.word	.LANCHOR8
+ 1495 01c8 00000000 		.word	.LANCHOR3
+ 1496 01cc 00100000 		.word	CompletePduInfo+4096
+ 1497 01d0 00000000 		.word	.LANCHOR11
+ 1498 01d4 00000000 		.word	.LANCHOR2
+ 1499 01d8 00000000 		.word	.LANCHOR14
+ 1500              	.LBE6:
+ 1501              		.cfi_endproc
+ 1502              	.LFE71:
+ 1504              		.global	rxComplete
+ 1505              		.global	rxData
+ 1506              		.global	rxCurrentMaxIndex
+ 1507              		.global	rxBufferIndex
+ 1508              		.global	rxBuffer
+ 1509              		.global	RxData
+ 1510              		.global	GlobalTxPduId
+ 1511              		.global	GlobalRxPduId
+ 1512              		.global	CanTp_Tx
+ 1513              		.global	CanTp_Rx
+ 1514              		.global	startOffset
+ 1515              		.global	currentOffset
+ 1516              		.global	currentIndex
+ 1517              		.global	ConsecSN
+ 1518              		.global	GlobalTxPduInfoPtr
+ 1519              		.global	GlobalRxPduInfoPtr
+ 1520              		.global	CompletePduInfo
+ 1521              		.global	DecodedPduInfo
+ 1522              		.global	EncodedPduInfo
+ 1523              		.global	expectedFrameState
+ 1524              		.global	App_Callback
+ 1525              		.global	availableBuffers
+ 1526              		.global	numberOfRemainingBytesToReceive
+ 1527              		.global	numberOfRemainingBytesToSend
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 39
+
+
+ 1528              		.global	numberOfConsecutiveFramesToReceive
+ 1529              		.global	currentConsecutiveFrames
+ 1530              		.global	numberOfConsecutiveFramesToSend
+ 1531              		.section	.bss.App_Callback,"aw",%nobits
+ 1532              		.align	2
+ 1533              		.set	.LANCHOR6,. + 0
+ 1536              	App_Callback:
+ 1537 0000 00000000 		.space	4
+ 1538              		.section	.bss.CanTp_Rx,"aw",%nobits
+ 1539              		.set	.LANCHOR2,. + 0
+ 1542              	CanTp_Rx:
+ 1543 0000 00       		.space	1
+ 1544              		.section	.bss.CanTp_Tx,"aw",%nobits
+ 1545              		.set	.LANCHOR5,. + 0
+ 1548              	CanTp_Tx:
+ 1549 0000 00       		.space	1
+ 1550              		.section	.bss.CompletePduInfo,"aw",%nobits
+ 1551              		.align	2
+ 1554              	CompletePduInfo:
+ 1555 0000 00000000 		.space	4100
+ 1555      00000000 
+ 1555      00000000 
+ 1555      00000000 
+ 1555      00000000 
+ 1556              		.section	.bss.ConsecSN,"aw",%nobits
+ 1557              		.set	.LANCHOR9,. + 0
+ 1560              	ConsecSN:
+ 1561 0000 00       		.space	1
+ 1562              		.section	.bss.DecodedPduInfo,"aw",%nobits
+ 1563              		.align	2
+ 1564              		.set	.LANCHOR18,. + 0
+ 1567              	DecodedPduInfo:
+ 1568 0000 00000000 		.space	12
+ 1568      00000000 
+ 1568      00000000 
+ 1569              		.section	.bss.EncodedPduInfo,"aw",%nobits
+ 1570              		.align	2
+ 1571              		.set	.LANCHOR7,. + 0
+ 1574              	EncodedPduInfo:
+ 1575 0000 00000000 		.space	12
+ 1575      00000000 
+ 1575      00000000 
+ 1576              		.section	.bss.GlobalRxPduId,"aw",%nobits
+ 1577              		.align	2
+ 1578              		.set	.LANCHOR1,. + 0
+ 1581              	GlobalRxPduId:
+ 1582 0000 00000000 		.space	4
+ 1583              		.section	.bss.GlobalRxPduInfoPtr,"aw",%nobits
+ 1584              		.align	2
+ 1585              		.set	.LANCHOR0,. + 0
+ 1588              	GlobalRxPduInfoPtr:
+ 1589 0000 00000000 		.space	4
+ 1590              		.section	.bss.GlobalTxPduId,"aw",%nobits
+ 1591              		.align	2
+ 1592              		.set	.LANCHOR4,. + 0
+ 1595              	GlobalTxPduId:
+ 1596 0000 00000000 		.space	4
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 40
+
+
+ 1597              		.section	.bss.GlobalTxPduInfoPtr,"aw",%nobits
+ 1598              		.align	2
+ 1599              		.set	.LANCHOR3,. + 0
+ 1602              	GlobalTxPduInfoPtr:
+ 1603 0000 00000000 		.space	4
+ 1604              		.section	.bss.RxData,"aw",%nobits
+ 1605              		.align	2
+ 1608              	RxData:
+ 1609 0000 00000000 		.space	8
+ 1609      00000000 
+ 1610              		.section	.bss.currentConsecutiveFrames,"aw",%nobits
+ 1611              		.align	2
+ 1614              	currentConsecutiveFrames:
+ 1615 0000 00000000 		.space	4
+ 1616              		.section	.bss.currentIndex,"aw",%nobits
+ 1617              		.align	1
+ 1618              		.set	.LANCHOR16,. + 0
+ 1621              	currentIndex:
+ 1622 0000 0000     		.space	2
+ 1623              		.section	.bss.expectedFrameState,"aw",%nobits
+ 1624              		.set	.LANCHOR15,. + 0
+ 1627              	expectedFrameState:
+ 1628 0000 00       		.space	1
+ 1629              		.section	.bss.numberOfConsecutiveFramesToReceive,"aw",%nobits
+ 1630              		.align	2
+ 1631              		.set	.LANCHOR13,. + 0
+ 1634              	numberOfConsecutiveFramesToReceive:
+ 1635 0000 00000000 		.space	4
+ 1636              		.section	.bss.numberOfConsecutiveFramesToSend,"aw",%nobits
+ 1637              		.align	2
+ 1638              		.set	.LANCHOR14,. + 0
+ 1641              	numberOfConsecutiveFramesToSend:
+ 1642 0000 00000000 		.space	4
+ 1643              		.section	.bss.numberOfRemainingBytesToReceive,"aw",%nobits
+ 1644              		.align	2
+ 1645              		.set	.LANCHOR17,. + 0
+ 1648              	numberOfRemainingBytesToReceive:
+ 1649 0000 00000000 		.space	4
+ 1650              		.section	.bss.numberOfRemainingBytesToSend,"aw",%nobits
+ 1651              		.align	2
+ 1652              		.set	.LANCHOR8,. + 0
+ 1655              	numberOfRemainingBytesToSend:
+ 1656 0000 00000000 		.space	4
+ 1657              		.section	.bss.rxBuffer,"aw",%nobits
+ 1658              		.align	2
+ 1661              	rxBuffer:
+ 1662 0000 00000000 		.space	100
+ 1662      00000000 
+ 1662      00000000 
+ 1662      00000000 
+ 1662      00000000 
+ 1663              		.section	.bss.rxBufferIndex,"aw",%nobits
+ 1664              		.align	2
+ 1667              	rxBufferIndex:
+ 1668 0000 00000000 		.space	4
+ 1669              		.section	.bss.rxComplete,"aw",%nobits
+ 1672              	rxComplete:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 41
+
+
+ 1673 0000 00       		.space	1
+ 1674              		.section	.bss.rxCurrentMaxIndex,"aw",%nobits
+ 1675              		.align	2
+ 1678              	rxCurrentMaxIndex:
+ 1679 0000 00000000 		.space	4
+ 1680              		.section	.bss.rxData,"aw",%nobits
+ 1683              	rxData:
+ 1684 0000 00       		.space	1
+ 1685              		.section	.bss.startOffset,"aw",%nobits
+ 1686              		.align	2
+ 1687              		.set	.LANCHOR10,. + 0
+ 1690              	startOffset:
+ 1691 0000 00000000 		.space	4
+ 1692              		.section	.data.availableBuffers,"aw"
+ 1693              		.align	2
+ 1694              		.set	.LANCHOR12,. + 0
+ 1697              	availableBuffers:
+ 1698 0000 0A000000 		.word	10
+ 1699              		.section	.data.currentOffset,"aw"
+ 1700              		.align	2
+ 1701              		.set	.LANCHOR11,. + 0
+ 1704              	currentOffset:
+ 1705 0000 FFFFFFFF 		.word	-1
+ 1706              		.text
+ 1707              	.Letext0:
+ 1708              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 1709              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 1710              		.file 4 "Inc/CanIf.h"
+ 1711              		.file 5 "Inc/CanTp.h"
+ 1712              		.file 6 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 42
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 cantp.c
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:18     .text.CanTp_RxIndication:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:24     .text.CanTp_RxIndication:00000000 CanTp_RxIndication
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:55     .text.CanTp_RxIndication:00000014 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:62     .text.CanTp_Init:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:68     .text.CanTp_Init:00000000 CanTp_Init
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:88     .text.CanTp_Init:0000000c $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:93     .text.CanTp_Transmit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:99     .text.CanTp_Transmit:00000000 CanTp_Transmit
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:129    .text.CanTp_Transmit:00000014 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:136    .text.CanTp_GetFrameType:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:142    .text.CanTp_GetFrameType:00000000 CanTp_GetFrameType
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:175    .text.CanTp_setCallback:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:181    .text.CanTp_setCallback:00000000 CanTp_setCallback
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:202    .text.CanTp_setCallback:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:207    .text.CanTp_encodeSingleFrame:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:213    .text.CanTp_encodeSingleFrame:00000000 CanTp_encodeSingleFrame
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:308    .text.CanTp_encodeSingleFrame:0000004c $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:314    .text.CanTp_encodeFirstFrame:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:320    .text.CanTp_encodeFirstFrame:00000000 CanTp_encodeFirstFrame
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:404    .text.CanTp_encodeFirstFrame:00000048 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:409    .text.CanTp_encodeConsecutiveFrame:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:415    .text.CanTp_encodeConsecutiveFrame:00000000 CanTp_encodeConsecutiveFrame
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:541    .text.CanTp_encodeConsecutiveFrame:0000007c $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:550    .text.CanTp_encodeFlowControlFrame:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:556    .text.CanTp_encodeFlowControlFrame:00000000 CanTp_encodeFlowControlFrame
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:634    .text.CanTp_encodeFlowControlFrame:00000038 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:642    .text.CanTp_decodeFlowControlFrame:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:648    .text.CanTp_decodeFlowControlFrame:00000000 CanTp_decodeFlowControlFrame
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:712    .text.CanTp_decodeFlowControlFrame:00000030 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:721    .text.CanTp_ConnectData:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:727    .text.CanTp_ConnectData:00000000 CanTp_ConnectData
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:794    .text.CanTp_ConnectData:0000004c $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1554   .bss.CompletePduInfo:00000000 CompletePduInfo
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:801    .text.CanTp_decodeSingleFrame:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:807    .text.CanTp_decodeSingleFrame:00000000 CanTp_decodeSingleFrame
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:876    .text.CanTp_decodeSingleFrame:00000034 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:883    .text.CanTp_decodeFirstFrame:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:889    .text.CanTp_decodeFirstFrame:00000000 CanTp_decodeFirstFrame
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:963    .text.CanTp_decodeFirstFrame:0000003c $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:970    .text.CanTp_decodeConsecutiveFrame:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:976    .text.CanTp_decodeConsecutiveFrame:00000000 CanTp_decodeConsecutiveFrame
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1089   .text.CanTp_decodeConsecutiveFrame:00000068 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1097   .text.CanTp_MainFunction:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1103   .text.CanTp_MainFunction:00000000 CanTp_MainFunction
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1384   .text.CanTp_MainFunction:00000128 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1389   .text.CanTp_MainFunction:00000138 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1416   .text.CanTp_MainFunction:00000150 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1420   .text.CanTp_MainFunction:00000154 $t
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1484   .text.CanTp_MainFunction:0000019c $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1672   .bss.rxComplete:00000000 rxComplete
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1683   .bss.rxData:00000000 rxData
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1678   .bss.rxCurrentMaxIndex:00000000 rxCurrentMaxIndex
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1667   .bss.rxBufferIndex:00000000 rxBufferIndex
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1661   .bss.rxBuffer:00000000 rxBuffer
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1608   .bss.RxData:00000000 RxData
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s 			page 43
+
+
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1595   .bss.GlobalTxPduId:00000000 GlobalTxPduId
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1581   .bss.GlobalRxPduId:00000000 GlobalRxPduId
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1548   .bss.CanTp_Tx:00000000 CanTp_Tx
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1542   .bss.CanTp_Rx:00000000 CanTp_Rx
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1690   .bss.startOffset:00000000 startOffset
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1704   .data.currentOffset:00000000 currentOffset
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1621   .bss.currentIndex:00000000 currentIndex
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1560   .bss.ConsecSN:00000000 ConsecSN
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1602   .bss.GlobalTxPduInfoPtr:00000000 GlobalTxPduInfoPtr
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1588   .bss.GlobalRxPduInfoPtr:00000000 GlobalRxPduInfoPtr
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1567   .bss.DecodedPduInfo:00000000 DecodedPduInfo
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1574   .bss.EncodedPduInfo:00000000 EncodedPduInfo
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1627   .bss.expectedFrameState:00000000 expectedFrameState
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1536   .bss.App_Callback:00000000 App_Callback
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1697   .data.availableBuffers:00000000 availableBuffers
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1648   .bss.numberOfRemainingBytesToReceive:00000000 numberOfRemainingBytesToReceive
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1655   .bss.numberOfRemainingBytesToSend:00000000 numberOfRemainingBytesToSend
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1634   .bss.numberOfConsecutiveFramesToReceive:00000000 numberOfConsecutiveFramesToReceive
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1614   .bss.currentConsecutiveFrames:00000000 currentConsecutiveFrames
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1641   .bss.numberOfConsecutiveFramesToSend:00000000 numberOfConsecutiveFramesToSend
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1532   .bss.App_Callback:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1543   .bss.CanTp_Rx:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1549   .bss.CanTp_Tx:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1551   .bss.CompletePduInfo:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1561   .bss.ConsecSN:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1563   .bss.DecodedPduInfo:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1570   .bss.EncodedPduInfo:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1577   .bss.GlobalRxPduId:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1584   .bss.GlobalRxPduInfoPtr:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1591   .bss.GlobalTxPduId:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1598   .bss.GlobalTxPduInfoPtr:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1605   .bss.RxData:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1611   .bss.currentConsecutiveFrames:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1617   .bss.currentIndex:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1628   .bss.expectedFrameState:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1630   .bss.numberOfConsecutiveFramesToReceive:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1637   .bss.numberOfConsecutiveFramesToSend:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1644   .bss.numberOfRemainingBytesToReceive:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1651   .bss.numberOfRemainingBytesToSend:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1658   .bss.rxBuffer:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1664   .bss.rxBufferIndex:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1673   .bss.rxComplete:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1675   .bss.rxCurrentMaxIndex:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1684   .bss.rxData:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1686   .bss.startOffset:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1693   .data.availableBuffers:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccRHTcgz.s:1700   .data.currentOffset:00000000 $d
+
+UNDEFINED SYMBOLS
+CanIf_setCallback
+CanIf_Transmit
+vTaskDelay
