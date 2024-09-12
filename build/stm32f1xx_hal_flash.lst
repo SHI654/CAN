@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 1
@@ -7,6 +8,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 1
+>>>>>>> 80dea70 ( OO)
 
 
    1              		.cpu cortex-m3
@@ -68,6 +72,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   ==============================================================================
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 2
@@ -75,6 +80,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 2
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 2
+>>>>>>> 80dea70 ( OO)
 
 
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   [..]                             
@@ -136,6 +144,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 3
@@ -143,6 +152,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 3
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 3
+>>>>>>> 80dea70 ( OO)
 
 
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** 
@@ -204,6 +216,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  146:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** @endverbatim
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 4
@@ -211,6 +224,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 4
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 4
+>>>>>>> 80dea70 ( OO)
 
 
  147:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   * @{
@@ -272,6 +288,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  203:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****     else if(TypeProgram == FLASH_TYPEPROGRAM_WORD)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 5
@@ -279,6 +296,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 5
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 5
+>>>>>>> 80dea70 ( OO)
 
 
  204:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****     {
@@ -340,6 +360,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  260:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   * @param  TypeProgram: Indicate the way to program at a specified address.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 6
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 6
@@ -347,6 +368,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 6
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 6
+>>>>>>> 80dea70 ( OO)
 
 
  261:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   *                      This parameter can be a value of @ref FLASH_Type_Program
@@ -408,6 +432,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  317:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****     pFlash.ProcedureOnGoing = FLASH_PROC_PROGRAMDOUBLEWORD;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 7
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 7
@@ -415,6 +440,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 7
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 7
+>>>>>>> 80dea70 ( OO)
 
 
  318:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****     /* Program double word (64-bit : 4*16-bit) at a specified address. */
@@ -476,6 +504,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  374:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****     {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 8
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 8
@@ -483,6 +512,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 8
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 8
+>>>>>>> 80dea70 ( OO)
 
 
  375:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****       if(pFlash.ProcedureOnGoing == FLASH_PROC_PAGEERASE)
@@ -544,6 +576,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  431:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****         /* Check if there are still 16-bit data to program */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 9
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 9
@@ -551,6 +584,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 9
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 9
+>>>>>>> 80dea70 ( OO)
 
 
  432:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****         if(pFlash.DataRemaining != 0U)
@@ -612,6 +648,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  488:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****         if(pFlash.DataRemaining != 0U)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 10
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 10
@@ -619,6 +656,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 10
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 10
+>>>>>>> 80dea70 ( OO)
 
 
  489:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****         {
@@ -680,6 +720,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  545:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 11
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 11
@@ -687,6 +728,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 11
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 11
+>>>>>>> 80dea70 ( OO)
 
 
  546:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****           /*Program halfword (16-bit) at a specified address.*/
@@ -748,6 +792,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  602:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   *                    (if 0xFFFFFFFF, it means that all the selected pages have been erased)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 12
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 12
@@ -755,6 +800,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 12
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 12
+>>>>>>> 80dea70 ( OO)
 
 
  603:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   *                 - Program: Address which was selected for data program
@@ -816,6 +864,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  659:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   HAL_StatusTypeDef status = HAL_OK;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 13
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 13
@@ -823,6 +872,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 13
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 13
+>>>>>>> 80dea70 ( OO)
 
 
  660:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** 
@@ -884,6 +936,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  716:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****     /* Authorizes the Option Byte register programming */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 14
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 14
@@ -891,6 +944,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 14
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 14
+>>>>>>> 80dea70 ( OO)
 
 
  717:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****     WRITE_REG(FLASH->OPTKEYR, FLASH_OPTKEY1);
@@ -952,6 +1008,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  773:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 15
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 15
@@ -959,6 +1016,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 15
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 15
+>>>>>>> 80dea70 ( OO)
 
 
  774:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** uint32_t HAL_FLASH_GetError(void)
@@ -1020,6 +1080,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  815:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** #endif /* FLASH_BANK2_END */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 16
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 16
@@ -1027,6 +1088,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 16
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 16
+>>>>>>> 80dea70 ( OO)
 
 
  816:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** 
@@ -1088,6 +1152,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  853:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****      __HAL_FLASH_GET_FLAG(FLASH_FLAG_OPTVERR) || 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 17
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 17
@@ -1095,6 +1160,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 17
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 17
+>>>>>>> 80dea70 ( OO)
 
 
  854:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****      __HAL_FLASH_GET_FLAG(FLASH_FLAG_PGERR))
@@ -1156,6 +1224,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  910:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 18
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 18
@@ -1163,6 +1232,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 18
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 18
+>>>>>>> 80dea70 ( OO)
 
 
  911:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   * @brief  Set the specific FLASH error flag.
@@ -1224,6 +1296,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
   95 001e 06D0     		beq	.L6
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 19
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 19
@@ -1231,6 +1304,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 19
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 19
+>>>>>>> 80dea70 ( OO)
 
 
  935:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** #endif /* FLASH_BANK2_END */
@@ -1292,6 +1368,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  135 0054 044A     		ldr	r2, .L11
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 20
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 20
@@ -1299,6 +1376,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 20
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 20
+>>>>>>> 80dea70 ( OO)
 
 
  136 0056 D360     		str	r3, [r2, #12]
@@ -1360,6 +1440,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  186 0008 012B     		cmp	r3, #1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 21
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 21
@@ -1367,6 +1448,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 21
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 21
+>>>>>>> 80dea70 ( OO)
 
 
  187 000a 28D0     		beq	.L18
@@ -1428,6 +1512,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  225 0034 0B4B     		ldr	r3, .L22
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 22
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 22
@@ -1435,6 +1520,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 22
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 22
+>>>>>>> 80dea70 ( OO)
 
 
  226 0036 0522     		movs	r2, #5
@@ -1496,6 +1584,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  267              		.loc 1 272 3 view .LVU76
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 23
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 23
@@ -1503,6 +1592,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 23
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 23
+>>>>>>> 80dea70 ( OO)
 
 
  268 005e 0220     		movs	r0, #2
@@ -1564,6 +1656,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  322              		.section	.text.HAL_FLASH_IRQHandler,"ax",%progbits
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 24
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 24
@@ -1571,6 +1664,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 24
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 24
+>>>>>>> 80dea70 ( OO)
 
 
  323              		.align	1
@@ -1632,6 +1728,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  350:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 25
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 25
@@ -1639,6 +1736,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 25
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 25
+>>>>>>> 80dea70 ( OO)
 
 
  369              		.loc 1 350 5 is_stmt 1 view .LVU95
@@ -1700,6 +1800,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  409 004c 30D0     		beq	.L39
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 26
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 26
@@ -1707,6 +1808,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 26
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 26
+>>>>>>> 80dea70 ( OO)
 
 
  406:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****       {
@@ -1768,6 +1872,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  449 007a 354B     		ldr	r3, .L44+4
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 27
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 27
@@ -1775,6 +1880,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 27
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 27
+>>>>>>> 80dea70 ( OO)
 
 
  450 007c 9868     		ldr	r0, [r3, #8]
@@ -1836,6 +1944,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  491              		.loc 1 378 9 is_stmt 1 view .LVU143
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 28
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 28
@@ -1843,6 +1952,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 28
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 28
+>>>>>>> 80dea70 ( OO)
 
 
  378:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** 
@@ -1904,6 +2016,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  531              		.loc 1 400 11 is_stmt 1 view .LVU160
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 29
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 29
@@ -1911,6 +2024,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 29
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 29
+>>>>>>> 80dea70 ( OO)
 
 
  532              	.LVL27:
@@ -1972,6 +2088,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  574              		.loc 1 439 32 is_stmt 0 view .LVU174
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 30
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 30
@@ -1979,6 +2096,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 30
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 30
+>>>>>>> 80dea70 ( OO)
 
 
  575 0110 D3E90467 		ldrd	r6, [r3, #16]
@@ -2040,6 +2160,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  621              		.section	.text.HAL_FLASH_Unlock,"ax",%progbits
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 31
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 31
@@ -2047,6 +2168,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 31
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 31
+>>>>>>> 80dea70 ( OO)
 
 
  622              		.align	1
@@ -2108,6 +2232,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  688:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 32
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 32
@@ -2115,6 +2240,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 32
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 32
+>>>>>>> 80dea70 ( OO)
 
 
  667              		.loc 1 688 3 is_stmt 1 view .LVU198
@@ -2176,6 +2304,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  721              		@ link register save eliminated.
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 33
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 33
@@ -2183,6 +2312,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 33
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 33
+>>>>>>> 80dea70 ( OO)
 
 
  714:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   {
@@ -2244,6 +2376,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  769 0002 1369     		ldr	r3, [r2, #16]
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 34
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 34
@@ -2251,6 +2384,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 34
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 34
+>>>>>>> 80dea70 ( OO)
 
 
  770 0004 23F40073 		bic	r3, r3, #512
@@ -2312,6 +2448,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  823              		.loc 1 776 4 view .LVU222
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 35
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 35
@@ -2319,6 +2456,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 35
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 35
+>>>>>>> 80dea70 ( OO)
 
 
  776:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** }
@@ -2380,6 +2520,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  834:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****   { 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 36
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 36
@@ -2387,6 +2528,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 36
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 36
+>>>>>>> 80dea70 ( OO)
 
 
  872              		.loc 1 834 8 view .LVU233
@@ -2448,6 +2592,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  911              		.loc 1 852 3 discriminator 4 view .LVU250
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 37
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 37
@@ -2455,6 +2600,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 37
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 37
+>>>>>>> 80dea70 ( OO)
 
 
  852:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c ****      __HAL_FLASH_GET_FLAG(FLASH_FLAG_OPTVERR) || 
@@ -2516,6 +2664,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  957              		.thumb_func
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 38
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 38
@@ -2523,6 +2672,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 38
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 38
+>>>>>>> 80dea70 ( OO)
 
 
  959              	HAL_FLASH_Program:
@@ -2584,6 +2736,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  186:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** #if defined(FLASH_BANK2_END)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 39
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 39
@@ -2591,6 +2744,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 39
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 39
+>>>>>>> 80dea70 ( OO)
 
 
  1002              		.loc 1 186 14 is_stmt 0 discriminator 2 view .LVU276
@@ -2652,6 +2808,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  1043 0042 0134     		adds	r4, r4, #1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 40
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 40
@@ -2659,6 +2816,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 40
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 40
+>>>>>>> 80dea70 ( OO)
 
 
  1044              	.LVL53:
@@ -2720,6 +2880,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  1087              	.L83:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 41
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 41
@@ -2727,6 +2888,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 41
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 41
+>>>>>>> 80dea70 ( OO)
 
 
  247:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c **** 
@@ -2781,6 +2945,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
  1130              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s 			page 42
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco9OXYM.s 			page 42
@@ -2788,10 +2953,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s 			page 42
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s 			page 42
+>>>>>>> 80dea70 ( OO)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_flash.c
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 C:\Users\wup15j\AppData\Local\Temp\ccn71NJR.s:18     .text.FLASH_Program_HalfWord:00000000 $t
@@ -2921,6 +3090,49 @@ C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s:1108   .text.HAL_FLASH_Program:000
 C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s:1119   .bss.pFlash:00000000 pFlash
 C:\Users\wup15j\AppData\Local\Temp\cceEsC6s.s:1115   .bss.pFlash:00000000 $d
 >>>>>>> 2ff531d (build)
+=======
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:18     .text.FLASH_Program_HalfWord:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:23     .text.FLASH_Program_HalfWord:00000000 FLASH_Program_HalfWord
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:50     .text.FLASH_Program_HalfWord:00000014 $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:56     .text.FLASH_SetErrorCode:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:61     .text.FLASH_SetErrorCode:00000000 FLASH_SetErrorCode
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:152    .text.FLASH_SetErrorCode:00000068 $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:158    .text.HAL_FLASH_Program_IT:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:164    .text.HAL_FLASH_Program_IT:00000000 HAL_FLASH_Program_IT
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:275    .text.HAL_FLASH_Program_IT:00000064 $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:281    .text.HAL_FLASH_EndOfOperationCallback:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:287    .text.HAL_FLASH_EndOfOperationCallback:00000000 HAL_FLASH_EndOfOperationCallback
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:302    .text.HAL_FLASH_OperationErrorCallback:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:308    .text.HAL_FLASH_OperationErrorCallback:00000000 HAL_FLASH_OperationErrorCallback
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:323    .text.HAL_FLASH_IRQHandler:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:329    .text.HAL_FLASH_IRQHandler:00000000 HAL_FLASH_IRQHandler
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:616    .text.HAL_FLASH_IRQHandler:0000014c $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:622    .text.HAL_FLASH_Unlock:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:628    .text.HAL_FLASH_Unlock:00000000 HAL_FLASH_Unlock
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:673    .text.HAL_FLASH_Unlock:0000002c $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:679    .text.HAL_FLASH_Lock:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:685    .text.HAL_FLASH_Lock:00000000 HAL_FLASH_Lock
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:704    .text.HAL_FLASH_Lock:00000010 $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:709    .text.HAL_FLASH_OB_Unlock:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:715    .text.HAL_FLASH_OB_Unlock:00000000 HAL_FLASH_OB_Unlock
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:748    .text.HAL_FLASH_OB_Unlock:00000020 $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:754    .text.HAL_FLASH_OB_Lock:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:760    .text.HAL_FLASH_OB_Lock:00000000 HAL_FLASH_OB_Lock
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:779    .text.HAL_FLASH_OB_Lock:00000010 $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:784    .text.HAL_FLASH_OB_Launch:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:790    .text.HAL_FLASH_OB_Launch:00000000 HAL_FLASH_OB_Launch
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:810    .text.HAL_FLASH_GetError:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:816    .text.HAL_FLASH_GetError:00000000 HAL_FLASH_GetError
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:832    .text.HAL_FLASH_GetError:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:837    .text.FLASH_WaitForLastOperation:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:843    .text.FLASH_WaitForLastOperation:00000000 FLASH_WaitForLastOperation
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:948    .text.FLASH_WaitForLastOperation:00000064 $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:953    .text.HAL_FLASH_Program:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:959    .text.HAL_FLASH_Program:00000000 HAL_FLASH_Program
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:1108   .text.HAL_FLASH_Program:00000098 $d
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:1119   .bss.pFlash:00000000 pFlash
+C:\Users\wup15j\AppData\Local\Temp\ccvFhKCX.s:1115   .bss.pFlash:00000000 $d
+>>>>>>> 80dea70 ( OO)
 
 UNDEFINED SYMBOLS
 FLASH_PageErase

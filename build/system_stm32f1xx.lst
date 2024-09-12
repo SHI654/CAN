@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 1
@@ -7,6 +8,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 1
+>>>>>>> 80dea70 ( OO)
 
 
    1              		.cpu cortex-m3
@@ -68,6 +72,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
   32:Src/system_stm32f1xx.c ****   *        
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 2
@@ -75,6 +80,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 2
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 2
+>>>>>>> 80dea70 ( OO)
 
 
   33:Src/system_stm32f1xx.c ****   ******************************************************************************
@@ -136,6 +144,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
   89:Src/system_stm32f1xx.c **** /* #define DATA_IN_ExtSRAM */
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 3
@@ -143,6 +152,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 3
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 3
+>>>>>>> 80dea70 ( OO)
 
 
   90:Src/system_stm32f1xx.c **** #endif /* STM32F100xE || STM32F101xE || STM32F101xG || STM32F103xE || STM32F103xG */
@@ -204,6 +216,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
  146:Src/system_stm32f1xx.c **** /**
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 4
@@ -211,6 +224,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 4
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 4
+>>>>>>> 80dea70 ( OO)
 
 
  147:Src/system_stm32f1xx.c ****   * @}
@@ -272,6 +288,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
   42              		.thumb_func
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 5
@@ -279,6 +296,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 5
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 5
+>>>>>>> 80dea70 ( OO)
 
 
   44              	SystemCoreClockUpdate:
@@ -340,6 +360,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
  236:Src/system_stm32f1xx.c ****     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 6
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 6
@@ -347,6 +368,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 6
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 6
+>>>>>>> 80dea70 ( OO)
 
 
  237:Src/system_stm32f1xx.c ****   /* Get SYSCLK source -------------------------------------------------------*/
@@ -408,6 +432,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
  280:Src/system_stm32f1xx.c **** #else
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 7
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 7
@@ -415,6 +440,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 7
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 7
+>>>>>>> 80dea70 ( OO)
 
 
  281:Src/system_stm32f1xx.c ****       pllmull = pllmull >> 18U;
@@ -476,6 +504,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
  243:Src/system_stm32f1xx.c ****       break;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 8
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 8
@@ -483,6 +512,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 8
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 8
+>>>>>>> 80dea70 ( OO)
 
 
   78              		.loc 1 243 23 is_stmt 0 view .LVU13
@@ -544,6 +576,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
  251:Src/system_stm32f1xx.c ****       pllsource = RCC->CFGR & RCC_CFGR_PLLSRC;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 9
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 9
@@ -551,6 +584,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 9
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 9
+>>>>>>> 80dea70 ( OO)
 
 
  119              		.loc 1 251 20 is_stmt 0 view .LVU28
@@ -612,6 +648,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
  272:Src/system_stm32f1xx.c ****         }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 10
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 10
@@ -619,6 +656,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 10
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 10
+>>>>>>> 80dea70 ( OO)
 
 
  160              		.loc 1 272 11 is_stmt 1 view .LVU44
@@ -680,6 +720,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
  214      01020304 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 11
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 11
@@ -687,6 +728,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 11
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 11
+>>>>>>> 80dea70 ( OO)
 
 
  215              		.text
@@ -698,6 +742,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
  221              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s 			page 12
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cciTg3d9.s 			page 12
@@ -705,10 +750,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s 			page 12
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s 			page 12
+>>>>>>> 80dea70 ( OO)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 system_stm32f1xx.c
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 C:\Users\wup15j\AppData\Local\Temp\ccW0pV2h.s:18     .text.SystemInit:00000000 $t
@@ -748,5 +797,18 @@ C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s:195    .data.SystemCoreClock:00000
 C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s:202    .rodata.AHBPrescTable:00000000 $d
 C:\Users\wup15j\AppData\Local\Temp\ccMllSs6.s:210    .rodata.APBPrescTable:00000000 $d
 >>>>>>> 2ff531d (build)
+=======
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:18     .text.SystemInit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:24     .text.SystemInit:00000000 SystemInit
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:38     .text.SystemCoreClockUpdate:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:44     .text.SystemCoreClockUpdate:00000000 SystemCoreClockUpdate
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:183    .text.SystemCoreClockUpdate:00000080 $d
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:213    .rodata.APBPrescTable:00000000 APBPrescTable
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:206    .rodata.AHBPrescTable:00000000 AHBPrescTable
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:199    .data.SystemCoreClock:00000000 SystemCoreClock
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:195    .data.SystemCoreClock:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:202    .rodata.AHBPrescTable:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccAI6gSh.s:210    .rodata.APBPrescTable:00000000 $d
+>>>>>>> 80dea70 ( OO)
 
 NO UNDEFINED SYMBOLS

@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
@@ -7,6 +8,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 1
+>>>>>>> 80dea70 ( OO)
 
 
    1              		.cpu cortex-m3
@@ -68,6 +72,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
   31:Src/sysmem.c  **** 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 2
@@ -75,6 +80,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 2
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 2
+>>>>>>> 80dea70 ( OO)
 
 
   32:Src/sysmem.c  **** /**
@@ -136,6 +144,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
   52              	.LVL2:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 3
@@ -143,6 +152,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 3
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 3
+>>>>>>> 80dea70 ( OO)
 
 
   53              		.loc 1 63 12 view .LVU11
@@ -204,6 +216,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
   90 0028 FFF7FEFF 		bl	__errno
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 4
@@ -211,6 +224,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 4
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 4
+>>>>>>> 80dea70 ( OO)
 
 
   91              	.LVL8:
@@ -246,6 +262,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
  121              		.file 5 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 5
@@ -253,10 +270,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 5
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 5
+>>>>>>> 80dea70 ( OO)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 sysmem.c
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:18     .text._sbrk:00000000 $t
@@ -278,6 +299,13 @@ C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:102    .text._sbrk:00000038 $d
 C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:110    .bss.__sbrk_heap_end:00000000 $d
 C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:114    .bss.__sbrk_heap_end:00000000 __sbrk_heap_end
 >>>>>>> 2ff531d (build)
+=======
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:18     .text._sbrk:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:24     .text._sbrk:00000000 _sbrk
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:102    .text._sbrk:00000038 $d
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:110    .bss.__sbrk_heap_end:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:114    .bss.__sbrk_heap_end:00000000 __sbrk_heap_end
+>>>>>>> 80dea70 ( OO)
 
 UNDEFINED SYMBOLS
 __errno
