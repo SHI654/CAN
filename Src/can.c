@@ -19,9 +19,10 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "can.h"
-
+#include "canif.h"
+#include "cantp.h"
 /* USER CODE BEGIN 0 */
-
+volatile int8_t CanIf_Rx=0;  
 /* USER CODE END 0 */
 
 CAN_HandleTypeDef hcan;
@@ -76,9 +77,9 @@ void HAL_CAN_MspInit(CAN_HandleTypeDef *canHandle)
     HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
     /* CAN1 interrupt Init */
-    HAL_NVIC_SetPriority(USB_LP_CAN1_RX0_IRQn, 1, 0);
+    HAL_NVIC_SetPriority(USB_LP_CAN1_RX0_IRQn, 6, 0);
     HAL_NVIC_EnableIRQ(USB_LP_CAN1_RX0_IRQn);
-    HAL_NVIC_SetPriority(CAN1_RX1_IRQn, 2, 0);
+    HAL_NVIC_SetPriority(CAN1_RX1_IRQn, 7, 0);
     HAL_NVIC_EnableIRQ(CAN1_RX1_IRQn);
     /* USER CODE BEGIN CAN1_MspInit 1 */
 
@@ -195,9 +196,10 @@ void CAN_Init(void)
   MX_CAN_Init();
   CAN_Filter_Config();
   HAL_CAN_Start(&hcan);
-  HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING); // 使能CAN接0收中断
+  HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING); // 使能CAN接收中断
+  CanIf_setCallback(CanTp_RxIndication);
 }
-
+/*
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *canHandle)
 {
   static CAN_RxPacketTypeDef packet;
@@ -227,7 +229,11 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *canHandle)
       HAL_CAN_ActivateNotification(canHandle, CAN_IT_RX_FIFO0_MSG_PENDING); // 再次使能FIFO0接收中断
     }
   }
+  CanIf_Rx = 1;
 }
+*/
+
+
 
 CAN_TxPacketTypeDef g_CanTxPacket;
 

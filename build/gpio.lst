@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 1
+>>>>>>> RTOS
 
 
    1              		.cpu cortex-m3
@@ -58,7 +62,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 1
   30:Src/gpio.c    **** 
   31:Src/gpio.c    **** /* USER CODE END 1 */
   32:Src/gpio.c    **** 
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 2
+>>>>>>> RTOS
 
 
   33:Src/gpio.c    **** /** Configure pins as
@@ -118,7 +126,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 1
   66              		.loc 1 47 3 view .LVU11
   67 0022 9A69     		ldr	r2, [r3, #24]
   68 0024 42F02002 		orr	r2, r2, #32
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 3
+>>>>>>> RTOS
 
 
   69 0028 9A61     		str	r2, [r3, #24]
@@ -178,7 +190,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 1
  113 0060 0223     		movs	r3, #2
  114 0062 0793     		str	r3, [sp, #28]
   58:Src/gpio.c    ****   HAL_GPIO_Init(LED_GPIO_Port, &GPIO_InitStruct);
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 4
+>>>>>>> RTOS
 
 
  115              		.loc 1 58 3 is_stmt 1 view .LVU30
@@ -207,14 +223,24 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 1
  137              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
  138              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
  139              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 5
+>>>>>>> RTOS
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gpio.c
+<<<<<<< HEAD
 C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s:18     .text.MX_GPIO_Init:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
 C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s:129    .text.MX_GPIO_Init:00000070 $d
+=======
+C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s:18     .text.MX_GPIO_Init:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s:129    .text.MX_GPIO_Init:00000070 $d
+>>>>>>> RTOS
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
