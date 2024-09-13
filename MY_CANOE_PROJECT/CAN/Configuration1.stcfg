@@ -4,6 +4,7 @@ Signature=VectorStatePersistence
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 mMeasurementIndex=17
 =======
 mMeasurementIndex=24
@@ -14,3 +15,6 @@ mMeasurementIndex=60
 =======
 mMeasurementIndex=20
 >>>>>>> 7f8e5ad (090300)
+=======
+mMeasurementIndex=24
+>>>>>>> c9bcb0e (build)

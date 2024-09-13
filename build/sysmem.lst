@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
@@ -10,6 +11,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
@@ -17,6 +20,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -27,6 +31,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
 
 
    1              		.cpu cortex-m3
@@ -90,6 +96,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 2
@@ -98,6 +105,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 2
@@ -105,6 +114,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 2
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -115,6 +125,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 2
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
 
 
   32:Src/sysmem.c  **** /**
@@ -178,6 +190,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 3
@@ -186,6 +199,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 3
@@ -193,6 +208,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 3
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -203,6 +219,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 3
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
 
 
   53              		.loc 1 63 12 view .LVU11
@@ -266,6 +284,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 4
@@ -274,6 +293,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 4
@@ -281,6 +302,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 4
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -291,6 +313,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 4
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
 
 
   91              	.LVL8:
@@ -328,6 +352,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 5
@@ -336,6 +361,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 5
@@ -343,6 +370,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 5
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -353,10 +381,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 5
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 sysmem.c
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -367,6 +398,8 @@ DEFINED SYMBOLS
 <<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
 C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:18     .text._sbrk:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:24     .text._sbrk:00000000 _sbrk
 C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:102    .text._sbrk:00000038 $d
@@ -398,6 +431,7 @@ C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:110    .bss.__sbrk_heap_end:000000
 C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:114    .bss.__sbrk_heap_end:00000000 __sbrk_heap_end
 >>>>>>> 2ff531d (build)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -410,6 +444,8 @@ C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:114    .bss.__sbrk_heap_end:000000
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
 
 UNDEFINED SYMBOLS
 __errno
