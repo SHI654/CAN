@@ -113,7 +113,7 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan1){
     CanIf_Rx = 1;
 }
 
-/*// 如果发送成功，并且配置了传输完成回调，则调用传输完成回调
+/*// 如果发送功，并且配置了传输完成回调，则调用传输完成回调
 	else if(CanNm_TxCallback != NULL && TxPduId == 1){
         
 		CanNm_TxCallback();
