@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 1
@@ -12,10 +13,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 1
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccWH0np5.s 			page 1
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -23,6 +30,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccWH0np5.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 
 
    1              		.cpu cortex-m3
@@ -85,6 +97,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 2
@@ -96,10 +109,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 2
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccWH0np5.s 			page 2
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -107,6 +126,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 2
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 2
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 
 
   33:Src/gpio.c    **** /** Configure pins as
@@ -169,6 +193,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 3
@@ -180,10 +205,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 3
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccWH0np5.s 			page 3
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -191,6 +222,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 3
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 3
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 
 
   69 0028 9A61     		str	r2, [r3, #24]
@@ -253,6 +289,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 4
@@ -264,10 +301,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 4
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccWH0np5.s 			page 4
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -275,6 +318,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 4
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 4
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 
 
  115              		.loc 1 58 3 is_stmt 1 view .LVU30
@@ -306,6 +354,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 5
@@ -317,10 +366,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s 			page 5
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccWH0np5.s 			page 5
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
@@ -328,10 +383,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 5
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s 			page 5
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 gpio.c
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -354,6 +415,15 @@ C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s:129    .text.MX_GPIO_Init:00000070
 C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s:18     .text.MX_GPIO_Init:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
 C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s:129    .text.MX_GPIO_Init:00000070 $d
+=======
+C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s:18     .text.MX_GPIO_Init:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\wup15j\AppData\Local\Temp\ccFWQpTI.s:129    .text.MX_GPIO_Init:00000070 $d
+=======
+C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s:18     .text.MX_GPIO_Init:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
+C:\Users\wup15j\AppData\Local\Temp\cceBjsyI.s:129    .text.MX_GPIO_Init:00000070 $d
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 >>>>>>> RTOS
 =======
 C:\Users\wup15j\AppData\Local\Temp\ccWH0np5.s:18     .text.MX_GPIO_Init:00000000 $t
@@ -361,14 +431,20 @@ C:\Users\wup15j\AppData\Local\Temp\ccWH0np5.s:24     .text.MX_GPIO_Init:00000000
 C:\Users\wup15j\AppData\Local\Temp\ccWH0np5.s:129    .text.MX_GPIO_Init:00000070 $d
 >>>>>>> 2ff531d (build)
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 =======
 C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s:18     .text.MX_GPIO_Init:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s:24     .text.MX_GPIO_Init:00000000 MX_GPIO_Init
 C:\Users\wup15j\AppData\Local\Temp\cc7XTKRg.s:129    .text.MX_GPIO_Init:00000070 $d
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
 
 UNDEFINED SYMBOLS
 HAL_GPIO_WritePin
