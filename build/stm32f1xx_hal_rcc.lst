@@ -4,6 +4,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 1
@@ -12,6 +15,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -19,6 +23,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 1
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 1
@@ -26,6 +40,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -33,6 +50,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 1
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -42,6 +60,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
    1              		.cpu cortex-m3
@@ -107,6 +131,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 2
@@ -115,6 +142,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -122,6 +150,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 2
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 2
@@ -129,6 +167,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -136,6 +177,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 2
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -145,6 +187,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 2
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 2
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****                       ##### RCC Limitations #####
@@ -210,6 +258,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 3
@@ -218,6 +269,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -225,6 +277,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 3
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 3
@@ -232,6 +294,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -239,6 +304,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 3
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -248,6 +314,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 3
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 3
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** #define MCO1_GPIO_PORT        GPIOA
@@ -313,6 +385,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 4
@@ -321,6 +396,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -328,6 +404,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 4
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 4
@@ -335,6 +421,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -342,6 +431,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 4
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -351,6 +441,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 4
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 4
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  147:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****       (#) MCO1 (microcontroller clock output), used to output SYSCLK, HSI,
@@ -416,6 +512,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 5
@@ -424,6 +523,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -431,6 +531,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 5
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 5
@@ -438,6 +548,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -445,6 +558,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 5
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -454,6 +568,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 5
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 5
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  204:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****   uint32_t tickstart;
@@ -519,6 +639,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 6
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 6
@@ -527,6 +650,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -534,6 +658,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 6
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 6
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 6
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 6
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 6
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 6
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 6
@@ -541,6 +675,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -548,6 +685,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 6
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -557,6 +695,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 6
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 6
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  261:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****   }
@@ -622,6 +766,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 7
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 7
@@ -630,6 +777,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -637,6 +785,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 7
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 7
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 7
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 7
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 7
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 7
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 7
@@ -644,6 +802,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -651,6 +812,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 7
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -660,6 +822,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 7
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 7
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  318:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** #if defined(RCC_CFGR2_PREDIV1)
@@ -725,6 +893,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 8
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 8
@@ -733,6 +904,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -740,6 +912,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 8
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 8
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 8
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 8
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 8
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 8
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 8
@@ -747,6 +929,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -754,6 +939,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 8
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -763,6 +949,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 8
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 8
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  375:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****     }
@@ -828,6 +1020,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 9
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 9
@@ -836,6 +1031,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -843,6 +1039,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 9
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 9
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 9
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 9
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 9
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 9
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 9
@@ -850,6 +1056,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -857,6 +1066,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 9
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -866,6 +1076,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 9
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 9
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  432:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****         /* Adjusts the Internal High Speed oscillator (HSI) calibration value.*/
@@ -931,6 +1147,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 10
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 10
@@ -939,6 +1158,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -946,6 +1166,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 10
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 10
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 10
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 10
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 10
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 10
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 10
@@ -953,6 +1183,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -960,6 +1193,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 10
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -969,6 +1203,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 10
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 10
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  489:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** 
@@ -1034,6 +1274,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 11
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 11
@@ -1042,6 +1285,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1049,6 +1293,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 11
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 11
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 11
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 11
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 11
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 11
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 11
@@ -1056,6 +1310,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1063,6 +1320,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 11
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1072,6 +1330,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 11
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 11
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  546:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** 
@@ -1137,6 +1401,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 12
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 12
@@ -1145,6 +1412,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1152,6 +1420,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 12
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 12
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 12
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 12
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 12
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 12
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 12
@@ -1159,6 +1437,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1166,6 +1447,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 12
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1175,6 +1457,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 12
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 12
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  603:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****     if ((__HAL_RCC_GET_PLL_OSCSOURCE() == RCC_PLLSOURCE_HSE) && \
@@ -1240,6 +1528,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 13
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 13
@@ -1248,6 +1539,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1255,6 +1547,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 13
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 13
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 13
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 13
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 13
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 13
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 13
@@ -1262,6 +1564,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1269,6 +1574,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 13
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1278,6 +1584,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 13
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 13
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  660:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****       }
@@ -1343,6 +1655,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 14
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 14
@@ -1351,6 +1666,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1358,6 +1674,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 14
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 14
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 14
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 14
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 14
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 14
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 14
@@ -1365,6 +1691,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1372,6 +1701,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 14
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1381,6 +1711,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 14
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 14
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  717:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****         {
@@ -1446,6 +1782,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 15
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 15
@@ -1454,6 +1793,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1461,6 +1801,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 15
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 15
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 15
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 15
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 15
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 15
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 15
@@ -1468,6 +1818,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1475,6 +1828,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 15
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1484,6 +1838,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 15
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 15
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  774:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****       else
@@ -1549,6 +1909,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 16
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 16
@@ -1557,6 +1920,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1564,6 +1928,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 16
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 16
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 16
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 16
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 16
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 16
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 16
@@ -1571,6 +1945,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1578,6 +1955,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 16
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1587,6 +1965,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 16
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 16
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  831:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** #if defined(FLASH_ACR_LATENCY)
@@ -1652,6 +2036,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 17
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 17
@@ -1660,6 +2047,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1667,6 +2055,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 17
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 17
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 17
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 17
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 17
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 17
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 17
@@ -1674,6 +2072,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1681,6 +2082,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 17
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1690,6 +2092,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 17
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 17
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  888:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****       }
@@ -1755,6 +2163,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 18
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 18
@@ -1763,6 +2174,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1770,6 +2182,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 18
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 18
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 18
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 18
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 18
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 18
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 18
@@ -1777,6 +2199,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1784,6 +2209,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 18
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1793,6 +2219,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 18
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 18
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  945:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** 
@@ -1858,6 +2290,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 19
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 19
@@ -1866,6 +2301,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1873,6 +2309,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 19
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 19
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 19
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 19
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 19
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 19
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 19
@@ -1880,6 +2326,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1887,6 +2336,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 19
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1896,6 +2346,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 19
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 19
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 1002:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** void HAL_RCC_MCOConfig(uint32_t RCC_MCOx, uint32_t RCC_MCOSource, uint32_t RCC_MCODiv)
@@ -1961,6 +2417,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 20
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 20
@@ -1969,6 +2428,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -1976,6 +2436,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 20
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 20
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 20
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 20
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 20
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 20
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 20
@@ -1983,6 +2453,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -1990,6 +2463,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 20
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -1999,6 +2473,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 20
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 20
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 1059:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****   * @note     If SYSCLK source is HSE, function returns a value based on HSE_VALUE
@@ -2064,6 +2544,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 21
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 21
@@ -2072,6 +2555,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -2079,6 +2563,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 21
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 21
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 21
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 21
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 21
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 21
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 21
@@ -2086,6 +2580,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -2093,6 +2590,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 21
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -2102,6 +2600,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 21
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 21
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 1116:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****       {
@@ -2167,6 +2671,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 22
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 22
@@ -2175,6 +2682,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -2182,6 +2690,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 22
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 22
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 22
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 22
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 22
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 22
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 22
@@ -2189,6 +2707,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -2196,6 +2717,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 22
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -2205,6 +2727,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 22
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 22
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 1173:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****   *         and updated within this function
@@ -2270,6 +2798,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 23
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 23
@@ -2278,6 +2809,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -2285,6 +2817,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 23
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 23
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 23
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 23
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 23
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 23
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 23
@@ -2292,6 +2834,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -2299,6 +2844,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 23
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -2308,6 +2854,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 23
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 23
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 1230:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****   }
@@ -2373,6 +2925,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 24
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 24
@@ -2381,6 +2936,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -2388,6 +2944,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 24
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 24
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 24
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 24
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 24
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 24
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 24
@@ -2395,6 +2961,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -2402,6 +2971,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 24
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -2411,6 +2981,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 24
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 24
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 1287:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****   RCC_OscInitStruct->PLL.PLLSource = (uint32_t)(RCC->CFGR & RCC_CFGR_PLLSRC);
@@ -2476,6 +3052,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 25
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 25
@@ -2484,6 +3063,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -2491,6 +3071,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 25
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 25
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 25
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 25
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 25
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 25
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 25
@@ -2498,6 +3088,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -2505,6 +3098,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 25
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -2514,6 +3108,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 25
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 25
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 1344:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****   * @note This API should be called under the NMI_Handler().
@@ -2579,6 +3179,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 26
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 26
@@ -2587,6 +3190,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -2594,6 +3198,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 26
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 26
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 26
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 26
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 26
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 26
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 26
@@ -2601,6 +3215,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -2608,6 +3225,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 26
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -2617,6 +3235,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 26
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 26
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
   55              		.loc 1 1372 16 is_stmt 0 discriminator 1 view .LVU9
@@ -2682,6 +3306,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 27
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 27
@@ -2690,6 +3317,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -2697,6 +3325,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 27
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 27
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 27
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 27
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 27
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 27
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 27
@@ -2704,6 +3342,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -2711,6 +3352,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 27
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -2720,6 +3362,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 27
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 27
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  108 000c 43F00103 		orr	r3, r3, #1
@@ -2785,6 +3433,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 28
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 28
@@ -2793,6 +3444,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -2800,6 +3452,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 28
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 28
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 28
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 28
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 28
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 28
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 28
@@ -2807,6 +3469,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -2814,6 +3479,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 28
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -2823,6 +3489,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 28
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 28
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  151 0040 0023     		movs	r3, #0
@@ -2888,6 +3560,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 29
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 29
@@ -2896,6 +3571,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -2903,6 +3579,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 29
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 29
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 29
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 29
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 29
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 29
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 29
@@ -2910,6 +3596,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -2917,6 +3606,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 29
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -2926,6 +3616,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 29
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 29
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  193              	.LVL14:
@@ -2991,6 +3687,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 30
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 30
@@ -2999,6 +3698,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3006,6 +3706,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 30
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 30
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 30
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 30
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 30
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 30
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 30
@@ -3013,6 +3723,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3020,6 +3733,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 30
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3029,6 +3743,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 30
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 30
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  235 009e 114E     		ldr	r6, .L27
@@ -3094,6 +3814,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 31
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 31
@@ -3102,6 +3825,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3109,6 +3833,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 31
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 31
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 31
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 31
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 31
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 31
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 31
@@ -3116,6 +3850,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3123,6 +3860,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 31
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3132,6 +3870,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 31
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 31
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  278 00d6 42F08072 		orr	r2, r2, #16777216
@@ -3197,6 +3941,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 32
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 32
@@ -3205,6 +3952,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3212,6 +3960,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 32
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 32
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 32
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 32
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 32
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 32
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 32
@@ -3219,6 +3977,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3226,6 +3987,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 32
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3235,6 +3997,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 32
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 32
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  359:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** 
@@ -3300,6 +4068,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 33
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 33
@@ -3308,6 +4079,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3315,6 +4087,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 33
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 33
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 33
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 33
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 33
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 33
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 33
@@ -3322,6 +4104,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3329,6 +4114,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 33
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3338,6 +4124,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 33
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 33
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  370 0050 37E0     		b	.L35
@@ -3403,6 +4195,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 34
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 34
@@ -3411,6 +4206,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3418,6 +4214,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 34
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 34
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 34
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 34
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 34
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 34
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 34
@@ -3425,6 +4231,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3432,6 +4241,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 34
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3441,6 +4251,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 34
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 34
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  411 0084 03F00C03 		and	r3, r3, #12
@@ -3506,6 +4322,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 35
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 35
@@ -3514,6 +4333,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3521,6 +4341,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 35
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 35
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 35
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 35
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 35
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 35
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 35
@@ -3528,6 +4358,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3535,6 +4368,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 35
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3544,6 +4378,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 35
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 35
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  452 00b6 9EE1     		b	.L30
@@ -3609,6 +4449,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 36
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 36
@@ -3617,6 +4460,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3624,6 +4468,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 36
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 36
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 36
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 36
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 36
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 36
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 36
@@ -3631,6 +4485,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3638,6 +4495,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 36
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3647,6 +4505,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 36
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 36
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  492              		.loc 1 393 20 view .LVU147
@@ -3712,6 +4576,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 37
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 37
@@ -3720,6 +4587,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3727,6 +4595,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 37
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 37
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 37
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 37
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 37
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 37
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 37
@@ -3734,6 +4612,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3741,6 +4622,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 37
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3750,6 +4632,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 37
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 37
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  537 0122 13F4003F 		tst	r3, #131072
@@ -3815,6 +4703,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 38
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 38
@@ -3823,6 +4714,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3830,6 +4722,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 38
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 38
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 38
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 38
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 38
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 38
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 38
@@ -3837,6 +4739,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3844,6 +4749,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 38
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3853,6 +4759,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 38
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 38
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  479:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****   {
@@ -3918,6 +4830,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 39
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 39
@@ -3926,6 +4841,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -3933,6 +4849,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 39
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 39
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 39
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 39
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 39
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 39
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 39
@@ -3940,6 +4866,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -3947,6 +4876,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 39
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -3956,6 +4886,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 39
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 39
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  620 018e 0228     		cmp	r0, #2
@@ -4021,6 +4957,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 40
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 40
@@ -4029,6 +4968,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4036,6 +4976,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 40
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 40
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 40
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 40
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 40
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 40
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 40
@@ -4043,6 +4993,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4050,6 +5003,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 40
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4059,6 +5013,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 40
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 40
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  472:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****           }
@@ -4124,6 +5084,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 41
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 41
@@ -4132,6 +5095,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4139,6 +5103,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 41
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 41
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 41
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 41
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 41
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 41
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 41
@@ -4146,6 +5120,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4153,6 +5130,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 41
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4162,6 +5140,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 41
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 41
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  705              		.loc 1 535 7 view .LVU219
@@ -4227,6 +5211,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 42
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 42
@@ -4235,6 +5222,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4242,6 +5230,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 42
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 42
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 42
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 42
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 42
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 42
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 42
@@ -4249,6 +5247,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4256,6 +5257,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 42
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4265,6 +5267,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 42
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 42
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  748              		.loc 1 511 19 is_stmt 0 view .LVU233
@@ -4330,6 +5338,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 43
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 43
@@ -4338,6 +5349,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4345,6 +5357,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 43
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 43
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 43
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 43
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 43
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 43
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 43
@@ -4352,6 +5374,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4359,6 +5384,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 43
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4368,6 +5394,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 43
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 43
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  792              	.LVL55:
@@ -4433,6 +5465,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 44
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 44
@@ -4441,6 +5476,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4448,6 +5484,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 44
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 44
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 44
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 44
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 44
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 44
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 44
@@ -4455,6 +5501,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4462,6 +5511,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 44
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4471,6 +5521,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 44
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 44
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  834              		.loc 1 562 7 is_stmt 1 view .LVU261
@@ -4536,6 +5592,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 45
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 45
@@ -4544,6 +5603,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4551,6 +5611,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 45
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 45
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 45
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 45
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 45
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 45
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 45
@@ -4558,6 +5628,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4565,6 +5638,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 45
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4574,6 +5648,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 45
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 45
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  557:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****     /* Check the LSE State */
@@ -4639,6 +5719,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 46
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 46
@@ -4647,6 +5730,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4654,6 +5738,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 46
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 46
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 46
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 46
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 46
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 46
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 46
@@ -4661,6 +5755,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4668,6 +5765,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 46
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4677,6 +5775,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 46
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 46
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  920 0306 E5B9     		cbnz	r5, .L116
@@ -4742,6 +5846,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 47
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 47
@@ -4750,6 +5857,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4757,6 +5865,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 47
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 47
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 47
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 47
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 47
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 47
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 47
@@ -4764,6 +5882,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4771,6 +5892,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 47
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4780,6 +5902,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 47
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 47
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  960              		.loc 1 758 15 view .LVU306
@@ -4845,6 +5973,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 48
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 48
@@ -4853,6 +5984,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4860,6 +5992,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 48
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 48
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 48
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 48
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 48
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 48
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 48
@@ -4867,6 +6009,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4874,6 +6019,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 48
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4883,6 +6029,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 48
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 48
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  706:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c ****         {
@@ -4948,6 +6100,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 49
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 49
@@ -4956,6 +6111,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -4963,6 +6119,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 49
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 49
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 49
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 49
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 49
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 49
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 49
@@ -4970,6 +6136,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -4977,6 +6146,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 49
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -4986,6 +6156,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 49
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 49
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1046 0396 0446     		mov	r4, r0
@@ -5051,6 +6227,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 50
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 50
@@ -5059,6 +6238,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5066,6 +6246,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 50
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 50
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 50
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 50
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 50
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 50
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 50
@@ -5073,6 +6263,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -5080,6 +6273,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 50
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -5089,6 +6283,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 50
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 50
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1090              	.L73:
@@ -5154,6 +6354,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 51
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 51
@@ -5162,6 +6365,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5169,6 +6373,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 51
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 51
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 51
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 51
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 51
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 51
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 51
@@ -5176,6 +6390,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -5183,6 +6400,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 51
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -5192,6 +6410,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 51
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 51
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1133              	.L108:
@@ -5257,6 +6481,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 52
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 52
@@ -5265,6 +6492,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5272,6 +6500,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 52
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 52
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 52
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 52
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 52
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 52
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 52
@@ -5279,6 +6517,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -5286,6 +6527,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 52
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -5295,6 +6537,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 52
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 52
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1182 040c 00004242 		.word	1111621632
@@ -5360,6 +6608,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 53
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 53
@@ -5368,6 +6619,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5375,6 +6627,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 53
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 53
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 53
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 53
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 53
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 53
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 53
@@ -5382,6 +6644,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -5389,6 +6654,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 53
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -5398,6 +6664,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 53
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 53
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1228              		.loc 1 1017 18 is_stmt 0 view .LVU382
@@ -5463,6 +6735,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 54
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 54
@@ -5471,6 +6746,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5478,6 +6754,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 54
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 54
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 54
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 54
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 54
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 54
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 54
@@ -5485,6 +6771,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -5492,6 +6781,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 54
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -5501,6 +6791,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 54
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 54
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1271 0046 30BD     		pop	{r4, r5, pc}
@@ -5566,6 +6862,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 55
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 55
@@ -5574,6 +6873,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5581,6 +6881,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 55
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 55
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 55
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 55
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 55
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 55
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 55
@@ -5588,6 +6898,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -5595,6 +6908,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 55
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -5604,6 +6918,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 55
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 55
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 1050:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** }
@@ -5669,6 +6989,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 56
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 56
@@ -5677,6 +7000,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5684,6 +7008,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 56
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 56
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 56
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 56
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 56
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 56
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 56
@@ -5691,6 +7025,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -5698,6 +7035,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 56
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -5707,6 +7045,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 56
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 56
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1372              		.loc 1 1097 3 view .LVU412
@@ -5772,6 +7116,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 57
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 57
@@ -5780,6 +7127,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5787,6 +7135,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 57
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 57
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 57
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 57
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 57
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 57
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 57
@@ -5794,6 +7152,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -5801,6 +7162,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 57
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -5810,6 +7172,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 57
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 57
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1414 003a 0A4B     		ldr	r3, .L142+4
@@ -5875,6 +7243,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 58
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 58
@@ -5883,6 +7254,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5890,6 +7262,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 58
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 58
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 58
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 58
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 58
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 58
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 58
@@ -5897,6 +7279,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -5904,6 +7289,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 58
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -5913,6 +7299,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 58
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 58
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1461              		.thumb_func
@@ -5978,6 +7370,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 59
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 59
@@ -5986,6 +7381,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -5993,6 +7389,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 59
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 59
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 59
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 59
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 59
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 59
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 59
@@ -6000,6 +7406,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6007,6 +7416,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 59
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6016,6 +7426,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 59
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 59
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1505              		.loc 1 840 8 view .LVU452
@@ -6081,6 +7497,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 60
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 60
@@ -6089,6 +7508,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -6096,6 +7516,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 60
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 60
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 60
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 60
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 60
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 60
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 60
@@ -6103,6 +7533,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6110,6 +7543,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 60
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6119,6 +7553,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 60
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 60
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1548              		.loc 1 868 3 is_stmt 1 view .LVU466
@@ -6184,6 +7624,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 61
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 61
@@ -6192,6 +7635,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -6199,6 +7643,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 61
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 61
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 61
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 61
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 61
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 61
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 61
@@ -6206,6 +7660,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6213,6 +7670,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 61
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6222,6 +7680,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 61
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 61
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1588              		.loc 1 904 11 view .LVU483
@@ -6287,6 +7751,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 62
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 62
@@ -6295,6 +7762,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -6302,6 +7770,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 62
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 62
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 62
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 62
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 62
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 62
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 62
@@ -6309,6 +7787,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6316,6 +7797,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 62
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6325,6 +7807,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 62
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 62
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1630 00c8 1268     		ldr	r2, [r2]
@@ -6390,6 +7878,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 63
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 63
@@ -6398,6 +7889,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -6405,6 +7897,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 63
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 63
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 63
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 63
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 63
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 63
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 63
@@ -6412,6 +7914,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6419,6 +7924,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 63
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6428,6 +7934,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 63
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 63
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1672 0102 23F4E063 		bic	r3, r3, #1792
@@ -6493,6 +8005,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 64
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 64
@@ -6501,6 +8016,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -6508,6 +8024,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 64
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 64
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 64
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 64
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 64
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 64
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 64
@@ -6515,6 +8041,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6522,6 +8051,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 64
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6531,6 +8061,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 64
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 64
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  949:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** }
@@ -6596,6 +8132,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 65
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 65
@@ -6604,6 +8143,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -6611,6 +8151,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 65
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 65
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 65
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 65
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 65
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 65
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 65
@@ -6618,6 +8168,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6625,6 +8178,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 65
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6634,6 +8188,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 65
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 65
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1763 0164 00000000 		.word	SystemCoreClock
@@ -6699,6 +8259,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 66
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 66
@@ -6707,6 +8270,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -6714,6 +8278,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 66
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 66
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 66
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 66
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 66
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 66
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 66
@@ -6721,6 +8295,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6728,6 +8305,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 66
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6737,6 +8315,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 66
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 66
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1817 0006 044B     		ldr	r3, .L179
@@ -6802,6 +8386,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 67
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 67
@@ -6810,6 +8397,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -6817,6 +8405,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 67
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 67
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 67
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 67
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 67
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 67
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 67
@@ -6824,6 +8422,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6831,6 +8432,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 67
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6840,6 +8442,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 67
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 67
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1866 0012 D840     		lsrs	r0, r0, r3
@@ -6905,6 +8513,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 68
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 68
@@ -6913,6 +8524,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -6920,6 +8532,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 68
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 68
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 68
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 68
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 68
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 68
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 68
@@ -6927,6 +8549,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -6934,6 +8559,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 68
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -6943,6 +8569,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 68
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 68
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1913              		.loc 1 1239 37 view .LVU565
@@ -7008,6 +8640,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 69
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 69
@@ -7016,6 +8651,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -7023,6 +8659,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 69
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 69
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 69
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 69
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 69
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 69
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 69
@@ -7030,6 +8676,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -7037,6 +8686,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 69
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -7046,6 +8696,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 69
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 69
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1952              		.loc 1 1270 5 is_stmt 1 view .LVU583
@@ -7111,6 +8767,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 70
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 70
@@ -7119,6 +8778,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -7126,6 +8786,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 70
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 70
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 70
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 70
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 70
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 70
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 70
@@ -7133,6 +8803,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -7140,6 +8813,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 70
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -7149,6 +8823,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 70
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 70
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  1991              		.loc 1 1231 11 view .LVU601
@@ -7214,6 +8894,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 71
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 71
@@ -7222,6 +8905,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -7229,6 +8913,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 71
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 71
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 71
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 71
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 71
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 71
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 71
@@ -7236,6 +8930,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -7243,6 +8940,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 71
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -7252,6 +8950,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 71
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 71
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  2033 00a4 0023     		movs	r3, #0
@@ -7317,6 +9021,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 72
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 72
@@ -7325,6 +9032,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -7332,6 +9040,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 72
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 72
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 72
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 72
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 72
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 72
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 72
@@ -7339,6 +9057,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -7346,6 +9067,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 72
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -7355,6 +9077,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 72
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 72
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  2079              		.loc 1 1325 52 is_stmt 0 view .LVU629
@@ -7420,6 +9148,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 73
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 73
@@ -7428,6 +9159,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -7435,6 +9167,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 73
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 73
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 73
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 73
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 73
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 73
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 73
@@ -7442,6 +9184,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -7449,6 +9194,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 73
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -7458,6 +9204,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 73
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 73
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
  2122              		.thumb
@@ -7523,6 +9275,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 74
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 74
@@ -7531,6 +9286,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -7538,6 +9294,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 74
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 74
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 74
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 74
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 74
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 74
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 74
@@ -7545,6 +9311,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -7552,6 +9321,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 74
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -7561,6 +9331,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 74
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 74
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 1353:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c **** 
@@ -7599,6 +9375,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 75
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 75
@@ -7607,6 +9386,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -7614,6 +9394,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 75
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 75
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 75
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 75
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 75
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 75
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 75
@@ -7621,6 +9411,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -7628,6 +9421,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 75
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -7637,6 +9431,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 75
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 75
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 DEFINED SYMBOLS
@@ -7647,16 +9447,23 @@ DEFINED SYMBOLS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 =======
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
 >>>>>>> 7f8e5ad (090300)
 =======
 >>>>>>> c9bcb0e (build)
 =======
 >>>>>>> e0bd117 ( OO)
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:18     .text.RCC_Delay:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:23     .text.RCC_Delay:00000000 RCC_Delay
 C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:73     .text.RCC_Delay:00000024 $d
@@ -7705,8 +9512,16 @@ C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:2138   .text.HAL_RCC_NMI_IRQHandle
 C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:2144   .text.HAL_RCC_NMI_IRQHandler:00000000 HAL_RCC_NMI_IRQHandler
 C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:2178   .text.HAL_RCC_NMI_IRQHandler:0000001c $d
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> c9bcb0e (build)
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s:18     .text.RCC_Delay:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s:23     .text.RCC_Delay:00000000 RCC_Delay
 C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s:73     .text.RCC_Delay:00000024 $d
@@ -7755,6 +9570,10 @@ C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s:2138   .text.HAL_RCC_NMI_IRQHandle
 C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s:2144   .text.HAL_RCC_NMI_IRQHandler:00000000 HAL_RCC_NMI_IRQHandler
 C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s:2178   .text.HAL_RCC_NMI_IRQHandler:0000001c $d
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 =======
 C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:18     .text.RCC_Delay:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:23     .text.RCC_Delay:00000000 RCC_Delay
@@ -7805,6 +9624,11 @@ C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:2144   .text.HAL_RCC_NMI_IRQHandle
 C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s:2178   .text.HAL_RCC_NMI_IRQHandler:0000001c $d
 >>>>>>> 7f8e5ad (090300)
 =======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s:18     .text.RCC_Delay:00000000 $t
@@ -7858,10 +9682,17 @@ C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s:2178   .text.HAL_RCC_NMI_IRQHandle
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
 =======
 =======
 >>>>>>> e0bd117 ( OO)
+=======
+>>>>>>> c9bcb0e (build)
+=======
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 =======
 C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s:18     .text.RCC_Delay:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s:23     .text.RCC_Delay:00000000 RCC_Delay
@@ -7914,11 +9745,15 @@ C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s:2178   .text.HAL_RCC_NMI_IRQHandle
 <<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 >>>>>>> 7f8e5ad (090300)
 =======
 >>>>>>> c9bcb0e (build)
 =======
 >>>>>>> e0bd117 ( OO)
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 UNDEFINED SYMBOLS
 SystemCoreClock
@@ -7933,6 +9768,9 @@ AHBPrescTable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 76
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 76
@@ -7941,6 +9779,7 @@ AHBPrescTable
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 =======
@@ -7948,6 +9787,16 @@ AHBPrescTable
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 76
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 76
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 76
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 76
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 76
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccbzlktA.s 			page 76
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccRUvrAI.s 			page 76
@@ -7955,6 +9804,9 @@ AHBPrescTable
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 >>>>>>> c9bcb0e (build)
 =======
 =======
@@ -7962,6 +9814,7 @@ AHBPrescTable
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
 =======
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccqXI5e4.s 			page 76
 >>>>>>> 7f8e5ad (090300)
 =======
@@ -7971,6 +9824,12 @@ AHBPrescTable
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 76
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccAi1xmK.s 			page 76
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 APBPrescTable
