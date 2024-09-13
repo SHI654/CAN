@@ -33,17 +33,23 @@ NS_ :
 
 BS_:
 
-BU_: STM32
+BU_: Tester STM32
 
 
-BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ New_Signal_9 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+BO_ 1281 STM32_STM32_NM_501: 8 Tester
 
-BO_ 426 STM32_Frame6_1AA: 8 Vector__XXX
+BO_ 562 STM32_Frame0_232: 8 STM32
+ SG_ New_Signal_8 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_7 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_6 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_4 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 426 STM32_Frame6_1AA: 8 STM32
 
 BO_ 766 STM32_Frame5_2FE: 8 Vector__XXX
 
-BO_ 256 STM32_Frame1_100: 8 Vector__XXX
+BO_ 256 STM32_Frame1_100: 8 STM32
+ SG_ New_Signal_9 : 39|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ New_Signal_8 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ New_Signal_7 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
  SG_ New_Signal_6 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
@@ -55,7 +61,7 @@ BO_ 849 STM32_Frame2_351: 8 STM32
 
 BO_ 581 STM32_Frame3_245: 8 STM32
 
-BO_ 1824 GW_STM32_Phy_Req_720: 8 Vector__XXX
+BO_ 1824 GW_STM32_Phy_Req_720: 8 Tester
  SG_ GW_STM32_Phy_Req_720_Data : 7|64@0+ (1,0) [0|0] ""  STM32
 
 BO_ 1832 STM32_STM32_Phy_Resp_728: 8 STM32
@@ -65,7 +71,6 @@ BO_ 1315 STM32_STM32_NM_523: 8 STM32
 
 
 
-CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 CM_ SG_ 1824 GW_STM32_Phy_Req_720_Data " ";
 CM_ SG_ 1832 STM32_STM32_Phy_Resp_728_Data " ";
 BA_DEF_  "Baudrate" INT 0 1000000;
@@ -183,6 +188,13 @@ BA_ "SamplePointMax" 80;
 BA_ "SamplePointMin" 80;
 BA_ "Baudrate" 500000;
 BA_ "DBName" "TestCAN";
+BA_ "NmAsrMessage" BO_ 1281 1;
+BA_ "GenMsgCycleTime" BO_ 1281 0;
+BA_ "GenMsgSendType" BO_ 1281 1;
+BA_ "GenMsgILSupport" BO_ 1281 0;
+BA_ "GenMsgILSupport" BO_ 562 1;
+BA_ "GenMsgSendType" BO_ 562 0;
+BA_ "GenMsgCycleTime" BO_ 562 500;
 BA_ "GenMsgILSupport" BO_ 426 1;
 BA_ "GenMsgSendType" BO_ 426 0;
 BA_ "GenMsgCycleTime" BO_ 426 500;

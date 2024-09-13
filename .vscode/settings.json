@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "canif.h": "c",
-        "can.h": "c"
+        "can.h": "c",
+        "compare": "c",
+        "type_traits": "c"
     }
 }
