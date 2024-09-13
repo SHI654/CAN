@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 1
+>>>>>>> 7f8e5ad (090300)
 
 
    1              		.cpu cortex-m3
@@ -69,6 +73,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 1
   28              		.loc 1 36 63 view -0
   29              		.cfi_startproc
   30              		@ args = 0, pretend = 0, frame = 32
+<<<<<<< HEAD
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 2
+
+
+>>>>>>> 7f8e5ad (090300)
   31              		@ frame_needed = 0, uses_anonymous_args = 0
   32              		.loc 1 36 63 is_stmt 0 view .LVU1
   33 0000 10B5     		push	{r4, lr}
@@ -128,9 +138,18 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 1
   68              		.loc 1 52 5 is_stmt 1 view .LVU17
   69              	.LVL1:
   70              	.L3:
+<<<<<<< HEAD
   71              		.loc 1 52 56 discriminator 1 view .LVU18
   72              		.loc 1 52 11 discriminator 1 view .LVU19
   73              		.loc 1 52 12 is_stmt 0 discriminator 1 view .LVU20
+=======
+  71              		.loc 1 44 56 discriminator 1 view .LVU18
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 3
+
+
+  72              		.loc 1 44 11 discriminator 1 view .LVU19
+  73              		.loc 1 44 12 is_stmt 0 discriminator 1 view .LVU20
+>>>>>>> 7f8e5ad (090300)
   74 001e 0B48     		ldr	r0, .L8+4
   75 0020 FFF7FEFF 		bl	HAL_CAN_GetTxMailboxesFreeLevel
   76              	.LVL2:
@@ -189,6 +208,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 1
  118 004c 00000000 		.word	hcan
  119              		.cfi_endproc
  120              	.LFE65:
+<<<<<<< HEAD
  122              		.section	.text.CanIf_Receive,"ax",%progbits
  123              		.align	1
  124              		.global	CanIf_Receive
@@ -589,10 +609,53 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 1
  411              		.file 10 "Inc/main.h"
  412              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 11
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 4
+
+
+ 122              		.global	TxPduIdToStdIdTable
+ 123              		.section	.rodata.TxPduIdToStdIdTable,"a"
+ 124              		.align	2
+ 125              		.set	.LANCHOR0,. + 0
+ 128              	TxPduIdToStdIdTable:
+ 129 0000 00010000 		.word	256
+ 130 0004 C0010000 		.word	448
+ 131 0008 80020000 		.word	640
+ 132 000c 40030000 		.word	832
+ 133 0010 00040000 		.word	1024
+ 134 0014 C0040000 		.word	1216
+ 135 0018 80050000 		.word	1408
+ 136 001c 40060000 		.word	1600
+ 137 0020 00070000 		.word	1792
+ 138 0024 C0070000 		.word	1984
+ 139 0028 80070000 		.word	1920
+ 140 002c 40070000 		.word	1856
+ 141 0030 C0060000 		.word	1728
+ 142 0034 00060000 		.word	1536
+ 143 0038 A0050000 		.word	1440
+ 144 003c E0040000 		.word	1248
+ 145 0040 20040000 		.word	1056
+ 146 0044 60030000 		.word	864
+ 147 0048 A0020000 		.word	672
+ 148 004c E0010000 		.word	480
+ 149              		.text
+ 150              	.Letext0:
+ 151              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 152              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 153              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 154              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
+ 155              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 156              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"
+ 157              		.file 8 "Inc/canif.h"
+ 158              		.file 9 "Inc/can.h"
+ 159              		.file 10 "Inc/main.h"
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 5
+>>>>>>> 7f8e5ad (090300)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 canif.c
+<<<<<<< HEAD
 C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s:18     .text.CanIf_Transmit:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s:24     .text.CanIf_Transmit:00000000 CanIf_Transmit
 C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s:117    .text.CanIf_Transmit:00000048 $d
@@ -613,6 +676,13 @@ C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s:353    .bss.CanIfPduInfo:00000000 
 C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s:360    .bss.CanTp_Callback:00000000 $d
 C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s:367    .bss.rxHeader:00000000 $d
 C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s:374    .rodata.TxPduIdToStdIdTable:00000000 $d
+=======
+C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:18     .text.CanIf_Transmit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:24     .text.CanIf_Transmit:00000000 CanIf_Transmit
+C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:117    .text.CanIf_Transmit:00000048 $d
+C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:128    .rodata.TxPduIdToStdIdTable:00000000 TxPduIdToStdIdTable
+C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:124    .rodata.TxPduIdToStdIdTable:00000000 $d
+>>>>>>> 7f8e5ad (090300)
 
 UNDEFINED SYMBOLS
 HAL_CAN_GetTxMailboxesFreeLevel
