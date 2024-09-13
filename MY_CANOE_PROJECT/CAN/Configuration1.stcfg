@@ -1,4 +1,20 @@
 [NStatePersistence]
 Signature=VectorStatePersistence
 [VGlobalMeasurementIndex]
-mMeasurementIndex=76
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+mMeasurementIndex=17
+=======
+mMeasurementIndex=24
+>>>>>>> c9bcb0e (build)
+=======
+mMeasurementIndex=60
+>>>>>>> e0bd117 ( OO)
+=======
+mMeasurementIndex=20
+>>>>>>> 7f8e5ad (090300)
+=======
+mMeasurementIndex=24
+>>>>>>> c9bcb0e (build)

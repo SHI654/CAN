@@ -1,4 +1,71 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
+>>>>>>> 7f8e5ad (090300)
+=======
+=======
+>>>>>>> e0bd117 ( OO)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
+=======
+>>>>>>> e0bd117 ( OO)
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 1
+>>>>>>> 2ff531d (build)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 1
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 1
+>>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 1
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 1
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +125,74 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
   29:Src/sysmem.c  ****  */
   30:Src/sysmem.c  **** static uint8_t *__sbrk_heap_end = NULL;
   31:Src/sysmem.c  **** 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 2
+>>>>>>> 7f8e5ad (090300)
+=======
+=======
+>>>>>>> e0bd117 ( OO)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
+=======
+>>>>>>> e0bd117 ( OO)
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 2
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 2
+>>>>>>> 2ff531d (build)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 2
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 2
+>>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 2
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 2
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
   32:Src/sysmem.c  **** /**
@@ -118,7 +252,74 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
   50              		.loc 1 63 12 is_stmt 0 view .LVU10
   51 0008 0D48     		ldr	r0, .L8+8
   52              	.LVL2:
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 3
+>>>>>>> 7f8e5ad (090300)
+=======
+=======
+>>>>>>> e0bd117 ( OO)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
+=======
+>>>>>>> e0bd117 ( OO)
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 3
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 3
+>>>>>>> 2ff531d (build)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 3
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 3
+>>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 3
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 3
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
   53              		.loc 1 63 12 view .LVU11
@@ -178,7 +379,74 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
   71:Src/sysmem.c  ****     return (void *)-1;
   89              		.loc 1 71 5 is_stmt 1 view .LVU23
   90 0028 FFF7FEFF 		bl	__errno
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 4
+>>>>>>> 7f8e5ad (090300)
+=======
+=======
+>>>>>>> e0bd117 ( OO)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
+=======
+>>>>>>> e0bd117 ( OO)
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 4
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 4
+>>>>>>> 2ff531d (build)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 4
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 4
+>>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 4
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 4
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
   91              	.LVL8:
@@ -212,16 +480,181 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 1
  119              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
  120              		.file 4 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
  121              		.file 5 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 5
+>>>>>>> 7f8e5ad (090300)
+=======
+=======
+>>>>>>> e0bd117 ( OO)
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
+=======
+>>>>>>> e0bd117 ( OO)
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s 			page 5
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s 			page 5
+>>>>>>> 2ff531d (build)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 5
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s 			page 5
+>>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 5
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s 			page 5
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 sysmem.c
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+=======
+=======
+>>>>>>> e0bd117 ( OO)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
+=======
+>>>>>>> e0bd117 ( OO)
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:18     .text._sbrk:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:24     .text._sbrk:00000000 _sbrk
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:102    .text._sbrk:00000038 $d
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:110    .bss.__sbrk_heap_end:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:114    .bss.__sbrk_heap_end:00000000 __sbrk_heap_end
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> c9bcb0e (build)
+=======
+=======
+<<<<<<< HEAD
+>>>>>>> c9bcb0e (build)
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s:18     .text._sbrk:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s:24     .text._sbrk:00000000 _sbrk
 C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s:102    .text._sbrk:00000038 $d
 C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s:110    .bss.__sbrk_heap_end:00000000 $d
 C:\Users\wup15j\AppData\Local\Temp\cc6gBCvT.s:114    .bss.__sbrk_heap_end:00000000 __sbrk_heap_end
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+=======
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:18     .text._sbrk:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:24     .text._sbrk:00000000 _sbrk
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:102    .text._sbrk:00000038 $d
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:110    .bss.__sbrk_heap_end:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cco8UVWw.s:114    .bss.__sbrk_heap_end:00000000 __sbrk_heap_end
+>>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+>>>>>>> RTOS
+=======
+C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:18     .text._sbrk:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:24     .text._sbrk:00000000 _sbrk
+C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:102    .text._sbrk:00000038 $d
+C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:110    .bss.__sbrk_heap_end:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cc7Ye8Md.s:114    .bss.__sbrk_heap_end:00000000 __sbrk_heap_end
+>>>>>>> 2ff531d (build)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> c9bcb0e (build)
+=======
+=======
+>>>>>>> e0bd117 ( OO)
+=======
+>>>>>>> c9bcb0e (build)
+=======
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
+=======
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:18     .text._sbrk:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:24     .text._sbrk:00000000 _sbrk
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:102    .text._sbrk:00000038 $d
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:110    .bss.__sbrk_heap_end:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cc9oPtMY.s:114    .bss.__sbrk_heap_end:00000000 __sbrk_heap_end
+>>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
+>>>>>>> e0bd117 ( OO)
+=======
+<<<<<<< HEAD
+>>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> c9bcb0e (build)
+=======
+>>>>>>> e0bd117 ( OO)
+=======
+>>>>>>> e0bd1171bd00776f3b89f4c50b010a56f80bba5e
+>>>>>>> 9cb67a72bb86385df69751197d0e9d153ed742b1
 
 UNDEFINED SYMBOLS
 __errno
