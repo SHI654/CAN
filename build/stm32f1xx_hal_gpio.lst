@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 1
@@ -23,6 +24,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cctALlS9.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 1
+>>>>>>> 7f8e5ad (090300)
 
 
    1              		.cpu cortex-m3
@@ -85,6 +89,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 2
@@ -107,6 +112,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 2
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 2
+>>>>>>> 7f8e5ad (090300)
 
 
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
@@ -169,6 +177,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 3
@@ -191,6 +200,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 3
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 3
+>>>>>>> 7f8e5ad (090300)
 
 
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   @endverbatim
@@ -253,6 +265,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 4
@@ -275,6 +288,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 4
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 4
+>>>>>>> 7f8e5ad (090300)
 
 
  146:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** /* Private macro -------------------------------------------------------------*/
@@ -337,6 +353,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 5
@@ -359,6 +376,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 5
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 5
+>>>>>>> 7f8e5ad (090300)
 
 
   47              		.loc 1 183 3 view .LVU5
@@ -421,6 +441,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 6
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 6
@@ -443,6 +464,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 6
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 6
+>>>>>>> 7f8e5ad (090300)
 
 
   77 0026 AA42     		cmp	r2, r5
@@ -505,6 +529,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 7
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 7
@@ -527,6 +552,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 7
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 7
+>>>>>>> 7f8e5ad (090300)
 
 
   90              		.loc 1 252 16 is_stmt 1 view .LVU21
@@ -589,6 +617,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 8
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 8
@@ -611,6 +640,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 8
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 8
+>>>>>>> 7f8e5ad (090300)
 
 
  117              	.LVL6:
@@ -673,6 +705,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 9
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 9
@@ -695,6 +728,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 9
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 9
+>>>>>>> 7f8e5ad (090300)
 
 
  162 0092 4FEA9C02 		lsr	r2, ip, #2
@@ -757,6 +793,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 10
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 10
@@ -779,6 +816,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 10
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 10
+>>>>>>> 7f8e5ad (090300)
 
 
  210 00e0 1368     		ldr	r3, [r2]
@@ -841,6 +881,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 11
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 11
@@ -863,6 +904,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 11
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 11
+>>>>>>> 7f8e5ad (090300)
 
 
  239              		.loc 1 329 9 view .LVU70
@@ -925,6 +969,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 12
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 12
@@ -947,6 +992,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 12
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 12
+>>>>>>> 7f8e5ad (090300)
 
 
  275              		.loc 1 205 7 is_stmt 1 view .LVU85
@@ -1009,6 +1057,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 13
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 13
@@ -1031,6 +1080,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 13
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 13
+>>>>>>> 7f8e5ad (090300)
 
 
  221:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****           break;
@@ -1093,6 +1145,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 14
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 14
@@ -1115,6 +1168,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 14
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 14
+>>>>>>> 7f8e5ad (090300)
 
 
  362              	.LVL28:
@@ -1177,6 +1233,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 15
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 15
@@ -1199,6 +1256,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 15
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 15
+>>>>>>> 7f8e5ad (090300)
 
 
  408 01de 83E7     		b	.L21
@@ -1261,6 +1321,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 16
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 16
@@ -1283,6 +1344,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 16
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 16
+>>>>>>> 7f8e5ad (090300)
 
 
  343:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
@@ -1345,6 +1409,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 17
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 17
@@ -1367,6 +1432,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 17
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 17
+>>>>>>> 7f8e5ad (090300)
 
 
  374:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****       tmp = AFIO->EXTICR[position >> 2u];
@@ -1429,6 +1497,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 18
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 18
@@ -1451,6 +1520,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 18
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 18
+>>>>>>> 7f8e5ad (090300)
 
 
  521 002c 4FF0040C 		mov	ip, #4
@@ -1513,6 +1585,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 19
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 19
@@ -1535,6 +1608,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 19
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 19
+>>>>>>> 7f8e5ad (090300)
 
 
  561              		.loc 1 375 40 is_stmt 0 view .LVU164
@@ -1597,6 +1673,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 20
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 20
@@ -1619,6 +1696,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 20
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 20
+>>>>>>> 7f8e5ad (090300)
 
 
  606 00a8 25EA0305 		bic	r5, r5, r3
@@ -1681,6 +1761,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 21
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 21
@@ -1703,6 +1784,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 21
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 21
+>>>>>>> 7f8e5ad (090300)
 
 
  651              		.loc 1 367 35 is_stmt 0 view .LVU187
@@ -1765,6 +1849,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 22
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 22
@@ -1787,6 +1872,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 22
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 22
+>>>>>>> 7f8e5ad (090300)
 
 
  409:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c **** 
@@ -1849,6 +1937,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 23
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 23
@@ -1871,6 +1960,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 23
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 23
+>>>>>>> 7f8e5ad (090300)
 
 
  722 000a 0020     		movs	r0, #0
@@ -1933,6 +2025,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 24
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 24
@@ -1955,6 +2048,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 24
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 24
+>>>>>>> 7f8e5ad (090300)
 
 
  752 0002 0161     		str	r1, [r0, #16]
@@ -2017,6 +2113,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 25
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 25
@@ -2039,6 +2136,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 25
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 25
+>>>>>>> 7f8e5ad (090300)
 
 
  498:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****   GPIOx->BSRR = ((odr & GPIO_Pin) << GPIO_NUMBER) | (~odr & GPIO_Pin);
@@ -2101,6 +2201,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 26
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 26
@@ -2123,6 +2224,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 26
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 26
+>>>>>>> 7f8e5ad (090300)
 
 
  826              		.loc 1 517 3 view .LVU231
@@ -2185,6 +2289,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 27
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 27
@@ -2207,6 +2312,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 27
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 27
+>>>>>>> 7f8e5ad (090300)
 
 
  861              		.cfi_def_cfa_offset 0
@@ -2269,6 +2377,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 28
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 28
@@ -2291,6 +2400,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 28
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 28
+>>>>>>> 7f8e5ad (090300)
 
 
  566:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c ****            the HAL_GPIO_EXTI_Callback could be implemented in the user file
@@ -2353,6 +2465,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s 			page 29
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 29
@@ -2375,6 +2488,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 29
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 29
+>>>>>>> 7f8e5ad (090300)
 
 
  939 0016 00BF     		.align	2
@@ -2389,6 +2505,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
  949              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
  950              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
  951              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2414,6 +2531,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s 			page 30
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s 			page 30
+>>>>>>> 7f8e5ad (090300)
 
 
 DEFINED SYMBOLS
@@ -2421,10 +2541,13 @@ DEFINED SYMBOLS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+=======
+>>>>>>> 7f8e5ad (090300)
 C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s:18     .text.HAL_GPIO_Init:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s:24     .text.HAL_GPIO_Init:00000000 HAL_GPIO_Init
 C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s:288    .text.HAL_GPIO_Init:0000014c $d
@@ -2446,6 +2569,7 @@ C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s:883    .text.HAL_GPIO_EXTI_Callbac
 C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s:898    .text.HAL_GPIO_EXTI_IRQHandler:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s:904    .text.HAL_GPIO_EXTI_IRQHandler:00000000 HAL_GPIO_EXTI_IRQHandler
 C:\Users\wup15j\AppData\Local\Temp\cc9NG61n.s:941    .text.HAL_GPIO_EXTI_IRQHandler:00000018 $d
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 C:\Users\wup15j\AppData\Local\Temp\ccp6WFjb.s:18     .text.HAL_GPIO_Init:00000000 $t
@@ -2545,5 +2669,7 @@ C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s:904    .text.HAL_GPIO_EXTI_IRQHand
 C:\Users\wup15j\AppData\Local\Temp\ccNo0ghd.s:941    .text.HAL_GPIO_EXTI_IRQHandler:00000018 $d
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+>>>>>>> 7f8e5ad (090300)
 
 NO UNDEFINED SYMBOLS

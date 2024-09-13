@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 1
@@ -23,6 +24,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 1
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 1
+>>>>>>> 7f8e5ad (090300)
 
 
    1              		.cpu cortex-m3
@@ -96,6 +100,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 1
   30              		@ args = 0, pretend = 0, frame = 32
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 <<<<<<< HEAD
@@ -104,6 +109,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 2
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 2
+>>>>>>> 7f8e5ad (090300)
 
 
 >>>>>>> 7f8e5ad (090300)
@@ -210,10 +218,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 1
 =======
   71              		.loc 1 44 56 discriminator 1 view .LVU18
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 3
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 3
+>>>>>>> 7f8e5ad (090300)
 
 
   72              		.loc 1 44 11 discriminator 1 view .LVU19
@@ -372,6 +384,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> e0bd117 ( OO)
@@ -380,6 +393,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 4
 >>>>>>> 2ff531d (build)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 4
+>>>>>>> 7f8e5ad (090300)
 
 
  122              		.global	TxPduIdToStdIdTable
@@ -418,6 +434,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 1
  157              		.file 8 "Inc/canif.h"
  158              		.file 9 "Inc/can.h"
  159              		.file 10 "Inc/main.h"
+<<<<<<< HEAD
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 5
 =======
@@ -1059,6 +1076,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 1
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 8
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 5
+>>>>>>> 7f8e5ad (090300)
 
 
 DEFINED SYMBOLS
@@ -1066,15 +1086,19 @@ DEFINED SYMBOLS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
+=======
+>>>>>>> 7f8e5ad (090300)
 C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:18     .text.CanIf_Transmit:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:24     .text.CanIf_Transmit:00000000 CanIf_Transmit
 C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:117    .text.CanIf_Transmit:00000048 $d
 C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:128    .rodata.TxPduIdToStdIdTable:00000000 TxPduIdToStdIdTable
 C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:124    .rodata.TxPduIdToStdIdTable:00000000 $d
+<<<<<<< HEAD
 =======
 >>>>>>> c9bcb0e (build)
 C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s:18     .text.CanIf_Transmit:00000000 $t
@@ -1132,6 +1156,8 @@ C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:204    .bss.rxHeader:00000000 $d
 C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:211    .rodata.TxPduIdToStdIdTable:00000000 $d
 >>>>>>> 80dea70 ( OO)
 >>>>>>> e0bd117 ( OO)
+=======
+>>>>>>> 7f8e5ad (090300)
 
 UNDEFINED SYMBOLS
 HAL_CAN_GetTxMailboxesFreeLevel
