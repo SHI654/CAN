@@ -1,10 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 1
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 1
 =======
@@ -13,7 +16,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 1
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
    1              		.cpu cortex-m3
@@ -48,6 +57,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
    4:Src/canif.c   **** CAN_RxHeaderTypeDef rxHeader;  // 定义一个用于存储接收 CAN 消息头的变量。
    5:Src/canif.c   **** PduInfoTRx CanIfPduInfo;  // 定义一个用于存储接收 CAN 消息数据的结构体变量。
    6:Src/canif.c   **** extern volatile int8_t CanIf_Rx;  
+<<<<<<< HEAD
    7:Src/canif.c   **** Std_ReturnType (*CanTp_Callback)(uint32_t RxPduId, PduInfoTRx* PduInfoPtr) = NULL; 
    8:Src/canif.c   **** 
    9:Src/canif.c   **** const uint32_t TxPduIdToStdIdTable[] = {
@@ -99,6 +109,42 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
 >>>>>>> 7f8e5ad (090300)
   31              		@ frame_needed = 0, uses_anonymous_args = 0
   32              		.loc 1 36 63 is_stmt 0 view .LVU1
+=======
+   7:Src/canif.c   **** 
+   8:Src/canif.c   **** const uint32_t TxPduIdToStdIdTable[] = {
+   9:Src/canif.c   ****     0x100,
+  10:Src/canif.c   ****     0x1C0,
+  11:Src/canif.c   ****     0x280,
+  12:Src/canif.c   ****     0x340,
+  13:Src/canif.c   ****     0x400,
+  14:Src/canif.c   ****     0x4C0,
+  15:Src/canif.c   ****     0x580,
+  16:Src/canif.c   ****     0x640,
+  17:Src/canif.c   ****     0x700,
+  18:Src/canif.c   ****     0x7C0,
+  19:Src/canif.c   ****     0x780,
+  20:Src/canif.c   ****     0x740,
+  21:Src/canif.c   ****     0x6C0,
+  22:Src/canif.c   ****     0x600,
+  23:Src/canif.c   ****     0x5A0,
+  24:Src/canif.c   ****     0x4E0,
+  25:Src/canif.c   ****     0x420,
+  26:Src/canif.c   ****     0x360,
+  27:Src/canif.c   ****     0x2A0,
+  28:Src/canif.c   ****     0x1E0
+  29:Src/canif.c   **** };
+  30:Src/canif.c   **** 
+  31:Src/canif.c   **** 
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 2
+
+
+  32:Src/canif.c   **** void CanIf_Transmit(uint32_t TxPduId, PduInfoTRx* PduInfoPtr) {
+  28              		.loc 1 32 63 view -0
+  29              		.cfi_startproc
+  30              		@ args = 0, pretend = 0, frame = 32
+  31              		@ frame_needed = 0, uses_anonymous_args = 0
+  32              		.loc 1 32 63 is_stmt 0 view .LVU1
+>>>>>>> 80dea70 ( OO)
   33 0000 10B5     		push	{r4, lr}
   34              	.LCFI0:
   35              		.cfi_def_cfa_offset 8
@@ -107,6 +153,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
   38 0002 88B0     		sub	sp, sp, #32
   39              	.LCFI1:
   40              		.cfi_def_cfa_offset 40
+<<<<<<< HEAD
   37:Src/canif.c   ****     CAN_TxHeaderTypeDef txHeader;
   41              		.loc 1 37 5 is_stmt 1 view .LVU2
   38:Src/canif.c   ****     uint32_t txMailbox;
@@ -182,12 +229,77 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
   54:Src/canif.c   ****     if (HAL_CAN_AddTxMessage(&hcan, &txHeader, PduInfoPtr->Data, &txMailbox) != HAL_OK) {
   80              		.loc 1 54 5 is_stmt 1 view .LVU22
   81              		.loc 1 54 9 is_stmt 0 view .LVU23
+=======
+  33:Src/canif.c   ****     CAN_TxHeaderTypeDef txHeader;
+  41              		.loc 1 33 5 is_stmt 1 view .LVU2
+  34:Src/canif.c   ****     uint32_t txMailbox;
+  42              		.loc 1 34 5 view .LVU3
+  35:Src/canif.c   **** 
+  36:Src/canif.c   ****     if (TxPduId < (sizeof(TxPduIdToStdIdTable) / sizeof(TxPduIdToStdIdTable[0]))) {
+  43              		.loc 1 36 5 view .LVU4
+  44              		.loc 1 36 8 is_stmt 0 view .LVU5
+  45 0004 1328     		cmp	r0, #19
+  46 0006 18D8     		bhi	.L2
+  47 0008 0C46     		mov	r4, r1
+  37:Src/canif.c   ****         txHeader.StdId = TxPduIdToStdIdTable[TxPduId];
+  48              		.loc 1 37 9 is_stmt 1 view .LVU6
+  49              		.loc 1 37 45 is_stmt 0 view .LVU7
+  50 000a 0F4B     		ldr	r3, .L8
+  51 000c 53F82030 		ldr	r3, [r3, r0, lsl #2]
+  52              		.loc 1 37 24 view .LVU8
+  53 0010 0293     		str	r3, [sp, #8]
+  38:Src/canif.c   ****     } else {
+  39:Src/canif.c   ****         Error_Handler();
+  40:Src/canif.c   ****         return;
+  41:Src/canif.c   ****     }
+  42:Src/canif.c   **** 
+  43:Src/canif.c   ****     txHeader.ExtId = 0x00;
+  54              		.loc 1 43 5 is_stmt 1 view .LVU9
+  55              		.loc 1 43 20 is_stmt 0 view .LVU10
+  56 0012 0023     		movs	r3, #0
+  57 0014 0393     		str	r3, [sp, #12]
+  44:Src/canif.c   ****     txHeader.IDE = CAN_ID_STD;
+  58              		.loc 1 44 5 is_stmt 1 view .LVU11
+  59              		.loc 1 44 18 is_stmt 0 view .LVU12
+  60 0016 0493     		str	r3, [sp, #16]
+  45:Src/canif.c   ****     txHeader.RTR = CAN_RTR_DATA;
+  61              		.loc 1 45 5 is_stmt 1 view .LVU13
+  62              		.loc 1 45 18 is_stmt 0 view .LVU14
+  63 0018 0593     		str	r3, [sp, #20]
+  46:Src/canif.c   ****     txHeader.DLC = 8;
+  64              		.loc 1 46 5 is_stmt 1 view .LVU15
+  65              		.loc 1 46 18 is_stmt 0 view .LVU16
+  66 001a 0823     		movs	r3, #8
+  67 001c 0693     		str	r3, [sp, #24]
+  47:Src/canif.c   **** 
+  48:Src/canif.c   ****     while (HAL_CAN_GetTxMailboxesFreeLevel(&hcan) == 0);
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 3
+
+
+  68              		.loc 1 48 5 is_stmt 1 view .LVU17
+  69              	.LVL1:
+  70              	.L3:
+  71              		.loc 1 48 56 discriminator 1 view .LVU18
+  72              		.loc 1 48 11 discriminator 1 view .LVU19
+  73              		.loc 1 48 12 is_stmt 0 discriminator 1 view .LVU20
+  74 001e 0B48     		ldr	r0, .L8+4
+  75 0020 FFF7FEFF 		bl	HAL_CAN_GetTxMailboxesFreeLevel
+  76              	.LVL2:
+  77              		.loc 1 48 11 discriminator 1 view .LVU21
+  78 0024 0028     		cmp	r0, #0
+  79 0026 FAD0     		beq	.L3
+  49:Src/canif.c   **** 
+  50:Src/canif.c   ****     if (HAL_CAN_AddTxMessage(&hcan, &txHeader, PduInfoPtr->Data, &txMailbox) != HAL_OK) {
+  80              		.loc 1 50 5 is_stmt 1 view .LVU22
+  81              		.loc 1 50 9 is_stmt 0 view .LVU23
+>>>>>>> 80dea70 ( OO)
   82 0028 01AB     		add	r3, sp, #4
   83 002a 2246     		mov	r2, r4
   84 002c 02A9     		add	r1, sp, #8
   85 002e 0748     		ldr	r0, .L8+4
   86 0030 FFF7FEFF 		bl	HAL_CAN_AddTxMessage
   87              	.LVL3:
+<<<<<<< HEAD
   88              		.loc 1 54 8 view .LVU24
   89 0034 20B9     		cbnz	r0, .L7
   90              	.LVL4:
@@ -196,6 +308,16 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
   56:Src/canif.c   ****     }
   57:Src/canif.c   **** }
   92              		.loc 1 57 1 view .LVU25
+=======
+  88              		.loc 1 50 8 view .LVU24
+  89 0034 20B9     		cbnz	r0, .L7
+  90              	.LVL4:
+  91              	.L1:
+  51:Src/canif.c   ****         Error_Handler();
+  52:Src/canif.c   ****     }
+  53:Src/canif.c   **** }
+  92              		.loc 1 53 1 view .LVU25
+>>>>>>> 80dea70 ( OO)
   93 0036 08B0     		add	sp, sp, #32
   94              	.LCFI2:
   95              		.cfi_remember_state
@@ -206,6 +328,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
  100              	.L2:
  101              	.LCFI3:
  102              		.cfi_restore_state
+<<<<<<< HEAD
   43:Src/canif.c   ****         return;
  103              		.loc 1 43 9 is_stmt 1 view .LVU26
  104 003a FFF7FEFF 		bl	Error_Handler
@@ -217,6 +340,19 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
  109              	.L7:
   55:Src/canif.c   ****         Error_Handler();
  110              		.loc 1 55 9 view .LVU28
+=======
+  39:Src/canif.c   ****         return;
+ 103              		.loc 1 39 9 is_stmt 1 view .LVU26
+ 104 003a FFF7FEFF 		bl	Error_Handler
+ 105              	.LVL6:
+  40:Src/canif.c   ****     }
+ 106              		.loc 1 40 9 view .LVU27
+ 107 003e FAE7     		b	.L1
+ 108              	.LVL7:
+ 109              	.L7:
+  51:Src/canif.c   ****         Error_Handler();
+ 110              		.loc 1 51 9 view .LVU28
+>>>>>>> 80dea70 ( OO)
  111 0040 FFF7FEFF 		bl	Error_Handler
  112              	.LVL8:
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cckmuyLC.s 			page 4
@@ -226,13 +362,19 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
  114              	.L9:
  115 0046 00BF     		.align	2
  116              	.L8:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 4
+
+
  117 0048 00000000 		.word	.LANCHOR0
  118 004c 00000000 		.word	hcan
  119              		.cfi_endproc
  120              	.LFE65:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s 			page 4
 =======
@@ -728,14 +870,205 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s 			page 5
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ 122              		.section	.text.CanIf_Receive,"ax",%progbits
+ 123              		.align	1
+ 124              		.global	CanIf_Receive
+ 125              		.syntax unified
+ 126              		.thumb
+ 127              		.thumb_func
+ 129              	CanIf_Receive:
+ 130              	.LFB66:
+  54:Src/canif.c   **** 
+  55:Src/canif.c   **** void CanIf_Receive(){
+ 131              		.loc 1 55 21 view -0
+ 132              		.cfi_startproc
+ 133              		@ args = 0, pretend = 0, frame = 0
+ 134              		@ frame_needed = 0, uses_anonymous_args = 0
+ 135 0000 08B5     		push	{r3, lr}
+ 136              	.LCFI4:
+ 137              		.cfi_def_cfa_offset 8
+ 138              		.cfi_offset 3, -8
+ 139              		.cfi_offset 14, -4
+ 140 0002 0EE0     		b	.L12
+ 141              	.L14:
+ 142              	.LBB2:
+  56:Src/canif.c   **** 	uint32_t PDU_ID;  // 定义一个变量用于存储接收的 PDU ID
+  57:Src/canif.c   **** 	while(1){
+  58:Src/canif.c   ****         // 检查是否接收到 CAN 消息
+  59:Src/canif.c   **** 		if(CanIf_Rx){
+  60:Src/canif.c   ****             HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+ 143              		.loc 1 60 13 view .LVU30
+ 144 0004 4FF40051 		mov	r1, #8192
+ 145 0008 0948     		ldr	r0, .L15
+ 146 000a FFF7FEFF 		bl	HAL_GPIO_TogglePin
+ 147              	.LVL9:
+  61:Src/canif.c   **** 			CanIf_Rx = 0;  // 重置接收标志
+ 148              		.loc 1 61 4 view .LVU31
+ 149              		.loc 1 61 13 is_stmt 0 view .LVU32
+ 150 000e 094B     		ldr	r3, .L15+4
+ 151 0010 0022     		movs	r2, #0
+ 152 0012 1A70     		strb	r2, [r3]
+  62:Src/canif.c   **** 			CanIfPduInfo.Length = rxHeader.DLC;  // 将接收到的消息长度保存到 PDU 结构体中
+ 153              		.loc 1 62 4 is_stmt 1 view .LVU33
+ 154              		.loc 1 62 34 is_stmt 0 view .LVU34
+ 155 0014 084B     		ldr	r3, .L15+8
+ 156 0016 1A69     		ldr	r2, [r3, #16]
+ 157              		.loc 1 62 24 view .LVU35
+ 158 0018 084B     		ldr	r3, .L15+12
+ 159 001a 9A60     		str	r2, [r3, #8]
+  63:Src/canif.c   ****             // 根据接收到的标准标识符，设置对应的 PDU ID
+  64:Src/canif.c   **** 			switch(rxHeader.StdId)
+ 160              		.loc 1 64 4 is_stmt 1 view .LVU36
+ 161              	.L11:
+  65:Src/canif.c   **** 			{
+  66:Src/canif.c   **** 			case 0x100 :PDU_ID = 0;  // 标识符为 0x100 时，设置 PDU ID 为 0
+  67:Src/canif.c   **** 			break;
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 5
+
+
+  68:Src/canif.c   **** 			case 0x200 :PDU_ID = 1;  // 标识符为 0x200 时，设置 PDU ID 为 1
+  69:Src/canif.c   **** 			break;
+  70:Src/canif.c   **** 			case 0x300 :PDU_ID = 2;  // 标识符为 0x300 时，设置 PDU ID 为 2
+  71:Src/canif.c   **** 			break;
+  72:Src/canif.c   **** 			case 0x400 :PDU_ID = 3;  // 标识符为 0x400 时，设置 PDU ID 为 3
+  73:Src/canif.c   **** 			break;
+  74:Src/canif.c   **** 			case 0x500 :PDU_ID = 4;  // 标识符为 0x500 时，设置 PDU ID 为 4
+  75:Src/canif.c   **** 			break;
+  76:Src/canif.c   **** 			case 0x600 :PDU_ID = 5;  // 标识符为 0x600 时，设置 PDU ID 为 5
+  77:Src/canif.c   **** 			break;
+  78:Src/canif.c   **** 			case 0x700 :PDU_ID = 6;  // 标识符为 0x700 时，设置 PDU ID 为 6
+  79:Src/canif.c   **** 			break;
+  80:Src/canif.c   **** 			case 0x800 :PDU_ID = 7;  // 标识符为 0x800 时，设置 PDU ID 为 7
+  81:Src/canif.c   **** 			break;
+  82:Src/canif.c   **** 			}
+  83:Src/canif.c   ****         
+  84:Src/canif.c   ****             // 如果配置了接收回调函数，并且 PDU ID 为 0，则调用接收回调函�
+  85:Src/canif.c   **** 			/*if(CanTp_Callback != NULL && PDU_ID == 0)
+  86:Src/canif.c   **** 			{
+  87:Src/canif.c   **** 				CanTp_Callback(PDU_ID, &CanIfPduInfo);
+  88:Src/canif.c   **** 			}
+  89:Src/canif.c   **** 			else if(CanNm_RxCallback != NULL && PDU_ID == 1){
+  90:Src/canif.c   ****                 // 如果配置了网络管理接收回调函数，并且 PDU ID 为 1，则调用�
+  91:Src/canif.c   **** 				CanNm_RxCallback();
+  92:Src/canif.c   **** 			}*/
+  93:Src/canif.c   **** 		}
+  94:Src/canif.c   ****         // 延迟 10 个时间单位，以避免占用过多的 CPU 资源
+  95:Src/canif.c   **** 		vTaskDelay(10);
+ 162              		.loc 1 95 3 view .LVU37
+ 163 001c 0A20     		movs	r0, #10
+ 164 001e FFF7FEFF 		bl	vTaskDelay
+ 165              	.LVL10:
+ 166              	.LBE2:
+  57:Src/canif.c   ****         // 检查是否接收到 CAN 消息
+ 167              		.loc 1 57 7 view .LVU38
+ 168              	.L12:
+  56:Src/canif.c   **** 	while(1){
+ 169              		.loc 1 56 2 view .LVU39
+  57:Src/canif.c   ****         // 检查是否接收到 CAN 消息
+ 170              		.loc 1 57 2 view .LVU40
+ 171              	.LBB3:
+  59:Src/canif.c   ****             HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+ 172              		.loc 1 59 3 view .LVU41
+  59:Src/canif.c   ****             HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+ 173              		.loc 1 59 6 is_stmt 0 view .LVU42
+ 174 0022 044B     		ldr	r3, .L15+4
+ 175 0024 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 176 0026 5BB2     		sxtb	r3, r3
+  59:Src/canif.c   ****             HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
+ 177              		.loc 1 59 5 view .LVU43
+ 178 0028 002B     		cmp	r3, #0
+ 179 002a EBD1     		bne	.L14
+  93:Src/canif.c   ****         // 延迟 10 个时间单位，以避免占用过多的 CPU 资源
+ 180              		.loc 1 93 3 view .LVU44
+ 181 002c F6E7     		b	.L11
+ 182              	.L16:
+ 183 002e 00BF     		.align	2
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 6
+
+
+ 184              	.L15:
+ 185 0030 00100140 		.word	1073811456
+ 186 0034 00000000 		.word	CanIf_Rx
+ 187 0038 00000000 		.word	.LANCHOR1
+ 188 003c 00000000 		.word	.LANCHOR2
+ 189              	.LBE3:
+ 190              		.cfi_endproc
+ 191              	.LFE66:
+ 193              		.global	TxPduIdToStdIdTable
+ 194              		.global	CanIfPduInfo
+ 195              		.global	rxHeader
+ 196              		.section	.bss.CanIfPduInfo,"aw",%nobits
+ 197              		.align	2
+ 198              		.set	.LANCHOR2,. + 0
+ 201              	CanIfPduInfo:
+ 202 0000 00000000 		.space	12
+ 202      00000000 
+ 202      00000000 
+ 203              		.section	.bss.rxHeader,"aw",%nobits
+ 204              		.align	2
+ 205              		.set	.LANCHOR1,. + 0
+ 208              	rxHeader:
+ 209 0000 00000000 		.space	28
+ 209      00000000 
+ 209      00000000 
+ 209      00000000 
+ 209      00000000 
+ 210              		.section	.rodata.TxPduIdToStdIdTable,"a"
+ 211              		.align	2
+ 212              		.set	.LANCHOR0,. + 0
+ 215              	TxPduIdToStdIdTable:
+ 216 0000 00010000 		.word	256
+ 217 0004 C0010000 		.word	448
+ 218 0008 80020000 		.word	640
+ 219 000c 40030000 		.word	832
+ 220 0010 00040000 		.word	1024
+ 221 0014 C0040000 		.word	1216
+ 222 0018 80050000 		.word	1408
+ 223 001c 40060000 		.word	1600
+ 224 0020 00070000 		.word	1792
+ 225 0024 C0070000 		.word	1984
+ 226 0028 80070000 		.word	1920
+ 227 002c 40070000 		.word	1856
+ 228 0030 C0060000 		.word	1728
+ 229 0034 00060000 		.word	1536
+ 230 0038 A0050000 		.word	1440
+ 231 003c E0040000 		.word	1248
+ 232 0040 20040000 		.word	1056
+ 233 0044 60030000 		.word	864
+ 234 0048 A0020000 		.word	672
+ 235 004c E0010000 		.word	480
+ 236              		.text
+ 237              	.Letext0:
+ 238              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 239              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 240              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 241              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 7
+
+
+ 242              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 243              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"
+ 244              		.file 8 "Inc/canif.h"
+ 245              		.file 9 "Inc/can.h"
+ 246              		.file 10 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ 247              		.file 11 "Inc/main.h"
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s 			page 8
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 canif.c
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:18     .text.CanIf_Transmit:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccgwLUjq.s:24     .text.CanIf_Transmit:00000000 CanIf_Transmit
@@ -781,14 +1114,37 @@ C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s:117    .text.CanIf_Transmit:000000
 C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s:128    .rodata.TxPduIdToStdIdTable:00000000 TxPduIdToStdIdTable
 C:\Users\wup15j\AppData\Local\Temp\ccgoxA7f.s:124    .rodata.TxPduIdToStdIdTable:00000000 $d
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:18     .text.CanIf_Transmit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:24     .text.CanIf_Transmit:00000000 CanIf_Transmit
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:117    .text.CanIf_Transmit:00000048 $d
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:123    .text.CanIf_Receive:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:129    .text.CanIf_Receive:00000000 CanIf_Receive
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:185    .text.CanIf_Receive:00000030 $d
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:215    .rodata.TxPduIdToStdIdTable:00000000 TxPduIdToStdIdTable
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:201    .bss.CanIfPduInfo:00000000 CanIfPduInfo
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:208    .bss.rxHeader:00000000 rxHeader
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:197    .bss.CanIfPduInfo:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:204    .bss.rxHeader:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccP2ZWG5.s:211    .rodata.TxPduIdToStdIdTable:00000000 $d
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 UNDEFINED SYMBOLS
 HAL_CAN_GetTxMailboxesFreeLevel
 HAL_CAN_AddTxMessage
 Error_Handler
 hcan
+<<<<<<< HEAD
 vTaskDelay
 HAL_GPIO_TogglePin
 CanIf_Rx
 HAL_CAN_GetRxMessage
+=======
+HAL_GPIO_TogglePin
+vTaskDelay
+CanIf_Rx
+>>>>>>> 80dea70 ( OO)

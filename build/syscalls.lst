@@ -1,10 +1,13 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 1
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 1
 =======
@@ -13,7 +16,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 1
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
    1              		.cpu cortex-m3
@@ -75,11 +84,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
   32:Src/syscalls.c **** 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 2
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 2
 =======
@@ -88,7 +100,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 2
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 2
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
   33:Src/syscalls.c **** 
@@ -150,11 +168,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
   52:Src/syscalls.c **** 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 3
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 3
 =======
@@ -163,7 +184,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 3
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 3
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
   53:Src/syscalls.c **** int _kill(int pid, int sig)
@@ -225,11 +252,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  115 0002 4FF0FF31 		mov	r1, #-1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 4
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 4
 =======
@@ -238,7 +268,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 4
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 4
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  116 0006 FFF7FEFF 		bl	_kill
@@ -300,11 +336,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  163              	.LVL7:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 5
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 5
 =======
@@ -313,7 +352,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 5
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 5
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  164              		.loc 1 74 9 discriminator 3 view .LVU28
@@ -375,11 +420,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  211              		.cfi_offset 14, -4
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 6
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 6
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 6
 =======
@@ -388,7 +436,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 6
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 6
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  212 0002 0C46     		mov	r4, r1
@@ -450,11 +504,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  257              	.LFB31:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 7
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 7
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 7
 =======
@@ -463,7 +520,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 7
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 7
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
   91:Src/syscalls.c **** 
@@ -525,11 +588,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  303              		.align	1
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 8
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 8
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 8
 =======
@@ -538,7 +604,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 8
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 8
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  304              		.global	_isatty
@@ -600,11 +672,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  349              		.loc 1 118 1 view .LVU78
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 9
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 9
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 9
 =======
@@ -613,7 +688,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 9
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 9
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  350 0002 7047     		bx	lr
@@ -675,11 +756,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  402              	.LFB36:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 10
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 10
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 10
 =======
@@ -688,7 +772,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 10
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 10
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  127:Src/syscalls.c **** 
@@ -750,11 +840,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  449 0002 FFF7FEFF 		bl	__errno
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 11
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 11
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 11
 =======
@@ -763,7 +856,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 11
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 11
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  450              	.LVL31:
@@ -825,11 +924,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  499              		@ frame_needed = 0, uses_anonymous_args = 0
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 12
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 12
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 12
 =======
@@ -838,7 +940,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 12
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 12
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  500              		@ link register save eliminated.
@@ -900,11 +1008,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  546 000e 08BD     		pop	{r3, pc}
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 13
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 13
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 13
 =======
@@ -913,7 +1024,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 13
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 13
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  547              		.cfi_endproc
@@ -975,11 +1092,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  598              		.cfi_def_cfa_offset 8
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 14
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 14
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 14
 =======
@@ -988,7 +1108,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 14
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 14
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
  599              		.cfi_offset 3, -8
@@ -1038,11 +1164,14 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
  642              		.file 9 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cccqqvSZ.s 			page 15
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 15
 >>>>>>> 7f8e5ad (090300)
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s 			page 15
 =======
@@ -1051,14 +1180,23 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s 			page 15
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s 			page 15
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 syscalls.c
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e0bd117 ( OO)
 <<<<<<< HEAD
 C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s:18     .text.initialise_monitor_handles:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccmpMiZD.s:24     .text.initialise_monitor_handles:00000000 initialise_monitor_handles
@@ -1229,7 +1367,52 @@ C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s:623    .bss.__env:00000000 __env
 C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s:620    .bss.__env:00000000 $d
 C:\Users\wup15j\AppData\Local\Temp\ccXBynfh.s:626    .data.environ:00000000 $d
 >>>>>>> 2ff531d (build)
+<<<<<<< HEAD
 >>>>>>> c9bcb0e (build)
+=======
+=======
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:18     .text.initialise_monitor_handles:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:24     .text.initialise_monitor_handles:00000000 initialise_monitor_handles
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:38     .text._getpid:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:44     .text._getpid:00000000 _getpid
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:59     .text._kill:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:65     .text._kill:00000000 _kill
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:94     .text._exit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:100    .text._exit:00000000 _exit
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:127    .text._read:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:133    .text._read:00000000 _read
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:191    .text._write:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:197    .text._write:00000000 _write
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:249    .text._close:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:255    .text._close:00000000 _close
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:274    .text._fstat:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:280    .text._fstat:00000000 _fstat
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:303    .text._isatty:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:309    .text._isatty:00000000 _isatty
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:328    .text._lseek:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:334    .text._lseek:00000000 _lseek
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:355    .text._open:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:361    .text._open:00000000 _open
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:394    .text._wait:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:400    .text._wait:00000000 _wait
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:428    .text._unlink:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:434    .text._unlink:00000000 _unlink
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:462    .text._times:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:468    .text._times:00000000 _times
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:487    .text._stat:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:493    .text._stat:00000000 _stat
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:516    .text._link:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:522    .text._link:00000000 _link
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:551    .text._fork:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:557    .text._fork:00000000 _fork
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:582    .text._execve:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:588    .text._execve:00000000 _execve
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:629    .data.environ:00000000 environ
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:623    .bss.__env:00000000 __env
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:620    .bss.__env:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cc3n1iY5.s:626    .data.environ:00000000 $d
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
 
 UNDEFINED SYMBOLS
 __errno
