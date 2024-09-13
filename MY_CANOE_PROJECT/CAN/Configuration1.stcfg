@@ -1,4 +1,8 @@
 [NStatePersistence]
 Signature=VectorStatePersistence
 [VGlobalMeasurementIndex]
+<<<<<<< HEAD
 mMeasurementIndex=17
+=======
+mMeasurementIndex=24
+>>>>>>> c9bcb0e (build)
