@@ -2,7 +2,11 @@
 Signature=VectorStatePersistence
 [VGlobalMeasurementIndex]
 <<<<<<< HEAD
+<<<<<<< HEAD
 mMeasurementIndex=17
 =======
 mMeasurementIndex=24
 >>>>>>> c9bcb0e (build)
+=======
+mMeasurementIndex=60
+>>>>>>> e0bd117 ( OO)
