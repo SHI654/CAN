@@ -56,10 +56,10 @@ void CanTp_MainFunction(){
 		if(CanTp_Rx){  // 如果接收到新的 CAN TP 数据包。
 			CanTp_Rx = 0;  // 清除接收标志，表示正在处理接收到的数据。
 			
-			// 如果全局接收 PDU ID 不等于 0，则停止程序运行。
-			if(GlobalRxPduId != 0){
-				while(1);  // 进入死循环，通常用作错误处理或调试目的。
-			}
+			// // 如果全局接收 PDU ID 不等于 0，则停止程序运行。
+			// if(GlobalRxPduId != 0){
+			// 	while(1);  // 进入死循环，通常用作错误处理或调试目的。
+			// }
 
 			// 获取当前接收帧的数据类型，根据帧的第一个字节确定帧类型。
 			Frame_Type frame_type = CanTp_GetFrameType(GlobalRxPduInfoPtr->Data[0]);

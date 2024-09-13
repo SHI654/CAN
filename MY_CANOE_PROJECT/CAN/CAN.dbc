@@ -1,0 +1,220 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: STM32
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ New_Signal_9 : 0|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 426 STM32_Frame6_1AA: 8 Vector__XXX
+
+BO_ 766 STM32_Frame5_2FE: 8 Vector__XXX
+
+BO_ 256 STM32_Frame1_100: 8 Vector__XXX
+ SG_ New_Signal_8 : 31|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_7 : 23|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_6 : 15|8@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_4 : 7|8@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 852 STM32_Frame4_354: 8 STM32
+
+BO_ 849 STM32_Frame2_351: 8 STM32
+
+BO_ 581 STM32_Frame3_245: 8 STM32
+
+BO_ 1824 GW_STM32_Phy_Req_720: 8 Vector__XXX
+ SG_ GW_STM32_Phy_Req_720_Data : 7|64@0+ (1,0) [0|0] ""  STM32
+
+BO_ 1832 STM32_STM32_Phy_Resp_728: 8 STM32
+ SG_ STM32_STM32_Phy_Resp_728_Data : 7|64@0+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1315 STM32_STM32_NM_523: 8 STM32
+
+
+
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+CM_ SG_ 1824 GW_STM32_Phy_Req_720_Data " ";
+CM_ SG_ 1832 STM32_STM32_Phy_Resp_728_Data " ";
+BA_DEF_  "Baudrate" INT 0 1000000;
+BA_DEF_  "SamplePointMin" FLOAT 0 100;
+BA_DEF_  "SamplePointMax" FLOAT 0 100;
+BA_DEF_  "SyncJumpWidthMin" INT 0 255;
+BA_DEF_  "SyncJumpWidthMax" INT 0 255;
+BA_DEF_  "NBTMin" INT 0 255;
+BA_DEF_  "NBTMax" INT 0 255;
+BA_DEF_  "Manufacturer" STRING ;
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "GenMsgILSupport" ENUM  "No","Yes";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Event","NotUsed","NotUsed","NotUsed","Cyclic","NotUsed","IfActive","NoMsgSendType","NotUsed";
+BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition","NoSigSendType","NotUsed","NotUsed","NotUsed","NotUsed","NotUsed";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 0 65535;
+BA_DEF_ SG_  "GenSigStartValue" INT 0 0;
+BA_DEF_ SG_  "GenSigInactiveValue" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgStartDelayTime" INT 0 65535;
+BA_DEF_ BO_  "GenMsgNrOfRepetition" INT 0 255;
+BA_DEF_  "NmType" STRING ;
+BA_DEF_ BU_  "NmAsrNode" ENUM  "No","Yes";
+BA_DEF_  "NmAsrTimeoutTime" INT 0 65535;
+BA_DEF_  "NmAsrWaitBusSleepTime" INT 0 65535;
+BA_DEF_  "NmAsrRepeatMessageTime" INT 0 65535;
+BA_DEF_ BO_  "NmAsrMessage" ENUM  "No","Yes";
+BA_DEF_  "NmAsrMessageCount" INT 0 256;
+BA_DEF_  "NmAsrBaseAddress" HEX 0 536870911;
+BA_DEF_  "NmAsrCanMsgCycleTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrCanMsgReducedTime" INT 0 65535;
+BA_DEF_ BU_  "NmAsrCanMsgCycleOffset" INT 0 65535;
+BA_DEF_ BU_  "NmAsrNodeIdentifier" HEX 0 255;
+BA_DEF_ BO_  "DiagState" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagRequest" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagUUDTResponse" ENUM  "No","Yes";
+BA_DEF_ BO_  "DiagConnection" INT 0 100;
+BA_DEF_ BO_  "TpTxIndex" INT 0 255;
+BA_DEF_ BU_  "ILUsed" ENUM  "No","Yes";
+BA_DEF_ SG_  "SigGroup" STRING ;
+BA_DEF_ BU_  "NmStationAddress" HEX 0 255;
+BA_DEF_ BO_  "SCP_FreshnessValueTxLength" INT 0 512;
+BA_DEF_ BO_  "SCP_FreshnessValueLength" INT 0 512;
+BA_DEF_ BO_  "SCP_FreshnessValueId" INT 0 65535;
+BA_DEF_ BO_  "SCP_DataId" INT 0 65535;
+BA_DEF_ BO_  "SCP_AuthInfoTxLength" INT 0 512;
+BA_DEF_ BU_  "SC_Verification" ENUM  "No","Yes";
+BA_DEF_ BO_  "SC_Message" ENUM  "No","Yes";
+BA_DEF_REL_ BU_SG_REL_  "GenSigTimeoutTime" INT 0 65535;
+BA_DEF_DEF_  "Baudrate" 500000;
+BA_DEF_DEF_  "SamplePointMin" 75;
+BA_DEF_DEF_  "SamplePointMax" 90;
+BA_DEF_DEF_  "SyncJumpWidthMin" 4;
+BA_DEF_DEF_  "SyncJumpWidthMax" 4;
+BA_DEF_DEF_  "NBTMin" 8;
+BA_DEF_DEF_  "NBTMax" 21;
+BA_DEF_DEF_  "Manufacturer" "Vector";
+BA_DEF_DEF_  "DBName" "";
+BA_DEF_DEF_  "BusType" "";
+BA_DEF_DEF_  "GenMsgILSupport" "Yes";
+BA_DEF_DEF_  "GenMsgSendType" "NoMsgSendType";
+BA_DEF_DEF_  "GenSigSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_DEF_DEF_  "GenSigInactiveValue" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenMsgStartDelayTime" 0;
+BA_DEF_DEF_  "GenMsgNrOfRepetition" 0;
+BA_DEF_DEF_  "NmType" "NmAsr";
+BA_DEF_DEF_  "NmAsrNode" "Yes";
+BA_DEF_DEF_  "NmAsrTimeoutTime" 0;
+BA_DEF_DEF_  "NmAsrWaitBusSleepTime" 0;
+BA_DEF_DEF_  "NmAsrRepeatMessageTime" 0;
+BA_DEF_DEF_  "NmAsrMessage" "No";
+BA_DEF_DEF_  "NmAsrMessageCount" 64;
+BA_DEF_DEF_  "NmAsrBaseAddress" 1024;
+BA_DEF_DEF_  "NmAsrCanMsgCycleTime" 100;
+BA_DEF_DEF_  "NmAsrCanMsgReducedTime" 50;
+BA_DEF_DEF_  "NmAsrCanMsgCycleOffset" 0;
+BA_DEF_DEF_  "NmAsrNodeIdentifier" 0;
+BA_DEF_DEF_  "DiagState" "No";
+BA_DEF_DEF_  "DiagRequest" "No";
+BA_DEF_DEF_  "DiagResponse" "No";
+BA_DEF_DEF_  "DiagUUDTResponse" "No";
+BA_DEF_DEF_  "DiagConnection" 0;
+BA_DEF_DEF_  "TpTxIndex" 0;
+BA_DEF_DEF_  "ILUsed" "Yes";
+BA_DEF_DEF_  "SigGroup" "";
+BA_DEF_DEF_  "NmStationAddress" 0;
+BA_DEF_DEF_  "SCP_FreshnessValueTxLength" 4;
+BA_DEF_DEF_  "SCP_FreshnessValueLength" 48;
+BA_DEF_DEF_  "SCP_FreshnessValueId" 0;
+BA_DEF_DEF_  "SCP_DataId" 0;
+BA_DEF_DEF_  "SCP_AuthInfoTxLength" 28;
+BA_DEF_DEF_  "SC_Verification" "No";
+BA_DEF_DEF_  "SC_Message" "No";
+BA_DEF_DEF_REL_ "GenSigTimeoutTime" 0;
+BA_ "NmAsrCanMsgCycleTime" 100;
+BA_ "NmAsrBaseAddress" 1024;
+BA_ "NmAsrMessageCount" 64;
+BA_ "NmAsrRepeatMessageTime" 400;
+BA_ "NmAsrWaitBusSleepTime" 750;
+BA_ "NmAsrTimeoutTime" 1000;
+BA_ "NmType" "NmAsr";
+BA_ "BusType" "CAN";
+BA_ "Manufacturer" "";
+BA_ "NBTMax" 20;
+BA_ "NBTMin" 20;
+BA_ "SyncJumpWidthMax" 4;
+BA_ "SyncJumpWidthMin" 4;
+BA_ "SamplePointMax" 80;
+BA_ "SamplePointMin" 80;
+BA_ "Baudrate" 500000;
+BA_ "DBName" "TestCAN";
+BA_ "GenMsgILSupport" BO_ 426 1;
+BA_ "GenMsgSendType" BO_ 426 0;
+BA_ "GenMsgCycleTime" BO_ 426 500;
+BA_ "GenMsgILSupport" BO_ 766 1;
+BA_ "GenMsgSendType" BO_ 766 0;
+BA_ "GenMsgCycleTime" BO_ 766 500;
+BA_ "GenMsgCycleTime" BO_ 256 500;
+BA_ "GenMsgSendType" BO_ 256 0;
+BA_ "GenMsgILSupport" BO_ 256 1;
+BA_ "GenMsgILSupport" BO_ 852 1;
+BA_ "GenMsgSendType" BO_ 852 0;
+BA_ "GenMsgCycleTime" BO_ 852 500;
+BA_ "GenMsgILSupport" BO_ 849 1;
+BA_ "GenMsgSendType" BO_ 849 0;
+BA_ "GenMsgCycleTime" BO_ 849 500;
+BA_ "GenMsgILSupport" BO_ 581 1;
+BA_ "GenMsgSendType" BO_ 581 0;
+BA_ "GenMsgCycleTime" BO_ 581 20;
+BA_ "GenMsgILSupport" BO_ 1824 0;
+BA_ "GenMsgSendType" BO_ 1824 1;
+BA_ "GenMsgCycleTime" BO_ 1824 0;
+BA_ "DiagRequest" BO_ 1824 1;
+BA_ "GenMsgILSupport" BO_ 1832 0;
+BA_ "GenMsgSendType" BO_ 1832 1;
+BA_ "GenMsgCycleTime" BO_ 1832 0;
+BA_ "DiagResponse" BO_ 1832 1;
+BA_ "GenMsgILSupport" BO_ 1315 0;
+BA_ "NmAsrMessage" BO_ 1315 1;
+BA_ "GenMsgSendType" BO_ 1315 1;
+BA_ "GenMsgCycleTime" BO_ 1315 0;
+BA_ "GenSigSendType" SG_ 1824 GW_STM32_Phy_Req_720_Data 1;
+BA_ "GenSigStartValue" SG_ 1824 GW_STM32_Phy_Req_720_Data 0;
+BA_ "GenSigSendType" SG_ 1832 STM32_STM32_Phy_Resp_728_Data 1;
+BA_ "GenSigStartValue" SG_ 1832 STM32_STM32_Phy_Resp_728_Data 0;
+
