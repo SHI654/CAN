@@ -1,12 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccogouct.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
 >>>>>>> 7f8e5ad (090300)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e0bd117 ( OO)
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccogouct.s 			page 1
@@ -14,10 +17,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccogouct.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 1
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 
    1              		.cpu cortex-m3
@@ -117,9 +123,12 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 2
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 
   27              		.loc 1 32 1 view -0
@@ -186,6 +195,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
   72              		.loc 1 43 3 is_stmt 1 view .LVU21
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e0bd117 ( OO)
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 3
 <<<<<<< HEAD
 >>>>>>> 7f8e5ad (090300)
@@ -197,10 +209,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 3
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 3
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 
   72              		.loc 1 44 3 is_stmt 1 view .LVU21
@@ -774,6 +789,15 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
 
  103:Src/can.c     ****     */
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 8
+
+
+>>>>>>> 80dea70 ( OO)
+ 104:Src/can.c     ****     HAL_GPIO_DeInit(GPIOA, GPIO_PIN_11 | GPIO_PIN_12);
+>>>>>>> e0bd117 ( OO)
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 8
 
@@ -1143,8 +1167,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  315              	.LFB68:
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 9
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 
  315              	.LFB73:
@@ -1278,6 +1305,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  394              	.LFE68:
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 11
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
+>>>>>>> e0bd117 ( OO)
+=======
 >>>>>>> e0bd117 ( OO)
 
 
@@ -1392,15 +1422,72 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
 <<<<<<< HEAD
 >>>>>>> 7f8e5ad (090300)
 =======
+<<<<<<< HEAD
+=======
+ 152:Src/can.c     **** 
+ 153:Src/can.c     **** void CAN_Filter_Config(void)
+ 154:Src/can.c     **** {
+ 405              		.loc 1 154 1 is_stmt 1 view -0
+ 406              		.cfi_startproc
+ 407              		@ args = 0, pretend = 0, frame = 40
+ 408              		@ frame_needed = 0, uses_anonymous_args = 0
+ 409 0000 00B5     		push	{lr}
+ 410              	.LCFI9:
+ 411              		.cfi_def_cfa_offset 4
+ 412              		.cfi_offset 14, -4
+ 413 0002 8BB0     		sub	sp, sp, #44
+ 414              	.LCFI10:
+ 415              		.cfi_def_cfa_offset 48
+ 155:Src/can.c     ****   CAN_FilterTypeDef sFilterConfig;
+ 416              		.loc 1 155 3 view .LVU114
+ 156:Src/can.c     ****   CAN_FilterRegTypeDef IDH = {0};
+ 417              		.loc 1 156 3 view .LVU115
+ 418              		.loc 1 156 24 is_stmt 0 view .LVU116
+ 419 0004 0023     		movs	r3, #0
+ 420              	.LVL22:
+ 157:Src/can.c     ****   CAN_FilterRegTypeDef IDL = {0};
+ 421              		.loc 1 157 3 is_stmt 1 view .LVU117
+ 158:Src/can.c     **** 
+ 159:Src/can.c     **** #if CAN_ID_TYPE_STD_ENABLE
+ 160:Src/can.c     ****   IDH.Sub.STID = (CAN_BASE_ID >> 16) & 0xFFFF; // 标准ID高16位
+ 422              		.loc 1 160 3 view .LVU118
+ 161:Src/can.c     ****   IDL.Sub.STID = (CAN_BASE_ID & 0xFFFF);       // 标准ID低16位
+ 423              		.loc 1 161 3 view .LVU119
+ 162:Src/can.c     **** #else
+ 163:Src/can.c     ****   IDH.Sub.EXID = (CAN_BASE_ID >> 16) & 0xFFFF; // 扩展ID高16位
+ 164:Src/can.c     ****   IDL.Sub.EXID = (CAN_BASE_ID & 0xFFFF);       // 扩展ID低16位
+ 165:Src/can.c     ****   IDL.Sub.IDE = 1;                             // 扩展帧标志位置位
+ 166:Src/can.c     **** #endif
+ 167:Src/can.c     ****   sFilterConfig.FilterBank = 0; // 设置过滤器组编号
+ 424              		.loc 1 167 3 view .LVU120
+ 425              		.loc 1 167 28 is_stmt 0 view .LVU121
+ 426 0006 0593     		str	r3, [sp, #20]
+ 168:Src/can.c     **** #if CAN_FILTER_MODE_MASK_ENABLE
+ 169:Src/can.c     ****   sFilterConfig.FilterMode = CAN_FILTERMODE_IDMASK; // 屏蔽位模式
+ 427              		.loc 1 169 3 is_stmt 1 view .LVU122
+ 428              		.loc 1 169 28 is_stmt 0 view .LVU123
+ 429 0008 0693     		str	r3, [sp, #24]
+<<<<<<< HEAD
+ 170:Src/can.c     **** #else
+ 171:Src/can.c     ****   sFilterConfig.FilterMode = CAN_FILTERMODE_IDLIST; // 列表模式
+ 172:Src/can.c     **** #endif
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccogouct.s 			page 12
+>>>>>>> e0bd117 ( OO)
 >>>>>>> RTOS
 =======
  169:Src/can.c     **** #else
  170:Src/can.c     ****   sFilterConfig.FilterMode = CAN_FILTERMODE_IDLIST; // 列表模式
  171:Src/can.c     **** #endif
+<<<<<<< HEAD
 =======
 
 
 >>>>>>> 7f8e5ad (090300)
+ 172:Src/can.c     ****   sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT; // 32位宽
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 12
+>>>>>>> 80dea70 ( OO)
+>>>>>>> e0bd117 ( OO)
+=======
  172:Src/can.c     ****   sFilterConfig.FilterScale = CAN_FILTERSCALE_32BIT; // 32位宽
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 12
 >>>>>>> 80dea70 ( OO)
@@ -1922,6 +2009,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  575 001c 00000000 		.word	.LANCHOR0
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 15
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e0bd117 ( OO)
 =======
  569              		.loc 1 199 1 is_stmt 0 view .LVU160
  570 001a 10BD     		pop	{r4, pc}
@@ -1932,8 +2022,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  575              		.cfi_endproc
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 15
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 
  576              		.cfi_endproc
@@ -1964,8 +2057,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  207:Src/can.c     ****   if (canHandle->Instance == hcan.Instance)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
  596              		.loc 1 207 3 view .LVU165
  597              		.loc 1 207 16 is_stmt 0 view .LVU166
  598 0000 0268     		ldr	r2, [r0]
@@ -2004,6 +2100,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  625 001e E0B1     		cbz	r0, .L44
  626              	.L40:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e0bd117 ( OO)
 =======
  595              		.loc 1 207 3 view .LVU165
  596              		.loc 1 207 16 is_stmt 0 view .LVU166
@@ -2017,8 +2116,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  208:Src/can.c     ****   {
  209:Src/can.c     ****     if (HAL_CAN_GetRxMessage(canHandle, CAN_RX_FIFO0, &packet.hdr, packet.payload) == HAL_OK) // �
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
  210:Src/can.c     ****     {
  211:Src/can.c     ****       for (int i = 0; i < packet.hdr.DLC; i++)
  212:Src/can.c     ****       {
@@ -2041,8 +2143,11 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  229:Src/can.c     ****   }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
  230:Src/can.c     **** }
  627              		.loc 1 230 1 view .LVU173
  628 0020 08B0     		add	sp, sp, #32
@@ -2881,6 +2986,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  824              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s 			page 21
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 
@@ -2977,10 +3083,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 1
  808              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h"
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s 			page 21
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 can.c
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -3020,6 +3129,8 @@ C:\Users\wup15j\AppData\Local\Temp\ccogouct.s:664    .bss.hcan:00000000 $d
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s:18     .text.MX_CAN_Init:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s:24     .text.MX_CAN_Init:00000000 MX_CAN_Init
 C:\Users\wup15j\AppData\Local\Temp\ccC3bo2f.s:96     .text.MX_CAN_Init:00000038 $d
@@ -3126,9 +3237,12 @@ C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s:800    .bss.hcan:00000000 $d
 C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s:807    .bss.packet.0:00000000 $d
 C:\Users\wup15j\AppData\Local\Temp\ccFXyyuC.s:811    .bss.packet.0:00000000 packet.0
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 UNDEFINED SYMBOLS
 HAL_CAN_Init

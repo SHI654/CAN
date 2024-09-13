@@ -1,12 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceDD4Wy.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s 			page 1
 >>>>>>> 7f8e5ad (090300)
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e0bd117 ( OO)
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceDD4Wy.s 			page 1
@@ -14,10 +17,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceDD4Wy.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s 			page 1
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s 			page 1
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 
    1              		.cpu cortex-m3
@@ -96,13 +102,31 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s 			page 1
 <<<<<<< HEAD
 >>>>>>> 7f8e5ad (090300)
 =======
+<<<<<<< HEAD
+=======
+  23:Src/main.c    **** #include "cmsis_os.h"
+  24:Src/main.c    **** #include "can.h"
+  25:Src/main.c    **** #include "gpio.h"
+  26:Src/main.c    **** #include "canif.h"
+  27:Src/main.c    **** 
+  28:Src/main.c    **** /* Private includes ----------------------------------------------------------*/
+  29:Src/main.c    **** /* USER CODE BEGIN Includes */
+  30:Src/main.c    **** 
+  31:Src/main.c    **** /* USER CODE END Includes */
+  32:Src/main.c    **** 
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceDD4Wy.s 			page 2
+>>>>>>> e0bd117 ( OO)
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s 			page 2
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 
   33:Src/main.c    **** /* Private typedef -----------------------------------------------------------*/
@@ -165,10 +189,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s 			page 1
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s 			page 3
 
 
@@ -929,13 +956,284 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s 			page 1
 <<<<<<< HEAD
 >>>>>>> 7f8e5ad (090300)
 =======
+<<<<<<< HEAD
+=======
+ 131              		.cfi_offset 14, -4
+ 132 0002 85B0     		sub	sp, sp, #20
+ 133              	.LCFI4:
+ 134              		.cfi_def_cfa_offset 24
+  79:Src/main.c    **** 
+ 135              		.loc 1 79 3 view .LVU34
+ 136 0004 FFF7FEFF 		bl	HAL_Init
+ 137              	.LVL3:
+  86:Src/main.c    **** 
+ 138              		.loc 1 86 3 view .LVU35
+ 139 0008 FFF7FEFF 		bl	SystemClock_Config
+ 140              	.LVL4:
+  93:Src/main.c    ****   MX_CAN_Init();
+ 141              		.loc 1 93 3 view .LVU36
+ 142 000c FFF7FEFF 		bl	MX_GPIO_Init
+ 143              	.LVL5:
+  94:Src/main.c    ****   /* USER CODE BEGIN 2 */
+ 144              		.loc 1 94 3 view .LVU37
+ 145 0010 FFF7FEFF 		bl	MX_CAN_Init
+ 146              	.LVL6:
+  97:Src/main.c    ****   CAN_SetTxPacket();
+ 147              		.loc 1 97 3 view .LVU38
+ 148 0014 FFF7FEFF 		bl	CAN_Init
+ 149              	.LVL7:
+  98:Src/main.c    ****     /* USER CODE END 2 */
+ 150              		.loc 1 98 3 view .LVU39
+ 151 0018 FFF7FEFF 		bl	CAN_SetTxPacket
+ 152              	.LVL8:
+ 102:Src/main.c    **** 
+ 153              		.loc 1 102 3 view .LVU40
+ 154 001c FFF7FEFF 		bl	MX_FREERTOS_Init
+ 155              	.LVL9:
+ 105:Src/main.c    **** 
+ 156              		.loc 1 105 3 view .LVU41
+ 157 0020 FFF7FEFF 		bl	osKernelStart
+ 158              	.LVL10:
+ 111:Src/main.c    ****     pduInfo.Length = 8; // 设置数据长度为 8 字节
+ 159              		.loc 1 111 3 view .LVU42
+ 112:Src/main.c    ****     // 填充发送数据
+ 160              		.loc 1 112 5 view .LVU43
+ 112:Src/main.c    ****     // 填充发送数据
+ 161              		.loc 1 112 20 is_stmt 0 view .LVU44
+ 162 0024 0823     		movs	r3, #8
+ 163 0026 0393     		str	r3, [sp, #12]
+ 114:Src/main.c    ****         pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+ 164              		.loc 1 114 5 is_stmt 1 view .LVU45
+ 165              	.LBB2:
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceDD4Wy.s 			page 7
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s 			page 7
+>>>>>>> 80dea70 ( OO)
+
+
+ 114:Src/main.c    ****         pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+ 166              		.loc 1 114 10 view .LVU46
+ 167              	.LVL11:
+ 114:Src/main.c    ****         pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+ 168              		.loc 1 114 19 is_stmt 0 view .LVU47
+ 169 0028 0023     		movs	r3, #0
+ 114:Src/main.c    ****         pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+ 170              		.loc 1 114 5 view .LVU48
+ 171 002a 05E0     		b	.L4
+ 172              	.LVL12:
+ 173              	.L5:
+ 115:Src/main.c    ****     }
+ 174              		.loc 1 115 9 is_stmt 1 discriminator 3 view .LVU49
+ 115:Src/main.c    ****     }
+ 175              		.loc 1 115 25 is_stmt 0 discriminator 3 view .LVU50
+ 176 002c 03F11002 		add	r2, r3, #16
+ 177 0030 6A44     		add	r2, sp, r2
+ 178 0032 02F80C3C 		strb	r3, [r2, #-12]
+ 114:Src/main.c    ****         pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+ 179              		.loc 1 114 46 is_stmt 1 discriminator 3 view .LVU51
+ 114:Src/main.c    ****         pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+ 180              		.loc 1 114 47 is_stmt 0 discriminator 3 view .LVU52
+ 181 0036 0133     		adds	r3, r3, #1
+ 182              	.LVL13:
+ 183              	.L4:
+ 114:Src/main.c    ****         pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+ 184              		.loc 1 114 26 is_stmt 1 discriminator 1 view .LVU53
+ 114:Src/main.c    ****         pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+ 185              		.loc 1 114 5 is_stmt 0 discriminator 1 view .LVU54
+ 186 0038 072B     		cmp	r3, #7
+ 187 003a F7D9     		bls	.L5
+ 188 003c 02E0     		b	.L8
+ 189              	.LVL14:
+ 190              	.L7:
+ 114:Src/main.c    ****         pduInfo.Data[i] = i;  // 示例数据为 0, 1, 2, ..., 7
+ 191              		.loc 1 114 5 discriminator 1 view .LVU55
+ 192              	.LBE2:
+ 193              	.LBB3:
+ 126:Src/main.c    ****     
+ 194              		.loc 1 126 5 is_stmt 1 discriminator 3 view .LVU56
+ 120:Src/main.c    ****       /* USER CODE END WHILE */
+ 195              		.loc 1 120 22 discriminator 3 view .LVU57
+ 120:Src/main.c    ****       /* USER CODE END WHILE */
+ 196              		.loc 1 120 23 is_stmt 0 discriminator 3 view .LVU58
+ 197 003e 0133     		adds	r3, r3, #1
+ 198              	.LVL15:
+ 199              	.L6:
+ 120:Src/main.c    ****       /* USER CODE END WHILE */
+ 200              		.loc 1 120 17 is_stmt 1 discriminator 1 view .LVU59
+ 120:Src/main.c    ****       /* USER CODE END WHILE */
+ 201              		.loc 1 120 5 is_stmt 0 discriminator 1 view .LVU60
+ 202 0040 132B     		cmp	r3, #19
+ 203 0042 FCDD     		ble	.L7
+ 204              	.LVL16:
+ 205              	.L8:
+ 120:Src/main.c    ****       /* USER CODE END WHILE */
+ 206              		.loc 1 120 5 discriminator 1 view .LVU61
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceDD4Wy.s 			page 8
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s 			page 8
+>>>>>>> 80dea70 ( OO)
+
+
+ 207              	.LBE3:
+ 118:Src/main.c    ****   {
+ 208              		.loc 1 118 3 is_stmt 1 view .LVU62
+ 120:Src/main.c    ****       /* USER CODE END WHILE */
+ 209              		.loc 1 120 5 view .LVU63
+ 210              	.LBB4:
+ 120:Src/main.c    ****       /* USER CODE END WHILE */
+ 211              		.loc 1 120 9 view .LVU64
+ 120:Src/main.c    ****       /* USER CODE END WHILE */
+ 212              		.loc 1 120 13 is_stmt 0 view .LVU65
+ 213 0044 0023     		movs	r3, #0
+ 120:Src/main.c    ****       /* USER CODE END WHILE */
+ 214              		.loc 1 120 5 view .LVU66
+ 215 0046 FBE7     		b	.L6
+ 216              	.LBE4:
+ 217              		.cfi_endproc
+ 218              	.LFE70:
+ 220              		.section	.text.HAL_TIM_PeriodElapsedCallback,"ax",%progbits
+ 221              		.align	1
+ 222              		.global	HAL_TIM_PeriodElapsedCallback
+ 223              		.syntax unified
+ 224              		.thumb
+ 225              		.thumb_func
+ 227              	HAL_TIM_PeriodElapsedCallback:
+ 228              	.LVL17:
+ 229              	.LFB72:
+ 168:Src/main.c    **** 
+ 169:Src/main.c    **** /* USER CODE BEGIN 4 */
+ 170:Src/main.c    **** 
+ 171:Src/main.c    **** /* USER CODE END 4 */
+ 172:Src/main.c    **** 
+ 173:Src/main.c    **** /**
+ 174:Src/main.c    ****   * @brief  Period elapsed callback in non blocking mode
+ 175:Src/main.c    ****   * @note   This function is called  when TIM1 interrupt took place, inside
+ 176:Src/main.c    ****   * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+ 177:Src/main.c    ****   * a global variable "uwTick" used as application time base.
+ 178:Src/main.c    ****   * @param  htim : TIM handle
+ 179:Src/main.c    ****   * @retval None
+ 180:Src/main.c    ****   */
+ 181:Src/main.c    **** void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+ 182:Src/main.c    **** {
+ 230              		.loc 1 182 1 is_stmt 1 view -0
+ 231              		.cfi_startproc
+ 232              		@ args = 0, pretend = 0, frame = 0
+ 233              		@ frame_needed = 0, uses_anonymous_args = 0
+ 234              		.loc 1 182 1 is_stmt 0 view .LVU68
+ 235 0000 08B5     		push	{r3, lr}
+ 236              	.LCFI5:
+ 237              		.cfi_def_cfa_offset 8
+ 238              		.cfi_offset 3, -8
+ 239              		.cfi_offset 14, -4
+ 183:Src/main.c    ****   /* USER CODE BEGIN Callback 0 */
+ 184:Src/main.c    **** 
+ 185:Src/main.c    ****   /* USER CODE END Callback 0 */
+ 186:Src/main.c    ****   if (htim->Instance == TIM1) {
+ 240              		.loc 1 186 3 is_stmt 1 view .LVU69
+ 241              		.loc 1 186 11 is_stmt 0 view .LVU70
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceDD4Wy.s 			page 9
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s 			page 9
+>>>>>>> 80dea70 ( OO)
+
+
+ 242 0002 0268     		ldr	r2, [r0]
+ 243              		.loc 1 186 6 view .LVU71
+ 244 0004 034B     		ldr	r3, .L14
+ 245 0006 9A42     		cmp	r2, r3
+ 246 0008 00D0     		beq	.L13
+ 247              	.LVL18:
+ 248              	.L10:
+ 187:Src/main.c    ****     HAL_IncTick();
+ 188:Src/main.c    ****   }
+ 189:Src/main.c    ****   /* USER CODE BEGIN Callback 1 */
+ 190:Src/main.c    **** 
+ 191:Src/main.c    ****   /* USER CODE END Callback 1 */
+ 192:Src/main.c    **** }
+ 249              		.loc 1 192 1 view .LVU72
+ 250 000a 08BD     		pop	{r3, pc}
+ 251              	.LVL19:
+ 252              	.L13:
+ 187:Src/main.c    ****     HAL_IncTick();
+ 253              		.loc 1 187 5 is_stmt 1 view .LVU73
+ 254 000c FFF7FEFF 		bl	HAL_IncTick
+ 255              	.LVL20:
+ 256              		.loc 1 192 1 is_stmt 0 view .LVU74
+ 257 0010 FBE7     		b	.L10
+ 258              	.L15:
+ 259 0012 00BF     		.align	2
+ 260              	.L14:
+ 261 0014 002C0140 		.word	1073818624
+ 262              		.cfi_endproc
+ 263              	.LFE72:
+ 265              		.section	.text.Error_Handler,"ax",%progbits
+ 266              		.align	1
+ 267              		.global	Error_Handler
+ 268              		.syntax unified
+ 269              		.thumb
+ 270              		.thumb_func
+ 272              	Error_Handler:
+ 273              	.LFB73:
+ 193:Src/main.c    **** 
+ 194:Src/main.c    **** /**
+ 195:Src/main.c    ****   * @brief  This function is executed in case of error occurrence.
+ 196:Src/main.c    ****   * @retval None
+ 197:Src/main.c    ****   */
+ 198:Src/main.c    **** void Error_Handler(void)
+ 199:Src/main.c    **** {
+ 274              		.loc 1 199 1 is_stmt 1 view -0
+ 275              		.cfi_startproc
+ 276              		@ args = 0, pretend = 0, frame = 0
+ 277              		@ frame_needed = 0, uses_anonymous_args = 0
+ 278              		@ link register save eliminated.
+ 200:Src/main.c    ****   /* USER CODE BEGIN Error_Handler_Debug */
+ 201:Src/main.c    ****   /* User can add his own implementation to report the HAL error return state */
+ 202:Src/main.c    **** 
+ 203:Src/main.c    ****   /* USER CODE END Error_Handler_Debug */
+ 204:Src/main.c    **** }
+ 279              		.loc 1 204 1 view .LVU76
+ 280 0000 7047     		bx	lr
+ 281              		.cfi_endproc
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceDD4Wy.s 			page 10
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s 			page 10
+>>>>>>> 80dea70 ( OO)
+
+
+ 282              	.LFE73:
+ 284              		.text
+ 285              	.Letext0:
+ 286              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 287              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 288              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 289              		.file 5 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 290              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h"
+ 291              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h"
+ 292              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h"
+ 293              		.file 9 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h"
+ 294              		.file 10 "Inc/canif.h"
+ 295              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h"
+ 296              		.file 12 "Inc/gpio.h"
+ 297              		.file 13 "Inc/can.h"
+ 298              		.file 14 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
+ 299              		.file 15 "<built-in>"
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceDD4Wy.s 			page 11
+>>>>>>> e0bd117 ( OO)
 >>>>>>> RTOS
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s 			page 11
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 
 DEFINED SYMBOLS
@@ -943,10 +1241,13 @@ DEFINED SYMBOLS
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s:18     .text.SystemClock_Config:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s:24     .text.SystemClock_Config:00000000 SystemClock_Config
 C:\Users\wup15j\AppData\Local\Temp\ccZSvnHy.s:116    .text.main:00000000 $t
@@ -987,9 +1288,12 @@ C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s:261    .text.HAL_TIM_PeriodElapsed
 C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s:266    .text.Error_Handler:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccuW26Ee.s:272    .text.Error_Handler:00000000 Error_Handler
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 UNDEFINED SYMBOLS
 memset

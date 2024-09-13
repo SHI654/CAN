@@ -174,9 +174,12 @@ Discarded input sections
 >>>>>>> RTOS
 =======
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
  .text          0x00000000        0x0 build/sysmem.o
  .data          0x00000000        0x0 build/sysmem.o
  .bss           0x00000000        0x0 build/sysmem.o
@@ -385,8 +388,6 @@ Discarded input sections
                 0x00000000       0xf4 build/stm32f1xx_hal_gpio.o
  .text.HAL_GPIO_ReadPin
                 0x00000000        0xe build/stm32f1xx_hal_gpio.o
- .text.HAL_GPIO_TogglePin
-                0x00000000       0x12 build/stm32f1xx_hal_gpio.o
  .text.HAL_GPIO_LockPin
                 0x00000000       0x2e build/stm32f1xx_hal_gpio.o
  .text.HAL_GPIO_EXTI_Callback
@@ -1460,10 +1461,13 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 .text           0x0800010c     0x1584
                 0x0800010c                . = ALIGN (0x4)
 =======
@@ -2762,6 +2766,7 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 .rel.dyn        0x0800353c        0x0
  .rel.iplt      0x0800353c        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
  *(.rodata)
@@ -2777,6 +2782,8 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 .rel.dyn        0x080016b4        0x0
  .rel.iplt      0x080016b4        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
@@ -2784,10 +2791,13 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 .ARM            0x080016b4        0x0
                 0x080016b4                __exidx_start = .
  *(.ARM.exidx*)
@@ -2902,9 +2912,12 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 
 .data           0x20000000       0x10 load address 0x08003544
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
                 0x20000000                . = ALIGN (0x4)
                 0x20000000                _sdata = .
  *(.data)
@@ -2927,10 +2940,13 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 .igot.plt       0x2000000c        0x0 load address 0x080016c8
  .igot.plt      0x2000000c        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtbegin.o
                 0x2000000c                . = ALIGN (0x4)
@@ -3238,29 +3254,38 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
  .ARM.attributes
                 0x000000fe       0x2d build/can.o
  .ARM.attributes
-                0x0000012b       0x2d build/stm32f1xx_hal_can.o
+                0x0000012b       0x2d build/canif.o
  .ARM.attributes
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e0bd117 ( OO)
                 0x00000158       0x2d build/stm32f1xx_hal.o
 =======
                 0x00000158       0x2d build/stm32f1xx_hal_can.o
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 =======
                 0x00000158       0x2d build/stm32f1xx_hal.o
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
  .ARM.attributes
-                0x00000185       0x2d build/stm32f1xx_hal_rcc.o
+                0x00000185       0x2d build/stm32f1xx_hal.o
  .ARM.attributes
-                0x000001b2       0x2d build/stm32f1xx_hal_gpio.o
+                0x000001b2       0x2d build/stm32f1xx_hal_rcc.o
  .ARM.attributes
-                0x000001df       0x2d build/stm32f1xx_hal_cortex.o
+                0x000001df       0x2d build/stm32f1xx_hal_gpio.o
  .ARM.attributes
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e0bd117 ( OO)
                 0x0000020c       0x2d build/system_stm32f1xx.o
  .ARM.attributes
                 0x00000239       0x21 build/startup_stm32f103x6.o
@@ -3376,6 +3401,7 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
  .ARM.attributes
                 0x000004fd       0x1d c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
                 0x0000020c       0x2d build/system_stm32f1xx.o
@@ -3388,6 +3414,8 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
  .ARM.attributes
                 0x000002b4       0x1d c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 OUTPUT(build/CAN.elf elf32-littlearm)
 LOAD linker stubs
 LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a
@@ -3397,10 +3425,13 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 .debug_info     0x00000000     0x5d5d
  .debug_info    0x00000000      0x3f4 build/main.o
  .debug_info    0x000003f4      0x32c build/gpio.o
@@ -3651,9 +3682,12 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 
 .debug_aranges  0x00000000     0x1198
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
  .debug_aranges
                 0x00000000       0x38 build/main.o
  .debug_aranges
@@ -3668,8 +3702,11 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> e0bd117 ( OO)
                 0x00000140      0x138 build/stm32f1xx_hal_can.o
  .debug_aranges
                 0x00000278       0xe0 build/stm32f1xx_hal.o
@@ -3781,6 +3818,7 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 .debug_ranges   0x00000000     0x1340
 =======
                 0x00000138       0x28 build/canif.o
+<<<<<<< HEAD
 =======
                 0x00000140      0x138 build/stm32f1xx_hal_can.o
 >>>>>>> 7f8e5ad (090300)
@@ -3796,6 +3834,19 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
                 0x000004d0       0x28 build/system_stm32f1xx.o
  .debug_aranges
 <<<<<<< HEAD
+=======
+ .debug_aranges
+                0x00000160      0x138 build/stm32f1xx_hal_can.o
+ .debug_aranges
+                0x00000298       0xe0 build/stm32f1xx_hal.o
+ .debug_aranges
+                0x00000378       0x90 build/stm32f1xx_hal_rcc.o
+ .debug_aranges
+                0x00000408       0x58 build/stm32f1xx_hal_gpio.o
+ .debug_aranges
+                0x00000460       0x90 build/stm32f1xx_hal_cortex.o
+ .debug_aranges
+>>>>>>> e0bd117 ( OO)
                 0x000004f0      0x3d0 build/stm32f1xx_hal_tim.o
  .debug_aranges
                 0x000008c0      0x168 build/stm32f1xx_hal_tim_ex.o
@@ -4095,9 +4146,12 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
                                 0x441 (size before relaxing)
  .debug_str     0x0000593a       0x24 build/startup_stm32f103x6.o
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
                                  0x53 (size before relaxing)
 
 .comment        0x00000000       0x49
@@ -4110,6 +4164,7 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  .comment       0x00000049       0x4a build/canif.o
  .comment       0x00000049       0x4a build/cantp.o
 =======
@@ -4117,15 +4172,20 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> e0bd117 ( OO)
+=======
  .comment       0x00000049       0x4a build/canif.o
  .comment       0x00000049       0x4a build/cantp.o
 >>>>>>> RTOS
 =======
  .comment       0x00000049       0x4a build/canif.o
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
  .comment       0x00000049       0x4a build/stm32f1xx_hal_can.o
  .comment       0x00000049       0x4a build/stm32f1xx_hal.o
  .comment       0x00000049       0x4a build/stm32f1xx_hal_rcc.o
@@ -4147,10 +4207,13 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 .debug_frame    0x00000000      0xb30
  .debug_frame   0x00000000       0x58 build/main.o
  .debug_frame   0x00000058       0x30 build/gpio.o
@@ -4243,9 +4306,12 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
  .debug_frame   0x00002f5c       0x28 c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memcpy-stub.o)
  .debug_frame   0x00002f84       0x20 c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc_nano.a(lib_a-memset.o)
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 
 Cross Reference Table
 
@@ -4446,20 +4512,26 @@ HAL_GPIO_TogglePin                                build/stm32f1xx_hal_gpio.o
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                                   build/canif.o
 =======
 >>>>>>> 7f8e5ad (090300)
 =======
 <<<<<<< HEAD
 =======
+>>>>>>> e0bd117 ( OO)
+=======
                                                   build/canif.o
 >>>>>>> RTOS
 =======
                                                   build/canif.o
 >>>>>>> 80dea70 ( OO)
+<<<<<<< HEAD
 >>>>>>> e0bd117 ( OO)
 =======
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> e0bd117 ( OO)
 HAL_GPIO_WritePin                                 build/stm32f1xx_hal_gpio.o
                                                   build/gpio.o
 HAL_GetDEVID                                      build/stm32f1xx_hal.o
