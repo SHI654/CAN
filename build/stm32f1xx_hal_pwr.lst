@@ -1,8 +1,19 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 1
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 1
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 1
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
    1              		.cpu cortex-m3
@@ -63,10 +74,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
   32:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
   33:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /** @defgroup PWR PWR
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 2
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 2
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 2
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 2
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 2
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
   34:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief    PWR HAL module driver
@@ -127,10 +149,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
   89:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @}
   90:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 3
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 3
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 3
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 3
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 3
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
   91:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
@@ -191,10 +224,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
   51              		.thumb
   52              		.thumb_func
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 4
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 4
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 4
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 4
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 4
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
   54              	HAL_PWR_DeInit:
@@ -255,10 +299,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
   70              		.loc 1 160 1 is_stmt 0 view .LVU7
   71 0012 7047     		bx	lr
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 5
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 5
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 5
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 5
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 5
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
   72              	.L4:
@@ -319,10 +374,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  176:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief  Disables access to the backup domain (RTC registers, RTC
  177:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   *         backup data registers).
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 6
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 6
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 6
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 6
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 6
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  178:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @note   If the HSE divided by 128 is used as the RTC clock, the
@@ -383,10 +449,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  206:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****       (+) A PVDO flag is available to indicate if VDD/VDDA is higher or lower
  207:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****           than the PVD threshold. This event is internally connected to the EXTI
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 7
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 7
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 7
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 7
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 7
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  208:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****           line16 and can generate an interrupt if enabled. This is done through
@@ -447,10 +524,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  263:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****           (++) PWR_SLEEPENTRY_WFx= PWR_SLEEPENTRY_WFE: enter STOP mode with WFE instruction
  264:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****       (+) Exit:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 8
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 8
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 8
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 8
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 8
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  265:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****           (++) WFI entry mode, Any EXTI Line (Internal or External) configured in Interrupt mode wi
@@ -511,10 +599,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  147              		@ args = 0, pretend = 0, frame = 0
  148              		@ frame_needed = 0, uses_anonymous_args = 0
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 9
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 9
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 9
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 9
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 9
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  149              		@ link register save eliminated.
@@ -575,10 +674,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  187              	.L12:
  335:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 10
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 10
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 10
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 10
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 10
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  336:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   
@@ -639,10 +749,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  225 0078 7047     		bx	lr
  226              	.L17:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 11
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 11
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 11
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 11
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 11
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  227 007a 00BF     		.align	2
@@ -703,10 +824,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  369:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** void HAL_PWR_DisablePVD(void)
  370:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** {
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 12
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 12
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 12
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 12
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 12
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  271              		.loc 1 370 1 is_stmt 1 view -0
@@ -767,10 +899,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
    2:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
    3:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 13
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 13
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 13
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 13
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 13
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
    4:Drivers/CMSIS/Include/cmsis_gcc.h ****  * @version  V5.0.4
@@ -831,10 +974,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
   59:Drivers/CMSIS/Include/cmsis_gcc.h ****   #define __WEAK                                 __attribute__((weak))
   60:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 14
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 14
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 14
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 14
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 14
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
   61:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __PACKED
@@ -895,10 +1049,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  116:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  117:Drivers/CMSIS/Include/cmsis_gcc.h **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 15
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 15
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 15
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 15
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 15
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  118:Drivers/CMSIS/Include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
@@ -959,10 +1124,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  173:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
  174:Drivers/CMSIS/Include/cmsis_gcc.h **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 16
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 16
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 16
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 16
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 16
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  175:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1023,10 +1199,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  230:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the content of the xPSR Register.
  231:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               xPSR Register value
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 17
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 17
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 17
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 17
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 17
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  232:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1087,10 +1274,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  287:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    topOfProcStack  Process Stack Pointer value to set
  288:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 18
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 18
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 18
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 18
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 18
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  289:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_PSP_NS(uint32_t topOfProcStack)
@@ -1151,10 +1349,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  344:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  345:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MSR msp_ns, %0" : : "r" (topOfMainStack) : );
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 19
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 19
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 19
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 19
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 19
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  346:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1215,10 +1424,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  401:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, primask_ns" : "=r" (result) :: "memory");
  402:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 20
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 20
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 20
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 20
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 20
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  403:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -1279,10 +1499,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  458:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Base Priority register.
  459:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Base Priority register value
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 21
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 21
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 21
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 21
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 21
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  460:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1343,10 +1574,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  515:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  516:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __set_BASEPRI_MAX(uint32_t basePri)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 22
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 22
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 22
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 22
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 22
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  517:Drivers/CMSIS/Include/cmsis_gcc.h **** {
@@ -1407,10 +1649,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  572:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  573:Drivers/CMSIS/Include/cmsis_gcc.h **** #endif
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 23
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 23
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 23
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 23
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 23
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  574:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1471,10 +1724,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  629:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Process Stack Pointer Limit
  630:Drivers/CMSIS/Include/cmsis_gcc.h ****   Devices without ARMv8-M Main Extensions (i.e. Cortex-M23) lack the non-secure
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 24
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 24
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 24
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 24
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 24
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  631:Drivers/CMSIS/Include/cmsis_gcc.h ****   Stack Pointer Limit register hence the write is silently ignored in non-secure
@@ -1535,10 +1799,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  686:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
  687:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msplim" : "=r" (result) );
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 25
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 25
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 25
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 25
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 25
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  688:Drivers/CMSIS/Include/cmsis_gcc.h ****   return result;
@@ -1599,10 +1874,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  743:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Main Stack Pointer Limit (MSPLIM) when in secu
  744:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    MainStackPtrLimit  Main Stack Pointer value to set
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 26
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 26
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 26
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 26
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 26
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  745:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
@@ -1663,10 +1949,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  800:Drivers/CMSIS/Include/cmsis_gcc.h ****   __builtin_arm_set_fpscr(fpscr);
  801:Drivers/CMSIS/Include/cmsis_gcc.h **** #else
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 27
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 27
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 27
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 27
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 27
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  802:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("VMSR fpscr, %0" : : "r" (fpscr) : "vfpcc", "memory");
@@ -1727,10 +2024,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  857:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __SEV()                             __ASM volatile ("sev")
  858:Drivers/CMSIS/Include/cmsis_gcc.h **** 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 28
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 28
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 28
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 28
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 28
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  859:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1791,10 +2099,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  914:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Reverse byte order (16 bit)
  915:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Reverses the byte order within each halfword of a word. For example, 0x12345678 becomes 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 29
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 29
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 29
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 29
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 29
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  916:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
@@ -1855,10 +2174,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  971:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  972:Drivers/CMSIS/Include/cmsis_gcc.h **** #define __BKPT(value)                       __ASM volatile ("bkpt "#value)
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 30
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 30
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 30
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 30
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 30
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  973:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -1919,10 +2249,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  335              	.L26:
  336              		.align	2
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 31
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 31
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 31
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 31
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 31
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  337              	.L25:
@@ -1983,10 +2324,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  377 0004 B0FA80F0 		clz	r0, r0
  378 0008 024B     		ldr	r3, .L28
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 32
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 32
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 32
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 32
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 32
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  379 000a 0344     		add	r3, r3, r0
@@ -2047,10 +2399,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  411 0000 064A     		ldr	r2, .L34
  412 0002 1369     		ldr	r3, [r2, #16]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 33
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 33
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 33
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 33
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 33
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  413 0004 23F00403 		bic	r3, r3, #4
@@ -2111,10 +2474,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  453              		.align	1
  454              		.global	HAL_PWR_EnterSTOPMode
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 34
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 34
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 34
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 34
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 34
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  455              		.syntax unified
@@ -2175,10 +2549,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  480 000c 1368     		ldr	r3, [r2]
  481 000e 23F00103 		bic	r3, r3, #1
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 35
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 35
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 35
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 35
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 35
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  482 0012 0343     		orrs	r3, r3, r0
@@ -2239,10 +2624,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  488:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****     PWR_OverloadWfe(); /* WFE redefine locally */
  516              		.loc 1 488 5 view .LVU95
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 36
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 36
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 36
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 36
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 36
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  517              		.thumb
@@ -2303,10 +2699,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  510:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** 
  511:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   /* This option is used to ensure that store operations are completed */
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 37
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 37
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 37
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 37
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 37
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  512:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** #if defined ( __CC_ARM)
@@ -2367,10 +2774,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  593              		.loc 1 532 1 is_stmt 0 view .LVU104
  594 000a 7047     		bx	lr
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 38
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 38
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 38
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 38
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 38
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  595              	.L47:
@@ -2431,10 +2849,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  548:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** /**
  549:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @brief Enables CORTEX M3 SEVONPEND bit. 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 39
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 39
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 39
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 39
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 39
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  550:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c ****   * @note Sets SEVONPEND bit of SCR register. When this bit is set, this causes 
@@ -2495,10 +2924,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  675 0004 23F01003 		bic	r3, r3, #16
  676 0008 1361     		str	r3, [r2, #16]
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 40
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 40
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 40
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 40
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 40
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  571:Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c **** }
@@ -2559,10 +2999,21 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  702              		.cfi_endproc
  703              	.LFE82:
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 41
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 41
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 41
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 41
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 41
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  705              		.section	.text.HAL_PWR_PVD_IRQHandler,"ax",%progbits
@@ -2623,24 +3074,103 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 1
  754              		.file 5 "Drivers/CMSIS/Include/core_cm3.h"
  755              		.file 6 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 42
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 42
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 42
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 42
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 42
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
  756              		.file 7 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
  757              		.file 8 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h"
 <<<<<<< HEAD
+<<<<<<< HEAD
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 43
 =======
 ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 43
 >>>>>>> 7f8e5ad (090300)
+=======
+<<<<<<< HEAD
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s 			page 43
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s 			page 43
+>>>>>>> RTOS
+=======
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s 			page 43
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32f1xx_hal_pwr.c
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:18     .text.PWR_OverloadWfe:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:23     .text.PWR_OverloadWfe:00000000 PWR_OverloadWfe
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:48     .text.HAL_PWR_DeInit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:54     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:75     .text.HAL_PWR_DeInit:00000014 $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:80     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:86     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:103    .text.HAL_PWR_EnableBkUpAccess:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:108    .text.HAL_PWR_DisableBkUpAccess:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:114    .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:131    .text.HAL_PWR_DisableBkUpAccess:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:136    .text.HAL_PWR_ConfigPVD:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:142    .text.HAL_PWR_ConfigPVD:00000000 HAL_PWR_ConfigPVD
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:229    .text.HAL_PWR_ConfigPVD:0000007c $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:235    .text.HAL_PWR_EnablePVD:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:241    .text.HAL_PWR_EnablePVD:00000000 HAL_PWR_EnablePVD
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:258    .text.HAL_PWR_EnablePVD:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:263    .text.HAL_PWR_DisablePVD:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:269    .text.HAL_PWR_DisablePVD:00000000 HAL_PWR_DisablePVD
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:286    .text.HAL_PWR_DisablePVD:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:291    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:297    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:338    .text.HAL_PWR_EnableWakeUpPin:00000014 $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:343    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:349    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:389    .text.HAL_PWR_DisableWakeUpPin:00000014 $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:394    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:400    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:448    .text.HAL_PWR_EnterSLEEPMode:0000001c $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:453    .text.HAL_PWR_EnterSTOPMode:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:459    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:528    .text.HAL_PWR_EnterSTOPMode:00000040 $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:534    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:540    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:569    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:575    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:581    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:598    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:603    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:609    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:626    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:631    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:637    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:654    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:659    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:665    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:682    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:687    .text.HAL_PWR_PVDCallback:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:693    .text.HAL_PWR_PVDCallback:00000000 HAL_PWR_PVDCallback
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:706    .text.HAL_PWR_PVD_IRQHandler:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:712    .text.HAL_PWR_PVD_IRQHandler:00000000 HAL_PWR_PVD_IRQHandler
+C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:746    .text.HAL_PWR_PVD_IRQHandler:0000001c $d
+=======
+>>>>>>> c9bcb0e (build)
 C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s:18     .text.PWR_OverloadWfe:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s:23     .text.PWR_OverloadWfe:00000000 PWR_OverloadWfe
 C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s:48     .text.HAL_PWR_DeInit:00000000 $t
@@ -2693,6 +3223,7 @@ C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s:693    .text.HAL_PWR_PVDCallback:0
 C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s:706    .text.HAL_PWR_PVD_IRQHandler:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s:712    .text.HAL_PWR_PVD_IRQHandler:00000000 HAL_PWR_PVD_IRQHandler
 C:\Users\wup15j\AppData\Local\Temp\cc8cABMA.s:746    .text.HAL_PWR_PVD_IRQHandler:0000001c $d
+<<<<<<< HEAD
 =======
 C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:18     .text.PWR_OverloadWfe:00000000 $t
 C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:23     .text.PWR_OverloadWfe:00000000 PWR_OverloadWfe
@@ -2747,5 +3278,62 @@ C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:706    .text.HAL_PWR_PVD_IRQHandle
 C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:712    .text.HAL_PWR_PVD_IRQHandler:00000000 HAL_PWR_PVD_IRQHandler
 C:\Users\wup15j\AppData\Local\Temp\ccdkG0GH.s:746    .text.HAL_PWR_PVD_IRQHandler:0000001c $d
 >>>>>>> 7f8e5ad (090300)
+=======
+>>>>>>> RTOS
+=======
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:18     .text.PWR_OverloadWfe:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:23     .text.PWR_OverloadWfe:00000000 PWR_OverloadWfe
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:48     .text.HAL_PWR_DeInit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:54     .text.HAL_PWR_DeInit:00000000 HAL_PWR_DeInit
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:75     .text.HAL_PWR_DeInit:00000014 $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:80     .text.HAL_PWR_EnableBkUpAccess:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:86     .text.HAL_PWR_EnableBkUpAccess:00000000 HAL_PWR_EnableBkUpAccess
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:103    .text.HAL_PWR_EnableBkUpAccess:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:108    .text.HAL_PWR_DisableBkUpAccess:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:114    .text.HAL_PWR_DisableBkUpAccess:00000000 HAL_PWR_DisableBkUpAccess
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:131    .text.HAL_PWR_DisableBkUpAccess:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:136    .text.HAL_PWR_ConfigPVD:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:142    .text.HAL_PWR_ConfigPVD:00000000 HAL_PWR_ConfigPVD
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:229    .text.HAL_PWR_ConfigPVD:0000007c $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:235    .text.HAL_PWR_EnablePVD:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:241    .text.HAL_PWR_EnablePVD:00000000 HAL_PWR_EnablePVD
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:258    .text.HAL_PWR_EnablePVD:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:263    .text.HAL_PWR_DisablePVD:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:269    .text.HAL_PWR_DisablePVD:00000000 HAL_PWR_DisablePVD
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:286    .text.HAL_PWR_DisablePVD:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:291    .text.HAL_PWR_EnableWakeUpPin:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:297    .text.HAL_PWR_EnableWakeUpPin:00000000 HAL_PWR_EnableWakeUpPin
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:338    .text.HAL_PWR_EnableWakeUpPin:00000014 $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:343    .text.HAL_PWR_DisableWakeUpPin:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:349    .text.HAL_PWR_DisableWakeUpPin:00000000 HAL_PWR_DisableWakeUpPin
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:389    .text.HAL_PWR_DisableWakeUpPin:00000014 $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:394    .text.HAL_PWR_EnterSLEEPMode:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:400    .text.HAL_PWR_EnterSLEEPMode:00000000 HAL_PWR_EnterSLEEPMode
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:448    .text.HAL_PWR_EnterSLEEPMode:0000001c $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:453    .text.HAL_PWR_EnterSTOPMode:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:459    .text.HAL_PWR_EnterSTOPMode:00000000 HAL_PWR_EnterSTOPMode
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:528    .text.HAL_PWR_EnterSTOPMode:00000040 $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:534    .text.HAL_PWR_EnterSTANDBYMode:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:540    .text.HAL_PWR_EnterSTANDBYMode:00000000 HAL_PWR_EnterSTANDBYMode
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:569    .text.HAL_PWR_EnterSTANDBYMode:00000018 $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:575    .text.HAL_PWR_EnableSleepOnExit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:581    .text.HAL_PWR_EnableSleepOnExit:00000000 HAL_PWR_EnableSleepOnExit
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:598    .text.HAL_PWR_EnableSleepOnExit:0000000c $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:603    .text.HAL_PWR_DisableSleepOnExit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:609    .text.HAL_PWR_DisableSleepOnExit:00000000 HAL_PWR_DisableSleepOnExit
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:626    .text.HAL_PWR_DisableSleepOnExit:0000000c $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:631    .text.HAL_PWR_EnableSEVOnPend:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:637    .text.HAL_PWR_EnableSEVOnPend:00000000 HAL_PWR_EnableSEVOnPend
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:654    .text.HAL_PWR_EnableSEVOnPend:0000000c $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:659    .text.HAL_PWR_DisableSEVOnPend:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:665    .text.HAL_PWR_DisableSEVOnPend:00000000 HAL_PWR_DisableSEVOnPend
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:682    .text.HAL_PWR_DisableSEVOnPend:0000000c $d
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:687    .text.HAL_PWR_PVDCallback:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:693    .text.HAL_PWR_PVDCallback:00000000 HAL_PWR_PVDCallback
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:706    .text.HAL_PWR_PVD_IRQHandler:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:712    .text.HAL_PWR_PVD_IRQHandler:00000000 HAL_PWR_PVD_IRQHandler
+C:\Users\wup15j\AppData\Local\Temp\ccKCuMMj.s:746    .text.HAL_PWR_PVD_IRQHandler:0000001c $d
+>>>>>>> 2ff531d (build)
+>>>>>>> c9bcb0e (build)
 
 NO UNDEFINED SYMBOLS
