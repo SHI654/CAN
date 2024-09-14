@@ -51,6 +51,7 @@
 osThreadId defaultTaskHandle;
 osThreadId LEDTaskHandle;
 osThreadId CANIFRXTaskHandle;
+osThreadId CANTPMFHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -60,6 +61,7 @@ osThreadId CANIFRXTaskHandle;
 void StartDefaultTask(void const * argument);
 void StartTask02(void const * argument);
 void StartTask03(void const * argument);
+void StartTask04(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
@@ -99,8 +101,12 @@ void MX_FREERTOS_Init(void) {
   LEDTaskHandle = osThreadCreate(osThread(LEDTask), NULL);
 
   /* definition and creation of CANIFRXTask */
-  osThreadDef(CANIFRXTask, StartTask03, osPriorityIdle, 0, 128);
+  osThreadDef(CANIFRXTask, StartTask03, osPriorityBelowNormal, 0, 128);
   CANIFRXTaskHandle = osThreadCreate(osThread(CANIFRXTask), NULL);
+
+  /* definition and creation of CANTPMF */
+  osThreadDef(CANTPMF, StartTask04, osPriorityLow, 0, 128);
+  CANTPMFHandle = osThreadCreate(osThread(CANTPMF), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -161,6 +167,24 @@ void StartTask03(void const * argument)
     osDelay(1);
   }
   /* USER CODE END StartTask03 */
+}
+
+/* USER CODE BEGIN Header_StartTask04 */
+/**
+* @brief Function implementing the CANTPMF thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartTask04 */
+void StartTask04(void const * argument)
+{
+  /* USER CODE BEGIN StartTask04 */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartTask04 */
 }
 
 /* Private application code --------------------------------------------------*/
