@@ -3,6 +3,8 @@
         "canif.h": "c",
         "can.h": "c",
         "compare": "c",
-        "type_traits": "c"
+        "type_traits": "c",
+        "cmsis_os.h": "c",
+        "cantp.h": "c"
     }
 }

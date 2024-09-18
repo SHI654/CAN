@@ -133,7 +133,7 @@ void CanIf_Receive() {
 
 
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan1){
-    if (hcan1->Instance == hcan.Instance) // 获得接收到的数据头和数据
+    if (hcan1->Instance == hcan.Instance) // 获得接*收到的数据头和数据
     {
     // 尝试从 FIFO0 中获取一条 CAN 消息
 	if (HAL_CAN_GetRxMessage(hcan1, CAN_RX_FIFO0, &rxHeader, CanIfPduInfo.Data) != HAL_OK) {

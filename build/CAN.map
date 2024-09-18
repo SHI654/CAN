@@ -894,6 +894,8 @@ Discarded input sections
  .text          0x00000000        0x0 build/freertos.o
  .data          0x00000000        0x0 build/freertos.o
  .bss           0x00000000        0x0 build/freertos.o
+ .bss.CANTPMFHandle
+                0x00000000        0x4 build/freertos.o
  .text          0x00000000        0x0 build/stm32f1xx_hal_timebase_tim.o
  .data          0x00000000        0x0 build/stm32f1xx_hal_timebase_tim.o
  .bss           0x00000000        0x0 build/stm32f1xx_hal_timebase_tim.o
@@ -2210,7 +2212,7 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
 LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a
 LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp\libgcc.a
 
-.debug_info     0x00000000    0x177a8
+.debug_info     0x00000000    0x177bb
  .debug_info    0x00000000      0xa6c build/main.o
  .debug_info    0x00000a6c      0x32c build/gpio.o
  .debug_info    0x00000d98      0xbe0 build/stm32f1xx_it.o
@@ -2226,16 +2228,16 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
  .debug_info    0x00007c5c     0x3df8 build/stm32f1xx_hal_tim.o
  .debug_info    0x0000ba54     0x1b67 build/stm32f1xx_hal_tim_ex.o
  .debug_info    0x0000d5bb      0x26e build/system_stm32f1xx.o
- .debug_info    0x0000d829      0x374 build/freertos.o
- .debug_info    0x0000db9d      0xaa6 build/stm32f1xx_hal_timebase_tim.o
- .debug_info    0x0000e643      0x309 build/list.o
- .debug_info    0x0000e94c     0x2304 build/queue.o
- .debug_info    0x00010c50     0x2d12 build/tasks.o
- .debug_info    0x00013962     0x12d1 build/timers.o
- .debug_info    0x00014c33     0x214f build/cmsis_os.o
- .debug_info    0x00016d82      0x49b build/heap_4.o
- .debug_info    0x0001721d      0x569 build/port.o
- .debug_info    0x00017786       0x22 build/startup_stm32f103x6.o
+ .debug_info    0x0000d829      0x387 build/freertos.o
+ .debug_info    0x0000dbb0      0xaa6 build/stm32f1xx_hal_timebase_tim.o
+ .debug_info    0x0000e656      0x309 build/list.o
+ .debug_info    0x0000e95f     0x2304 build/queue.o
+ .debug_info    0x00010c63     0x2d12 build/tasks.o
+ .debug_info    0x00013975     0x12d1 build/timers.o
+ .debug_info    0x00014c46     0x214f build/cmsis_os.o
+ .debug_info    0x00016d95      0x49b build/heap_4.o
+ .debug_info    0x00017230      0x569 build/port.o
+ .debug_info    0x00017799       0x22 build/startup_stm32f103x6.o
 
 .debug_abbrev   0x00000000     0x37ca
  .debug_abbrev  0x00000000      0x21e build/main.o
@@ -2369,7 +2371,7 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
  .debug_ranges  0x000012a0       0x68 build/port.o
  .debug_ranges  0x00001308       0x20 build/startup_stm32f103x6.o
 
-.debug_line     0x00000000    0x12499
+.debug_line     0x00000000    0x1249b
  .debug_line    0x00000000      0x3c4 build/main.o
  .debug_line    0x000003c4      0x1c5 build/gpio.o
  .debug_line    0x00000589      0x2d2 build/stm32f1xx_it.o
@@ -2385,18 +2387,18 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
  .debug_line    0x000049d2     0x460b build/stm32f1xx_hal_tim.o
  .debug_line    0x00008fdd     0x1b24 build/stm32f1xx_hal_tim_ex.o
  .debug_line    0x0000ab01      0x239 build/system_stm32f1xx.o
- .debug_line    0x0000ad3a      0x23a build/freertos.o
- .debug_line    0x0000af74      0x291 build/stm32f1xx_hal_timebase_tim.o
- .debug_line    0x0000b205      0x36c build/list.o
- .debug_line    0x0000b571     0x1ce7 build/queue.o
- .debug_line    0x0000d258     0x278d build/tasks.o
- .debug_line    0x0000f9e5      0xb69 build/timers.o
- .debug_line    0x0001054e     0x124c build/cmsis_os.o
- .debug_line    0x0001179a      0x672 build/heap_4.o
- .debug_line    0x00011e0c      0x618 build/port.o
- .debug_line    0x00012424       0x75 build/startup_stm32f103x6.o
+ .debug_line    0x0000ad3a      0x23c build/freertos.o
+ .debug_line    0x0000af76      0x291 build/stm32f1xx_hal_timebase_tim.o
+ .debug_line    0x0000b207      0x36c build/list.o
+ .debug_line    0x0000b573     0x1ce7 build/queue.o
+ .debug_line    0x0000d25a     0x278d build/tasks.o
+ .debug_line    0x0000f9e7      0xb69 build/timers.o
+ .debug_line    0x00010550     0x124c build/cmsis_os.o
+ .debug_line    0x0001179c      0x672 build/heap_4.o
+ .debug_line    0x00011e0e      0x618 build/port.o
+ .debug_line    0x00012426       0x75 build/startup_stm32f103x6.o
 
-.debug_str      0x00000000     0x5db2
+.debug_str      0x00000000     0x5dc0
  .debug_str     0x00000000      0x7a2 build/main.o
                                 0x87a (size before relaxing)
  .debug_str     0x000007a2       0xdb build/gpio.o
@@ -2427,25 +2429,25 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
                                 0xe19 (size before relaxing)
  .debug_str     0x00003829       0x4a build/system_stm32f1xx.o
                                 0x22f (size before relaxing)
- .debug_str     0x00003873      0x1c2 build/freertos.o
-                                0x35b (size before relaxing)
- .debug_str     0x00003a35       0x47 build/stm32f1xx_hal_timebase_tim.o
+ .debug_str     0x00003873      0x1d0 build/freertos.o
+                                0x369 (size before relaxing)
+ .debug_str     0x00003a43       0x47 build/stm32f1xx_hal_timebase_tim.o
                                 0xa91 (size before relaxing)
- .debug_str     0x00003a7c      0x163 build/list.o
+ .debug_str     0x00003a8a      0x163 build/list.o
                                 0x2d5 (size before relaxing)
- .debug_str     0x00003bdf      0x837 build/queue.o
+ .debug_str     0x00003bed      0x837 build/queue.o
                                 0xacb (size before relaxing)
- .debug_str     0x00004416      0xb21 build/tasks.o
+ .debug_str     0x00004424      0xb21 build/tasks.o
                                0x10bf (size before relaxing)
- .debug_str     0x00004f37      0x454 build/timers.o
+ .debug_str     0x00004f45      0x454 build/timers.o
                                 0x899 (size before relaxing)
- .debug_str     0x0000538b      0x6c1 build/cmsis_os.o
+ .debug_str     0x00005399      0x6c1 build/cmsis_os.o
                                 0xe18 (size before relaxing)
- .debug_str     0x00005a4c      0x1d5 build/heap_4.o
+ .debug_str     0x00005a5a      0x1d5 build/heap_4.o
                                 0x3be (size before relaxing)
- .debug_str     0x00005c21      0x16d build/port.o
+ .debug_str     0x00005c2f      0x16d build/port.o
                                 0x441 (size before relaxing)
- .debug_str     0x00005d8e       0x24 build/startup_stm32f103x6.o
+ .debug_str     0x00005d9c       0x24 build/startup_stm32f103x6.o
                                  0x53 (size before relaxing)
 
 .comment        0x00000000       0x49
@@ -2517,6 +2519,7 @@ BusFault_Handler                                  build/stm32f1xx_it.o
 CAN1_RX1_IRQHandler                               build/stm32f1xx_it.o
 CAN1_SCE_IRQHandler                               build/startup_stm32f103x6.o
 CANIFRXTaskHandle                                 build/freertos.o
+CANTPMFHandle                                     build/freertos.o
 CAN_Config                                        build/can.o
 CAN_Filter_Config                                 build/can.o
 CAN_Init                                          build/can.o
