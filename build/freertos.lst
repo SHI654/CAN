@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 1
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -29,18 +29,22 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 1
   23 0014 43414E49 		.ascii	"CANIFRXTask\000"
   23      46525854 
   23      61736B00 
-  24              		.text
-  25              	.Ltext0:
-  26              		.cfi_sections	.debug_frame
-  27              		.section	.text.StartDefaultTask,"ax",%progbits
-  28              		.align	1
-  29              		.global	StartDefaultTask
-  30              		.syntax unified
-  31              		.thumb
-  32              		.thumb_func
-  34              	StartDefaultTask:
-  35              	.LFB71:
-  36              		.file 1 "Src/freertos.c"
+  24              		.align	2
+  25              	.LC6:
+  26 0020 43414E54 		.ascii	"CANTPMF\000"
+  26      504D4600 
+  27              		.text
+  28              	.Ltext0:
+  29              		.cfi_sections	.debug_frame
+  30              		.section	.text.StartDefaultTask,"ax",%progbits
+  31              		.align	1
+  32              		.global	StartDefaultTask
+  33              		.syntax unified
+  34              		.thumb
+  35              		.thumb_func
+  37              	StartDefaultTask:
+  38              	.LFB71:
+  39              		.file 1 "Src/freertos.c"
    1:Src/freertos.c **** /* USER CODE BEGIN Header */
    2:Src/freertos.c **** /**
    3:Src/freertos.c ****   ******************************************************************************
@@ -54,13 +58,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 1
   11:Src/freertos.c ****   *
   12:Src/freertos.c ****   * This software component is licensed by ST under Ultimate Liberty license
   13:Src/freertos.c ****   * SLA0044, the "License"; You may not use this file except in compliance with
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 2
+
+
   14:Src/freertos.c ****   * the License. You may obtain a copy of the License at:
   15:Src/freertos.c ****   *                             www.st.com/SLA0044
   16:Src/freertos.c ****   *
   17:Src/freertos.c ****   ******************************************************************************
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 2
-
-
   18:Src/freertos.c ****   */
   19:Src/freertos.c **** /* USER CODE END Header */
   20:Src/freertos.c **** 
@@ -114,13 +118,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 1
   68:Src/freertos.c **** 
   69:Src/freertos.c **** /**
   70:Src/freertos.c ****   * @brief  FreeRTOS initialization
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 3
+
+
   71:Src/freertos.c ****   * @param  None
   72:Src/freertos.c ****   * @retval None
   73:Src/freertos.c ****   */
   74:Src/freertos.c **** void MX_FREERTOS_Init(void) {
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 3
-
-
   75:Src/freertos.c ****   /* USER CODE BEGIN Init */
   76:Src/freertos.c **** 
   77:Src/freertos.c ****   /* USER CODE END Init */
@@ -155,8 +159,8 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 1
  106:Src/freertos.c ****   CANIFRXTaskHandle = osThreadCreate(osThread(CANIFRXTask), NULL);
  107:Src/freertos.c **** 
  108:Src/freertos.c ****   /* definition and creation of CANTPMF */
- 109:Src/freertos.c ****   // osThreadDef(CANTPMF, StartTask04, osPriorityLow, 0, 128);
- 110:Src/freertos.c ****   // CANTPMFHandle = osThreadCreate(osThread(CANTPMF), NULL);
+ 109:Src/freertos.c ****   osThreadDef(CANTPMF, StartTask04, osPriorityLow, 0, 128);
+ 110:Src/freertos.c ****   CANTPMFHandle = osThreadCreate(osThread(CANTPMF), NULL);
  111:Src/freertos.c **** 
  112:Src/freertos.c ****   /* USER CODE BEGIN RTOS_THREADS */
  113:Src/freertos.c ****   /* add threads, ... */
@@ -173,47 +177,47 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 1
  124:Src/freertos.c **** /* USER CODE END Header_StartDefaultTask */
  125:Src/freertos.c **** void StartDefaultTask(void const * argument)
  126:Src/freertos.c **** {
-  37              		.loc 1 126 1 view -0
-  38              		.cfi_startproc
-  39              		@ Volatile: function does not return.
-  40              		@ args = 0, pretend = 0, frame = 0
-  41              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 4
+  40              		.loc 1 126 1 view -0
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 4
 
 
-  42              	.LVL0:
-  43              		.loc 1 126 1 is_stmt 0 view .LVU1
-  44 0000 08B5     		push	{r3, lr}
-  45              	.LCFI0:
-  46              		.cfi_def_cfa_offset 8
-  47              		.cfi_offset 3, -8
-  48              		.cfi_offset 14, -4
-  49              	.LVL1:
-  50              	.L2:
+  41              		.cfi_startproc
+  42              		@ Volatile: function does not return.
+  43              		@ args = 0, pretend = 0, frame = 0
+  44              		@ frame_needed = 0, uses_anonymous_args = 0
+  45              	.LVL0:
+  46              		.loc 1 126 1 is_stmt 0 view .LVU1
+  47 0000 08B5     		push	{r3, lr}
+  48              	.LCFI0:
+  49              		.cfi_def_cfa_offset 8
+  50              		.cfi_offset 3, -8
+  51              		.cfi_offset 14, -4
+  52              	.LVL1:
+  53              	.L2:
  127:Src/freertos.c **** 
  128:Src/freertos.c ****   /* USER CODE BEGIN StartDefaultTask */
  129:Src/freertos.c ****   /* Infinite loop */
  130:Src/freertos.c ****   for(;;)
-  51              		.loc 1 130 3 is_stmt 1 discriminator 1 view .LVU2
+  54              		.loc 1 130 3 is_stmt 1 discriminator 1 view .LVU2
  131:Src/freertos.c ****   {
  132:Src/freertos.c ****     osDelay(1);
-  52              		.loc 1 132 5 discriminator 1 view .LVU3
-  53 0002 0120     		movs	r0, #1
-  54 0004 FFF7FEFF 		bl	osDelay
-  55              	.LVL2:
+  55              		.loc 1 132 5 discriminator 1 view .LVU3
+  56 0002 0120     		movs	r0, #1
+  57 0004 FFF7FEFF 		bl	osDelay
+  58              	.LVL2:
  130:Src/freertos.c ****   {
-  56              		.loc 1 130 8 discriminator 1 view .LVU4
-  57 0008 FBE7     		b	.L2
-  58              		.cfi_endproc
-  59              	.LFE71:
-  61              		.section	.text.StartTask02,"ax",%progbits
-  62              		.align	1
-  63              		.global	StartTask02
-  64              		.syntax unified
-  65              		.thumb
-  66              		.thumb_func
-  68              	StartTask02:
-  69              	.LFB72:
+  59              		.loc 1 130 8 discriminator 1 view .LVU4
+  60 0008 FBE7     		b	.L2
+  61              		.cfi_endproc
+  62              	.LFE71:
+  64              		.section	.text.StartTask02,"ax",%progbits
+  65              		.align	1
+  66              		.global	StartTask02
+  67              		.syntax unified
+  68              		.thumb
+  69              		.thumb_func
+  71              	StartTask02:
+  72              	.LFB72:
  133:Src/freertos.c ****   }
  134:Src/freertos.c ****   /* USER CODE END StartDefaultTask */
  135:Src/freertos.c **** }
@@ -227,47 +231,47 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 1
  143:Src/freertos.c **** /* USER CODE END Header_StartTask02 */
  144:Src/freertos.c **** void StartTask02(void const * argument)
  145:Src/freertos.c **** {
-  70              		.loc 1 145 1 view -0
-  71              		.cfi_startproc
-  72              		@ Volatile: function does not return.
-  73              		@ args = 0, pretend = 0, frame = 0
-  74              		@ frame_needed = 0, uses_anonymous_args = 0
-  75              	.LVL3:
-  76              		.loc 1 145 1 is_stmt 0 view .LVU6
-  77 0000 08B5     		push	{r3, lr}
-  78              	.LCFI1:
-  79              		.cfi_def_cfa_offset 8
-  80              		.cfi_offset 3, -8
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 5
+  73              		.loc 1 145 1 view -0
+  74              		.cfi_startproc
+  75              		@ Volatile: function does not return.
+  76              		@ args = 0, pretend = 0, frame = 0
+  77              		@ frame_needed = 0, uses_anonymous_args = 0
+  78              	.LVL3:
+  79              		.loc 1 145 1 is_stmt 0 view .LVU6
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 5
 
 
-  81              		.cfi_offset 14, -4
-  82              	.LVL4:
-  83              	.L5:
+  80 0000 08B5     		push	{r3, lr}
+  81              	.LCFI1:
+  82              		.cfi_def_cfa_offset 8
+  83              		.cfi_offset 3, -8
+  84              		.cfi_offset 14, -4
+  85              	.LVL4:
+  86              	.L5:
  146:Src/freertos.c ****   /* USER CODE BEGIN StartTask02 */
  147:Src/freertos.c ****   /* Infinite loop */
  148:Src/freertos.c ****   for(;;)
-  84              		.loc 1 148 3 is_stmt 1 discriminator 1 view .LVU7
+  87              		.loc 1 148 3 is_stmt 1 discriminator 1 view .LVU7
  149:Src/freertos.c ****   {
  150:Src/freertos.c ****     //HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
  151:Src/freertos.c ****     osDelay(1000);
-  85              		.loc 1 151 5 discriminator 1 view .LVU8
-  86 0002 4FF47A70 		mov	r0, #1000
-  87 0006 FFF7FEFF 		bl	osDelay
-  88              	.LVL5:
+  88              		.loc 1 151 5 discriminator 1 view .LVU8
+  89 0002 4FF47A70 		mov	r0, #1000
+  90 0006 FFF7FEFF 		bl	osDelay
+  91              	.LVL5:
  148:Src/freertos.c ****   {
-  89              		.loc 1 148 8 discriminator 1 view .LVU9
-  90 000a FAE7     		b	.L5
-  91              		.cfi_endproc
-  92              	.LFE72:
-  94              		.section	.text.StartTask03,"ax",%progbits
-  95              		.align	1
-  96              		.global	StartTask03
-  97              		.syntax unified
-  98              		.thumb
-  99              		.thumb_func
- 101              	StartTask03:
- 102              	.LFB73:
+  92              		.loc 1 148 8 discriminator 1 view .LVU9
+  93 000a FAE7     		b	.L5
+  94              		.cfi_endproc
+  95              	.LFE72:
+  97              		.section	.text.StartTask03,"ax",%progbits
+  98              		.align	1
+  99              		.global	StartTask03
+ 100              		.syntax unified
+ 101              		.thumb
+ 102              		.thumb_func
+ 104              	StartTask03:
+ 105              	.LFB73:
  152:Src/freertos.c ****   }
  153:Src/freertos.c ****   /* USER CODE END StartTask02 */
  154:Src/freertos.c **** }
@@ -281,227 +285,320 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 1
  162:Src/freertos.c **** /* USER CODE END Header_StartTask03 */
  163:Src/freertos.c **** void StartTask03(void const * argument)
  164:Src/freertos.c **** {
- 103              		.loc 1 164 1 view -0
- 104              		.cfi_startproc
- 105              		@ Volatile: function does not return.
- 106              		@ args = 0, pretend = 0, frame = 0
- 107              		@ frame_needed = 0, uses_anonymous_args = 0
- 108              	.LVL6:
- 109              		.loc 1 164 1 is_stmt 0 view .LVU11
- 110 0000 08B5     		push	{r3, lr}
- 111              	.LCFI2:
- 112              		.cfi_def_cfa_offset 8
- 113              		.cfi_offset 3, -8
- 114              		.cfi_offset 14, -4
- 115              	.LVL7:
- 116              	.L8:
+ 106              		.loc 1 164 1 view -0
+ 107              		.cfi_startproc
+ 108              		@ Volatile: function does not return.
+ 109              		@ args = 0, pretend = 0, frame = 0
+ 110              		@ frame_needed = 0, uses_anonymous_args = 0
+ 111              	.LVL6:
+ 112              		.loc 1 164 1 is_stmt 0 view .LVU11
+ 113 0000 08B5     		push	{r3, lr}
+ 114              	.LCFI2:
+ 115              		.cfi_def_cfa_offset 8
+ 116              		.cfi_offset 3, -8
+ 117              		.cfi_offset 14, -4
+ 118              	.LVL7:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 6
+
+
+ 119              	.L8:
  165:Src/freertos.c ****   /* USER CODE BEGIN StartTask03 */
  166:Src/freertos.c ****   /* Infinite loop */
  167:Src/freertos.c ****   for(;;)
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 6
-
-
- 117              		.loc 1 167 3 is_stmt 1 discriminator 1 view .LVU12
- 118              	.LBB2:
+ 120              		.loc 1 167 3 is_stmt 1 discriminator 1 view .LVU12
+ 121              	.LBB2:
  168:Src/freertos.c ****   {
  169:Src/freertos.c ****     CanIf_Receive();
- 119              		.loc 1 169 5 discriminator 1 view .LVU13
- 120 0002 FFF7FEFF 		bl	CanIf_Receive
- 121              	.LVL8:
+ 122              		.loc 1 169 5 discriminator 1 view .LVU13
+ 123 0002 FFF7FEFF 		bl	CanIf_Receive
+ 124              	.LVL8:
  170:Src/freertos.c ****     osDelay(1);
- 122              		.loc 1 170 5 discriminator 1 view .LVU14
- 123 0006 0120     		movs	r0, #1
- 124 0008 FFF7FEFF 		bl	osDelay
- 125              	.LVL9:
- 126              	.LBE2:
+ 125              		.loc 1 170 5 discriminator 1 view .LVU14
+ 126 0006 0120     		movs	r0, #1
+ 127 0008 FFF7FEFF 		bl	osDelay
+ 128              	.LVL9:
+ 129              	.LBE2:
  167:Src/freertos.c ****   {
- 127              		.loc 1 167 8 discriminator 1 view .LVU15
- 128 000c F9E7     		b	.L8
- 129              		.cfi_endproc
- 130              	.LFE73:
- 132              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
- 133              		.align	1
- 134              		.global	MX_FREERTOS_Init
- 135              		.syntax unified
- 136              		.thumb
- 137              		.thumb_func
- 139              	MX_FREERTOS_Init:
- 140              	.LFB70:
+ 130              		.loc 1 167 8 discriminator 1 view .LVU15
+ 131 000c F9E7     		b	.L8
+ 132              		.cfi_endproc
+ 133              	.LFE73:
+ 135              		.section	.text.StartTask04,"ax",%progbits
+ 136              		.align	1
+ 137              		.global	StartTask04
+ 138              		.syntax unified
+ 139              		.thumb
+ 140              		.thumb_func
+ 142              	StartTask04:
+ 143              	.LFB74:
+ 171:Src/freertos.c ****   }
+ 172:Src/freertos.c ****   /* USER CODE END StartTask03 */
+ 173:Src/freertos.c **** }
+ 174:Src/freertos.c **** 
+ 175:Src/freertos.c **** /* USER CODE BEGIN Header_StartTask04 */
+ 176:Src/freertos.c **** /**
+ 177:Src/freertos.c **** * @brief Function implementing the CANTPMF thread.
+ 178:Src/freertos.c **** * @param argument: Not used
+ 179:Src/freertos.c **** * @retval None
+ 180:Src/freertos.c **** */
+ 181:Src/freertos.c **** /* USER CODE END Header_StartTask04 */
+ 182:Src/freertos.c **** void StartTask04(void const * argument)
+ 183:Src/freertos.c **** {
+ 144              		.loc 1 183 1 view -0
+ 145              		.cfi_startproc
+ 146              		@ Volatile: function does not return.
+ 147              		@ args = 0, pretend = 0, frame = 0
+ 148              		@ frame_needed = 0, uses_anonymous_args = 0
+ 149              	.LVL10:
+ 150              		.loc 1 183 1 is_stmt 0 view .LVU17
+ 151 0000 08B5     		push	{r3, lr}
+ 152              	.LCFI3:
+ 153              		.cfi_def_cfa_offset 8
+ 154              		.cfi_offset 3, -8
+ 155              		.cfi_offset 14, -4
+ 156              	.LVL11:
+ 157              	.L11:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 7
+
+
+ 184:Src/freertos.c ****   /* USER CODE BEGIN StartTask04 */
+ 185:Src/freertos.c ****   /* Infinite loop */
+ 186:Src/freertos.c ****   for(;;)
+ 158              		.loc 1 186 3 is_stmt 1 discriminator 1 view .LVU18
+ 187:Src/freertos.c ****   {
+ 188:Src/freertos.c ****     CanTp_MainFunction();
+ 159              		.loc 1 188 5 discriminator 1 view .LVU19
+ 160 0002 FFF7FEFF 		bl	CanTp_MainFunction
+ 161              	.LVL12:
+ 189:Src/freertos.c ****     osDelay(1);
+ 162              		.loc 1 189 5 discriminator 1 view .LVU20
+ 163 0006 0120     		movs	r0, #1
+ 164 0008 FFF7FEFF 		bl	osDelay
+ 165              	.LVL13:
+ 186:Src/freertos.c ****   {
+ 166              		.loc 1 186 8 discriminator 1 view .LVU21
+ 167 000c F9E7     		b	.L11
+ 168              		.cfi_endproc
+ 169              	.LFE74:
+ 171              		.section	.text.MX_FREERTOS_Init,"ax",%progbits
+ 172              		.align	1
+ 173              		.global	MX_FREERTOS_Init
+ 174              		.syntax unified
+ 175              		.thumb
+ 176              		.thumb_func
+ 178              	MX_FREERTOS_Init:
+ 179              	.LFB70:
   74:Src/freertos.c ****   /* USER CODE BEGIN Init */
- 141              		.loc 1 74 29 view -0
- 142              		.cfi_startproc
- 143              		@ args = 0, pretend = 0, frame = 64
- 144              		@ frame_needed = 0, uses_anonymous_args = 0
- 145 0000 10B5     		push	{r4, lr}
- 146              	.LCFI3:
- 147              		.cfi_def_cfa_offset 8
- 148              		.cfi_offset 4, -8
- 149              		.cfi_offset 14, -4
- 150 0002 90B0     		sub	sp, sp, #64
- 151              	.LCFI4:
- 152              		.cfi_def_cfa_offset 72
+ 180              		.loc 1 74 29 view -0
+ 181              		.cfi_startproc
+ 182              		@ args = 0, pretend = 0, frame = 80
+ 183              		@ frame_needed = 0, uses_anonymous_args = 0
+ 184 0000 10B5     		push	{r4, lr}
+ 185              	.LCFI4:
+ 186              		.cfi_def_cfa_offset 8
+ 187              		.cfi_offset 4, -8
+ 188              		.cfi_offset 14, -4
+ 189 0002 94B0     		sub	sp, sp, #80
+ 190              	.LCFI5:
+ 191              		.cfi_def_cfa_offset 88
   97:Src/freertos.c ****   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
- 153              		.loc 1 97 3 view .LVU17
- 154 0004 1B4C     		ldr	r4, .L12
- 155 0006 0DF12C0C 		add	ip, sp, #44
- 156 000a A646     		mov	lr, r4
- 157 000c BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
- 158 0010 ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
- 159 0014 DEF80030 		ldr	r3, [lr]
- 160 0018 CCF80030 		str	r3, [ip]
+ 192              		.loc 1 97 3 view .LVU23
+ 193 0004 244C     		ldr	r4, .L15
+ 194 0006 0DF13C0C 		add	ip, sp, #60
+ 195 000a A646     		mov	lr, r4
+ 196 000c BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
+ 197 0010 ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
+ 198 0014 DEF80030 		ldr	r3, [lr]
+ 199 0018 CCF80030 		str	r3, [ip]
   98:Src/freertos.c **** 
- 161              		.loc 1 98 3 view .LVU18
+ 200              		.loc 1 98 3 view .LVU24
   98:Src/freertos.c **** 
- 162              		.loc 1 98 23 is_stmt 0 view .LVU19
- 163 001c 0021     		movs	r1, #0
- 164 001e 0BA8     		add	r0, sp, #44
- 165 0020 FFF7FEFF 		bl	osThreadCreate
- 166              	.LVL10:
-  98:Src/freertos.c **** 
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 7
+ 201              		.loc 1 98 23 is_stmt 0 view .LVU25
+ 202 001c 0021     		movs	r1, #0
+ 203 001e 0FA8     		add	r0, sp, #60
+ 204 0020 FFF7FEFF 		bl	osThreadCreate
+ 205              	.LVL14:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 8
 
 
- 167              		.loc 1 98 21 view .LVU20
- 168 0024 144B     		ldr	r3, .L12+4
- 169 0026 1860     		str	r0, [r3]
+  98:Src/freertos.c **** 
+ 206              		.loc 1 98 21 view .LVU26
+ 207 0024 1D4B     		ldr	r3, .L15+4
+ 208 0026 1860     		str	r0, [r3]
  101:Src/freertos.c ****   LEDTaskHandle = osThreadCreate(osThread(LEDTask), NULL);
- 170              		.loc 1 101 3 is_stmt 1 view .LVU21
- 171 0028 0DF1180C 		add	ip, sp, #24
- 172 002c 04F1140E 		add	lr, r4, #20
- 173 0030 BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
- 174 0034 ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
- 175 0038 DEF80030 		ldr	r3, [lr]
- 176 003c CCF80030 		str	r3, [ip]
+ 209              		.loc 1 101 3 is_stmt 1 view .LVU27
+ 210 0028 0DF1280C 		add	ip, sp, #40
+ 211 002c 04F1140E 		add	lr, r4, #20
+ 212 0030 BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
+ 213 0034 ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
+ 214 0038 DEF80030 		ldr	r3, [lr]
+ 215 003c CCF80030 		str	r3, [ip]
  102:Src/freertos.c **** 
- 177              		.loc 1 102 3 view .LVU22
+ 216              		.loc 1 102 3 view .LVU28
  102:Src/freertos.c **** 
- 178              		.loc 1 102 19 is_stmt 0 view .LVU23
- 179 0040 0021     		movs	r1, #0
- 180 0042 06A8     		add	r0, sp, #24
- 181 0044 FFF7FEFF 		bl	osThreadCreate
- 182              	.LVL11:
+ 217              		.loc 1 102 19 is_stmt 0 view .LVU29
+ 218 0040 0021     		movs	r1, #0
+ 219 0042 0AA8     		add	r0, sp, #40
+ 220 0044 FFF7FEFF 		bl	osThreadCreate
+ 221              	.LVL15:
  102:Src/freertos.c **** 
- 183              		.loc 1 102 17 view .LVU24
- 184 0048 0C4B     		ldr	r3, .L12+8
- 185 004a 1860     		str	r0, [r3]
+ 222              		.loc 1 102 17 view .LVU30
+ 223 0048 154B     		ldr	r3, .L15+8
+ 224 004a 1860     		str	r0, [r3]
  105:Src/freertos.c ****   CANIFRXTaskHandle = osThreadCreate(osThread(CANIFRXTask), NULL);
- 186              		.loc 1 105 3 is_stmt 1 view .LVU25
- 187 004c 0DF1040E 		add	lr, sp, #4
- 188 0050 04F1280C 		add	ip, r4, #40
- 189 0054 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
- 190 0058 AEE80F00 		stmia	lr!, {r0, r1, r2, r3}
- 191 005c DCF80030 		ldr	r3, [ip]
- 192 0060 CEF80030 		str	r3, [lr]
+ 225              		.loc 1 105 3 is_stmt 1 view .LVU31
+ 226 004c 0DF1140C 		add	ip, sp, #20
+ 227 0050 04F1280E 		add	lr, r4, #40
+ 228 0054 BEE80F00 		ldmia	lr!, {r0, r1, r2, r3}
+ 229 0058 ACE80F00 		stmia	ip!, {r0, r1, r2, r3}
+ 230 005c DEF80030 		ldr	r3, [lr]
+ 231 0060 CCF80030 		str	r3, [ip]
  106:Src/freertos.c **** 
- 193              		.loc 1 106 3 view .LVU26
+ 232              		.loc 1 106 3 view .LVU32
  106:Src/freertos.c **** 
- 194              		.loc 1 106 23 is_stmt 0 view .LVU27
- 195 0064 0021     		movs	r1, #0
- 196 0066 01A8     		add	r0, sp, #4
- 197 0068 FFF7FEFF 		bl	osThreadCreate
- 198              	.LVL12:
+ 233              		.loc 1 106 23 is_stmt 0 view .LVU33
+ 234 0064 0021     		movs	r1, #0
+ 235 0066 05A8     		add	r0, sp, #20
+ 236 0068 FFF7FEFF 		bl	osThreadCreate
+ 237              	.LVL16:
  106:Src/freertos.c **** 
- 199              		.loc 1 106 21 view .LVU28
- 200 006c 044B     		ldr	r3, .L12+12
- 201 006e 1860     		str	r0, [r3]
+ 238              		.loc 1 106 21 view .LVU34
+ 239 006c 0D4B     		ldr	r3, .L15+12
+ 240 006e 1860     		str	r0, [r3]
+ 109:Src/freertos.c ****   CANTPMFHandle = osThreadCreate(osThread(CANTPMF), NULL);
+ 241              		.loc 1 109 3 is_stmt 1 view .LVU35
+ 242 0070 EE46     		mov	lr, sp
+ 243 0072 04F13C0C 		add	ip, r4, #60
+ 244 0076 BCE80F00 		ldmia	ip!, {r0, r1, r2, r3}
+ 245 007a AEE80F00 		stmia	lr!, {r0, r1, r2, r3}
+ 246 007e DCF80030 		ldr	r3, [ip]
+ 247 0082 CEF80030 		str	r3, [lr]
+ 110:Src/freertos.c **** 
+ 248              		.loc 1 110 3 view .LVU36
+ 110:Src/freertos.c **** 
+ 249              		.loc 1 110 19 is_stmt 0 view .LVU37
+ 250 0086 0021     		movs	r1, #0
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 9
+
+
+ 251 0088 6846     		mov	r0, sp
+ 252 008a FFF7FEFF 		bl	osThreadCreate
+ 253              	.LVL17:
+ 110:Src/freertos.c **** 
+ 254              		.loc 1 110 17 view .LVU38
+ 255 008e 064B     		ldr	r3, .L15+16
+ 256 0090 1860     		str	r0, [r3]
  116:Src/freertos.c **** 
- 202              		.loc 1 116 1 view .LVU29
- 203 0070 10B0     		add	sp, sp, #64
- 204              	.LCFI5:
- 205              		.cfi_def_cfa_offset 8
- 206              		@ sp needed
- 207 0072 10BD     		pop	{r4, pc}
- 208              	.L13:
- 209              		.align	2
- 210              	.L12:
- 211 0074 00000000 		.word	.LANCHOR0
- 212 0078 00000000 		.word	.LANCHOR1
- 213 007c 00000000 		.word	.LANCHOR2
- 214 0080 00000000 		.word	.LANCHOR3
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 8
+ 257              		.loc 1 116 1 view .LVU39
+ 258 0092 14B0     		add	sp, sp, #80
+ 259              	.LCFI6:
+ 260              		.cfi_def_cfa_offset 8
+ 261              		@ sp needed
+ 262 0094 10BD     		pop	{r4, pc}
+ 263              	.L16:
+ 264 0096 00BF     		.align	2
+ 265              	.L15:
+ 266 0098 00000000 		.word	.LANCHOR0
+ 267 009c 00000000 		.word	.LANCHOR1
+ 268 00a0 00000000 		.word	.LANCHOR2
+ 269 00a4 00000000 		.word	.LANCHOR3
+ 270 00a8 00000000 		.word	.LANCHOR4
+ 271              		.cfi_endproc
+ 272              	.LFE70:
+ 274              		.global	CANTPMFHandle
+ 275              		.global	CANIFRXTaskHandle
+ 276              		.global	LEDTaskHandle
+ 277              		.global	defaultTaskHandle
+ 278              		.section	.rodata
+ 279              		.align	2
+ 280              		.set	.LANCHOR0,. + 0
+ 281              	.LC8:
+ 282 0000 00000000 		.word	.LC0
+ 283 0004 00000000 		.word	StartDefaultTask
+ 284 0008 0000     		.short	0
+ 285 000a 0000     		.space	2
+ 286 000c 00000000 		.word	0
+ 287 0010 80000000 		.word	128
+ 288              	.LC9:
+ 289 0014 0C000000 		.word	.LC2
+ 290 0018 00000000 		.word	StartTask02
+ 291 001c FEFF     		.short	-2
+ 292 001e 0000     		.space	2
+ 293 0020 00000000 		.word	0
+ 294 0024 80000000 		.word	128
+ 295              	.LC10:
+ 296 0028 14000000 		.word	.LC4
+ 297 002c 00000000 		.word	StartTask03
+ 298 0030 FFFF     		.short	-1
+ 299 0032 0000     		.space	2
+ 300 0034 00000000 		.word	0
+ 301 0038 80000000 		.word	128
+ 302              	.LC11:
+ 303 003c 20000000 		.word	.LC6
+ 304 0040 00000000 		.word	StartTask04
+ 305 0044 FEFF     		.short	-2
+ 306 0046 0000     		.space	2
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 10
 
 
- 215              		.cfi_endproc
- 216              	.LFE70:
- 218              		.global	CANTPMFHandle
- 219              		.global	CANIFRXTaskHandle
- 220              		.global	LEDTaskHandle
- 221              		.global	defaultTaskHandle
- 222              		.section	.rodata
- 223              		.align	2
- 224              		.set	.LANCHOR0,. + 0
- 225              	.LC6:
- 226 0000 00000000 		.word	.LC0
- 227 0004 00000000 		.word	StartDefaultTask
- 228 0008 0000     		.short	0
- 229 000a 0000     		.space	2
- 230 000c 00000000 		.word	0
- 231 0010 80000000 		.word	128
- 232              	.LC7:
- 233 0014 0C000000 		.word	.LC2
- 234 0018 00000000 		.word	StartTask02
- 235 001c FEFF     		.short	-2
- 236 001e 0000     		.space	2
- 237 0020 00000000 		.word	0
- 238 0024 80000000 		.word	128
- 239              	.LC8:
- 240 0028 14000000 		.word	.LC4
- 241 002c 00000000 		.word	StartTask03
- 242 0030 FFFF     		.short	-1
- 243 0032 0000     		.space	2
- 244 0034 00000000 		.word	0
- 245 0038 80000000 		.word	128
- 246              		.section	.bss.CANIFRXTaskHandle,"aw",%nobits
- 247              		.align	2
- 248              		.set	.LANCHOR3,. + 0
- 251              	CANIFRXTaskHandle:
- 252 0000 00000000 		.space	4
- 253              		.section	.bss.CANTPMFHandle,"aw",%nobits
- 254              		.align	2
- 257              	CANTPMFHandle:
- 258 0000 00000000 		.space	4
- 259              		.section	.bss.LEDTaskHandle,"aw",%nobits
- 260              		.align	2
- 261              		.set	.LANCHOR2,. + 0
- 264              	LEDTaskHandle:
- 265 0000 00000000 		.space	4
- 266              		.section	.bss.defaultTaskHandle,"aw",%nobits
- 267              		.align	2
- 268              		.set	.LANCHOR1,. + 0
- 271              	defaultTaskHandle:
- 272 0000 00000000 		.space	4
- 273              		.text
- 274              	.Letext0:
- 275              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
- 276              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
- 277              		.file 4 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
- 278              		.file 5 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s 			page 9
+ 307 0048 00000000 		.word	0
+ 308 004c 80000000 		.word	128
+ 309              		.section	.bss.CANIFRXTaskHandle,"aw",%nobits
+ 310              		.align	2
+ 311              		.set	.LANCHOR3,. + 0
+ 314              	CANIFRXTaskHandle:
+ 315 0000 00000000 		.space	4
+ 316              		.section	.bss.CANTPMFHandle,"aw",%nobits
+ 317              		.align	2
+ 318              		.set	.LANCHOR4,. + 0
+ 321              	CANTPMFHandle:
+ 322 0000 00000000 		.space	4
+ 323              		.section	.bss.LEDTaskHandle,"aw",%nobits
+ 324              		.align	2
+ 325              		.set	.LANCHOR2,. + 0
+ 328              	LEDTaskHandle:
+ 329 0000 00000000 		.space	4
+ 330              		.section	.bss.defaultTaskHandle,"aw",%nobits
+ 331              		.align	2
+ 332              		.set	.LANCHOR1,. + 0
+ 335              	defaultTaskHandle:
+ 336 0000 00000000 		.space	4
+ 337              		.text
+ 338              	.Letext0:
+ 339              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 340              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 341              		.file 4 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ 342              		.file 5 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
+ 343              		.file 6 "Inc/cantp.h"
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 freertos.c
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:15     .rodata.str1.4:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:28     .text.StartDefaultTask:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:34     .text.StartDefaultTask:00000000 StartDefaultTask
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:62     .text.StartTask02:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:68     .text.StartTask02:00000000 StartTask02
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:95     .text.StartTask03:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:101    .text.StartTask03:00000000 StartTask03
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:133    .text.MX_FREERTOS_Init:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:139    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:211    .text.MX_FREERTOS_Init:00000074 $d
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:257    .bss.CANTPMFHandle:00000000 CANTPMFHandle
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:251    .bss.CANIFRXTaskHandle:00000000 CANIFRXTaskHandle
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:264    .bss.LEDTaskHandle:00000000 LEDTaskHandle
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:271    .bss.defaultTaskHandle:00000000 defaultTaskHandle
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:223    .rodata:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:247    .bss.CANIFRXTaskHandle:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:254    .bss.CANTPMFHandle:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:260    .bss.LEDTaskHandle:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\ccujNz4J.s:267    .bss.defaultTaskHandle:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:15     .rodata.str1.4:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:31     .text.StartDefaultTask:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:37     .text.StartDefaultTask:00000000 StartDefaultTask
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:65     .text.StartTask02:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:71     .text.StartTask02:00000000 StartTask02
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:98     .text.StartTask03:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:104    .text.StartTask03:00000000 StartTask03
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:136    .text.StartTask04:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:142    .text.StartTask04:00000000 StartTask04
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:172    .text.MX_FREERTOS_Init:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:178    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:266    .text.MX_FREERTOS_Init:00000098 $d
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:321    .bss.CANTPMFHandle:00000000 CANTPMFHandle
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:314    .bss.CANIFRXTaskHandle:00000000 CANIFRXTaskHandle
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:328    .bss.LEDTaskHandle:00000000 LEDTaskHandle
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:335    .bss.defaultTaskHandle:00000000 defaultTaskHandle
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:279    .rodata:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:310    .bss.CANIFRXTaskHandle:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:317    .bss.CANTPMFHandle:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:324    .bss.LEDTaskHandle:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccVQb75N.s:331    .bss.defaultTaskHandle:00000000 $d
 
 UNDEFINED SYMBOLS
 osDelay
 CanIf_Receive
+CanTp_MainFunction
 osThreadCreate

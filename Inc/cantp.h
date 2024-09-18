@@ -30,7 +30,8 @@ typedef enum
 
 typedef struct
 {
-	uint8_t Data[4096];
+	//uint8_t Data[4096];
+	uint8_t Data[2048];
 	uint32_t Length;
 }PduInfoType;
 
