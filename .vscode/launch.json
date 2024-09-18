@@ -6,14 +6,14 @@
     "configurations": [
         {
             "cwd": "${workspaceRoot}",
-            "executable": "build/TEE.elf",
+            "executable": "build/CAN.elf",
             "name": "Debug with OpenOCD",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "openocd",
             "configFiles": [
-                "C:/openocd-0.10.0/scripts/interface/cmsis-dap.cfg",
-                "C:/openocd-0.10.0/scripts/target/stm32f1x.cfg"
+                "C:/openocd-0.12.0/tcl/interface/cmsis-dap.cfg",
+                "C:/openocd-0.12.0/tcl/target/stm32f1x.cfg"
             ],
             
             

@@ -17,8 +17,8 @@ if "%choice%"=="1" (
 ) else if "%choice%"=="2" (
     echo Running flash task...
     openocd ^
-        -f C:/openocd-0.10.0/scripts/interface/cmsis-dap.cfg ^
-        -f C:/openocd-0.10.0/scripts/target/stm32f1x.cfg ^
+        -f C:/openocd-0.12.0/tcl/interface/cmsis-dap.cfg ^
+        -f C:/openocd-0.12.0/tcl/target/stm32f1x.cfg ^
         -c "init" ^
         -c "reset init" ^
         -c "program build/CAN.elf verify" ^
@@ -34,8 +34,8 @@ if "%choice%"=="1" (
 
     echo Flashing...
     openocd ^
-        -f C:/openocd-0.10.0/scripts/interface/cmsis-dap.cfg ^
-        -f C:/openocd-0.10.0/scripts/target/stm32f1x.cfg ^
+        -f C:/openocd-0.12.0/tcl/interface/cmsis-dap.cfg ^
+        -f C:/openocd-0.12.0/tcl/target/stm32f1x.cfg ^
         -c "init" ^
         -c "reset init" ^
         -c "program build/CAN.elf verify" ^

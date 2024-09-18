@@ -6,5 +6,6 @@
         "type_traits": "c",
         "cmsis_os.h": "c",
         "cantp.h": "c"
-    }
+    },
+    "cortex-debug.variableUseNaturalFormat": false
 }
