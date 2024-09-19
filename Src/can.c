@@ -21,6 +21,8 @@
 #include "can.h"
 #include "canif.h"
 #include "cantp.h"
+#include "uds_diag.h"
+
 /* USER CODE BEGIN 0 */
 volatile int8_t CanIf_Rx=0;  
 /* USER CODE END 0 */
@@ -198,6 +200,7 @@ void CAN_Init(void)
   HAL_CAN_Start(&hcan);
   HAL_CAN_ActivateNotification(&hcan, CAN_IT_RX_FIFO0_MSG_PENDING); // 使能CAN接收中断
   CanIf_setCallback(CanTp_RxIndication);
+  CanTp_setCallback(server_call_back);
 }
 /*
 void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *canHandle)

@@ -1,4 +1,4 @@
-build/can.o: Src/can.c Inc/can.h Inc/main.h \
+build/uds_diag.o: Src/uds_diag.c Inc/uds_diag.h Inc/can.h Inc/main.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h \
  Inc/stm32f1xx_hal_conf.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h \
@@ -21,8 +21,7 @@ build/can.o: Src/can.c Inc/can.h Inc/main.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h \
  Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h \
- Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Inc/canif.h \
- Inc/can.h Inc/cantp.h Inc/CanIf.h \
+ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h Inc/gpio.h \
  Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h \
  Inc/FreeRTOSConfig.h \
@@ -39,8 +38,9 @@ build/can.o: Src/can.c Inc/can.h Inc/main.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/queue.h \
  Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h \
- Middlewares/Third_Party/FreeRTOS/Source/include/timers.h Inc/uds_diag.h \
- Inc/gpio.h Inc/CanTp.h
+ Middlewares/Third_Party/FreeRTOS/Source/include/timers.h Inc/CanIf.h \
+ Inc/CanTp.h
+Inc/uds_diag.h:
 Inc/can.h:
 Inc/main.h:
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h:
@@ -68,10 +68,7 @@ Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h:
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h:
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h:
 Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h:
-Inc/canif.h:
-Inc/can.h:
-Inc/cantp.h:
-Inc/CanIf.h:
+Inc/gpio.h:
 Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h:
 Middlewares/Third_Party/FreeRTOS/Source/include/FreeRTOS.h:
 Inc/FreeRTOSConfig.h:
@@ -89,6 +86,5 @@ Middlewares/Third_Party/FreeRTOS/Source/include/semphr.h:
 Middlewares/Third_Party/FreeRTOS/Source/include/queue.h:
 Middlewares/Third_Party/FreeRTOS/Source/include/event_groups.h:
 Middlewares/Third_Party/FreeRTOS/Source/include/timers.h:
-Inc/uds_diag.h:
-Inc/gpio.h:
+Inc/CanIf.h:
 Inc/CanTp.h:

@@ -106,8 +106,8 @@ void MX_FREERTOS_Init(void) {
   CANIFRXTaskHandle = osThreadCreate(osThread(CANIFRXTask), NULL);
 
   /* definition and creation of CANTPMF */
-  osThreadDef(CANTPMF, StartTask04, osPriorityLow, 0, 128);
-  CANTPMFHandle = osThreadCreate(osThread(CANTPMF), NULL);
+  // osThreadDef(CANTPMF, StartTask04, osPriorityLow, 0, 128);
+  // CANTPMFHandle = osThreadCreate(osThread(CANTPMF), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -147,8 +147,9 @@ void StartTask02(void const * argument)
   /* Infinite loop */
   for(;;)
   {
+    CanTp_MainFunction();
     //HAL_GPIO_TogglePin(LED_GPIO_Port,LED_Pin);
-    osDelay(1000);
+    osDelay(1);
   }
   /* USER CODE END StartTask02 */
 }
@@ -179,17 +180,17 @@ void StartTask03(void const * argument)
 * @retval None
 */
 /* USER CODE END Header_StartTask04 */
-void StartTask04(void const * argument)
-{
-  /* USER CODE BEGIN StartTask04 */
-  /* Infinite loop */
-  for(;;)
-  {
-    CanTp_MainFunction();
-    osDelay(1);
-  }
-  /* USER CODE END StartTask04 */
-}
+// void StartTask04(void const * argument)
+// {
+//   /* USER CODE BEGIN StartTask04 */
+//   /* Infinite loop */
+//   for(;;)
+//   {
+//     
+//     osDelay(1);
+//   }
+//   /* USER CODE END StartTask04 */
+// }
 
 /* Private application code --------------------------------------------------*/
 /* USER CODE BEGIN Application */

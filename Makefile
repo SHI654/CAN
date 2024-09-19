@@ -43,6 +43,7 @@ Src/stm32f1xx_hal_msp.c \
 Src/can.c \
 Src/canif.c \
 Src/cantp.c \
+Src/uds_diag.c \
 Src/sysmem.c \
 Src/syscalls.c \
 Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c \

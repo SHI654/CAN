@@ -5,7 +5,9 @@
         "compare": "c",
         "type_traits": "c",
         "cmsis_os.h": "c",
-        "cantp.h": "c"
+        "cantp.h": "c",
+        "uds_diag.h": "c",
+        "gpio.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": false
 }

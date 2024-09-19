@@ -102,10 +102,10 @@ void CanTp_MainFunction(){
 			}
 		}
 		else if(CanTp_Tx){  // 如果有新的 CAN TP 数据需要发送。
-			// 如果全局传输 PDU ID 不等于 0，则停止程序运行。
-			if(GlobalTxPduId != 0){
-				while(1);  // 进入死循环，通常用作错误处理或调试目的。
-			}
+			// // 如果全局传输 PDU ID 不等于 0，则停止程序运行。
+			// if(GlobalTxPduId != 0){
+			// 	while(1);  // 进入死循环，通常用作错误处理或调试目的。
+			// }
 
 			Frame_Type frame_type = None;  // 初始化帧类型为 None。
 			if(numberOfRemainingBytesToSend == 0 && expectedFrameState == Any_State){

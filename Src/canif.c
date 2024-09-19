@@ -88,7 +88,7 @@ void CanIf_Receive() {
         // 检查是否接收到 CAN 消息
         if (CanIf_Rx) {
            //HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-            CanIf_Rx = 0;  // 重置接收标志
+            CanIf_Rx = 0;  // 重置接收标志/
             CanIfPduInfo.Length = rxHeader.DLC;  // 将接收到的消息长度保存到 PDU 结构体中
 
             // 遍历查找表，根据接收到的标准标识符查找对应的 PDU ID
@@ -111,9 +111,9 @@ void CanIf_Receive() {
                         break;
 
                     case DIAG:  
-                        /*  if (CanTp_Callback != NULL) {
+                          if (CanTp_Callback != NULL) {
                         CanTp_Callback(PDU_ID, &CanIfPduInfo);
-                    } */ 
+                    }  
                         break;
 
                     case APPL:  

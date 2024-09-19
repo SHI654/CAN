@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
   29:Src/canif.c   ****     {0, 0x232, APPL},
   30:Src/canif.c   ****     {1, 0x100, APPL},
   31:Src/canif.c   ****     {2, 0x351, APPL},
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 2
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 2
 
 
   32:Src/canif.c   ****     {3, 0x245, APPL},
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
   55 0008 082B     		cmp	r3, #8
   56 000a 22D8     		bhi	.L9
   59:Src/canif.c   ****         if (TxPduId == TxPduIdToStdIdTable[i].pduid) {
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 3
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 3
 
 
   57              		.loc 1 59 9 is_stmt 1 view .LVU10
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
   95              		.loc 1 72 18 is_stmt 0 view .LVU29
   96 002e 0593     		str	r3, [sp, #20]
   73:Src/canif.c   ****     txHeader.DLC = 8;
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 4
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 4
 
 
   97              		.loc 1 73 5 is_stmt 1 view .LVU30
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
  141              	.LVL12:
  142              	.L12:
  143              		.loc 1 80 1 view .LVU45
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 5
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 5
 
 
  144 005a 00BF     		.align	2
@@ -271,9 +271,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
  169              		.cfi_offset 5, -8
  170              		.cfi_offset 14, -4
  171 0002 0024     		movs	r4, #0
- 172 0004 16E0     		b	.L21
+ 172 0004 24E0     		b	.L22
  173              	.LVL13:
- 174              	.L25:
+ 174              	.L27:
  175              	.LBB3:
  176              	.LBB4:
   85:Src/canif.c   ****     uint32_t PDU_ID;  // 定义一个变量用于存储接收的 PDU ID
@@ -282,7 +282,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
   88:Src/canif.c   ****         // 检查是否接收到 CAN 消息
   89:Src/canif.c   ****         if (CanIf_Rx) {
   90:Src/canif.c   ****            //HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
-  91:Src/canif.c   ****             CanIf_Rx = 0;  // 重置接收标志
+  91:Src/canif.c   ****             CanIf_Rx = 0;  // 重置接收标志/
   92:Src/canif.c   ****             CanIfPduInfo.Length = rxHeader.DLC;  // 将接收到的消息长度保存到 PDU 结构
   93:Src/canif.c   **** 
   94:Src/canif.c   ****             // 遍历查找表，根据接收到的标准标识符查找对应的 PDU ID
@@ -292,13 +292,13 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
   98:Src/canif.c   ****                     PDU_ID = RxPduIdToStdIdTable[i].pduid;
  177              		.loc 1 98 21 view .LVU47
  178              		.loc 1 98 28 is_stmt 0 view .LVU48
- 179 0006 1C4A     		ldr	r2, .L26
+ 179 0006 1F4A     		ldr	r2, .L28
  180 0008 5558     		ldr	r5, [r2, r1]
  181              	.LVL14:
   99:Src/canif.c   ****                     PDU_TYPE = RxPduIdToStdIdTable[i].type;
  182              		.loc 1 99 21 is_stmt 1 view .LVU49
  183              		.loc 1 99 30 is_stmt 0 view .LVU50
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 6
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 6
 
 
  184 000a 0A44     		add	r2, r2, r1
@@ -308,7 +308,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
  187              		.loc 1 100 21 is_stmt 1 view .LVU51
  188 000e 01E0     		b	.L17
  189              	.LVL16:
- 190              	.L24:
+ 190              	.L26:
  191              		.loc 1 100 21 is_stmt 0 view .LVU52
  192              	.LBE4:
   95:Src/canif.c   ****             for (uint32_t i = 0; i < RX_PDU_ID_TO_STD_ID_TABLE_SIZE; ++i) {
@@ -323,22 +323,20 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
  197              		.loc 1 104 13 is_stmt 1 view .LVU54
  198              		.loc 1 104 16 is_stmt 0 view .LVU55
  199 0014 B5F1FF3F 		cmp	r5, #-1
- 200 0018 09D0     		beq	.L14
+ 200 0018 17D0     		beq	.L14
  105:Src/canif.c   ****                 HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
  201              		.loc 1 105 17 is_stmt 1 view .LVU56
  202 001a 4FF40051 		mov	r1, #8192
- 203 001e 1748     		ldr	r0, .L26+4
+ 203 001e 1A48     		ldr	r0, .L28+4
  204 0020 FFF7FEFF 		bl	HAL_GPIO_TogglePin
  205              	.LVL18:
  106:Src/canif.c   ****                 switch (PDU_TYPE) {
  206              		.loc 1 106 17 view .LVU57
- 207 0024 04B3     		cbz	r4, .L19
- 208 0026 631E     		subs	r3, r4, #1
- 209 0028 DBB2     		uxtb	r3, r3
- 210 002a 012B     		cmp	r3, #1
- 211 002c 21D8     		bhi	.L23
- 212              	.LVL19:
- 213              	.L14:
+ 207 0024 012C     		cmp	r4, #1
+ 208 0026 10D0     		beq	.L14
+ 209 0028 022C     		cmp	r4, #2
+ 210 002a 03D0     		beq	.L19
+ 211 002c 4CB1     		cbz	r4, .L25
  107:Src/canif.c   ****                     case NM:  
  108:Src/canif.c   ****                         /* if (CanNm_RxCallback != NULL) {
  109:Src/canif.c   ****                         CanNm_RxCallback();
@@ -346,9 +344,9 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
  111:Src/canif.c   ****                         break;
  112:Src/canif.c   **** 
  113:Src/canif.c   ****                     case DIAG:  
- 114:Src/canif.c   ****                         /*  if (CanTp_Callback != NULL) {
+ 114:Src/canif.c   ****                           if (CanTp_Callback != NULL) {
  115:Src/canif.c   ****                         CanTp_Callback(PDU_ID, &CanIfPduInfo);
- 116:Src/canif.c   ****                     } */ 
+ 116:Src/canif.c   ****                     }  
  117:Src/canif.c   ****                         break;
  118:Src/canif.c   **** 
  119:Src/canif.c   ****                     case APPL:  
@@ -357,230 +355,242 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
  122:Src/canif.c   **** 
  123:Src/canif.c   ****                     default:
  124:Src/canif.c   ****                         Error_Handler();  // 未知类型
+ 212              		.loc 1 124 25 view .LVU58
+ 213 002e FFF7FEFF 		bl	Error_Handler
+ 214              	.LVL19:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 7
+
+
  125:Src/canif.c   ****                         break;
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 7
-
-
+ 215              		.loc 1 125 25 view .LVU59
+ 216 0032 0AE0     		b	.L14
+ 217              	.L19:
+ 114:Src/canif.c   ****                         CanTp_Callback(PDU_ID, &CanIfPduInfo);
+ 218              		.loc 1 114 27 view .LVU60
+ 114:Src/canif.c   ****                         CanTp_Callback(PDU_ID, &CanIfPduInfo);
+ 219              		.loc 1 114 46 is_stmt 0 view .LVU61
+ 220 0034 154B     		ldr	r3, .L28+8
+ 221 0036 1B68     		ldr	r3, [r3]
+ 114:Src/canif.c   ****                         CanTp_Callback(PDU_ID, &CanIfPduInfo);
+ 222              		.loc 1 114 30 view .LVU62
+ 223 0038 3BB1     		cbz	r3, .L14
+ 115:Src/canif.c   ****                     }  
+ 224              		.loc 1 115 25 is_stmt 1 view .LVU63
+ 225 003a 1549     		ldr	r1, .L28+12
+ 226 003c 2846     		mov	r0, r5
+ 227 003e 9847     		blx	r3
+ 228              	.LVL20:
+ 229 0040 03E0     		b	.L14
+ 230              	.L25:
+ 120:Src/canif.c   ****                         break;
+ 231              		.loc 1 120 25 view .LVU64
+ 232 0042 1349     		ldr	r1, .L28+12
+ 233 0044 2846     		mov	r0, r5
+ 234 0046 FFF7FEFF 		bl	CanIf_Transmit
+ 235              	.LVL21:
+ 121:Src/canif.c   **** 
+ 236              		.loc 1 121 25 view .LVU65
+ 237              	.L14:
  126:Src/canif.c   ****                 }
  127:Src/canif.c   ****             }
  128:Src/canif.c   ****         }
  129:Src/canif.c   ****         // 延迟 10 个时间单位，以避免占用过多的 CPU 资源
  130:Src/canif.c   ****         vTaskDelay(10);
- 214              		.loc 1 130 9 view .LVU58
- 215 002e 0A20     		movs	r0, #10
- 216 0030 FFF7FEFF 		bl	vTaskDelay
- 217              	.LVL20:
- 218              	.LBE3:
+ 238              		.loc 1 130 9 view .LVU66
+ 239 004a 0A20     		movs	r0, #10
+ 240 004c FFF7FEFF 		bl	vTaskDelay
+ 241              	.LVL22:
+ 242              	.LBE3:
   87:Src/canif.c   ****         // 检查是否接收到 CAN 消息
- 219              		.loc 1 87 11 view .LVU59
- 220              	.L21:
+ 243              		.loc 1 87 11 view .LVU67
+ 244              	.L22:
   85:Src/canif.c   ****     PduType PDU_TYPE;
- 221              		.loc 1 85 5 view .LVU60
+ 245              		.loc 1 85 5 view .LVU68
   86:Src/canif.c   ****     while (1) {
- 222              		.loc 1 86 5 view .LVU61
+ 246              		.loc 1 86 5 view .LVU69
   87:Src/canif.c   ****         // 检查是否接收到 CAN 消息
- 223              		.loc 1 87 5 view .LVU62
- 224              	.LBB6:
+ 247              		.loc 1 87 5 view .LVU70
+ 248              	.LBB6:
   89:Src/canif.c   ****            //HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
- 225              		.loc 1 89 9 view .LVU63
+ 249              		.loc 1 89 9 view .LVU71
   89:Src/canif.c   ****            //HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
- 226              		.loc 1 89 13 is_stmt 0 view .LVU64
- 227 0034 124B     		ldr	r3, .L26+8
- 228 0036 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
- 229 0038 5BB2     		sxtb	r3, r3
+ 250              		.loc 1 89 13 is_stmt 0 view .LVU72
+ 251 0050 104B     		ldr	r3, .L28+16
+ 252 0052 1B78     		ldrb	r3, [r3]	@ zero_extendqisi2
+ 253 0054 5BB2     		sxtb	r3, r3
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 8
+
+
   89:Src/canif.c   ****            //HAL_GPIO_TogglePin(LED_GPIO_Port, LED_Pin);
- 230              		.loc 1 89 12 view .LVU65
- 231 003a 002B     		cmp	r3, #0
- 232 003c F7D0     		beq	.L14
+ 254              		.loc 1 89 12 view .LVU73
+ 255 0056 002B     		cmp	r3, #0
+ 256 0058 F7D0     		beq	.L14
   91:Src/canif.c   ****             CanIfPduInfo.Length = rxHeader.DLC;  // 将接收到的消息长度保存到 PDU 结构
- 233              		.loc 1 91 13 is_stmt 1 view .LVU66
+ 257              		.loc 1 91 13 is_stmt 1 view .LVU74
   91:Src/canif.c   ****             CanIfPduInfo.Length = rxHeader.DLC;  // 将接收到的消息长度保存到 PDU 结构
- 234              		.loc 1 91 22 is_stmt 0 view .LVU67
- 235 003e 0023     		movs	r3, #0
- 236 0040 0F4A     		ldr	r2, .L26+8
- 237 0042 1370     		strb	r3, [r2]
+ 258              		.loc 1 91 22 is_stmt 0 view .LVU75
+ 259 005a 0023     		movs	r3, #0
+ 260 005c 0D4A     		ldr	r2, .L28+16
+ 261 005e 1370     		strb	r3, [r2]
   92:Src/canif.c   **** 
- 238              		.loc 1 92 13 is_stmt 1 view .LVU68
+ 262              		.loc 1 92 13 is_stmt 1 view .LVU76
   92:Src/canif.c   **** 
- 239              		.loc 1 92 43 is_stmt 0 view .LVU69
- 240 0044 0F4A     		ldr	r2, .L26+12
- 241 0046 1169     		ldr	r1, [r2, #16]
+ 263              		.loc 1 92 43 is_stmt 0 view .LVU77
+ 264 0060 0D4A     		ldr	r2, .L28+20
+ 265 0062 1169     		ldr	r1, [r2, #16]
   92:Src/canif.c   **** 
- 242              		.loc 1 92 33 view .LVU70
- 243 0048 0F4A     		ldr	r2, .L26+16
- 244 004a 9160     		str	r1, [r2, #8]
+ 266              		.loc 1 92 33 view .LVU78
+ 267 0064 0A4A     		ldr	r2, .L28+12
+ 268 0066 9160     		str	r1, [r2, #8]
   95:Src/canif.c   ****             for (uint32_t i = 0; i < RX_PDU_ID_TO_STD_ID_TABLE_SIZE; ++i) {
- 245              		.loc 1 95 13 is_stmt 1 view .LVU71
- 246              	.LVL21:
+ 269              		.loc 1 95 13 is_stmt 1 view .LVU79
+ 270              	.LVL23:
   96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
- 247              		.loc 1 96 13 view .LVU72
- 248              	.LBB5:
+ 271              		.loc 1 96 13 view .LVU80
+ 272              	.LBB5:
   96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
- 249              		.loc 1 96 18 view .LVU73
- 250              	.L15:
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 8
+ 273              		.loc 1 96 18 view .LVU81
+ 274              	.L15:
+  96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
+ 275              		.loc 1 96 34 discriminator 1 view .LVU82
+  96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
+ 276              		.loc 1 96 13 is_stmt 0 discriminator 1 view .LVU83
+ 277 0068 082B     		cmp	r3, #8
+ 278 006a D1D8     		bhi	.L26
+  97:Src/canif.c   ****                     PDU_ID = RxPduIdToStdIdTable[i].pduid;
+ 279              		.loc 1 97 17 is_stmt 1 view .LVU84
+  97:Src/canif.c   ****                     PDU_ID = RxPduIdToStdIdTable[i].pduid;
+ 280              		.loc 1 97 29 is_stmt 0 view .LVU85
+ 281 006c 0A4A     		ldr	r2, .L28+20
+ 282 006e 1068     		ldr	r0, [r2]
+  97:Src/canif.c   ****                     PDU_ID = RxPduIdToStdIdTable[i].pduid;
+ 283              		.loc 1 97 61 view .LVU86
+ 284 0070 03EB4302 		add	r2, r3, r3, lsl #1
+ 285 0074 9100     		lsls	r1, r2, #2
+ 286 0076 034A     		ldr	r2, .L28
+ 287 0078 0A44     		add	r2, r2, r1
+ 288 007a 5268     		ldr	r2, [r2, #4]
+  97:Src/canif.c   ****                     PDU_ID = RxPduIdToStdIdTable[i].pduid;
+ 289              		.loc 1 97 20 view .LVU87
+ 290 007c 9042     		cmp	r0, r2
+ 291 007e C2D0     		beq	.L27
+  96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
+ 292              		.loc 1 96 70 is_stmt 1 discriminator 2 view .LVU88
+ 293 0080 0133     		adds	r3, r3, #1
+ 294              	.LVL24:
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 9
 
 
   96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
- 251              		.loc 1 96 34 discriminator 1 view .LVU74
-  96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
- 252              		.loc 1 96 13 is_stmt 0 discriminator 1 view .LVU75
- 253 004c 082B     		cmp	r3, #8
- 254 004e DFD8     		bhi	.L24
-  97:Src/canif.c   ****                     PDU_ID = RxPduIdToStdIdTable[i].pduid;
- 255              		.loc 1 97 17 is_stmt 1 view .LVU76
-  97:Src/canif.c   ****                     PDU_ID = RxPduIdToStdIdTable[i].pduid;
- 256              		.loc 1 97 29 is_stmt 0 view .LVU77
- 257 0050 0C4A     		ldr	r2, .L26+12
- 258 0052 1068     		ldr	r0, [r2]
-  97:Src/canif.c   ****                     PDU_ID = RxPduIdToStdIdTable[i].pduid;
- 259              		.loc 1 97 61 view .LVU78
- 260 0054 03EB4302 		add	r2, r3, r3, lsl #1
- 261 0058 9100     		lsls	r1, r2, #2
- 262 005a 074A     		ldr	r2, .L26
- 263 005c 0A44     		add	r2, r2, r1
- 264 005e 5268     		ldr	r2, [r2, #4]
-  97:Src/canif.c   ****                     PDU_ID = RxPduIdToStdIdTable[i].pduid;
- 265              		.loc 1 97 20 view .LVU79
- 266 0060 9042     		cmp	r0, r2
- 267 0062 D0D0     		beq	.L25
-  96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
- 268              		.loc 1 96 70 is_stmt 1 discriminator 2 view .LVU80
- 269 0064 0133     		adds	r3, r3, #1
- 270              	.LVL22:
-  96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
- 271              		.loc 1 96 70 is_stmt 0 discriminator 2 view .LVU81
- 272 0066 F1E7     		b	.L15
- 273              	.LVL23:
- 274              	.L19:
-  96:Src/canif.c   ****                 if (rxHeader.StdId == RxPduIdToStdIdTable[i].stdid) {
- 275              		.loc 1 96 70 discriminator 2 view .LVU82
- 276              	.LBE5:
- 120:Src/canif.c   ****                         break;
- 277              		.loc 1 120 25 is_stmt 1 view .LVU83
- 278 0068 0749     		ldr	r1, .L26+16
- 279 006a 2846     		mov	r0, r5
- 280 006c FFF7FEFF 		bl	CanIf_Transmit
- 281              	.LVL24:
- 121:Src/canif.c   **** 
- 282              		.loc 1 121 25 view .LVU84
- 283 0070 DDE7     		b	.L14
- 284              	.L23:
- 124:Src/canif.c   ****                         break;
- 285              		.loc 1 124 25 view .LVU85
- 286 0072 FFF7FEFF 		bl	Error_Handler
- 287              	.LVL25:
- 125:Src/canif.c   ****                 }
- 288              		.loc 1 125 25 view .LVU86
- 289 0076 DAE7     		b	.L14
- 290              	.L27:
- 291              		.align	2
- 292              	.L26:
- 293 0078 00000000 		.word	.LANCHOR3
- 294 007c 00100140 		.word	1073811456
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 9
-
-
- 295 0080 00000000 		.word	CanIf_Rx
- 296 0084 00000000 		.word	.LANCHOR1
- 297 0088 00000000 		.word	.LANCHOR2
- 298              	.LBE6:
- 299              		.cfi_endproc
- 300              	.LFE66:
- 302              		.section	.text.HAL_CAN_RxFifo0MsgPendingCallback,"ax",%progbits
- 303              		.align	1
- 304              		.global	HAL_CAN_RxFifo0MsgPendingCallback
- 305              		.syntax unified
- 306              		.thumb
- 307              		.thumb_func
- 309              	HAL_CAN_RxFifo0MsgPendingCallback:
- 310              	.LVL26:
- 311              	.LFB67:
+ 295              		.loc 1 96 70 is_stmt 0 discriminator 2 view .LVU89
+ 296 0082 F1E7     		b	.L15
+ 297              	.L29:
+ 298              		.align	2
+ 299              	.L28:
+ 300 0084 00000000 		.word	.LANCHOR3
+ 301 0088 00100140 		.word	1073811456
+ 302 008c 00000000 		.word	.LANCHOR4
+ 303 0090 00000000 		.word	.LANCHOR2
+ 304 0094 00000000 		.word	CanIf_Rx
+ 305 0098 00000000 		.word	.LANCHOR1
+ 306              	.LBE5:
+ 307              	.LBE6:
+ 308              		.cfi_endproc
+ 309              	.LFE66:
+ 311              		.section	.text.HAL_CAN_RxFifo0MsgPendingCallback,"ax",%progbits
+ 312              		.align	1
+ 313              		.global	HAL_CAN_RxFifo0MsgPendingCallback
+ 314              		.syntax unified
+ 315              		.thumb
+ 316              		.thumb_func
+ 318              	HAL_CAN_RxFifo0MsgPendingCallback:
+ 319              	.LVL25:
+ 320              	.LFB67:
  131:Src/canif.c   ****     }
  132:Src/canif.c   **** }
  133:Src/canif.c   **** 
  134:Src/canif.c   **** 
  135:Src/canif.c   **** void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan1){
- 312              		.loc 1 135 65 view -0
- 313              		.cfi_startproc
- 314              		@ args = 0, pretend = 0, frame = 0
- 315              		@ frame_needed = 0, uses_anonymous_args = 0
- 316              		.loc 1 135 65 is_stmt 0 view .LVU88
- 317 0000 08B5     		push	{r3, lr}
- 318              	.LCFI4:
- 319              		.cfi_def_cfa_offset 8
- 320              		.cfi_offset 3, -8
- 321              		.cfi_offset 14, -4
+ 321              		.loc 1 135 65 is_stmt 1 view -0
+ 322              		.cfi_startproc
+ 323              		@ args = 0, pretend = 0, frame = 0
+ 324              		@ frame_needed = 0, uses_anonymous_args = 0
+ 325              		.loc 1 135 65 is_stmt 0 view .LVU91
+ 326 0000 08B5     		push	{r3, lr}
+ 327              	.LCFI4:
+ 328              		.cfi_def_cfa_offset 8
+ 329              		.cfi_offset 3, -8
+ 330              		.cfi_offset 14, -4
  136:Src/canif.c   ****     if (hcan1->Instance == hcan.Instance) // 获得接*收到的数据头和数据
- 322              		.loc 1 136 5 is_stmt 1 view .LVU89
- 323              		.loc 1 136 14 is_stmt 0 view .LVU90
- 324 0002 0268     		ldr	r2, [r0]
- 325              		.loc 1 136 32 view .LVU91
- 326 0004 084B     		ldr	r3, .L32
- 327 0006 1B68     		ldr	r3, [r3]
- 328              		.loc 1 136 8 view .LVU92
- 329 0008 9A42     		cmp	r2, r3
- 330 000a 03D0     		beq	.L31
- 331              	.LVL27:
- 332              	.L29:
+ 331              		.loc 1 136 5 is_stmt 1 view .LVU92
+ 332              		.loc 1 136 14 is_stmt 0 view .LVU93
+ 333 0002 0268     		ldr	r2, [r0]
+ 334              		.loc 1 136 32 view .LVU94
+ 335 0004 084B     		ldr	r3, .L34
+ 336 0006 1B68     		ldr	r3, [r3]
+ 337              		.loc 1 136 8 view .LVU95
+ 338 0008 9A42     		cmp	r2, r3
+ 339 000a 03D0     		beq	.L33
+ 340              	.LVL26:
+ 341              	.L31:
  137:Src/canif.c   ****     {
  138:Src/canif.c   ****     // 尝试从 FIFO0 中获取一条 CAN 消息
  139:Src/canif.c   **** 	if (HAL_CAN_GetRxMessage(hcan1, CAN_RX_FIFO0, &rxHeader, CanIfPduInfo.Data) != HAL_OK) {
  140:Src/canif.c   **** 		// 如果获取消息失败，调用错误处理函数
  141:Src/canif.c   **** 		Error_Handler();
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 10
+
+
  142:Src/canif.c   **** 	}
  143:Src/canif.c   ****     // 设置接收标志为 1，表示有消息接收到了
  144:Src/canif.c   ****     }
  145:Src/canif.c   ****     CanIf_Rx = 1;
- 333              		.loc 1 145 5 is_stmt 1 view .LVU93
- 334              		.loc 1 145 14 is_stmt 0 view .LVU94
- 335 000c 074B     		ldr	r3, .L32+4
- 336 000e 0122     		movs	r2, #1
- 337 0010 1A70     		strb	r2, [r3]
+ 342              		.loc 1 145 5 is_stmt 1 view .LVU96
+ 343              		.loc 1 145 14 is_stmt 0 view .LVU97
+ 344 000c 074B     		ldr	r3, .L34+4
+ 345 000e 0122     		movs	r2, #1
+ 346 0010 1A70     		strb	r2, [r3]
  146:Src/canif.c   **** }
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 10
-
-
- 338              		.loc 1 146 1 view .LVU95
- 339 0012 08BD     		pop	{r3, pc}
- 340              	.LVL28:
- 341              	.L31:
+ 347              		.loc 1 146 1 view .LVU98
+ 348 0012 08BD     		pop	{r3, pc}
+ 349              	.LVL27:
+ 350              	.L33:
  139:Src/canif.c   **** 		// 如果获取消息失败，调用错误处理函数
- 342              		.loc 1 139 2 is_stmt 1 view .LVU96
+ 351              		.loc 1 139 2 is_stmt 1 view .LVU99
  139:Src/canif.c   **** 		// 如果获取消息失败，调用错误处理函数
- 343              		.loc 1 139 6 is_stmt 0 view .LVU97
- 344 0014 064B     		ldr	r3, .L32+8
- 345 0016 074A     		ldr	r2, .L32+12
- 346 0018 0021     		movs	r1, #0
- 347 001a FFF7FEFF 		bl	HAL_CAN_GetRxMessage
- 348              	.LVL29:
+ 352              		.loc 1 139 6 is_stmt 0 view .LVU100
+ 353 0014 064B     		ldr	r3, .L34+8
+ 354 0016 074A     		ldr	r2, .L34+12
+ 355 0018 0021     		movs	r1, #0
+ 356 001a FFF7FEFF 		bl	HAL_CAN_GetRxMessage
+ 357              	.LVL28:
  139:Src/canif.c   **** 		// 如果获取消息失败，调用错误处理函数
- 349              		.loc 1 139 5 view .LVU98
- 350 001e 0028     		cmp	r0, #0
- 351 0020 F4D0     		beq	.L29
+ 358              		.loc 1 139 5 view .LVU101
+ 359 001e 0028     		cmp	r0, #0
+ 360 0020 F4D0     		beq	.L31
  141:Src/canif.c   **** 	}
- 352              		.loc 1 141 3 is_stmt 1 view .LVU99
- 353 0022 FFF7FEFF 		bl	Error_Handler
- 354              	.LVL30:
- 355 0026 F1E7     		b	.L29
- 356              	.L33:
- 357              		.align	2
- 358              	.L32:
- 359 0028 00000000 		.word	hcan
- 360 002c 00000000 		.word	CanIf_Rx
- 361 0030 00000000 		.word	.LANCHOR2
- 362 0034 00000000 		.word	.LANCHOR1
- 363              		.cfi_endproc
- 364              	.LFE67:
- 366              		.section	.text.CanIf_setCallback,"ax",%progbits
- 367              		.align	1
- 368              		.global	CanIf_setCallback
- 369              		.syntax unified
- 370              		.thumb
- 371              		.thumb_func
- 373              	CanIf_setCallback:
- 374              	.LVL31:
- 375              	.LFB68:
+ 361              		.loc 1 141 3 is_stmt 1 view .LVU102
+ 362 0022 FFF7FEFF 		bl	Error_Handler
+ 363              	.LVL29:
+ 364 0026 F1E7     		b	.L31
+ 365              	.L35:
+ 366              		.align	2
+ 367              	.L34:
+ 368 0028 00000000 		.word	hcan
+ 369 002c 00000000 		.word	CanIf_Rx
+ 370 0030 00000000 		.word	.LANCHOR2
+ 371 0034 00000000 		.word	.LANCHOR1
+ 372              		.cfi_endproc
+ 373              	.LFE67:
+ 375              		.section	.text.CanIf_setCallback,"ax",%progbits
+ 376              		.align	1
+ 377              		.global	CanIf_setCallback
+ 378              		.syntax unified
+ 379              		.thumb
+ 380              		.thumb_func
+ 382              	CanIf_setCallback:
+ 383              	.LVL30:
+ 384              	.LFB68:
  147:Src/canif.c   **** 
  148:Src/canif.c   **** /*// 如果发送成功，并且配置了传输完成回调，则调用传输完成回调
  149:Src/canif.c   **** 	else if(CanNm_TxCallback != NULL && TxPduId == 1){
@@ -588,190 +598,190 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 1
  151:Src/canif.c   **** 		CanNm_TxCallback();
  152:Src/canif.c   **** 	}
  153:Src/canif.c   **** 	l*/
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 11
+
+
  154:Src/canif.c   **** //	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, 1);  // (注释掉的代码) 可以用于在发送消息后
  155:Src/canif.c   **** 
  156:Src/canif.c   **** // 设置 CAN 接收回调函数1
  157:Src/canif.c   **** void CanIf_setCallback(Std_ReturnType (*IF_Callback)(uint32_t RxPduId, PduInfoTRx* PduInfoPtr)){
- 376              		.loc 1 157 96 view -0
- 377              		.cfi_startproc
- 378              		@ args = 0, pretend = 0, frame = 0
- 379              		@ frame_needed = 0, uses_anonymous_args = 0
- 380              		@ link register save eliminated.
+ 385              		.loc 1 157 96 view -0
+ 386              		.cfi_startproc
+ 387              		@ args = 0, pretend = 0, frame = 0
+ 388              		@ frame_needed = 0, uses_anonymous_args = 0
+ 389              		@ link register save eliminated.
  158:Src/canif.c   **** 	if(IF_Callback != NULL)
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 11
-
-
- 381              		.loc 1 158 2 view .LVU101
- 382              		.loc 1 158 4 is_stmt 0 view .LVU102
- 383 0000 08B1     		cbz	r0, .L34
+ 390              		.loc 1 158 2 view .LVU104
+ 391              		.loc 1 158 4 is_stmt 0 view .LVU105
+ 392 0000 08B1     		cbz	r0, .L36
  159:Src/canif.c   **** 	{
  160:Src/canif.c   **** 		CanTp_Callback = IF_Callback ;  // 如果传入的回调函数指针不为空，则将其设置�
- 384              		.loc 1 160 3 is_stmt 1 view .LVU103
- 385              		.loc 1 160 18 is_stmt 0 view .LVU104
- 386 0002 014A     		ldr	r2, .L36
- 387 0004 1060     		str	r0, [r2]
- 388              	.L34:
+ 393              		.loc 1 160 3 is_stmt 1 view .LVU106
+ 394              		.loc 1 160 18 is_stmt 0 view .LVU107
+ 395 0002 014A     		ldr	r2, .L38
+ 396 0004 1060     		str	r0, [r2]
+ 397              	.L36:
  161:Src/canif.c   **** 	}
  162:Src/canif.c   **** }
- 389              		.loc 1 162 1 view .LVU105
- 390 0006 7047     		bx	lr
- 391              	.L37:
- 392              		.align	2
- 393              	.L36:
- 394 0008 00000000 		.word	.LANCHOR4
- 395              		.cfi_endproc
- 396              	.LFE68:
- 398              		.global	TxPduIdToStdIdTable
- 399              		.global	RxPduIdToStdIdTable
- 400              		.global	CanTp_Callback
- 401              		.global	CanIfPduInfo
- 402              		.global	rxHeader
- 403              		.section	.bss.CanIfPduInfo,"aw",%nobits
- 404              		.align	2
- 405              		.set	.LANCHOR2,. + 0
- 408              	CanIfPduInfo:
- 409 0000 00000000 		.space	12
- 409      00000000 
- 409      00000000 
- 410              		.section	.bss.CanTp_Callback,"aw",%nobits
- 411              		.align	2
- 412              		.set	.LANCHOR4,. + 0
- 415              	CanTp_Callback:
- 416 0000 00000000 		.space	4
- 417              		.section	.bss.rxHeader,"aw",%nobits
- 418              		.align	2
- 419              		.set	.LANCHOR1,. + 0
- 422              	rxHeader:
- 423 0000 00000000 		.space	28
- 423      00000000 
- 423      00000000 
- 423      00000000 
- 423      00000000 
- 424              		.section	.rodata.RxPduIdToStdIdTable,"a"
- 425              		.align	2
- 426              		.set	.LANCHOR3,. + 0
- 429              	RxPduIdToStdIdTable:
- 430 0000 00000000 		.word	0
- 431 0004 32020000 		.word	562
- 432 0008 00       		.byte	0
- 433 0009 000000   		.space	3
- 434 000c 01000000 		.word	1
- 435 0010 00010000 		.word	256
- 436 0014 00       		.byte	0
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 12
+ 398              		.loc 1 162 1 view .LVU108
+ 399 0006 7047     		bx	lr
+ 400              	.L39:
+ 401              		.align	2
+ 402              	.L38:
+ 403 0008 00000000 		.word	.LANCHOR4
+ 404              		.cfi_endproc
+ 405              	.LFE68:
+ 407              		.global	TxPduIdToStdIdTable
+ 408              		.global	RxPduIdToStdIdTable
+ 409              		.global	CanTp_Callback
+ 410              		.global	CanIfPduInfo
+ 411              		.global	rxHeader
+ 412              		.section	.bss.CanIfPduInfo,"aw",%nobits
+ 413              		.align	2
+ 414              		.set	.LANCHOR2,. + 0
+ 417              	CanIfPduInfo:
+ 418 0000 00000000 		.space	12
+ 418      00000000 
+ 418      00000000 
+ 419              		.section	.bss.CanTp_Callback,"aw",%nobits
+ 420              		.align	2
+ 421              		.set	.LANCHOR4,. + 0
+ 424              	CanTp_Callback:
+ 425 0000 00000000 		.space	4
+ 426              		.section	.bss.rxHeader,"aw",%nobits
+ 427              		.align	2
+ 428              		.set	.LANCHOR1,. + 0
+ 431              	rxHeader:
+ 432 0000 00000000 		.space	28
+ 432      00000000 
+ 432      00000000 
+ 432      00000000 
+ 432      00000000 
+ 433              		.section	.rodata.RxPduIdToStdIdTable,"a"
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 12
 
 
- 437 0015 000000   		.space	3
- 438 0018 02000000 		.word	2
- 439 001c 51030000 		.word	849
- 440 0020 00       		.byte	0
- 441 0021 000000   		.space	3
- 442 0024 03000000 		.word	3
- 443 0028 45020000 		.word	581
- 444 002c 00       		.byte	0
- 445 002d 000000   		.space	3
- 446 0030 04000000 		.word	4
- 447 0034 54030000 		.word	852
- 448 0038 00       		.byte	0
- 449 0039 000000   		.space	3
- 450 003c 05000000 		.word	5
- 451 0040 FE020000 		.word	766
- 452 0044 00       		.byte	0
- 453 0045 000000   		.space	3
- 454 0048 06000000 		.word	6
- 455 004c AA010000 		.word	426
- 456 0050 00       		.byte	0
- 457 0051 000000   		.space	3
- 458 0054 07000000 		.word	7
- 459 0058 23050000 		.word	1315
- 460 005c 01       		.byte	1
- 461 005d 000000   		.space	3
- 462 0060 08000000 		.word	8
- 463 0064 20070000 		.word	1824
- 464 0068 02       		.byte	2
- 465 0069 000000   		.space	3
- 466              		.section	.rodata.TxPduIdToStdIdTable,"a"
- 467              		.align	2
- 468              		.set	.LANCHOR0,. + 0
- 471              	TxPduIdToStdIdTable:
- 472 0000 00000000 		.word	0
- 473 0004 32020000 		.word	562
- 474 0008 00       		.byte	0
- 475 0009 000000   		.space	3
- 476 000c 01000000 		.word	1
- 477 0010 00010000 		.word	256
- 478 0014 00       		.byte	0
- 479 0015 000000   		.space	3
- 480 0018 02000000 		.word	2
- 481 001c 51030000 		.word	849
- 482 0020 00       		.byte	0
- 483 0021 000000   		.space	3
- 484 0024 03000000 		.word	3
- 485 0028 45020000 		.word	581
- 486 002c 00       		.byte	0
- 487 002d 000000   		.space	3
- 488 0030 04000000 		.word	4
- 489 0034 54030000 		.word	852
- 490 0038 00       		.byte	0
- 491 0039 000000   		.space	3
- 492 003c 05000000 		.word	5
- 493 0040 FE020000 		.word	766
- 494 0044 00       		.byte	0
- 495 0045 000000   		.space	3
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 13
+ 434              		.align	2
+ 435              		.set	.LANCHOR3,. + 0
+ 438              	RxPduIdToStdIdTable:
+ 439 0000 00000000 		.word	0
+ 440 0004 32020000 		.word	562
+ 441 0008 00       		.byte	0
+ 442 0009 000000   		.space	3
+ 443 000c 01000000 		.word	1
+ 444 0010 00010000 		.word	256
+ 445 0014 00       		.byte	0
+ 446 0015 000000   		.space	3
+ 447 0018 02000000 		.word	2
+ 448 001c 51030000 		.word	849
+ 449 0020 00       		.byte	0
+ 450 0021 000000   		.space	3
+ 451 0024 03000000 		.word	3
+ 452 0028 45020000 		.word	581
+ 453 002c 00       		.byte	0
+ 454 002d 000000   		.space	3
+ 455 0030 04000000 		.word	4
+ 456 0034 54030000 		.word	852
+ 457 0038 00       		.byte	0
+ 458 0039 000000   		.space	3
+ 459 003c 05000000 		.word	5
+ 460 0040 FE020000 		.word	766
+ 461 0044 00       		.byte	0
+ 462 0045 000000   		.space	3
+ 463 0048 06000000 		.word	6
+ 464 004c AA010000 		.word	426
+ 465 0050 00       		.byte	0
+ 466 0051 000000   		.space	3
+ 467 0054 07000000 		.word	7
+ 468 0058 23050000 		.word	1315
+ 469 005c 01       		.byte	1
+ 470 005d 000000   		.space	3
+ 471 0060 08000000 		.word	8
+ 472 0064 20070000 		.word	1824
+ 473 0068 02       		.byte	2
+ 474 0069 000000   		.space	3
+ 475              		.section	.rodata.TxPduIdToStdIdTable,"a"
+ 476              		.align	2
+ 477              		.set	.LANCHOR0,. + 0
+ 480              	TxPduIdToStdIdTable:
+ 481 0000 00000000 		.word	0
+ 482 0004 32020000 		.word	562
+ 483 0008 00       		.byte	0
+ 484 0009 000000   		.space	3
+ 485 000c 01000000 		.word	1
+ 486 0010 00010000 		.word	256
+ 487 0014 00       		.byte	0
+ 488 0015 000000   		.space	3
+ 489 0018 02000000 		.word	2
+ 490 001c 51030000 		.word	849
+ 491 0020 00       		.byte	0
+ 492 0021 000000   		.space	3
+ 493 0024 03000000 		.word	3
+ 494 0028 45020000 		.word	581
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 13
 
 
- 496 0048 06000000 		.word	6
- 497 004c AA010000 		.word	426
- 498 0050 00       		.byte	0
- 499 0051 000000   		.space	3
- 500 0054 07000000 		.word	7
- 501 0058 01050000 		.word	1281
- 502 005c 01       		.byte	1
- 503 005d 000000   		.space	3
- 504 0060 08000000 		.word	8
- 505 0064 28070000 		.word	1832
- 506 0068 02       		.byte	2
- 507 0069 000000   		.space	3
- 508              		.text
- 509              	.Letext0:
- 510              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
- 511              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
- 512              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
- 513              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
- 514              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
- 515              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"
- 516              		.file 8 "Inc/canif.h"
- 517              		.file 9 "Inc/can.h"
- 518              		.file 10 "Inc/main.h"
- 519              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s 			page 14
+ 495 002c 00       		.byte	0
+ 496 002d 000000   		.space	3
+ 497 0030 04000000 		.word	4
+ 498 0034 54030000 		.word	852
+ 499 0038 00       		.byte	0
+ 500 0039 000000   		.space	3
+ 501 003c 05000000 		.word	5
+ 502 0040 FE020000 		.word	766
+ 503 0044 00       		.byte	0
+ 504 0045 000000   		.space	3
+ 505 0048 06000000 		.word	6
+ 506 004c AA010000 		.word	426
+ 507 0050 00       		.byte	0
+ 508 0051 000000   		.space	3
+ 509 0054 07000000 		.word	7
+ 510 0058 01050000 		.word	1281
+ 511 005c 01       		.byte	1
+ 512 005d 000000   		.space	3
+ 513 0060 08000000 		.word	8
+ 514 0064 28070000 		.word	1832
+ 515 0068 02       		.byte	2
+ 516 0069 000000   		.space	3
+ 517              		.text
+ 518              	.Letext0:
+ 519              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 520              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 521              		.file 4 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103x6.h"
+ 522              		.file 5 "Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h"
+ 523              		.file 6 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h"
+ 524              		.file 7 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_can.h"
+ 525              		.file 8 "Inc/canif.h"
+ 526              		.file 9 "Inc/can.h"
+ 527              		.file 10 "Inc/main.h"
+ 528              		.file 11 "Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h"
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 canif.c
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:18     .text.CanIf_Transmit:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:24     .text.CanIf_Transmit:00000000 CanIf_Transmit
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:146    .text.CanIf_Transmit:0000005c $d
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:152    .text.CanIf_Receive:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:158    .text.CanIf_Receive:00000000 CanIf_Receive
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:293    .text.CanIf_Receive:00000078 $d
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:303    .text.HAL_CAN_RxFifo0MsgPendingCallback:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:309    .text.HAL_CAN_RxFifo0MsgPendingCallback:00000000 HAL_CAN_RxFifo0MsgPendingCallback
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:359    .text.HAL_CAN_RxFifo0MsgPendingCallback:00000028 $d
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:367    .text.CanIf_setCallback:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:373    .text.CanIf_setCallback:00000000 CanIf_setCallback
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:394    .text.CanIf_setCallback:00000008 $d
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:471    .rodata.TxPduIdToStdIdTable:00000000 TxPduIdToStdIdTable
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:429    .rodata.RxPduIdToStdIdTable:00000000 RxPduIdToStdIdTable
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:415    .bss.CanTp_Callback:00000000 CanTp_Callback
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:408    .bss.CanIfPduInfo:00000000 CanIfPduInfo
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:422    .bss.rxHeader:00000000 rxHeader
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:404    .bss.CanIfPduInfo:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:411    .bss.CanTp_Callback:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:418    .bss.rxHeader:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:425    .rodata.RxPduIdToStdIdTable:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\ccIJ0Exm.s:467    .rodata.TxPduIdToStdIdTable:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:18     .text.CanIf_Transmit:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:24     .text.CanIf_Transmit:00000000 CanIf_Transmit
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:146    .text.CanIf_Transmit:0000005c $d
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:152    .text.CanIf_Receive:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:158    .text.CanIf_Receive:00000000 CanIf_Receive
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:300    .text.CanIf_Receive:00000084 $d
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:312    .text.HAL_CAN_RxFifo0MsgPendingCallback:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:318    .text.HAL_CAN_RxFifo0MsgPendingCallback:00000000 HAL_CAN_RxFifo0MsgPendingCallback
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:368    .text.HAL_CAN_RxFifo0MsgPendingCallback:00000028 $d
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:376    .text.CanIf_setCallback:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:382    .text.CanIf_setCallback:00000000 CanIf_setCallback
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:403    .text.CanIf_setCallback:00000008 $d
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:480    .rodata.TxPduIdToStdIdTable:00000000 TxPduIdToStdIdTable
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:438    .rodata.RxPduIdToStdIdTable:00000000 RxPduIdToStdIdTable
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:424    .bss.CanTp_Callback:00000000 CanTp_Callback
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:417    .bss.CanIfPduInfo:00000000 CanIfPduInfo
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:431    .bss.rxHeader:00000000 rxHeader
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:413    .bss.CanIfPduInfo:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:420    .bss.CanTp_Callback:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:427    .bss.rxHeader:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:434    .rodata.RxPduIdToStdIdTable:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\ccuMFPOf.s:476    .rodata.TxPduIdToStdIdTable:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_CAN_GetTxMailboxesFreeLevel
