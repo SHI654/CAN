@@ -22,8 +22,11 @@
 #include "main.h"
 #include "cmsis_os.h"
 #include "can.h"
+#include "tim.h"
 #include "gpio.h"
 #include "canif.h"
+#include "uds_diag.h"
+#include "cantp.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -60,7 +63,8 @@ void MX_FREERTOS_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
+volatile uint8_t count;
+extern volatile uint8_t global_session;
 /* USER CODE END 0 */
 
 /**
@@ -92,6 +96,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_CAN_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
   //CAN_Config();
   CAN_Init();
@@ -187,7 +192,25 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
     HAL_IncTick();
   }
   /* USER CODE BEGIN Callback 1 */
+  if(htim->Instance == TIM2){
+		if(count == 0){
+			count++;
+			return;
+		}
 
+		//		__HAL_TIM_CLEAR_FLAG(htim, TIM_FLAG_UPDATE);
+		else if (global_session != DefaultSession)
+		{
+			global_session = DefaultSession;
+			//			global_sec_flag = Un_Secure;
+		}
+		else
+		{
+			// do nothing
+		}
+		//		stop_timer();
+		reset_timer();
+	}
   /* USER CODE END Callback 1 */
 }
 

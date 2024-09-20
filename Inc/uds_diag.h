@@ -87,17 +87,15 @@ typedef enum {
 
 
 typedef enum {
-	Oil_Temp = 0xF13D,
-	Oil_Pressure = 0xF53D,
-	VIN_number = 0xF23D,
-	Oil_Temp_First_byte=0xF1,
-	Oil_Temp_Second_byte=0x3D,
-	Oil_Pressure_First_byte=0xF5,
-	Oil_Pressure_Second_byte=0x3D,
-	VIN_number_First_byte=0xF2,
-	VIN_number_Second_byte=0x3D,
-
-
+	SW_version = 0xF18C,
+	Active_Session = 0xF186,
+	VIN_number = 0xEDA0,
+	SW_version_First_byte=0xF1,
+	SW_version_Second_byte=0x8C,
+	Active_Session_First_byte=0xF1,
+	Active_Session_Second_byte=0x86,
+	VIN_number_First_byte=0xED,
+	VIN_number_Second_byte=0xA0,
 }DID;
 
 
@@ -135,8 +133,8 @@ typedef struct {
 
 typedef struct
 {
-	uint8_t ADD_Source;
-	uint8_t ADD_Target;
+	// uint8_t ADD_Source;
+	// uint8_t ADD_Target;
 	uint8_t SID;
 	int8_t SUB_FUNC;
 	int8_t DID[2];

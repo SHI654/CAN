@@ -28,15 +28,15 @@ volatile uint8_t Security_Service_Availability_Flag = Not_Available;
 /*Security Variables */
 volatile uint32_t Sec_u32SeedValue = 0 ;
 Security_Access_State Sec_State = Un_Secure ;
-volatile uint32_t Oil_Pressure_var = 0x778899AA;
-volatile uint32_t Oil_Temp_var = 0x5566;
+volatile uint32_t Active_Session_var = 0x778899AA;
+volatile uint32_t SW_version_var = 0x5566;
 volatile uint8_t VIN_number_var[17]= { 0x11, 0x11,0x11,0x11,0x11,0x11,0x11,0x11,0x11,0x11,0x11,0x11,0x11,0x11,0x11,0x11,0x11};
 //volatile uint32_t VIN_number_var;
 ServiceInfo pos_Response;
 
 ServiceInfo Control;
 PduInfoType msg;
-extern TIM_HandleTypeDef htim6;
+extern TIM_HandleTypeDef htim2;
 volatile uint8_t flag_sub_fun;
 uint8_t UDS_Tx_Confirm = 0;
 PduInfoType* UDS_Struct;
@@ -129,15 +129,15 @@ void UDS_Read_Data_Client(DID did)
 	Read_Data_Client.Length = 6; //length of Read frame
 
 	//check DID which Data
-	if(did == Oil_Temp)
+	if(did == SW_version)
 	{
-		Read_Data_Client.Data[DID_1] = Oil_Temp_First_byte;
-		Read_Data_Client.Data[DID_2] = Oil_Temp_Second_byte;
+		Read_Data_Client.Data[DID_1] = SW_version_First_byte;
+		Read_Data_Client.Data[DID_2] = SW_version_Second_byte;
 	}
-	else if (did == Oil_Pressure)
+	else if (did == Active_Session)
 	{
-		Read_Data_Client.Data[DID_1] = Oil_Pressure_First_byte;
-		Read_Data_Client.Data[DID_2] = Oil_Pressure_Second_byte;
+		Read_Data_Client.Data[DID_1] = Active_Session_First_byte;
+		Read_Data_Client.Data[DID_2] = Active_Session_Second_byte;
 	}
 	else if (did == VIN_number)
 	{
@@ -169,7 +169,7 @@ void UDS_Read_Data_Client(DID did)
 //	ServiceInfo Read_Data_Server ;
 //	Read_Data_Server.SID = 0x22;
 //	Read_Data_Server.SUB_FUNC = -1;
-//	//if DID --> Oil_Temp
+//	//if DID --> SW_version
 //	if((PduInfoTypeptr->Data[SID] == 0xF1) && (PduInfoTypeptr->Data[Sub_F] == 0x3D) )
 //	{
 //		Read_Data_Server.DID[0] = 0xF1;
@@ -180,8 +180,8 @@ void UDS_Read_Data_Client(DID did)
 //		//sendHexArrayAsASCII(Read_Data_Server.DID, Read_Data_Server.DID_Length );
 //		//HAL_UART_Transmit(&huart2, "\r\n", 50, HAL_MAX_DELAY);
 //
-//		Read_Data_Server.Data[SID] = 0x55; //value of Oil_Temp
-//		Read_Data_Server.Data[Sub_F] = 0x66; //value of Oil_Temp
+//		Read_Data_Server.Data[SID] = 0x55; //value of SW_version
+//		Read_Data_Server.Data[Sub_F] = 0x66; //value of SW_version
 //		Read_Data_Server.Data_Length = 2;
 //		//Send +ve responce
 //		//UDS_Send_Pos_Res(Read_Data_Server);
@@ -191,7 +191,7 @@ void UDS_Read_Data_Client(DID did)
 //		//sendHexArrayAsASCII(Read_Data_Server.Data, Read_Data_Server.Data_Length);
 //		//HAL_UART_Transmit(&huart2, "\r\n", 50, HAL_MAX_DELAY);
 //
-//	}//if DID --> Oil_Pressure
+//	}//if DID --> Active_Session
 //	else if((PduInfoTypeptr->Data[SID] == 0xF5) && (PduInfoTypeptr->Data[Sub_F] == 0x3D) )
 //	{
 //		Read_Data_Server.DID[0] = 0xF5;
@@ -201,10 +201,10 @@ void UDS_Read_Data_Client(DID did)
 //		//HAL_UART_Transmit(&huart2, "\r\nRead Frame Client DID:", 50, HAL_MAX_DELAY);
 //		//sendHexArrayAsASCII(Read_Data_Server.DID, Read_Data_Server.DID_Length );
 //		//HAL_UART_Transmit(&huart2, "\r\n", 50, HAL_MAX_DELAY);
-//		Read_Data_Server.Data[SID] = 0x77; //value of Oil_Pressure
-//		Read_Data_Server.Data[Sub_F] = 0x88; //value of Oil_Pressure
-//		Read_Data_Server.Data[2] = 0x99; //value of Oil_Pressure
-//		Read_Data_Server.Data[3] = 0xAA; //value of Oil_Pressure
+//		Read_Data_Server.Data[SID] = 0x77; //value of Active_Session
+//		Read_Data_Server.Data[Sub_F] = 0x88; //value of Active_Session
+//		Read_Data_Server.Data[2] = 0x99; //value of Active_Session
+//		Read_Data_Server.Data[3] = 0xAA; //value of Active_Session
 //		Read_Data_Server.Data_Length = 4;
 //		//Send +ve responce
 //		//UDS_Send_Pos_Res(Read_Data_Server);
@@ -251,10 +251,10 @@ void UDS_Write_Data_Client(DID did, uint32_t data)
 	}
 
 	//check DID which Data
-	if(did == Oil_Temp)
+	if(did == SW_version)
 	{
-		Write_Data_Client.Data[DID_1] = Oil_Temp_First_byte;
-		Write_Data_Client.Data[DID_2] = Oil_Temp_Second_byte;
+		Write_Data_Client.Data[DID_1] = SW_version_First_byte;
+		Write_Data_Client.Data[DID_2] = SW_version_Second_byte;
 
 		// Assuming data is 2 bytes
 		UART_ReceiveAndConvert(4, &Write_Data_Client);
@@ -269,10 +269,10 @@ void UDS_Write_Data_Client(DID did, uint32_t data)
 
 
 	}
-	else if (did == Oil_Pressure)
+	else if (did == Active_Session)
 	{
-		Write_Data_Client.Data[DID_1] = Oil_Pressure_First_byte;
-		Write_Data_Client.Data[DID_2] = Oil_Pressure_Second_byte;
+		Write_Data_Client.Data[DID_1] = Active_Session_First_byte;
+		Write_Data_Client.Data[DID_2] = Active_Session_Second_byte;
 
 		// Assuming data is 4 bytes
 		UART_ReceiveAndConvert(8, &Write_Data_Client);
@@ -336,23 +336,23 @@ void UDS_Write_Data_Client(DID did, uint32_t data)
 //void UDS_Write_Data_Server(PduInfoType* Received_data)
 //{
 //
-//	uint16_t Oil_Temp;
-//	uint32_t Oil_Pressure;
+//	uint16_t SW_version;
+//	uint32_t Active_Session;
 //	PduInfoType Write_Data_Server;
 //
 //
-//	// did for Oil_Temp or we can check by the length of the received_data
+//	// did for SW_version or we can check by the length of the received_data
 //	if ((Received_data->Data[1] == 0xF1) && (Received_data->Data[2] == 0x3D))
 //	{
 //		// udate the value of oil temperature
-//		Oil_Temp = ( (Received_data->Data[3] << 8) | (Received_data->Data[4]) );
+//		SW_version = ( (Received_data->Data[3] << 8) | (Received_data->Data[4]) );
 //
 //	}
-//	// did for Oil_Pressure
+//	// did for Active_Session
 //	else if (Received_data->Data[1] == 0xF5 && Received_data->Data[2] == 0x3D)
 //	{
 //		// udate the value of oil pressure
-//		Oil_Pressure = ( (Received_data->Data[3] << 24) | (Received_data->Data[4] << 16) | (Received_data->Data[5] << 8) | (Received_data->Data[6]) );
+//		Active_Session = ( (Received_data->Data[3] << 24) | (Received_data->Data[4] << 16) | (Received_data->Data[5] << 8) | (Received_data->Data[6]) );
 //
 //	}
 //	else
@@ -583,7 +583,7 @@ void UDS_Send_Security_Client(Sub_Fun sub_fun)
 //		if (Ptr->Data[0] == Read_Service)
 //
 //		{
-//			if  ( ptr->Data[SID] == Oil_Temp_First_byte &&  ptr->Data[Sub_F] == Oil_Temp_Second_byte )
+//			if  ( ptr->Data[SID] == SW_version_First_byte &&  ptr->Data[Sub_F] == SW_version_Second_byte )
 //			{
 //
 //				HAL_UART_Transmit(&huart2, (const uint8_t*) "\r\n Oil Temp .\r\n", strlen("\r\n Oil Temp .\r\n"), HAL_MAX_DELAY);
@@ -591,7 +591,7 @@ void UDS_Send_Security_Client(Sub_Fun sub_fun)
 //
 //			}
 //
-//			else if  ( ptr->Data[SID] == Oil_Pressure_First_byte &&  ptr->Data[Sub_F] == Oil_Pressure_Second_byte  )
+//			else if  ( ptr->Data[SID] == Active_Session_First_byte &&  ptr->Data[Sub_F] == Active_Session_Second_byte  )
 //			{
 //				HAL_UART_Transmit(&huart2, (const uint8_t*) "\r\n Oil Pressure .\r\n", strlen("\r\n Oil Pressure .\r\n"), HAL_MAX_DELAY);
 //				sendHexArrayAsASCII((const uint8_t*)&Ptr->Data[3],4);
@@ -604,12 +604,12 @@ void UDS_Send_Security_Client(Sub_Fun sub_fun)
 //
 //		{
 //
-//			if ( ptr->Data[SID] == Oil_Temp_First_byte &&  ptr->Data[Sub_F] == Oil_Temp_Second_byte )
+//			if ( ptr->Data[SID] == SW_version_First_byte &&  ptr->Data[Sub_F] == SW_version_Second_byte )
 //			{
 //				HAL_UART_Transmit(&huart2, (const uint8_t*) "\r\n Oil Temperature Written successfully .\r\n", strlen("\r\n Oil Temperature Written successfully .\r\n"), HAL_MAX_DELAY);
 //			}
 //
-//			else if  ( ptr->Data[SID] == Oil_Pressure_First_byte &&  ptr->Data[Sub_F] == Oil_Pressure_Second_byte  )
+//			else if  ( ptr->Data[SID] == Active_Session_First_byte &&  ptr->Data[Sub_F] == Active_Session_Second_byte  )
 //			{
 //				HAL_UART_Transmit(&huart2, (const uint8_t*) "\r\n Oil Pressure Written successfully .\r\n", strlen("\r\n Oil Pressure Written successfully .\r\n"), HAL_MAX_DELAY);
 //			}
@@ -724,7 +724,7 @@ void sendHexArrayAsASCII(uint8_t* hexArray, uint16_t length)
 // 			{
 // 				PduInfoType_Ptr->Data[(i / 2)+5] = hexValue;
 // 			}
-// 			else if ( (PduInfoType_Ptr->Data[DID_1] == Oil_Temp_First_byte) || (PduInfoType_Ptr->Data[DID_1] == Oil_Pressure_First_byte) ||  (PduInfoType_Ptr->Data[DID_1] == VIN_number_First_byte) )
+// 			else if ( (PduInfoType_Ptr->Data[DID_1] == SW_version_First_byte) || (PduInfoType_Ptr->Data[DID_1] == Active_Session_First_byte) ||  (PduInfoType_Ptr->Data[DID_1] == VIN_number_First_byte) )
 // 			{
 // 				PduInfoType_Ptr->Data[(i / 2)+6] = hexValue;
 // 			}
@@ -803,11 +803,11 @@ void UDS_Write_Data_Server(uint8_t* received_data, uint16_t received_length)
 
 	pos_Response.DID[0] |= 0b10000000;//Original DID
 
-	if(received_data[DID_1] == Oil_Temp_First_byte && received_data[DID_2] == Oil_Temp_Second_byte){
-		Oil_Temp_var = received_data[Data_DID] << 8 | received_data[Data_DID+1];
+	if(received_data[DID_1] == SW_version_First_byte && received_data[DID_2] == SW_version_Second_byte){
+		SW_version_var = received_data[Data_DID] << 8 | received_data[Data_DID+1];
 	}
-	else if(received_data[DID_1] == Oil_Pressure_First_byte && received_data[DID_2] == Oil_Pressure_Second_byte){
-		Oil_Pressure_var = received_data[Data_DID] << 24 | received_data[Data_DID+1] << 16 | received_data[Data_DID+2] << 8 | received_data[Data_DID+3];
+	else if(received_data[DID_1] == Active_Session_First_byte && received_data[DID_2] == Active_Session_Second_byte){
+		Active_Session_var = received_data[Data_DID] << 24 | received_data[Data_DID+1] << 16 | received_data[Data_DID+2] << 8 | received_data[Data_DID+3];
 	}
 	else if(received_data[DID_1] == VIN_number_First_byte && received_data[DID_2] == VIN_number_Second_byte){
 		//VIN_number_var = received_data[Data_DID] << 24 | received_data[Data_DID+1] << 16 | received_data[Data_DID+2] << 8 | received_data[Data_DID+3];
@@ -862,8 +862,6 @@ void UDS_Send_Pos_Res(ServiceInfo* Response)
 
 	uint8_t PCI = 4 + Response->DID_Length + Response->Data_Length;
 	msg.Data[SID] = Response->SID + 0x40;
-	msg.Data[ADD_Source] = Response->ADD_Source;
-	msg.Data[ADD_Target] = Response->ADD_Target;
 	uint8_t currentIndex = Sub_F;
 	if(Response->SUB_FUNC != -1)
 	{
@@ -887,7 +885,7 @@ void UDS_Send_Pos_Res(ServiceInfo* Response)
 	msg.Data[0] = PCI;
 	msg.Length = PCI;
 
-	CanTp_Transmit(0, &msg);
+	CanTp_Transmit(8, &msg);
 }
 
 void UDS_Send_Neg_Res(uint8_t SID, uint8_t NRC)
@@ -923,9 +921,9 @@ void UDS_Tester_Presenter_Server(void)//Khaled Waleed
 
 void reset_timer(void)
 {
-	// HAL_TIM_Base_Stop_IT(&htim6); // Stop Timer6
-	// TIM6->CNT = 0; // Reset Timer6 counter to 0
-	//    HAL_TIM_Base_Start_IT(&htim6); // Start Timer6 again
+	HAL_TIM_Base_Stop_IT(&htim2); // Stop Timer6
+	TIM2->CNT = 0; // Reset Timer6 counter to 0
+	HAL_TIM_Base_Start_IT(&htim2); // Start Timer6 again
 }
 
 void stop_timer(TIM_HandleTypeDef* htim){
@@ -934,8 +932,8 @@ void stop_timer(TIM_HandleTypeDef* htim){
 
 void start_timer(void)
 {
-	// //	HAL_TIM_Base_Start(&htim6);
-	// HAL_TIM_Base_Start_IT(&htim6);
+	//	HAL_TIM_Base_Start(&htim6);
+	HAL_TIM_Base_Start_IT(&htim2);
 }
 
 void UDS_Control_Session_Server(uint8_t *Received)
@@ -1063,28 +1061,28 @@ void UDS_Read_Data_Server(uint8_t* data)
 	pos_Response.DID_Length=2;
 	data[DID_1] |= 0b10000000; //Original DID
 
-	//if DID --> Oil_Temp
-	if((data[DID_1] == Oil_Temp_First_byte) && (data[DID_2] == Oil_Temp_Second_byte) )
+	//if DID --> SW_version
+	if((data[DID_1] == SW_version_First_byte) && (data[DID_2] == SW_version_Second_byte) )
 	{
 
-		pos_Response.DID[0]=Oil_Temp_First_byte;
-		pos_Response.DID[1]=Oil_Temp_Second_byte;
-		pos_Response.Data[0]=Oil_Temp_var>>8;
-		pos_Response.Data[1]=Oil_Temp_var & 0xFF;
+		pos_Response.DID[0]=SW_version_First_byte;
+		pos_Response.DID[1]=SW_version_Second_byte;
+		pos_Response.Data[0]=SW_version_var>>8;
+		pos_Response.Data[1]=SW_version_var & 0xFF;
 		pos_Response.Data_Length = 2;
 		UDS_Send_Pos_Res(&pos_Response);
 
 
 		//	UDS_Send_Pos_Res(Read_Data_Server);
-	}//if DID --> Oil_Pressure
-	else if((data[DID_1] == Oil_Pressure_First_byte) && (data[DID_2] == Oil_Pressure_Second_byte) )
+	}//if DID --> Active_Session
+	else if((data[DID_1] == Active_Session_First_byte) && (data[DID_2] == Active_Session_Second_byte) )
 	{
-		pos_Response.DID[0]=Oil_Pressure_First_byte;
-		pos_Response.DID[1]=Oil_Pressure_Second_byte;
-		pos_Response.Data[0]=Oil_Pressure_var>>24;
-		pos_Response.Data[1]=Oil_Pressure_var>>16;
-		pos_Response.Data[2]=Oil_Pressure_var>>8;
-		pos_Response.Data[3]=Oil_Pressure_var & 0xFF;
+		pos_Response.DID[0]=Active_Session_First_byte;
+		pos_Response.DID[1]=Active_Session_Second_byte;
+		pos_Response.Data[0]=Active_Session_var>>24;
+		pos_Response.Data[1]=Active_Session_var>>16;
+		pos_Response.Data[2]=Active_Session_var>>8;
+		pos_Response.Data[3]=Active_Session_var & 0xFF;
 
 		pos_Response.Data_Length = 4;
 		UDS_Send_Pos_Res(&pos_Response);
@@ -1154,17 +1152,10 @@ void server_call_back(uint32_t TxPduId, PduInfoType* ptr)
 	PduDataPTR = ptr;
 	// create flag for check SID this is local bec . every frame i need to check the sid
 	uint8_t local_sid_flag = 0;
-	uint8_t local_target_accept = 1;
 	SupressedPosRes_Server = ((ptr->Data[Sub_F] & 0b10000000)>>7) ;
-	pos_Response.ADD_Target = Client_Address;
-	Control.ADD_Target = Client_Address;
 	// this for test only
 	//uint8_t ptr->Data[20] = {2 ,Control_Service , 5 };
 	// we need to check for address target (ADD_Target) if true this message is for me if not rejected it
-
-
-	if(local_target_accept)
-	{
 		// for SID validation
 		if (ptr->Data[SID] == Control_Service || ptr->Data[SID]== Read_Service || ptr->Data[SID] == Write_Service || ptr->Data[SID] == Security_Service || ptr->Data[SID] == Tester_Representer_Service)
 		{
@@ -1192,15 +1183,12 @@ void server_call_back(uint32_t TxPduId, PduInfoType* ptr)
 		if (local_sid_flag)
 		{
 			//Check Suppressed Positive Response
-
-
 			if (ptr->Data[SID] == Control_Service)
 			{
 				flag_sub_fun = 1;
 			}
 			else if (ptr->Data[SID] == Read_Service)
 			{
-				    
 				//  for test
 				//	printf("u are in Read_Service\n");
 				// send read function (rad resp as the actual ptr->Data of temp or pressure)
@@ -1316,11 +1304,8 @@ void server_call_back(uint32_t TxPduId, PduInfoType* ptr)
 			
 
 		}
-	}
-	else
-	{
-		// not the target
-	}
+	
+	
 }
 
 void UDS_MainFunction()
@@ -1369,7 +1354,7 @@ void UDS_MainFunction()
 				if (UDS_Struct->Data[SID] == Read_Service)
 
 				{
-					if  ( UDS_Struct->Data[DID_1] == Oil_Temp_First_byte &&  UDS_Struct->Data[DID_2] == Oil_Temp_Second_byte )
+					if  ( UDS_Struct->Data[DID_1] == SW_version_First_byte &&  UDS_Struct->Data[DID_2] == SW_version_Second_byte )
 					{
 
 						//HAL_UART_Transmit(&huart2, (uint8_t*) "\r\nOil Temp:\r\n", strlen("\r\nOil Temp:\r\n"), HAL_MAX_DELAY);
@@ -1377,7 +1362,7 @@ void UDS_MainFunction()
 
 					}
 
-					else if  ( UDS_Struct->Data[DID_1] == Oil_Pressure_First_byte &&  UDS_Struct->Data[DID_2] == Oil_Pressure_Second_byte  )
+					else if  ( UDS_Struct->Data[DID_1] == Active_Session_First_byte &&  UDS_Struct->Data[DID_2] == Active_Session_Second_byte  )
 					{
 						//HAL_UART_Transmit(&huart2, (uint8_t*) "\r\nOil Pressure:\r\n", strlen("\r\nOil Pressure:\r\n"), HAL_MAX_DELAY);
 						sendHexArrayAsASCII((uint8_t*)&UDS_Struct->Data[Data_DID],4);
@@ -1398,12 +1383,12 @@ void UDS_MainFunction()
 
 				{
 
-					if ( UDS_Struct->Data[DID_1] == Oil_Temp_First_byte &&  UDS_Struct->Data[DID_2] == Oil_Temp_Second_byte )
+					if ( UDS_Struct->Data[DID_1] == SW_version_First_byte &&  UDS_Struct->Data[DID_2] == SW_version_Second_byte )
 					{
 						//HAL_UART_Transmit(&huart2, (uint8_t*) "\r\nOil Temperature Written successfully.\r\n", strlen("\r\nOil Temperature Written successfully .\r\n"), HAL_MAX_DELAY);
 					}
 
-					else if  ( UDS_Struct->Data[DID_1] == Oil_Pressure_First_byte &&  UDS_Struct->Data[DID_2] == Oil_Pressure_Second_byte  )
+					else if  ( UDS_Struct->Data[DID_1] == Active_Session_First_byte &&  UDS_Struct->Data[DID_2] == Active_Session_Second_byte  )
 					{
 						//HAL_UART_Transmit(&huart2, (uint8_t*) "\r\nOil Pressure Written successfully.\r\n", strlen("\r\nOil Pressure Written successfully .\r\n"), HAL_MAX_DELAY);
 					}

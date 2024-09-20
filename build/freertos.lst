@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s 			page 1
 
 
    1              		.cpu cortex-m3
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
   15:Src/freertos.c ****   *                             www.st.com/SLA0044
   16:Src/freertos.c ****   *
   17:Src/freertos.c ****   ******************************************************************************
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 2
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s 			page 2
 
 
   18:Src/freertos.c ****   */
@@ -98,7 +98,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
   52:Src/freertos.c **** osThreadId defaultTaskHandle;
   53:Src/freertos.c **** osThreadId LEDTaskHandle;
   54:Src/freertos.c **** osThreadId CANIFRXTaskHandle;
-  55:Src/freertos.c **** osThreadId CANTPMFHandle;
+  55:Src/freertos.c **** //osThreadId CANTPMFHandle;
   56:Src/freertos.c **** 
   57:Src/freertos.c **** /* Private function prototypes -----------------------------------------------*/
   58:Src/freertos.c **** /* USER CODE BEGIN FunctionPrototypes */
@@ -108,7 +108,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
   62:Src/freertos.c **** void StartDefaultTask(void const * argument);
   63:Src/freertos.c **** void StartTask02(void const * argument);
   64:Src/freertos.c **** void StartTask03(void const * argument);
-  65:Src/freertos.c **** void StartTask04(void const * argument);
+  65:Src/freertos.c **** //void StartTask04(void const * argument);
   66:Src/freertos.c **** 
   67:Src/freertos.c **** void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   68:Src/freertos.c **** 
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
   72:Src/freertos.c ****   * @retval None
   73:Src/freertos.c ****   */
   74:Src/freertos.c **** void MX_FREERTOS_Init(void) {
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 3
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s 			page 3
 
 
   75:Src/freertos.c ****   /* USER CODE BEGIN Init */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
   39              		@ Volatile: function does not return.
   40              		@ args = 0, pretend = 0, frame = 0
   41              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 4
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s 			page 4
 
 
   42              	.LVL0:
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
   78              	.LCFI1:
   79              		.cfi_def_cfa_offset 8
   80              		.cfi_offset 3, -8
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 5
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s 			page 5
 
 
   81              		.cfi_offset 14, -4
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
  116              		.cfi_offset 3, -8
  117              		.cfi_offset 14, -4
  118              	.LVL8:
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 6
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s 			page 6
 
 
  119              	.L8:
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
   98:Src/freertos.c **** 
  165              		.loc 1 98 23 is_stmt 0 view .LVU20
  166 001c 0021     		movs	r1, #0
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 7
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s 			page 7
 
 
  167 001e 0BA8     		add	r0, sp, #44
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
  211              	.L13:
  212              		.align	2
  213              	.L12:
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 8
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s 			page 8
 
 
  214 0074 00000000 		.word	.LANCHOR0
@@ -427,87 +427,77 @@ ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 1
  217 0080 00000000 		.word	.LANCHOR3
  218              		.cfi_endproc
  219              	.LFE70:
- 221              		.global	CANTPMFHandle
- 222              		.global	CANIFRXTaskHandle
- 223              		.global	LEDTaskHandle
- 224              		.global	defaultTaskHandle
- 225              		.section	.rodata
- 226              		.align	2
- 227              		.set	.LANCHOR0,. + 0
- 228              	.LC6:
- 229 0000 00000000 		.word	.LC0
- 230 0004 00000000 		.word	StartDefaultTask
- 231 0008 0000     		.short	0
- 232 000a 0000     		.space	2
- 233 000c 00000000 		.word	0
- 234 0010 80000000 		.word	128
- 235              	.LC7:
- 236 0014 0C000000 		.word	.LC2
- 237 0018 00000000 		.word	StartTask02
- 238 001c FEFF     		.short	-2
- 239 001e 0000     		.space	2
- 240 0020 00000000 		.word	0
- 241 0024 80000000 		.word	128
- 242              	.LC8:
- 243 0028 14000000 		.word	.LC4
- 244 002c 00000000 		.word	StartTask03
- 245 0030 FFFF     		.short	-1
- 246 0032 0000     		.space	2
- 247 0034 00000000 		.word	0
- 248 0038 80000000 		.word	128
- 249              		.section	.bss.CANIFRXTaskHandle,"aw",%nobits
- 250              		.align	2
- 251              		.set	.LANCHOR3,. + 0
- 254              	CANIFRXTaskHandle:
- 255 0000 00000000 		.space	4
- 256              		.section	.bss.CANTPMFHandle,"aw",%nobits
- 257              		.align	2
- 260              	CANTPMFHandle:
+ 221              		.global	CANIFRXTaskHandle
+ 222              		.global	LEDTaskHandle
+ 223              		.global	defaultTaskHandle
+ 224              		.section	.rodata
+ 225              		.align	2
+ 226              		.set	.LANCHOR0,. + 0
+ 227              	.LC6:
+ 228 0000 00000000 		.word	.LC0
+ 229 0004 00000000 		.word	StartDefaultTask
+ 230 0008 0000     		.short	0
+ 231 000a 0000     		.space	2
+ 232 000c 00000000 		.word	0
+ 233 0010 80000000 		.word	128
+ 234              	.LC7:
+ 235 0014 0C000000 		.word	.LC2
+ 236 0018 00000000 		.word	StartTask02
+ 237 001c FEFF     		.short	-2
+ 238 001e 0000     		.space	2
+ 239 0020 00000000 		.word	0
+ 240 0024 80000000 		.word	128
+ 241              	.LC8:
+ 242 0028 14000000 		.word	.LC4
+ 243 002c 00000000 		.word	StartTask03
+ 244 0030 FFFF     		.short	-1
+ 245 0032 0000     		.space	2
+ 246 0034 00000000 		.word	0
+ 247 0038 80000000 		.word	128
+ 248              		.section	.bss.CANIFRXTaskHandle,"aw",%nobits
+ 249              		.align	2
+ 250              		.set	.LANCHOR3,. + 0
+ 253              	CANIFRXTaskHandle:
+ 254 0000 00000000 		.space	4
+ 255              		.section	.bss.LEDTaskHandle,"aw",%nobits
+ 256              		.align	2
+ 257              		.set	.LANCHOR2,. + 0
+ 260              	LEDTaskHandle:
  261 0000 00000000 		.space	4
- 262              		.section	.bss.LEDTaskHandle,"aw",%nobits
+ 262              		.section	.bss.defaultTaskHandle,"aw",%nobits
  263              		.align	2
- 264              		.set	.LANCHOR2,. + 0
- 267              	LEDTaskHandle:
+ 264              		.set	.LANCHOR1,. + 0
+ 267              	defaultTaskHandle:
  268 0000 00000000 		.space	4
- 269              		.section	.bss.defaultTaskHandle,"aw",%nobits
- 270              		.align	2
- 271              		.set	.LANCHOR1,. + 0
- 274              	defaultTaskHandle:
- 275 0000 00000000 		.space	4
- 276              		.text
- 277              	.Letext0:
- 278              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
- 279              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 9
-
-
- 280              		.file 4 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
- 281              		.file 5 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
- 282              		.file 6 "Inc/cantp.h"
-ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s 			page 10
+ 269              		.text
+ 270              	.Letext0:
+ 271              		.file 2 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 272              		.file 3 "c:\\program files (x86)\\gnu arm embedded toolchain\\10 2021.10\\arm-none-eabi\\include\\
+ 273              		.file 4 "Middlewares/Third_Party/FreeRTOS/Source/include/task.h"
+ 274              		.file 5 "Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS/cmsis_os.h"
+ 275              		.file 6 "Inc/cantp.h"
+ARM GAS  C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s 			page 9
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 freertos.c
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:15     .rodata.str1.4:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:28     .text.StartDefaultTask:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:34     .text.StartDefaultTask:00000000 StartDefaultTask
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:62     .text.StartTask02:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:68     .text.StartTask02:00000000 StartTask02
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:98     .text.StartTask03:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:104    .text.StartTask03:00000000 StartTask03
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:136    .text.MX_FREERTOS_Init:00000000 $t
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:142    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:214    .text.MX_FREERTOS_Init:00000074 $d
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:260    .bss.CANTPMFHandle:00000000 CANTPMFHandle
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:254    .bss.CANIFRXTaskHandle:00000000 CANIFRXTaskHandle
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:267    .bss.LEDTaskHandle:00000000 LEDTaskHandle
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:274    .bss.defaultTaskHandle:00000000 defaultTaskHandle
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:226    .rodata:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:250    .bss.CANIFRXTaskHandle:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:257    .bss.CANTPMFHandle:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:263    .bss.LEDTaskHandle:00000000 $d
-C:\Users\wup15j\AppData\Local\Temp\cceedoYc.s:270    .bss.defaultTaskHandle:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:15     .rodata.str1.4:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:28     .text.StartDefaultTask:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:34     .text.StartDefaultTask:00000000 StartDefaultTask
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:62     .text.StartTask02:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:68     .text.StartTask02:00000000 StartTask02
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:98     .text.StartTask03:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:104    .text.StartTask03:00000000 StartTask03
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:136    .text.MX_FREERTOS_Init:00000000 $t
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:142    .text.MX_FREERTOS_Init:00000000 MX_FREERTOS_Init
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:214    .text.MX_FREERTOS_Init:00000074 $d
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:253    .bss.CANIFRXTaskHandle:00000000 CANIFRXTaskHandle
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:260    .bss.LEDTaskHandle:00000000 LEDTaskHandle
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:267    .bss.defaultTaskHandle:00000000 defaultTaskHandle
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:225    .rodata:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:249    .bss.CANIFRXTaskHandle:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:256    .bss.LEDTaskHandle:00000000 $d
+C:\Users\wup15j\AppData\Local\Temp\cc225xRP.s:263    .bss.defaultTaskHandle:00000000 $d
 
 UNDEFINED SYMBOLS
 osDelay

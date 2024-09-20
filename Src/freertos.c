@@ -52,7 +52,7 @@
 osThreadId defaultTaskHandle;
 osThreadId LEDTaskHandle;
 osThreadId CANIFRXTaskHandle;
-osThreadId CANTPMFHandle;
+//osThreadId CANTPMFHandle;
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN FunctionPrototypes */
@@ -62,7 +62,7 @@ osThreadId CANTPMFHandle;
 void StartDefaultTask(void const * argument);
 void StartTask02(void const * argument);
 void StartTask03(void const * argument);
-void StartTask04(void const * argument);
+//void StartTask04(void const * argument);
 
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
