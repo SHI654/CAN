@@ -2750,34 +2750,34 @@ LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2021.10/bin/../lib/gcc
  .debug_ranges  0x000013f0       0x20 build/tim.o
  .debug_ranges  0x00001410       0x20 build/startup_stm32f103x6.o
 
-.debug_line     0x00000000    0x13527
+.debug_line     0x00000000    0x13524
  .debug_line    0x00000000      0x419 build/main.o
  .debug_line    0x00000419      0x1c5 build/gpio.o
  .debug_line    0x000005de      0x2eb build/stm32f1xx_it.o
  .debug_line    0x000008c9      0x1ac build/stm32f1xx_hal_msp.o
  .debug_line    0x00000a75      0x4eb build/can.o
- .debug_line    0x00000f60      0x3ad build/canif.o
- .debug_line    0x0000130d      0x90f build/cantp.o
- .debug_line    0x00001c1c      0xd1f build/uds_diag.o
- .debug_line    0x0000293b     0x10ef build/stm32f1xx_hal_can.o
- .debug_line    0x00003a2a      0x526 build/stm32f1xx_hal.o
- .debug_line    0x00003f50      0xc24 build/stm32f1xx_hal_rcc.o
- .debug_line    0x00004b74      0x5c4 build/stm32f1xx_hal_gpio.o
- .debug_line    0x00005138      0x631 build/stm32f1xx_hal_cortex.o
- .debug_line    0x00005769     0x460b build/stm32f1xx_hal_tim.o
- .debug_line    0x00009d74     0x1b24 build/stm32f1xx_hal_tim_ex.o
- .debug_line    0x0000b898      0x239 build/system_stm32f1xx.o
- .debug_line    0x0000bad1      0x250 build/freertos.o
- .debug_line    0x0000bd21      0x291 build/stm32f1xx_hal_timebase_tim.o
- .debug_line    0x0000bfb2      0x36c build/list.o
- .debug_line    0x0000c31e     0x1ce7 build/queue.o
- .debug_line    0x0000e005     0x278d build/tasks.o
- .debug_line    0x00010792      0xb69 build/timers.o
- .debug_line    0x000112fb     0x124c build/cmsis_os.o
- .debug_line    0x00012547      0x672 build/heap_4.o
- .debug_line    0x00012bb9      0x618 build/port.o
- .debug_line    0x000131d1      0x2e1 build/tim.o
- .debug_line    0x000134b2       0x75 build/startup_stm32f103x6.o
+ .debug_line    0x00000f60      0x3aa build/canif.o
+ .debug_line    0x0000130a      0x90f build/cantp.o
+ .debug_line    0x00001c19      0xd1f build/uds_diag.o
+ .debug_line    0x00002938     0x10ef build/stm32f1xx_hal_can.o
+ .debug_line    0x00003a27      0x526 build/stm32f1xx_hal.o
+ .debug_line    0x00003f4d      0xc24 build/stm32f1xx_hal_rcc.o
+ .debug_line    0x00004b71      0x5c4 build/stm32f1xx_hal_gpio.o
+ .debug_line    0x00005135      0x631 build/stm32f1xx_hal_cortex.o
+ .debug_line    0x00005766     0x460b build/stm32f1xx_hal_tim.o
+ .debug_line    0x00009d71     0x1b24 build/stm32f1xx_hal_tim_ex.o
+ .debug_line    0x0000b895      0x239 build/system_stm32f1xx.o
+ .debug_line    0x0000bace      0x250 build/freertos.o
+ .debug_line    0x0000bd1e      0x291 build/stm32f1xx_hal_timebase_tim.o
+ .debug_line    0x0000bfaf      0x36c build/list.o
+ .debug_line    0x0000c31b     0x1ce7 build/queue.o
+ .debug_line    0x0000e002     0x278d build/tasks.o
+ .debug_line    0x0001078f      0xb69 build/timers.o
+ .debug_line    0x000112f8     0x124c build/cmsis_os.o
+ .debug_line    0x00012544      0x672 build/heap_4.o
+ .debug_line    0x00012bb6      0x618 build/port.o
+ .debug_line    0x000131ce      0x2e1 build/tim.o
+ .debug_line    0x000134af       0x75 build/startup_stm32f103x6.o
 
 .debug_str      0x00000000     0x64c8
  .debug_str     0x00000000      0x7fd build/main.o
