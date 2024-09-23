@@ -101,65 +101,6 @@ void UDS_Tester_Presenter_Client(void)
 
 /***************************************************************Read**********************************************************************/
 
-//Send Read Frame
-void UDS_Read_Data_Client(DID did)
-{
-	Read_Data_Client.Data[PCI] = 6;
-	Read_Data_Client.Data[ADD_Source]= Client_Address; 	// ADD_Source
-
-
-	if( Target_Address == Tempreture_Address)
-	{
-		Read_Data_Client.Data[ADD_Target]= Tempreture_Address; 	// ADD_Target
-	}
-	else if( Target_Address == Pressure_Address)
-	{
-		Read_Data_Client.Data[ADD_Target]= Pressure_Address; 	// ADD_Target
-	}
-	else if( Target_Address == Functional_Address)
-	{
-		Read_Data_Client.Data[ADD_Target]= Functional_Address; 	// ADD_Target
-	}
-	else
-	{
-		//Nothing
-	}
-
-	Read_Data_Client.Data[SID] = Read_Service; //SID of Read
-	Read_Data_Client.Length = 6; //length of Read frame
-
-	//check DID which Data
-	if(did == SW_version)
-	{
-		Read_Data_Client.Data[DID_1] = SW_version_First_byte;
-		Read_Data_Client.Data[DID_2] = SW_version_Second_byte;
-	}
-	else if (did == Active_Session)
-	{
-		Read_Data_Client.Data[DID_1] = Active_Session_First_byte;
-		Read_Data_Client.Data[DID_2] = Active_Session_Second_byte;
-	}
-	else if (did == VIN_number)
-	{
-		Read_Data_Client.Data[DID_1] = VIN_number_First_byte;
-		Read_Data_Client.Data[DID_2] = VIN_number_Second_byte;
-	}
-	else
-	{
-		//Another DID
-	}
-
-	//Check supressed Positive Responce
-	Read_Data_Client.Data[DID_1] |= 0b10000000;
-	Read_Data_Client.Data[DID_1] &= ((SupressedPosRes_CLient<<7)|0x7F);
-	//Send Frame to Can TP
-	CanTp_Transmit(0, &Read_Data_Client);
-
-	//For Debugging
-	//HAL_UART_Transmit(&huart2, "\r\nRead Frame Client:", 50, HAL_MAX_DELAY);
-	//sendHexArrayAsASCII(Read_Data_Client.Data, Read_Data_Client.Length);
-	//HAL_UART_Transmit(&huart2, "\r\n", 50, HAL_MAX_DELAY);
-}
 
 
 //Recieve Read Frame
@@ -226,110 +167,6 @@ void UDS_Read_Data_Client(DID did)
 
 /***************************************************************Write**********************************************************************/
 
-void UDS_Write_Data_Client(DID did, uint32_t data)
-{
-
-	//PduInfoType Write_Data_Client;
-	Write_Data_Client.Data[SID] = Write_Service; //SID of WDID
-	Write_Data_Client.Data[ADD_Source] = Client_Address;
-
-	if( Target_Address == Tempreture_Address)
-	{
-		Write_Data_Client.Data[ADD_Target]= Tempreture_Address; 	// ADD_Target
-	}
-	else if( Target_Address == Pressure_Address)
-	{
-		Write_Data_Client.Data[ADD_Target]= Pressure_Address; 	// ADD_Target
-	}
-	else if( Target_Address == Functional_Address)
-	{
-		Write_Data_Client.Data[ADD_Target]= Functional_Address; 	// ADD_Target
-	}
-	else
-	{
-		//Nothing
-	}
-
-	//check DID which Data
-	if(did == SW_version)
-	{
-		Write_Data_Client.Data[DID_1] = SW_version_First_byte;
-		Write_Data_Client.Data[DID_2] = SW_version_Second_byte;
-
-		// Assuming data is 2 bytes
-		UART_ReceiveAndConvert(4, &Write_Data_Client);
-		/*
-		Write_Data_Client.Data[Data_DID] = data >> 8; // Most significant byte of data
-		Write_Data_Client.Data[Data_DID+1] = data & 0xFF;	   // Least significant byte of data
-		Write_Data_Client.Data[Data_DID+2] = 0x00;
-		Write_Data_Client.Data[Data_DID+3] = 0x00;		  // Least significant byte of data
-		 */
-		Write_Data_Client.Length = 8; // SID + DID + Data
-		Write_Data_Client.Data[PCI] = 8;
-
-
-	}
-	else if (did == Active_Session)
-	{
-		Write_Data_Client.Data[DID_1] = Active_Session_First_byte;
-		Write_Data_Client.Data[DID_2] = Active_Session_Second_byte;
-
-		// Assuming data is 4 bytes
-		UART_ReceiveAndConvert(8, &Write_Data_Client);
-		/*
-		Write_Data_Client.Data[Data_DID] = (data >> 24) & 0xFF; // Most significant byte of data
-		Write_Data_Client.Data[Data_DID+1] = (data >> 16) & 0xFF;
-		Write_Data_Client.Data[Data_DID+2] = (data >> 8) & 0xFF;
-		Write_Data_Client.Data[Data_DID+3] = data & 0xFF;		  // Least significant byte of data
-		 */
-		Write_Data_Client.Length = 10; // SID + DID + Data
-		Write_Data_Client.Data[PCI] = 10;
-
-
-	}
-	else if (did == VIN_number)
-	{
-		Write_Data_Client.Data[DID_1] = VIN_number_First_byte;
-		Write_Data_Client.Data[DID_2] = VIN_number_Second_byte;
-
-		// Assuming data is 4 bytes for now until we test then handle it as 17 bytes ISA
-		UART_ReceiveAndConvert(34, &Write_Data_Client);
-		//Write_Data_Client.Data[Data_DID] = (data >> 24) & 0xFF; // Most significant byte of data
-		//Write_Data_Client.Data[Data_DID+1] = (data >> 16) & 0xFF;
-		//Write_Data_Client.Data[Data_DID+2] = (data >> 8) & 0xFF;
-		//Write_Data_Client.Data[Data_DID+3] = data & 0xFF;		  // Least significant byte of data
-		/*
-		Write_Data_Client.Length = 10; // SID + DID + Data
-		Write_Data_Client.Data[PCI] = 10;
-		 */
-		Write_Data_Client.Length = 23; // SID + DID + Data
-		Write_Data_Client.Data[PCI] = 23;
-
-		/* to handle 17 bytes of data */
-		/*	for (uint8_t i=16; i>=0; i--)
-			{
-				Write_Data_Client.Data[(Data_DID + (16-i))] = (data >> (i*8)) & 0xFF;
-			}
-
-		 */
-
-	}
-	else
-	{
-		//Another DID
-	}
-	//Check supressed Positive Responce
-	Write_Data_Client.Data[DID_1] |= 0b10000000;
-	Write_Data_Client.Data[DID_1] &= ((SupressedPosRes_CLient<<7)|0x7F);
-	CanTp_Transmit(0, &Write_Data_Client);
-
-	//For Debugging
-	//HAL_UART_Transmit(&huart2, "\r\nWrite Frame Client:", 50, HAL_MAX_DELAY);
-	sendHexArrayAsASCII(Write_Data_Client.Data,  Write_Data_Client.Length);
-	//(&huart2, (uint8_t*)"\r\n", 50, HAL_MAX_DELAY);
-}
-
-
 
 
 
@@ -377,91 +214,6 @@ void UDS_Write_Data_Client(DID did, uint32_t data)
 //
 
 /***************************************************************Control Session**********************************************************************/
-void UDS_Control_Session_Default(void)
-{
-	// init struct var  to use for send TP
-
-	// fill the struct data
-	Control_Session_Default.Data[PCI] = 5;
-	Control_Session_Default.Data[SID] = Control_Service;
-
-	Control_Session_Default.Data[ADD_Source] = Client_Address;
-
-	if( Target_Address == Tempreture_Address)
-	{
-		Control_Session_Default.Data[ADD_Target]= Tempreture_Address; 	// ADD_Target
-	}
-	else if( Target_Address == Pressure_Address)
-	{
-		Control_Session_Default.Data[ADD_Target]= Pressure_Address; 	// ADD_Target
-	}
-	else if( Target_Address == Functional_Address)
-	{
-		Control_Session_Default.Data[ADD_Target]= Functional_Address; 	// ADD_Target
-	}
-	else
-	{
-		//Nothing
-	}
-	Control_Session_Default.Data[Sub_F] = DefaultSession;
-	//Check supressed Positive Responce
-	Control_Session_Default.Data[Sub_F] |= 0b10000000;
-	Control_Session_Default.Data[Sub_F] &= ((SupressedPosRes_CLient<<7)|0x7F);
-
-	Control_Session_Default.Length = 5;
-
-	// send to can tp
-	CanTp_Transmit(0, &Control_Session_Default);
-
-	//For Debugging
-	//HAL_UART_Transmit(&huart2, "\r\nControl_Session_Default:", 100, HAL_MAX_DELAY);
-	//sendHexArrayAsASCII(Control_Session_Default.Data,  Control_Session_Default.Length);
-	//HAL_UART_Transmit(&huart2, "\r\n", 50, HAL_MAX_DELAY);
-}
-
-
-void UDS_Control_Session_Extended(void)
-{
-	// init struct var  to use for send TP
-
-
-	// fill the struct data
-	Control_Session_Extended.Data[PCI] = 5;
-	Control_Session_Extended.Data[SID] = Control_Service;
-
-	Control_Session_Extended.Data[ADD_Source] = Client_Address;
-
-	if( Target_Address == Tempreture_Address)
-	{
-		Control_Session_Extended.Data[ADD_Target]= Tempreture_Address; 	// ADD_Target
-	}
-	else if( Target_Address == Pressure_Address)
-	{
-		Control_Session_Extended.Data[ADD_Target]= Pressure_Address; 	// ADD_Target
-	}
-	else if( Target_Address == Functional_Address)
-	{
-		Control_Session_Extended.Data[ADD_Target]= Functional_Address; 	// ADD_Target
-	}
-	else
-	{
-		//Nothing
-	}
-	Control_Session_Extended.Data[Sub_F] = ExtendedSession;
-	//Check supressed Positive Responce
-	Control_Session_Extended.Data[Sub_F] |= 0b10000000;
-	Control_Session_Extended.Data[Sub_F] &= ((SupressedPosRes_CLient<<7)|0x7F);
-
-	Control_Session_Extended.Length = 5;
-
-	// send to can tp
-	CanTp_Transmit(0, &Control_Session_Extended);
-
-	//For Debugging
-	//HAL_UART_Transmit(&huart2, "\r\Control_Session_Extended:", 100, HAL_MAX_DELAY);
-	//sendHexArrayAsASCII(Control_Session_Extended.Data,  Control_Session_Extended.Length);
-	//HAL_UART_Transmit(&huart2, "\r\n", 50, HAL_MAX_DELAY);
-}
 
 
 
@@ -860,7 +612,7 @@ void UDS_Write_Data_Server(uint8_t* received_data, uint16_t received_length)
 void UDS_Send_Pos_Res(ServiceInfo* Response)
 {
 
-	uint8_t PCI = 4 + Response->DID_Length + Response->Data_Length;
+	uint8_t PCI = Response->DID_Length + Response->Data_Length;
 	msg.Data[SID] = Response->SID + 0x40;
 	uint8_t currentIndex = Sub_F;
 	if(Response->SUB_FUNC != -1)
@@ -870,9 +622,9 @@ void UDS_Send_Pos_Res(ServiceInfo* Response)
 	}
 	else
 	{
-		for(currentIndex = DID_1; currentIndex < Response->DID_Length + 4; currentIndex++)
+		for(currentIndex = DID_1; currentIndex <= Response->DID_Length ; currentIndex++)
 		{
-			msg.Data[currentIndex] = Response->DID[currentIndex - 4];
+			msg.Data[currentIndex] = Response->DID[currentIndex - 1 ];
 		}
 	}
 
@@ -882,19 +634,17 @@ void UDS_Send_Pos_Res(ServiceInfo* Response)
 		msg.Data[currentIndex] = Response->Data[currentIndex - temp];
 		currentIndex++;
 	}
-	msg.Data[0] = PCI;
-	msg.Length = PCI;
+	msg.Length = PCI+1;
 
 	CanTp_Transmit(8, &msg);
 }
 
 void UDS_Send_Neg_Res(uint8_t SID, uint8_t NRC)
 {
-	msg.Data[PCI] = 4;
 	msg.Data[Neg_Res_INDEX] = 0x7F;
 	msg.Data[SID_NR_INDEX] = SID;
 	msg.Data[NRC_INDEX] = NRC;
-	msg.Length = 4;
+	msg.Length = 3;
 
 	CanTp_Transmit(8, &msg);
 }
@@ -1079,12 +829,9 @@ void UDS_Read_Data_Server(uint8_t* data)
 	{
 		pos_Response.DID[0]=Active_Session_First_byte;
 		pos_Response.DID[1]=Active_Session_Second_byte;
-		pos_Response.Data[0]=Active_Session_var>>24;
-		pos_Response.Data[1]=Active_Session_var>>16;
-		pos_Response.Data[2]=Active_Session_var>>8;
-		pos_Response.Data[3]=Active_Session_var & 0xFF;
+		pos_Response.Data[0]= global_session;
 
-		pos_Response.Data_Length = 4;
+		pos_Response.Data_Length = 1;
 		UDS_Send_Pos_Res(&pos_Response);
 
 

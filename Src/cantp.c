@@ -216,12 +216,12 @@ void CanTp_encodeSingleFrame(uint32_t TxPduId, PduInfoType* PduInfoPtr){
     // 初始化一个循环计数变量 i
     uint32_t i;
     // 将数据从 PduInfoPtr 复制到 CAN 帧，从第二个字节（索引为 1）开始
-    for (i = 0; i < dataLength; i++) {
+    for (i = 0; i < dataLength+1; i++) {
         EncodedPduInfo.Data[i + 1] = PduInfoPtr->Data[i];
     }
 
     // 如果数据未填满整个 CAN 帧，将剩余的字节填充为零
-    for (i = dataLength + 1; i < CAN_FRAME_LENGTH; i++) {
+    for (i = dataLength + 2; i < CAN_FRAME_LENGTH; i++) {
         EncodedPduInfo.Data[i] = 0;
     }
 

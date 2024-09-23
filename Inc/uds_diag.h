@@ -200,9 +200,9 @@ typedef enum {
 	Data_DID = 6 ,
 	Data_Sub_Fun = 5 ,
 
-	Neg_Res_INDEX=1,
-	SID_NR_INDEX=2,
-	NRC_INDEX=3,
+	Neg_Res_INDEX=0,
+	SID_NR_INDEX=1,
+	NRC_INDEX=2,
 
 }Indices;
 
@@ -245,14 +245,10 @@ typedef enum
 
 
 void UDS_Init(void);
-void UDS_Read_Data_Client(DID did);
 //void UDS_Read_Data_Server( PduInfoType* PduInfoTypePtr );
 
-void UDS_Write_Data_Client(DID did, uint32_t data);
-//void UDS_Write_Data_Server(PduInfoType* Received_data);
 
-void UDS_Control_Session_Default(void);
-void UDS_Control_Session_Extended(void);
+//void UDS_Write_Data_Server(PduInfoType* Received_data);
 
 void UDS_Send_Security_Client(Sub_Fun sub_fun);
 //void UDS_Send_Security_Server(void);
