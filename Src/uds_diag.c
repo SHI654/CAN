@@ -899,7 +899,7 @@ void server_call_back(uint32_t TxPduId, PduInfoType* ptr)
 	PduDataPTR = ptr;
 	// create flag for check SID this is local bec . every frame i need to check the sid
 	uint8_t local_sid_flag = 0;
-	SupressedPosRes_Server = ((ptr->Data[Sub_F] & 0b10000000)>>7) ;
+	//SupressedPosRes_Server = ((ptr->Data[Sub_F] & 0b10000000)>>7) ;
 	// this for test only
 	//uint8_t ptr->Data[20] = {2 ,Control_Service , 5 };
 	// we need to check for address target (ADD_Target) if true this message is for me if not rejected it

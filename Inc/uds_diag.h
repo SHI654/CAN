@@ -196,7 +196,7 @@ typedef enum {
 	SID = 0,
 	DID_1 = 1 ,
 	DID_2 = 2 ,
-	Sub_F = 4,
+	Sub_F = 1,
 	Data_DID = 6 ,
 	Data_Sub_Fun = 5 ,
 
